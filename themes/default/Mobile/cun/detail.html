@@ -1,0 +1,53 @@
+<include file='public:head_frozen'/>
+<section class="ui-container">
+	<div class="ui-row banner">
+		<a href=""><img class="img-responsive1" src="__ROOT__/attachs/<{$detail[pic]}>"  /></a>
+		<a href="<{:U('cun/index')}>" class="text-white text-center detail-anniu ui-f12"><{:bao_msubstr($detail['name'],0,10)}></a>
+	</div>
+	
+	<div class="ui-row ui-whitespace bg-white p-y-1 ui-f14">
+		<div class="ui-col ui-col-10 text-red">公告</div>
+		<div class="ui-col ui-col-80">
+			<a href="">欢迎光临智慧乡村服务平台</a>
+		</div>
+		<div class="ui-col ui-col-10 text-right">
+			<i class="fa fa-arrow-next"></i>
+		</div>
+	</div>
+	
+	<ul class="ui-list ui-list-function ui-border-tb">
+		<li class="ui-border-t">
+			<div class="ui-list-info">
+				<h4 class="ui-nowrap">每日来签到</h4>
+				<p>连续签到7天，多得20积分</p>
+			</div>
+			<a mini="act" href="<{:U('mobile/sign/signed')}>" class="ui-btn">签到</a>
+		</li>
+		<li class="ui-border-t">
+			<div class="ui-list-info">
+				<h4 class="ui-nowrap">推客有福利</h4>
+				<p>分享给亲朋好友，每天坐享分层</p>
+			</div>
+			<a  href="<{:U('mcenter/distribution/qrcode')}>" class="ui-btn">看看</a>
+		</li>
+	</ul>
+        
+
+	<ul class="ui-row-flex ui-whitespace text-center m-t-1 bg-white ui-border-tb ui-f12">
+		<li class="ui-col ui-col ui-border-tb ui-border-r p-y-1"><a href="<{:U('mobile/village/index')}>"><img src="/static/default/mobile/img/cun_mlxc.png"  class="icon" alt=""/></a><p>魅力乡村</p></li>
+		<li class="ui-col ui-col ui-border-r p-y-1"><a href="<{:U('mobile/village/index')}>"><img src="/static/default/mobile/img/cun-news.png"  class="icon"  alt=""/></a><p>乡村新闻</p></li>
+		<li class="ui-col ui-col ui-border-r p-y-1"><a href="<{:U('mobile/village/index')}>"><img src="/static/default/mobile/img/cun_whualitang.png"  class="icon"  alt=""/></a><p>文化礼堂</p></li>
+		<li class="ui-col ui-col  p-y-1"><a href=""><img src="/static/default/mobile/img/cun_liping.png" class="icon"   alt=""/></a><p>乡村礼品</p></li>
+	</ul>
+	<ul class="ui-row-flex ui-whitespace text-center bg-white ui-border-b ui-f12">
+		<li class="ui-col ui-col p-y-1 ui-border-tb ui-border-r"><a href=""><img src="/static/default/mobile/img/cun_liyou.png" class="icon"  alt=""/></a><p>乡游推荐</p></li>
+		<li class="ui-col ui-col p-y-1 ui-border-r"><a href=""><img src="/static/default/mobile/img/cun_xiangcunmingsu.png" class="icon"  alt=""/></a><p>乡村民宿</p></li>
+		<li class="ui-col ui-col p-y-1 ui-border-r"><a href="<{:U('mobile/village/index')}>"><img src="/static/default/mobile/img/cun_shenghuofuw.png" class="icon"  alt=""/></a><p>生活服务</p></li>
+		<li class="ui-col ui-col p-y-1 "><a href="<{:U('mobile/village/index')}>"><img src="/static/default/mobile/img/cun-tieba.png" class="icon"   alt=""/></a><p>乡村贴吧</p></li>
+	</ul>
+
+</section>
+<script>
+
+</script>
+<include file='cun:footer'/> 

@@ -1,0 +1,71 @@
+<include  file='public:header'/>
+<div class="mainBt">
+    <ul>
+        <li class="li1">课堂管理</li>
+        <li class="li2">视频课堂</li>
+        <li class="li2 li3">编辑</li>
+    </ul>
+</div>
+<div class="mainScAdd ">
+    <div class="tableBox">
+        <form target="baocms_frm" action="<{:U('video/edit',array('video_id'=>$detail['video_id']))}>" method="post">
+            <table bordercolor="#e1e6eb" cellspacing="0" width="100%" border="1px"  style=" border-collapse: collapse; margin:0px; vertical-align:middle; background-color:#FFF;" >
+                <tr>
+                    <td class="lfTdBt">标题：</td>
+                    <td class="rgTdBt">
+                        <input type="text" name="data[title]" value="<{$detail.title}>" class="manageInput" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="lfTdBt">分类：</td>
+                    <td class="rgTdBt">
+                        <select name="data[category_id]" class="manageSelect w100">
+                            <option value="0">请选择...</option>
+                            <foreach name="category" item="item">
+                                <option value="<{$item.category_id}>" <eq name="item.category_id" value="$detail.category_id">selected="selected"</eq> ><{$item.name}></option>
+                            </foreach>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="lfTdBt">
+                        <script type="text/javascript">var GV = {APP:'default'/*当前应用名*/};</script>
+                        <script type="text/javascript" src="__PUBLIC__/js/wind/wind.js?t=<{$nowtime}>"></script>
+                        <script type="text/javascript" src="__PUBLIC__/js/wind/wind_fun.js"></script>
+                        <link href="__PUBLIC__/js/artDialog/skins/default.css" rel="stylesheet" />
+                        封面图片：
+                    </td>
+                    <td class="rgTdBt">
+                        <div style="width: 300px;height: 100px; float: left;">
+                            <input type="hidden" name="data[picture]" value="<{$detail.picture}>" id="data_logo" />
+                            <a href="javascript:upload_one_image('封面上传','#data_logo');" style="color:#09C">上传封面</a>
+                        </div>
+                        <div style="width: 300px;height: 100px; float: left;">
+                            <img id="data_logo-preview" width="80" height="80"  src="__ROOT__<{$detail.picture|default='/attachs/default.jpg'}>" onclick="window.image_preview_dialog(this.src);"/>
+                            建议尺寸:<{$CONFIG.attachs.hotel.thumb}>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="lfTdBt">视频路径：</td>
+                    <td class="rgTdBt">
+                        <input type="text" name="data[path]" value="<{$detail.path}>" class="manageInput" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="lfTdBt">视频描述：</td>
+                    <td class="rgTdBt">
+                        <textarea  name="data[intro]"  cols="50" rows="10" ><{$detail.intro}></textarea>
+                    </td>
+                </tr>
+            </table>
+
+            <div style="margin-left:140px;margin-top:20px">
+                <input type="submit" value="确认编辑" class="smtQrIpt" />
+            </div>
+
+        </form>
+    </div>
+</div>
+<include  file='public:footer'/>
+

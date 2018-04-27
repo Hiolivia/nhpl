@@ -1,0 +1,296 @@
+<title>物流配送中心</title>
+<include file="public:header"/>
+<link rel="stylesheet" href="/static/default/wap/css/delivery.css">
+<script src = "/themes/default/Mobile/statics/js/jquery-1.7.1.min.js" ></script>
+<script src="/themes/default/Mobile/statics/js/layer/layer.js"></script>
+
+<style>
+.table th {border-bottom:2px dashed #ddd;}
+.table th, .table td {font-size: 12px;padding:5px;}
+</style>
+
+
+<header class="top-fixed bg-yellow bg-inverse">
+	<div class="top-back">
+		<a class="top-addr" href="<{:U('delivery/index/index')}>"><i class="icon-angle-left"></i></a>
+	</div>
+		<div class="top-title">
+			订单列表
+		</div>
+	<div class="top-signed">
+		<a href="<{:U('delivery/login/logout')}>">退出</a>
+	</div>
+</header>
+
+
+
+<ul id="shangjia_tab">
+        <li style="width: 33.3333367%;"><a href="<{:U('lists/index',array('ss'=>0))}>" <eq name='ss' value='0'>class="on"</eq>>抢新单</a></li>
+        <li style="width: 33.3333367%;"><a href="<{:U('lists/index',array('ss'=>2))}>"<eq name='ss' value='2'>class="on"</eq>>配送中</a></li>
+        <li style="width: 33.3333367%;"><a href="<{:U('lists/index',array('ss'=>8))}>"<eq name='ss' value='8'>class="on"</eq>>已完成</a></li>
+</ul>
+
+<!-- 筛选TAB -->
+
+<div class="line tab-bar">
+	<div class="button-toolbar">
+		<div class="button-group">
+			<a class="block button bg-dot active" href="#">订单列表
+             <eq name="ss" value="0">抢单中</eq>
+            <eq name="ss" value="2">配送中</eq>
+            <eq name="ss" value="8">已完成</eq>
+            </a>
+		</div>
+	</div>
+</div>
+
+
+<div class="container1">
+<div class="list-media-x" id="list-media">
+	<ul>
+<php>$a=1;</php>
+<volist name="rdv" id="r"> 
+    <li class="line padding">
+        <div class="x12">
+            <p class="text-small">配送ID:<{$r.order_id}>             
+              <eq name="r.type" value="0">（商城，订单id：<{$r.type_order_id}>）
+              </eq>
+              <eq name="r.type" value="1">（外卖，订单id：<{$r.type_order_id}>）
+              </eq><a class="icon icon-send radius-little " style=" color:#F00; padding:0px 5px;"> 距离<{$r.d}></a>
+           </p>
+
+                          <!--PHP代码开始--><php>
+                            if($r['type'] == 0){ //商品
+                            $o = D('Order');
+                            $res = $o -> where('order_id ='.$r['type_order_id']) -> find();
+                            $t = 0;
+                            $o2 = D('OrderGoods');
+                            $res2 = $o2 -> where('order_id ='.$res['order_id']) ->  select();
+                            $o3 = D('Goods');
+                            foreach($res2 as $key => $val){
+                            $v = $o3->where('goods_id ='.$val['goods_id'])->getField('title');
+                            $res2[$key]['t'] = $v ;
+                            }
+                            }elseif($r['type'] == 1){ //外卖
+                            $o = D('EleOrder');
+                            $res = $o -> where('order_id ='.$r['type_order_id']) -> find();
+                            $t = 1;
+                            $o2 = D('EleOrderProduct');
+                            $res2 = $o2 -> where('order_id ='.$res['order_id']) ->select();
+                            $o3 = D('EleProduct');
+                            foreach($res2 as $key => $val){
+
+                            $v = $o3->where('product_id ='.$val['product_id'])->getField('product_name');
+                            $res2[$key]['t'] = $v;  
+                            }
+                            }
+
+                        </php> <!--PHP代码结束-->
+
+                                   
+
+
+<!--商品循环开始-->
+<div class="blank-10"></div>
+<table class="table">
+	<tbody><tr>
+		<th>商品信息</th>
+		<th>单价</th>
+		<th>数量</th>
+	</tr>
+    <volist name="res2" id="res2">	
+	<tr>  
+		<td><{:bao_msubstr($res2['t'],0,18,false)}></td>
+		<td>￥<php>echo round(($res2['total_price']/$res2['num'])/100,2);</php></td>
+		<td> x<{$res2.num}></td>
+	</tr> 
+    </volist>                   
+</tbody></table>
+<div class="blank-10"></div>
+<!--商品循环结束-->
+          
+
+<p class="text-small">下单时间： <{$res.create_time|date='Y-m-d H:i:s',###}> </p> 
+<!--规定时间开始-->            
+ 				<php>
+                    $delivery_time = $ex[$r['shop_id']]['delivery_time']*60;
+                    $end_time = $r['update_time'] + $delivery_time;
+                    $cha = $end_time - $nowtime;
+                    $endge_time = date('Y/m/d H:i:s',$end_time);
+
+                </php>
+
+<script type="text/javascript" language="javascript">
+                        setInterval(function () {
+                            var end_time = "<{$endge_time}>";
+                            var EndTime = new Date(end_time); //截止时间 前端路上
+                            var NowTime = new Date();
+                            var t = EndTime.getTime() - NowTime.getTime();
+                            var d = Math.floor(t / 1000 / 60 / 60 / 24);
+                            var h = Math.floor(t / 1000 / 60 / 60 % 24);
+                            var m = Math.floor(t / 1000 / 60 % 60);
+                            var s = Math.floor(t / 1000 % 60);
+                            if (d < 10) {
+                                $('#t<{$a}>').children('#t_d').html('0' + d);
+                            } else {
+                                $('#t<{$a}>').children('#t_d').html(d);
+                            }
+                            if (h < 10) {
+                                $('#t<{$a}>').children('#t_h').html('0' + h);
+                            } else {
+                                $('#t<{$a}>').children('#t_h').html(h);
+                            }
+                            if (m < 10) {
+                                $('#t<{$a}>').children('#t_m').html('0' + m);
+                            } else {
+                                $('#t<{$a}>').children('#t_m').html(m);
+                            }
+                            if (s < 10) {
+                                $('#t<{$a}>').children('#t_s').html('0' + s);
+                            } else {
+                                $('#t<{$a}>').children('#t_s').html(s);
+                            }
+                        }, 1000);
+                    </script>
+       
+                        <if condition="$r.status eq 2">
+                            <if condition="$cha lt 0">
+                                <span class="text-small">已超出商家规定时间</span>
+                                <else/>
+                                
+                            <span class="text-small spxq_qgTime" id="t<{$a}>">
+                                    <span class="spxq_qgTimezt spxq_qgTimejx">距商家规定时间还有：</span>
+                                    <span id="t_d">00</span>:
+                                    <span id="t_h">00</span>:
+                                    <span id="t_m">00</span>:
+                                    <span id="t_s">00</span>
+                                </span>
+                            </if>
+                        </if>       
+
+<div class="blank-10"></div>
+<p class="text-right padding-top">
+<a href="javascript:void(0);" rel="mine_yiyuan_allnum_mask_<{$r.order_id}>" class="mine_yiyuan_btn button button-small bg-blue">配送地址</a> 
+
+
+<eq name="r.type" value="0"><!--如果是商城-->
+	<eq name="res.is_daofu" value="1"><!--如果是商城-->
+     <php>
+       $need_pay = $res['total_price'] - $res['use_integral'] - $res['mobile_fan'];
+     </php>
+    <a href="javascript:void(0);" class="button button-small bg-green">到付：￥<{:round($need_pay/100,2)}></a>  
+    <else/>
+    <a href="javascript:void(0);" class="button button-small bg-green">总计：￥<{:round($res['need_pay']/100,2)}></a>  
+    </eq>
+<else/>
+<a href="javascript:void(0);" class="button button-small bg-green">总计：￥<{:round($res['need_pay']/100,2)}></a>  
+</eq>
+
+
+
+        
+<eq name="r.status" value="0"><a href="javascript:void(0);" class="button button-small bg-yellow">抢单中</a></eq>
+<eq name="r.status" value="2"><a href="javascript:void(0);" class="button button-small bg-yellow">配送中</a></eq>
+<eq name="r.status" value="8"><a href="javascript:void(0);" class="button button-small bg-gray">已完成</a></eq> 
+
+<eq name="t" value="0"><eq name="res.is_daofu" value="1"><a href="javascript:void(0);" class="button button-small bg-yellow">货到付款</a></eq></eq>
+<eq name="t" value="1"><eq name="res.is_pay" value="0"><a href="javascript:void(0);" class="button button-small bg-yellow">货到付款</a></eq></eq>
+
+<eq name="r.status" value="0"><a href="javascript:void(0);" val="<{$r.order_id}>" class="button button-small bg-dot qiang_btn">抢单</a></eq>
+<eq name="r.status" value="1"><a href="javascript:void(0);" val="<{$r.order_id}>" class="button button-small bg-dot qiang_btn">抢单</a></eq>
+<eq name="r.status" value="2"><a href="javascript:void(0);" val="<{$r.order_id}>" class="button button-small bg-dot ok_btn">确认完成</a></eq> 
+
+</p>
+
+          </p>
+        </div>
+    </li>
+    <div class="blank-10 bg"></div>
+<php>$a++;</php>
+</volist><!--循环结束-->
+
+  </ul>
+</div> 
+</div> 
+
+
+<!--点击弹出-->
+
+<volist name="rdv" id="r">
+    <div class="mine_yiyuan_allnum_mask mine_yiyuan_allnum_mask_<{$r.order_id}>">
+        <div class="cont">
+            <a href="javascript:void(0);" rel="mine_yiyuan_allnum_mask_<{$r.order_id}>" class="closs">×</a>
+            <div class="title">配送地址详情</div>
+            <div class="num">
+            <table class="table">
+                <div class="blank-10"></div>
+                <a class="text-small button-block">商家名称：<{$r.shop_name}>-  <{$r.shop_mobile}></a>
+                <a class="text-small button-block">商家地址：<{$r.shop_addr}> </a>
+                <div class="blank-10 bg"></div>
+                <a class="text-small1 button-block">买家地址：<{$r.user_addr}> </a>
+                <a class="text-small1 button-block">买家姓名：<{$r.user_name}> </a>
+                <a class="text-small1 button-block">买家手机：<{$r.user_mobile}></a>
+                
+                <eq name="r.type" value="1"><!--如果是商城-->
+				<a class="text-small1 button-block">订单留言：<{$r.message}></a>
+				</eq>
+
+
+           </table>
+            </div>
+            <input type="button" value="确定" rel="mine_yiyuan_allnum_mask_<{$r.order_id}>"  class="btn" >
+        </div>
+    </div>
+</volist>
+<script>
+    $(document).ready(function () {
+        /*一元抢购查看所有号码*/
+        $(".mine_yiyuan_btn").click(function () {
+            $("."+$(this).attr('rel')).show();
+        });
+        $(".mine_yiyuan_allnum_mask").find(".closs").click(function () {
+            $("."+$(this).attr('rel')).hide();
+        });
+        $(".mine_yiyuan_allnum_mask").find(".btn").click(function () {
+            $("."+$(this).attr('rel')).hide();
+        });
+        /*一元抢购查看所有号码*/
+
+    });
+</script>
+
+
+
+  <script type="text/javascript" language="javascript">
+   		$(document).ready(function(){
+			$('.qiang_btn').click(function(){
+				var id = $(this).attr('val');
+				$.post('<{:U("lists/handle")}>',{order_id:id},function(result){
+					if(result.status == 'success'){
+						layer.msg(result.message,{icon:6});
+						setTimeout(function(){
+							location.reload(true);
+						},3000);
+					}else{
+						layer.msg(result.message);
+					}
+				},'json');
+			})
+
+            $('.ok_btn').click(function(){
+			    var id = $(this).attr('val');
+				$.post('<{:U("set_ok")}>',{order_id:id},function(result){
+					if(result.status == 'success'){
+						layer.msg(result.message,{icon:6});
+						setTimeout(function(){
+							location.reload(true);
+						},3000);
+					}else{
+						layer.msg(result.message);
+					}
+				},'json');
+			})
+		})
+   </script>
+
+<include  file='public:footer'/>

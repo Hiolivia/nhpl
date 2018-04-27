@@ -1,0 +1,83 @@
+<include file='public:head_frozen'/>
+	<header class="ui-header ui-header-stable ui-header-red ui-border-b">
+		<a class="ui-icon-return" href="javascript:history.back();"></a>
+		<h1>便民电话</h1>
+	</header> 
+	<section class="ui-container">
+		<div class="ui-selector-content">
+			<ul id="venient-selector">
+				<li id="part-1" class="ui-selector-item">
+					<h3 rel="1" class="ui-border-b">
+						<p>便民电话</p>
+					</h3>
+					<ul id="list-1" class="ui-list ui-border-b">
+						<foreach name="list" item="item">
+						<li>
+							<div class="ui-avatar-s">
+							  <span style="background-image:url(/upload/<{$item.photo|default="icon.jpg"}>)"></span>
+							</div>
+							<div class="ui-list-info ui-border-t">
+								<h4><{$item.title}></h4>
+								<p><{$item.tel}></p>
+							</div>
+						</li>
+						</foreach>
+					</ul>
+				</li>
+				<li id="part-2" class="ui-selector-item">
+					<h3 rel="2" class="ui-border-b">
+						<p>生活常用</p>
+					</h3>
+					<ul id="list-2" class="ui-list ui-border-b">
+						<li rel='110'>
+							<div class="ui-avatar-s">
+							  <span style="background-image:url(../img/ava1.png)"></span>
+							</div>
+							<div class="ui-list-info ui-border-t">
+								<h4>公安报警</h4>
+								<p class="m-a-0">110</p>
+							</div>
+						</li>
+						<li rel='119'>
+							<div class="ui-avatar-s">
+							  <span style="background-image:url(/public/wap/img/cun/venient/119.jpg)"></span>
+							</div>
+							<div class="ui-list-info ui-border-t">
+								<h4>火灾报警</h4>
+								<p class="m-a-0">119</p>
+							</div>
+						</li>
+						
+						<li rel='120'>
+							<div class="ui-avatar-s">
+							  <span style="background-image:url(../img/ava1.png)"></span>
+							</div>
+							<div class="ui-list-info ui-border-t">
+								<h4>急救电话</h4>
+								<p class="m-a-0">120</p>
+							</div>
+						</li>
+						
+					</ul>
+				</li>
+				
+			</ul>
+	</section>
+	<!-- js -->
+	<script>
+		$("#venient-selector h3").click(function(){
+			var rel = $(this).attr("rel");
+			$('#venient-selector li').each(function (i){
+				$(this).removeClass("active");
+				$("#venient-selector ul").hide();
+			});
+			
+			$("#list-" + rel).show();
+			$("#part-" + rel).addClass("active");
+		});
+		$("#venient-selector ul li").click(function(){
+			var rel = $(this).attr("rel");
+			location.href='tel:' + rel;
+		});
+	</script>
+<include file='cun:footer'/> 

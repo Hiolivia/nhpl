@@ -1,0 +1,44 @@
+<include  file='public:header'/>
+<div class="mainBt">
+    <ul>
+        <li class="li1">设置</li>
+        <li class="li2">课堂管理</li>
+        <li class="li2 li3">语音课堂</li>
+    </ul>
+</div>
+<div class="main-cate">
+    <!--<p class="attention"><span>注意：修改完佣金后请清理缓存！</span>最高3级分类，分类名称后面（）内的是团购分类的ID，前台增加抢购自动设置结算价格！</p>-->
+    <div class="jsglNr">
+        <div class="selectNr" style="border-top: 1px solid #dbdbdb;">
+            <div class="left">
+                <{:BA('voice/create','','添加语音课堂')}>
+            </div>
+        </div>
+        <div class="tableBox">
+            <table bordercolor="#dbdbdb" cellspacing="0" width="100%" border="1px"  style=" border-collapse: collapse; margin:0px; vertical-align:middle; background-color:#FFF; text-align:center;">
+                <tr bgcolor="#F5F6FA" height="48px;" style="color:#333; font-size:16px; line-height:48px;">
+                    <th>标题</th>
+                    <th>分类</th>
+                    <th>创建人</th>
+                    <th>创建时间</th>
+                    <th>操作</th>
+                </tr>
+                <foreach name="list" item="var">
+
+                    <tr bgcolor="#f1f1f1" height="48px" style="font-size:14px; color:#545454; text-align:center; line-height:48px;">
+                        <td><{$var.title}></td>
+                        <td><{$var.name}></td>
+                        <td><{$var.username}></td>
+                        <td><{$var.create_time}></td>
+                        <td>
+                            <{:BA('voice/edit',array("voice_id"=>$var["voice_id"]),'编辑','','remberBtn')}>
+                            <{:BA('voice/delete',array("voice_id"=>$var["voice_id"]),'删除','','remberBtn')}>
+                        </td>
+                    </tr>
+                </foreach>
+            </table>
+            <{$page}>
+        </div>
+    </div>
+</div>
+<include  file='public:footer'/>

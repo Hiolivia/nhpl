@@ -1,0 +1,86 @@
+<include  file='public:header'/>
+<script src="__PUBLIC__/js/my97/WdatePicker.js"></script>
+<div class="sjgl_lead">
+    <ul>
+        <li><a href="#">结算</a> > <a href="">资金记录</a> > <a>商家资金</a></li>
+    </ul>
+</div>
+
+<div class="tuan_content">
+    <form method="post" action="<{:U('money/shopmoney')}>">
+    <div class="radius5 tuan_top">
+        <div class="tuan_top_t">
+            <div class="left tuan_topser_l">
+             开始时间：<input type="text" placeholder="点击选择开始时间" class="radius3 tuan_topser"  name="bg_date" value="<{$bg_date|default=''}>" onfocus="WdatePicker({dateFmt: 'yyyy-MM-dd'});"/>
+            结束时间：<input type="text"  placeholder="点击选择结束时间" class="radius3 tuan_topser"  name="end_date" value="<{$end_date|default=''}>" onfocus="WdatePicker({dateFmt: 'yyyy-MM-dd'});"/> 
+            
+            类型：<select name="st" class="seleFl w80">
+                        <option value="999">请选择类型</option>
+                        <option <eq name="st" value="1">selected="selected"</eq>  value="1">团购订单</option>
+                        <option <eq name="st" value="2">selected="selected"</eq>  value="2">订餐订单</option>
+                        <option <eq name="st" value="3">selected="selected"</eq>  value="3">订座订单</option>
+                        <option <eq name="st" value="4">selected="selected"</eq>  value="4">购物订单</option>
+                        <option <eq name="st" value="5">selected="selected"</eq>  value="5">优惠买单订单</option>
+                 </select>
+                    
+                          
+            <input type="submit" style="margin-left:10px;" class="radius3 sjgl_an tuan_topbt" value="搜 索"/>
+            </div>
+        </div>
+    </div>
+    </form>
+
+    <include  file='money:nav'/>
+
+    <table class="tuan_table" width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr style="background-color:#eee;">
+            <td>编号</td>
+            <td>资金</td>
+            <td>类型</td>
+            <td>原始订单</td>
+            <td>说明</td>
+            <td>日期</td>
+        </tr>
+        <!--<tr style="background-color:#FFF0F0;">
+            <td colspan="6">总计：<{:round($shop_money_sum/100,2)}>元</td>
+        </tr>-->
+        
+        <foreach name="list" item="var">
+            <tr>
+                <td><{$var['money_id']}></td>
+                <td>&yen;<{:round($var['money']/100,2)}>元</td>
+                <td>
+                <if condition="$var['type'] eq 'tuan'">抢购
+                <elseif condition="$var['type'] eq 'goods'"/>购物
+                <elseif condition="$var['type'] eq 'ele'"/>订餐
+                <elseif condition="$var['type'] eq 'breaks'"/>优惠买单
+                <elseif condition="$var['type'] eq 'booking'"/>订座
+                <elseif condition="$var['type'] eq 'hotel'"/>酒店
+                <else/>未知类型
+                </if></td>
+
+                <td><{$var.order_id}></td>       
+
+                <td><{$var.intro}></td>
+
+                <td><{$var.create_time|date='Y-m-d H:i:s',###}></td>
+
+                
+
+            </tr>
+
+        </foreach>
+
+    </table>
+
+    <div class="paging">
+
+        <{$page}>
+
+    </div>
+
+</div>
+
+
+
+<include  file='public:footer'/>

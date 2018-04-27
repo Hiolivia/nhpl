@@ -1,0 +1,22 @@
+
+
+<script>
+function require() {
+      var url = "{U('order1/checkNotify')}";
+        　　
+      $.get(url,null,function(data) {
+        　　　　　　
+            // 如果获得的数据不为空，则显示提醒
+           if ($.trim(data) != '') {
+
+               // 这里写提醒的方式
+        　　　　alert('您有新订单来了，还在测试');
+           }
+      });
+
+      // 每三秒请求一次
+      setTimeout('require()',3000);
+}
+</script>
+<!--<body onload="javascript:return require();">-->
+</html>

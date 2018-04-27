@@ -1,0 +1,147 @@
+<include file='public:header'/>    
+	<header class="top-fixed bg-yellow bg-inverse">
+		<div class="top-back">
+			<a class="top-addr" href="<{:U('index/index')}>"><i class="icon-angle-left"></i></a>
+		</div>
+		<div class="top-title">
+			同城微店
+		</div>
+        <div class="top-share">
+		</div>
+	</header>
+<style>
+.serch-bar-mask-list li.on {background: #06c1ae !important;}
+.serch-bar-mask-list li.on a { color:#fff}
+.serch-bar-mask-list li.hui{ background-color:#f5f5f5}
+.cate-wrap{font-size:0;background-color:#fff;border-bottom:1px solid #f3f3f3;width:100%;overflow:hidden;}
+.cate-wrap li{box-sizing:border-box;width:25%;float:left}
+.icon2{color:#555;font-size:16px;text-align:center;display:block;padding:.6rem 0}
+.cate-img{background-size:6rem auto;display:inline-block}
+.cate-img img{width:2.6rem;height:2.6rem}
+.cate-desc{display:block}
+.cate-desc{padding-top:.4rem}
+</style>
+
+<if condition="empty($cat) && empty($area_id) && empty($order) && empty($keyword)">
+    <ul class="cate-wrap bbOnepx">
+    <php>$k = 0;</php> 
+        <foreach name="weidiancates" item="var">  
+        <php>$k++;</php>
+        <if condition="$i lt 9">
+            <if condition="$var.parent_id eq 0">            
+                <li>
+                    <a class="icon2" href="<{:LinkTo('mart/index',array('cat'=>$var['cate_id']))}>" tongji_tag="m_home_job_new">
+                        <span class="cate-img" id="job"><img src="<{:config_img($var['photo'])}>"></span>
+                        <span class="cate-desc"><{$var.cate_name}></span>
+                    </a>
+                </li> 
+            </if>  
+        </if> 
+        </foreach>
+    </ul>                        
+</if>                        
+
+  <div id="filter2" class="filter2">
+    <ul class="tab clearfix">
+    <li class="item">
+        <a href="javascript:void(0);"> 
+        <if condition="!empty($cat)">
+        <span id="str_b_node" style="color:#f60"> <{$weidiancates[$cat]['cate_name']}></span>
+        <else/>
+        <span id="str_b_node">选择分类</span>
+        </if><em></em>
+        </a>
+      </li>
+      
+      <li class="item">
+        <a href="javascript:void(0);"> 
+         <if condition="!empty($area_id)">
+            <span id="str_b_node" style="color:#f60;"><{$areass[$area_id]['area_name']}></span>
+         <else/>
+            <span id="str_d_node">选择地区</span>
+         </if>
+        <em></em>
+        </a>
+      </li>
+    
+       <li class="item">
+        <a href="javascript:void(0);">
+            <if condition="empty($order)">
+            <span id="str_e_node">选择排序</span>
+            <elseif condition="$order eq 1"/>
+            <span id="str_b_node" style="color:#f60;">距离排序</span>
+            <elseif condition="$order eq 2"/>
+            <span id="str_b_node" style="color:#f60;">时间排序</span>
+            <elseif condition="$order eq 3"/>
+            <span id="str_b_node" style="color:#f60;">更新排序</span>
+            </if>
+            <em></em>
+        </a>
+      </li>
+      
+    </ul>
+    
+    <div class="inner" style=" display:none">
+      <ul>
+        <li class="item">
+        <a class="rights" href="<{:U('mart/index')}>">全部分类</a>
+        </li>
+       <foreach name="weidiancates" item="var">
+          <if condition="$var.parent_id eq 0">           
+            <li id="cat_<{$var['cate_id']}>"><a class="rights hasUlLink" title="<{$var.cate_name}>" href="javascript:void(0);>"><{$var.cate_name}><span class="num">(<{$var.count}>)</span></a>
+             
+               <ul id="items0">  
+                <foreach name="weidiancates" item="product">
+                   <if condition="$product.parent_id eq $var['cate_id']"> 
+                       <li><a title="<{$product.cate_name}>" href="<{:LinkTo('mart/index',array('cat'=>$product['cate_id'],'area_id'=>$area_id,'order'=>$order))}>"> <{$product.cate_name}><span class="num">(<{$product.count}>)</span></a>
+                            
+                   </if>
+                </foreach>
+               </ul>
+                       
+             </li>
+          </if>     
+        </foreach>
+      </ul><!--1级end-->
+    </div>
+    
+    
+    
+     <div class="inner" style=" display:none">
+        <ul>
+         <li class="<if condition="empty($area_id)">style="color:red;"</if> "><a href="<{:U('mart/index')}>" >全部地区</a></li>
+				<foreach name="areas" item="var">
+                <php>if($var['city_id'] == $city_id){</php>    
+				<li><a <if condition="$area_id eq $var['area_id']"> style="color:red;"</if>  href="<{:U('mart/index',array('cat'=>$cat,'area_id'=>$var['area_id'],'order'=>$order))}>"><{$var.area_name}></a></li>
+                <php>}</php> 
+				</foreach>
+            </ul>
+    </div>
+    
+    
+    <div class="inner" style="display:none;">
+              <ul>
+            <li <if condition="$order eq 1">style="color:red;"</if>><a href="<{:LinkTo('mart/index',array('cat'=>$cat,'area_id'=>$area_id,'order'=>1))}>">距离排序</a></li>
+            <li <if condition="$order eq 2">style="color:red;"</if>><a href="<{:LinkTo('mart/index',array('cat'=>$cat,'area_id'=>$area_id,'order'=>2))}>">时间排序</a></li>
+            <li <if condition="$order eq 3">style="color:red;"</if>><a href="<{:LinkTo('mart/index',array('cat'=>$cat,'area_id'=>$area_id,'order'=>2))}>">更新排序</a></li>
+            </ul>
+      </div>
+      
+      <div id="parent_container" class="inner_parent" style="display:none;"><div class="innercontent"></div></div>
+      <div id="inner_container" class="inner_child" style="display:none;"> <div class="innercontent"></div></div>
+</div>
+<!--end-->   
+
+ 
+
+<div id="fullbg" class="fullbg" style="display: none; height: 250px;"><i class="pull2"></i></div>
+
+    <ul class="shop-list" id="shop-list"></ul>
+	<script>
+		$(document).ready(function () {
+			showFilter({ibox:'filter2',content1:'parent_container',content2:'inner_container',fullbg:'fullbg'});
+			loaddata('<{$nextpage}>', $("#shop-list"), true);
+		});
+	</script>
+
+<include file="public:footer"/>

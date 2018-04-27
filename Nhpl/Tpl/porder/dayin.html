@@ -1,0 +1,340 @@
+<include  file='public:header'/>
+<style>
+body{padding:0}
+.tlist{padding-top: 20px;}
+table,.inputs,.miaoshu{width:1200px;margin:0 auto;}
+table tbody{width:480px;display:block; float:left}
+table tbody tr td{font-size:14px;}
+table tbody .ci,table tbody .ci td{height:30px;}
+table tbody .bi .abc1{ width:100%; line-height:20px; font-size:14px}
+table tbody .bi .abc1 span{float:left;text-align:left;}
+table tbody .ci .et2{width:480px; text-align: right;}
+table tbody .bi,table tbody .bi td{line-height:32px;}
+table tbody .bi{border-bottom:1px solid #000;display: flex;}
+table tbody .bi .et4,table tbody .aw .et5{ text-align: center; white-space: normal; width:480px;}
+table tbody .bi .et4{font-weight: 700;}
+table tbody .bi .et4{line-height:40px;}
+table tbody .bi .et3{ width:240px;border-right: 1px solid #000;}
+table tbody .bi td{white-space: normal;text-align: center;}
+table tbody .bi .et6{width:35px; border-right: 1px solid #000;}
+table tbody .bi .et7{width:38px;}
+table tbody .bi .et5{width:240px;}
+table tbody .bi .et5s{width:130px; border-left:1px solid #000;}
+table tbody .bi .et8{width:57px;}
+table tbody .bi .et9{border-right:1px solid #000;}
+table tbody .bi .et10{width:200px;}
+table tbody .bi .et11{width:137px;}
+table tbody .bi .et12{line-height:22px;padding:5px 0;}
+table tbody .bis{border-bottom:none;}
+table tbody .bis td{text-align:left;}
+.inputs{height:auto;top:0; position:absolute}
+.miaoshu{padding:30px 0 5px; font-size:13px; overflow:hidden}
+.miaoshu img{width:110px; float:left;}
+.miaoshu .yb{float:left; margin-left:20px}
+.miaoshu .yb p{margin:0; padding:0; line-height:26px}
+</style><if condition="$dandu eq 1">
+<div class="tlist" style="padding-top: 0;">
+<table>
+    <tbody>
+        <tr class="ci">
+            <td class="et2" colspan="3" x:str="">
+                客户联
+            </td>
+        </tr>
+       <tr class="bi bis">
+            <td class="et4" colspan="3" x:str="">
+                【宜鲜果坊】水果配送单
+            </td>
+        </tr>
+        <tr class="bi">
+            <td class="et2 abc1">
+              <span style="width: 25%;">联系人：<{$lists.xm}></span> <span style="width: 40%">联系电话：<{$lists.tel}></span>  <span style="text-align:right; width: 35%;">订单编号：<{$lists.order_no}></span>
+            </td>
+        </tr>
+        <tr class="bi">
+            <td class="et3">
+                下单时间：<{$lists.order_time|date='Y-m-d H:i:s',###}>
+            </td>
+            <td class="et5">
+                成团时间：<{$lists.order_time|date='Y-m-d H:i:s',###}></eq>
+            </td>
+        </tr>
+        <tr class="bi">
+            <td class="et6">
+                团ID
+            </td>
+            <td class="et10 et9">
+                商品名称
+            </td>
+            <td class="et7 et9">
+                单价
+            </td>
+            <td class="et11 et9">
+                实付
+            </td>
+            <td class="et8">
+                配送方式
+            </td>
+        </tr>
+        <tr class="bi">
+            <td class="et6">
+                普
+            </td>
+            <td class="et10 et9">
+                <{$lists.goods_name}>
+            </td>
+            <td class="et7 et9">
+                ￥<{:round($lists['goods_price']/100,2)}>
+            </td>
+            <td class="et11 et9">
+                ￥<{:round($lists['pay_price']/100,2)}>(运费：￥<{:round($lists['express_price']/100,2)}>)
+            </td>
+            <td class="et8">
+                <{$lists.express_name}>
+            </td>
+        </tr>
+        <tr class="bi">
+            <td>
+                配送地址：<{$lists.address}>
+            </td>
+        </tr>
+        <tr class="bi bis">
+            <td>
+                用户留言：<{$lists.order_beizu}>
+            </td>
+        </tr>
+    </tbody>
+    <tbody style="float:right">
+        <tr class="ci">
+            <td class="et2" colspan="3" x:str="">
+                存根联
+            </td>
+        </tr>
+       <tr class="bi bis">
+            <td class="et4" colspan="3" x:str="">
+                【宜鲜果坊】水果配送单
+            </td>
+        </tr>
+        <tr class="bi">
+            <td class="et2 abc1">
+              <span style="width: 25%;">联系人：<{$lists.xm}></span> <span style="width: 40%">联系电话：<{$lists.tel}></span>  <span style="text-align:right; width: 35%;">订单编号：<{$lists.order_no}></span>
+            </td>
+        </tr>
+        <tr class="bi">
+            <td class="et3">
+                下单时间：<{$lists.order_time|date='Y-m-d H:i:s',###}>
+            </td>
+            <td class="et5">
+                成团时间：<{$lists.order_time|date='Y-m-d H:i:s',###}></eq>
+            </td>
+        </tr>
+        <tr class="bi">
+            <td class="et6">
+                团ID
+            </td>
+            <td class="et10 et9">
+                商品名称
+            </td>
+            <td class="et7 et9">
+                单价
+            </td>
+            <td class="et11 et9">
+                实付
+            </td>
+            <td class="et8">
+                配送方式
+            </td>
+        </tr>
+        <tr class="bi">
+            <td class="et6">
+                普
+            </td>
+            <td class="et10 et9">
+                <{$lists.goods_name}>
+            </td>
+            <td class="et7 et9">
+                ￥<{:round($lists['goods_price']/100,2)}>
+            </td>
+            <td class="et11 et9">
+                ￥<{:round($lists['pay_price']/100,2)}>(运费：￥<{:round($lists['express_price']/100,2)}>)
+            </td>
+            <td class="et8">
+                <{$lists.express_name}>
+            </td>
+        </tr>
+        <tr class="bi">
+            <td>
+                配送地址：<{$lists.address}>
+            </td>
+        </tr>
+        <tr class="bi bis">
+            <td>
+                用户留言：<{$lists.order_beizu}>
+            </td>
+        </tr>
+    </tbody>
+</table>
+    <div class="miaoshu">
+    	<span><img src="http://www.1ywogou.com/Public/img/wx.png"></span>
+        <div class="yb">
+        	<p>宜鲜果坊感谢您的惠顾！</p>
+            <p>地址：东山县西埔镇开发区泽园路348号-6（开发区信用社旁）</p>
+            <p>热线电话：400-9902-114 / 0596-5839355</p>
+            <p>←←还没关注宜鲜果坊的朋友记得扫一下哦~！</p>
+        </div>
+    </div>
+</div>
+	<else />
+<foreach name="lists" item="order">
+<div class="tlist" <if condition="$order['tstatus'] eq 1">style="padding-top: 0;"</if>>
+<table>
+    <tbody>
+        <tr class="ci">
+            <td class="et2" colspan="3" x:str="">
+                客户联
+            </td>
+        </tr>
+       <tr class="bi bis">
+            <td class="et4" colspan="3" x:str="">
+                【宜鲜果坊】水果配送单
+            </td>
+        </tr>
+        <tr class="bi">
+            <td class="et2 abc1">
+              <span style="width: 25%;">联系人：<{$order.xm}></span> <span style="width: 40%">联系电话：<{$order.tel}></span>  <span style="text-align:right; width: 35%;">订单编号：<{$order.order_no}></span>
+            </td>
+        </tr>
+        <tr class="bi">
+            <td class="et3">
+                下单时间：<{$order.order_time|date='Y-m-d H:i:s',###}>
+            </td>
+            <td class="et5">
+                成团时间：<{$tuans.success_time|date='Y-m-d H:i:s',###}>
+            </td>
+        </tr>
+        <tr class="bi">
+            <td class="et6">
+                团ID
+            </td>
+            <td class="et10 et9">
+                商品名称
+            </td>
+            <td class="et7 et9">
+                单价
+            </td>
+            <td class="et11 et9">
+                实付
+            </td>
+            <td class="et8">
+                配送方式
+            </td>
+        </tr>
+        <tr class="bi">
+            <td class="et6">
+                <{$order.tuan_id}>
+            </td>
+            <td class="et10 et9">
+                <{$order.goods_name}>
+            </td>
+            <td class="et7 et9">
+                ￥<{:round($order['goods_price']/100,2)}>
+            </td>
+            <td class="et11 et9">
+                ￥<{:round($order['pay_price']/100,2)}>(运费：￥<{:round($order['express_price']/100,2)}>)
+            </td>
+            <td class="et8">
+                <{$order.express_name}>
+            </td>
+        </tr>
+        <tr class="bi">
+            <td>
+                配送地址：<{$order.address}>
+            </td>
+        </tr>
+        <tr class="bi bis">
+            <td>
+                用户留言：<{$order.order_beizu}>
+            </td>
+        </tr>
+    </tbody>
+    <tbody style="float:right">
+        <tr class="ci">
+            <td class="et2" colspan="3" x:str="">
+                存根联
+            </td>
+        </tr>
+       <tr class="bi bis">
+            <td class="et4" colspan="3" x:str="">
+                【宜鲜果坊】水果配送单
+            </td>
+        </tr>
+        <tr class="bi">
+            <td class="et2 abc1">
+              <span style="width: 25%;">联系人：<{$order.xm}></span> <span style="width: 40%">联系电话：<{$order.tel}></span>  <span style="text-align:right; width: 35%;">订单编号：<{$order.order_no}></span>	
+            </td>
+        </tr>
+        <tr class="bi">
+            <td class="et3">
+                下单时间：<{$order.order_time|date='Y-m-d H:i:s',###}>
+            </td>
+            <td class="et5">
+                成团时间：<{$tuans.success_time|date='Y-m-d H:i:s',###}>
+            </td>
+        </tr>
+        <tr class="bi">
+            <td class="et6">
+                团ID
+            </td>
+            <td class="et10 et9">
+                商品名称
+            </td>
+            <td class="et7 et9">
+                单价
+            </td>
+            <td class="et11 et9">
+                实付
+            </td>
+            <td class="et8">
+                配送方式
+            </td>
+        </tr>
+        <tr class="bi">
+            <td class="et6">
+                <{$order.tuan_id}>
+            </td>
+            <td class="et10 et9">
+                <{$order.goods_name}>
+            </td>
+            <td class="et7 et9">
+                ￥<{:round($order['goods_price']/100,2)}>
+            </td>
+            <td class="et11 et9">
+                ￥<{:round($order['pay_price']/100,2)}>(运费：￥<{:round($order['express_price']/100,2)}>)
+            </td>
+            <td class="et8">
+                <{$order.express_name}>
+            </td>
+        </tr>
+        <tr class="bi">
+            <td>
+                配送地址：<{$order.address}>
+            </td>
+        </tr>
+        <tr class="bi bis">
+            <td>
+                用户留言：<{$order.order_beizu}>
+            </td>
+        </tr>
+    </tbody>
+</table>
+    <div class="miaoshu">
+    	<span><img src="http://www.1ywogou.com/Public/img/wx.png"></span>
+        <div class="yb">
+        	<p>宜鲜果坊感谢您的惠顾！</p>
+            <p>地址：东山县西埔镇开发区泽园路348号-6（开发区信用社旁）</p>
+            <p>热线电话：400-9902-114 / 0596-5839355</p>
+            <p>←←还没关注宜鲜果坊的朋友记得扫一下哦~！</p>
+        </div>
+    </div>
+</div> </foreach></if>
+<div class="inputs"><input type="button"  onclick="window.print();" value=" 打 印 " /></div>

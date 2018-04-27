@@ -1,0 +1,217 @@
+<include file="public:header"/>
+<header class="top-fixed bg-yellow bg-inverse">
+	<div class="top-back">
+		<a class="top-addr" href="<{:U('index/index')}>"><i class="icon-angle-left"></i></a>
+	</div>
+		<div class="top-title">
+			商户中心
+		</div>
+	<div class="top-signed">
+		<a href="<{:U('passport/logout')}>"><i class="icon-sign-out"></i></a>
+	</div>
+</header>
+
+<div class="blank-10 bg"></div>
+<div class="container">
+		<div class="line detail-base">
+			<div class="x5">
+				<div class="pic">
+					<a href="<{:U('audit/index')}>"><img src="<{:config_img($SHOP['logo'])}>"></a>	
+                    <if condition="$SHOP['is_renzheng'] eq 1">	
+                    <span class="album">已认证</span>	
+                    <else/>
+                    <span class="album" style="width:60px;">申请认证</span>	
+                    </if> 
+                </div>
+			</div>
+			<div class="x7">
+				<h1><{$SHOP.shop_name}>（<{$SHOP.shop_id}>）</h1>
+                <if condition="!empty($SHOP['score'])">
+                <p><span class="ui-starbar"><span style="width:<{:round($SHOP['score']*2,2)}>%"></span></span></p>
+                <else/>
+                <p>暂无评价</p>
+                </if>
+                <p>类型：<{$shopcates[$SHOP['cate_id']]['cate_name']}></p>
+                <p>商户资金： &yen; <{:round($MEMBER['gold']/100,2)}> 元&nbsp;</p>
+                <p>员工：<{$counts['shopworker']}>人 &nbsp;<a href="<{:u('worker/index')}>">管理</a></p>
+			</div>
+		</div>
+       </div>
+       
+       
+
+<div class="blank-10 bg"></div>
+<div class="panel-list">
+	<ul>
+        <li>
+            <a href="<{:U('shop/about')}>">
+                <span class="icon-gears "></span>
+                商户设置
+                <if condition="$shop_branch gt 0">
+                    <font>
+                        <{$shop_branch}>家分店<if condition="$shop_branch_audit gt 0">，待审核<b><{$shop_branch_audit}></b>家。</if>
+                    </font>
+                </if>
+                <i class="icon-angle-right"></i>
+             </a>
+        </li>
+       
+        <if condition="!empty($SHOPGRADE['is_tuan'])">
+            <li>
+                <a href="<{:U('tuan/order')}>"><span class="icon-tags"></span>
+                    抢购
+                    <font>
+                        <if condition="$counts['tuan_order_code_is_used'] gt 0">
+                            待验<{$counts['tuan_order_code_is_used']}>单
+                        </if>
+                        <if condition="$counts['tuan_order_code_is_used_ture'] gt 0">
+                            ，已验<{$counts['tuan_order_code_is_used_ture']}>单
+                        </if>
+                        <if condition="$counts['tuan'] gt 0">
+                            ，抢购<{$counts['tuan']}>单
+                        </if>
+                        <if condition="$counts['tuan_audit'] gt 0">
+                            ，待审<b><{$counts['tuan_audit']}></b>单
+                        </if>
+                    </font>
+                    <i class="icon-angle-right"></i>
+                </a>
+            </li>
+        </if>
+        <if condition="!empty($SHOPGRADE['is_coupon'])">
+            <li>
+                <a href="<{:U('coupon/index')}>">
+                    <span class="icon-key"></span>优惠劵
+                    <font>
+                        <if condition="$counts['coupon'] gt 0">
+                            共<{$counts['coupon']}>优惠劵
+                        </if>
+                        <if condition="$counts['coupon_audit'] gt 0">
+                         ，<b><{$counts['coupon_audit']}></b>待审
+                        </if>
+                        <if condition="$counts['coupon_download'] gt 0">
+                            ，总<{$counts['coupon_download']}>次下载
+                        </if>
+                        <if condition="$counts['coupon_download_is_used'] gt 0">
+                            ，待验<b><{$counts['coupon_download_is_used']}></b>。
+                        </if>
+                    </font>
+                    <i class="icon-angle-right"></i>
+                </a>
+            </li>
+        </if>
+        
+
+            <if condition="!empty($SHOPGRADE['is_mall'])">
+                <li>
+                    <a href="<{:U('mart/index')}>"><span class="icon-home"></span>商城管理
+                    <font>
+                        <if condition="$counts['goods_order_two'] gt 0">
+                            已付款<{$counts['goods_order_two']}>单
+                        </if>
+                        <if condition="$counts['goods_order_one'] gt 0">
+                            ，已发货<b><{$counts['goods_order_one']}></b>单。
+                        </if>
+                    </font>
+                    <i class="icon-angle-right"></i>
+                    </a>
+                </li>
+            </if>
+     
+        
+        <li>
+            <a href="<{:U('fans/index')}>"><span class="icon-group"></span>粉丝
+                <font>
+                    <if condition="$counts['favorites'] gt 0">
+                        <{$counts['favorites']}>粉丝
+                    </if>
+                    <if condition="$counts['totay_favorites'] gt 0">
+                        ，今增加<b><{$counts['totay_favorites']}></b>粉丝。
+                    </if>
+                </font>
+                <i class="icon-angle-right"></i>
+            </a>
+        </li>
+        
+        <if condition="!empty($SHOPGRADE['is_ele'])">
+            <li>
+                <a href="<{:U('ele/eleorder',array('status'=>1))}>"><span class="icon-home"></span>外卖
+                <font>
+                    <if condition="$counts['ele_order_two'] gt 0">
+                        已发货<{$counts['ele_order_two']}>单，
+                    </if>
+                    <if condition="$counts['totay_ele_order'] gt 0">
+                        今日新增<b><{$counts['totay_ele_order']}></b>单
+                    </if>
+                </font>
+                <i class="icon-angle-right"></i>
+                </a>
+            </li>
+        </if>
+        
+            <if condition="!empty($SHOPGRADE['is_life'])">
+                <li>
+                    <a href="<{:U('life/index')}>"><span class="icon-truck"></span>同城信息
+                    <font>
+                        <if condition="$counts['life'] gt 0">
+                            <{$counts['life']}>条，
+                        </if>
+                        <if condition="$counts['life_audit'] gt 0">
+                            <b><{$counts['life_audit']}></b>待审核
+                        </if>
+                    </font>
+                    <i class="icon-angle-right"></i>
+                    </a>
+                </li>
+            </if>
+        
+        
+        <li>
+            <a href="<{:U('nearwork/index')}>"><span class="icon-github"></span>人才招聘
+                <font>
+                    <if condition="$counts['work'] gt 0">
+                        <{$counts['work']}>条招聘
+                    </if>
+                    <if condition="$counts['work_audit'] gt 0">
+                        ，<b><{$counts['work_audit']}></b>条待审核
+                    </if>
+                </font>
+                <i class="icon-angle-right"></i>
+            </a>
+        </li>
+        
+        <li>
+            <a href="<{:U('yuyue/index')}>"><span class="icon-phone-square"></span>预约管理
+                <font>
+                    <if condition="$counts['shopyuyue_one'] gt 0">
+                        <{$counts['shopyuyue_one']}>条预约
+                    </if>
+                    <if condition="$counts['shopyuyue_eight'] gt 0">
+                        ，<b><{$counts['shopyuyue_eight']}></b>条待确认
+                    </if>
+                </font>
+                <i class="icon-angle-right"></i>
+            </a>
+        </li>
+        
+        <li>
+            <a href="<{:U('news/index')}>">
+                <span class="icon-newspaper-o"></span>文章管理
+                <font>
+                    <if condition="$counts['news'] gt 0">
+                        <{$counts['news']}>篇文章
+                    </if>
+                    <if condition="$counts['news_autit'] gt 0">
+                     ，<b><{$counts['news_autit']}></b>篇待审核
+                    </if>
+                </font>
+                <i class="icon-angle-right"></i>
+            </a>
+        </li>
+        
+        <li><a href="<{:U('money/index')}>"><span class="icon-btc"></span>财务<i class="icon-angle-right"></i></a></li>
+        <li><a href="<{:U('passport/logout')}>"><span class="icon-sign-out"></span>注销登录<i class="icon-angle-right"></i></a></li>
+	</ul>
+</div>
+
+<include  file='public:footer'/>

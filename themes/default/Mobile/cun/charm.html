@@ -1,0 +1,75 @@
+﻿<include file='public:head_frozen'/>
+<header class="ui-header ui-border-b " style="background:#EAEAEA;height:40px;">
+    <ul class="ui-row ui-whitespace" style="height:35px">
+        <li class="ui-col ui-col-75">
+            <div class="ui-form ui-border-t">
+                <form action="">
+                    <div class="ui-form-item ui-border-b ui-form-item-pure m-t-1" style="background: #8B8B8B;height:35px;line-height:25px;">
+                        <label ><a href="" class="fa fa-search float-left text-white ui-f16  "></a></label>
+                        <input type="text" placeholder="乡村、介绍、人文地理"  class=" text-white  m-l-3 ui-f16 "  />
+                    </div>
+                </form>
+            </div>
+        </li>
+        <li class="ui-col ui-col-25 "><div><a href=""class="fa fa-share text-grey-500 float-right ui-f30"></a> </div>
+            <h5 class="float-right text-grey-500">分享</h5>
+        </li>
+    </ul>
+</header>
+<section class="ui-container">
+   <ul class="ui-row ">
+       <li class="ui-col ui-col-100 " style="position:relative;">
+           <a href="<{:U('cun/special')}>"><img class="img-responsive1" src="/public/wap/img/cun/cun_zhuant.png" alt=""/></a>
+           <i  class="block name text-grey-500 text-center ui-f40">腾冲和顺古镇</i>
+           <i class="charm_tuijian text-white text-center block">推荐</i>
+       </li>
+       <li class="ui-col ui-col-100 m-t-1" style="position:relative;">
+           <a href="<{:U('cun/special')}>"><img class="img-responsive1" src="/public/wap/img/cun/cun_zhuant01.png" alt=""/></a>
+           <i  class="block name text-grey-500 text-center ui-f40">明光乡</i>
+           <i class="charm_tuijian text-white text-center block">推荐</i>
+       </li>
+       <li class="ui-col ui-col-100 m-t-1" style="position:relative;">
+           <a href="<{:U('cun/special')}>"><img class="img-responsive1" src="/public/wap/img/cun/xiangcun0452.png" alt=""/></a>
+           <i  class="block name text-grey-500 text-center ui-f40">醉美泸州</i>
+           <i class="charm_tuijian text-white text-center block">推荐</i>
+       </li>
+       <li class="ui-col ui-col-100 m-t-1" style="position:relative;">
+           <a href="<{:U('cun/special')}>"><img class="img-responsive1" src="/public/wap/img/cun/cun_zhuant.png" alt=""/></a>
+           <i  class="block name text-grey-500 text-center ui-f40">醉美泸州</i>
+           <i class="charm_tuijian text-white text-center block">推荐</i>
+       </li>
+       <li class="ui-col ui-col-100 m-t-1" style="position:relative;">
+           <a href="<{:U('cun/special')}>"><img class="img-responsive1" src="/public/wap/img/cun/cun_zhuant01.png" alt=""/></a>
+           <i  class="block name text-grey-500 text-center ui-f40">醉美泸州</i>
+           <i class="charm_tuijian text-white text-center block">推荐</i>
+       </li>
+
+   </ul>
+</section>
+<div class="ui-scroll-top">
+    <a href="javascript:toTop();">
+        <i class="ui-icon-gototop"></i>
+    </a>
+</div>
+<script>
+
+    var slider = new fz.Scroll('.ui-slider', {
+        role: 'slider',
+        indicator: true,
+        autoplay: false,
+        interval: 3000
+    });
+
+
+
+
+    $('.ui-searchbar').click(function(){
+        $('.ui-searchbar-wrap').addClass('focus');
+        $('.ui-searchbar-input input').focus();
+    });
+    $('.ui-searchbar-cancel').click(function(){
+        $('.ui-searchbar-wrap').removeClass('focus');
+    });
+</script>
+
+<include file='cun:footer'/> 

@@ -1,0 +1,50 @@
+﻿/* CSS Document */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td {margin:0; padding:0;}
+body{color:#333;font-size:12px;font-family:"微软雅黑";background: #fff;}
+td,th,caption {font-size:12px;}
+h1, h2, h3, h4, h5, h6 {font-weight:normal;font-size:100%; }
+address, caption, cite, code, dfn, em, strong, th, var{ font-style:normal;font-weight:normal; }
+a{color:#000;text-decoration:none;font-family: "微软雅黑";}
+a:hover {cursor:pointer;text-decoration:none;}
+a{blr:expression(this.onFocus=this.blur())}
+*:focus{outline:0;}
+*{font-family: "微软雅黑";}
+fieldset,img {border:none;}
+ol,ul,li {list-style:none;}
+span,i{display:inline-block;}
+i{font-style: normal;}
+input, textarea, select, button {font:12px "微软雅黑";outline:none;}
+input, textarea{background: #FFF;}
+table{border-collapse:collapse;border-spacing:0;}
+textarea {resize:none;}
+/* css common */
+.clearfix:after {content: ".";display: block;height:0;clear:both; visibility:hidden;}
+.clearfix {*zoom:1;}
+/*pccss reset 结束*/
+/*-------------------------------------------------------------------------------------------*/
+.login{position: absolute;width: 100%;height: 100%;left: 0;top: 0;}
+.bg_color li{width: 100%;height: 100%;position: absolute;z-index: 1;overflow: hidden;}
+.bg_color li img{width: 100%;height: 100%;background-size:100%;}
+.login_box{width: 330px;height: 424px;position: absolute;left: 50%;top: 50%;margin-left: -165px;margin-top: -212px;z-index: 2;}
+.login_box h2{width: 400px;margin-bottom: 48px;height: 118px;overflow: hidden;}
+.login_box .usname{margin-bottom: 20px;background:url(../../../../Public/images/bg_color.png) repeat ;width: 326px;height: 48px;line-height: 48px;border-radius: 5px;-webkit-border-radius: 5px;-moz-border-radius: 5px;}
+.login_box .usname span{width: 60px;height: 25px;text-align: center;margin-left: 4px;vertical-align: middle;margin-top: -5px;position: relative;}
+.login_box .usname span:after{
+	content: '';
+	display: inline-block;
+	width: 1px;
+	height: 25px;
+	background: #252525;
+	opacity: 0.8;
+	position: absolute;
+	top: 0;
+	right: 0;
+	
+}
+.login_box .usname input{width: 250px;height: 25px;background: none;border: none;text-align: center;font-size: 14px;color: #666666;}
+.login_box .yz{margin-top: 20px;height: 48px;line-height: 48px;}
+.login_box .yz input{line-height: 48px; width: 167px;height: 48px;margin-right: 14px;background:url(../../../../Public/images/bg_color.png) repeat ;border-radius: 5px;border: none;font-size: 16px;color: #666666;text-align: center;vertical-align: top;}
+.login_box .yz span{vertical-align: middle;margin-top: -4px;width: 142px;height: 48px;overflow: hidden;cursor: pointer;border-radius: 4px;}
+.logins{margin-top: 20px;width: 328px;height: 48px;border: #c84905 1px solid;border-radius: 25px;-webkit-border-radius: 25px;-moz-border-radius: 25px;}
+.logins input{box-sizing: border-box;-webkit-box-sizing: border-box;-moz-box-sizing: border-box; transition: .5s;-webkit-transition: .5s; cursor: pointer; text-align: center;width: 328px;height: 48px;line-height: 48px;border-radius: 24px;-webkit-border-radius: 24px;-moz-border-radius: 24px;font-size: 16px;color: #ffffff;background: #ea5404;border: #fd9526 1px solid;letter-spacing: 8px;}
+.logins input:hover{background: #d34e07;}

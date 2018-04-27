@@ -1,0 +1,16 @@
+﻿<foreach name="list" item="item">
+<li class="ui-border-t">
+	<div class="ui-avatar">
+		<a href="<{:U('cun/detail',array('id'=>$item['id']))}>"><span style="background-image:url(/upload/<{$item.photo|default='default.jpg'}>)"></span></a>
+	</div>
+	<div class="ui-list-info">
+		<a href="<{:U('cun/detail',array('id'=>$item['id']))}>">
+		<h4 class="ui-nowrap">
+			<eq name="item.type" value="1">供应</eq><eq name="item.type" value="2">需求</eq><{$item.title}>
+			<span class="float-right ui-f12 text-orange"><eq name="item.price" value="0">价格面议<else /><{$item.price}>元/<{$item.unit}></eq></span>
+		</h4>
+		<p class="ui-nowrap"><{$towns[$item[town]][name]}>/<{$cuns[$item[cun]][name]}></p>
+		</a>
+	</div>
+</li>
+</foreach>

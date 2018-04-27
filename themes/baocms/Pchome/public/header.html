@@ -1,0 +1,26 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <{$CONFIG['site']['headinfo']}>
+        <title><php>if($config['title'])echo $config['title'];else echo $seo_title;</php></title>
+        <meta name="keywords" content="<{$seo_keywords}>" />
+        <meta name="description" content="<{$seo_description}>" />
+        <link href="/themes/baocms/Pchome/statics/css/style.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="/themes/baocms/Pchome/statics/css/<{$ctl}>.css" />
+        <script> var BAO_PUBLIC = '__PUBLIC__'; var BAO_ROOT = '__ROOT__';</script>
+        <script src="__TMPL__statics/js/jquery.js??v=20160125"></script>
+        <script src="__PUBLIC__/js/layer/layer.js??v=20160125"></script>
+        <script src="__TMPL__statics/js/jquery.flexslider-min.js??v=20160125"></script>
+        <script src="__TMPL__statics/js/js.js??v=20160125"></script>
+        <script src="__PUBLIC__/js/web.js??v=20160125"></script>
+        <script src="__TMPL__statics/js/baocms.js??v=20160125"></script>
+    </head>
+<style>
+/*兼容性修改*/
+.navA {padding: 0px 10px;}
+.navA {position: relative;}
+.navA .hot {display: block;width: 27px;height: 18px;background: url(/themes/default/Pchome/statics/images/header-hot.gif) no-repeat center top;position: absolute;right: -5px;top: 2px;}
+</style>
+    <body>
+        <iframe id="baocms_frm" name="baocms_frm" style="display:none;"></iframe>

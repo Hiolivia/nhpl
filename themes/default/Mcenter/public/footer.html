@@ -1,0 +1,37 @@
+<div class="blank-20"></div>
+ <footer class="foot-fixed">
+  <if condition="$ctl eq 'member'">
+    <a class="foot-item  <if condition="$ctl eq 'member'">active</if>" href="<{:u('mobile/index/index')}>">		
+    <span class="icon icon-home"></span>
+    <span class="foot-label">首页</span>
+    </a>
+  <else/>
+  <a class="foot-item" href="<{:u('member/index')}>">		
+    <span class="icon icon-home"></span>
+    <span class="foot-label">首页</span>
+    </a>
+  
+  </if>
+    
+    <a class="foot-item " href="<{:LinkTo('mobile/life/release')}>">			
+    <span class="icon icon-plus"></span><span class="foot-label">发布</span></a>
+    
+     <a class="foot-item  <if condition="($ctl eq 'tuancode')">active</if>" href="<{:u('tuancode/index')}>">			
+    <span class="icon icon-folder"></span><span class="foot-label">抢购劵</span></a>
+    
+    
+    
+    <a class="foot-item  <if condition="($ctl eq 'message') ||($act eq 'xiaoxizhongxin')">active</if>" href="<{:u('message/index')}>">			
+    <span class="icon icon-volume-up"></span><span class="foot-label">消息</span></a>
+    
+    <a class="foot-item  <if condition="($ctl eq 'money') || ($ctl eq 'logs') || ($ctl eq 'cash') ||($act eq 'zijinguanli')">active</if>" href="<{:u('information/index')}>">			
+    <span class="icon icon-gear"></span><span class="foot-label">设置</span></a>
+    
+   
+    </footer>
+
+
+<iframe id="x-frame" name="x-frame" style="display:none;">
+</iframe>
+</body>
+</html>

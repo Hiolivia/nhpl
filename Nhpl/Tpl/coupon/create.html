@@ -1,0 +1,145 @@
+<include  file='public:header'/>
+<div class="mainBt">
+    <ul>
+        <li class="li1">优惠券</li>
+        <li class="li2">优惠券管理</li>
+        <li class="li2 li3">新增</li>
+    </ul>
+</div>
+
+<div class="mainScAdd ">
+    <div class="tableBox">
+        <form  target="baocms_frm" action="<{:U('coupon/create')}>" method="post">
+            <table bordercolor="#e1e6eb" cellspacing="0" width="100%" border="1px"  style=" border-collapse: collapse; margin:0px; vertical-align:middle; background-color:#FFF;" >
+               <!--<tr>
+                    <td class="lfTdBt">商家：</td>
+                    <td class="rgTdBt">
+                        <div class="lt">
+                            <input type="hidden" id="shop_id" name="data[shop_id]" value="<{$detail.shop_id|default=''}>"/>
+                            <input type="text" id="shop_name" name="shop_name" value="" class="manageInput" />
+                        </div>
+                        <a mini="select"  w="1000" h="600" href="<{:U('shop/select')}>" class="remberBtn">选择商家</a>
+                    </td>
+                </tr>-->
+                <tr>
+                    <td class="lfTdBt">标题：</td>
+                    <td class="rgTdBt">
+                        <input type="text" name="data[title]" value="<{$detail.title|default=''}>" class="manageInput" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="lfTdBt">类型：</td>
+                    <td class="rgTdBt">
+                        <input type="radio" name="data[type]" value="0" checked>满减券
+                        <input type="radio" name="data[type]" value="1" >满折券
+                    </td>
+                </tr>
+                <!--<tr>
+                    <td class="lfTdBt">
+                <js file='__PUBLIC__/js/uploadify/jquery.uploadify.min.js'/>
+                <link rel="stylesheet" href="__PUBLIC__/js/uploadify/uploadify.css">
+                优惠券图片：
+                </td>
+                <td class="rgTdBt">
+                    <div style="width: 300px;height: 100px; float: left;">
+                        <input type="hidden" name="data[photo]" value="<{$detail.photo}>" id="data_photo" />
+                        <input id="photo_file" name="photo_file" type="file" multiple="true" value="" />
+                    </div>
+                    <div style="width: 300px;height: 100px; float: left;">
+                        <img id="photo_img" width="80" height="80"  src="__ROOT__/attachs/<{$detail.photo|default='default.jpg'}>" />
+                        <a href="<{:U('setting/attachs')}>">设置【全站商城支持传七牛云联系：120,585,022】</a>
+                        建议尺寸<{$CONFIG.attachs.coupon.thumb}>
+                    </div>
+                    <script>
+                            $("#photo_file").uploadify({
+                                'swf'      : '__PUBLIC__/js/uploadify/uploadify.swf?t=<{$nowtime}>',
+                                'uploader' : '<{:U("app/upload/uploadify",array("model"=>"coupon"))}>',
+                                'cancelImg' : '__PUBLIC__/js/uploadify/uploadify-cancel.png',
+                                'buttonText' : '上传优惠券图片',
+                                'fileTypeExts': '*.gif;*.jpg;*.png',
+                                'queueSizeLimit':1,
+                                'onUploadSuccess' : function(file, data, response) {
+                                    $("#data_photo").val(data);
+                                    $("#photo_img").attr('src','__ROOT__/attachs/'+data).show();
+                                }
+                            });
+                    </script>
+                </td>
+            </tr>-->
+
+            <tr>
+                <td  class="lfTdBt">总数量：</td>
+                <td class="rgTdBt"><input type="text" name="data[num]" value="<{$detail.num|default=''}>"   class="manageInput" />
+                    <code>总数量为0的时候，就不能领用了</code>
+                </td>
+            </tr>
+             <tr>
+                <td  class="lfTdBt">单人限制领用：</td>
+                <td class="rgTdBt"><input type="text" name="data[limit_num]" value="<{$detail.limit_num|default=''}>"   class="manageInput" />
+                    <code>0为不限制，如果填入数字代码该用户只能领用多少次</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td  class="lfTdBt">满多少钱：</td>
+                <td class="rgTdBt"><input type="text" name="data[full_price]" value="<{:round($detail['full_price']/100,2)}>"   class="manageInput" />
+                    <code>就是当前优惠劵满多钱</code>
+                </td>
+            </tr>
+            
+             <tr>
+                <td  class="lfTdBt">减多少钱|打几折：</td>
+                <td class="rgTdBt"><input type="text" name="data[reduce_price]" value="<{:round($detail['reduce_price']/100,2)}>"   class="manageInput" />
+                    <code>减去多少钱|打几折(示例: 75元 | 75折)</code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="lfTdBt">使用期限：</td>
+                <td class="rgTdBt">
+                    <input type="text" name="data[begin_date]" onfocus="WdatePicker();"  class="inputData" /> --
+                    <input type="text" name="data[expire_date]" onfocus="WdatePicker();"  class="inputData" />
+                </td>
+            </tr>
+            <!--<tr>
+                <td class="lfTdBt">过期日期：</td>
+                <td class="rgTdBt"><input type="text" name="data[expire_date]" value="<{$detail.expire_date|default=''}>" onfocus="WdatePicker();"  class="inputData" />
+                </td>
+            </tr>-->
+            <tr>
+                <td class="lfTdBt">优惠券描述：</td>
+                <td class="rgTdBt"><textarea  name="data[intro]" cols="50" rows="10" ><{$detail.intro|default=''}></textarea>
+                </td>
+            </tr>
+        
+         <!--<link rel="stylesheet" href="__PUBLIC__/umeditor/themes/default/css/umeditor.min.css" type="text/css">
+            <script type="text/javascript" charset="utf-8" src="__PUBLIC__/umeditor/umeditor.config.js"></script>
+            <script type="text/javascript" charset="utf-8" src="__PUBLIC__/umeditor/umeditor.min.js"></script>
+            <script type="text/javascript" src="__PUBLIC__/umeditor/lang/zh-cn/zh-cn.js"></script>
+                <tr>
+                    <td class="lfTdBt">优惠劵详情：</td>
+                    <td class="rgTdBt">
+                        <script type="text/plain" id="data_details" name="data[details]" style="width:800px;height:360px;"><{$detail.details}></script>
+                    </td>
+                </tr>
+           <script>
+             um = UM.getEditor('data_details', {
+                imageUrl: "<{:U('app/upload/editor')}>",
+                imagePath: '__ROOT__/attachs/editor/',
+                lang: 'zh-cn',
+                langPath: UMEDITOR_CONFIG.UMEDITOR_HOME_URL + "lang/",
+                focus: false
+             });
+          </script>-->
+
+    </table>
+
+                 <div style="margin-left:140px;margin-top:20px">
+                <input type="submit" value="确认添加" class="smtQrIpt" />
+                <div>
+
+</form>
+</div>
+</div>
+<include  file='public:footer'/>       

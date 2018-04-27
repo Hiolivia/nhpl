@@ -1,0 +1,48 @@
+<include file='public:header'/>
+<div class="sjgl_lead">
+    <ul>
+        <li><a href="#">家政</a> > <a href="<{:U('appoint/index')}>">家政项目</a>> <a href="<{:U('appoint/order')}>">家政订单</a></li>
+    </ul>
+</div>
+<div class="tuan_content">
+    <form method="post" action="<{:U('appoint/order')}>">
+    <div class="radius5 tuan_top">
+        <div class="tuan_top_t">
+            家政订单ID：
+            <input type="text" name="keyword" value="<{$keyword}>"  placeholder="输入家政订单ID" class="radius3 tuan_topser" />
+            <input type="submit" style="margin-left:10px;"  class="radius3 sjgl_an tuan_topbt" value="搜 索"/>
+            <div class="right tuan_topfb_r"><a class="radius3 sjgl_an tuan_topbt" target="main_frm" href="<{:U('appoint/create')}>">添加家政+</a></div>
+        </div>
+    </div>
+    </form>
+    <div class="tuanfabu_tab">
+        <ul>
+          <li class="tuanfabu_tabli tabli_change on"><a href="<{:U('appoint/order')}>">家政项目</a></li>
+        </ul>
+    </div>
+    <table class="tuan_table" width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr style="background-color:#eee;">
+          <td>订单ID</td>  
+          <td>标题</td>
+          <td>图片</td>
+          <td>预约时间</td>
+          <td>客户信息</td>
+          <td>服务地址</td>
+          <td>下单时间</td>
+        </tr>
+        <foreach name="list" item="item">
+         <td><{$item.order_id}></td>
+         <td><{$appoints[$item['appoint_id']]['title']}></td>
+         <td><img src="<{:config_img($appoints[$item['appoint_id']]['photo'])}>" width="60" height="60"></td>
+         <td><{$item.svctime}></td>
+         <td><{$item.name}>，<{$item.tel}></td>
+         <td><{$item.addr}></td>
+         <td><{$item.create_time|date='Y-m-d,H:i:s',###}></td>
+        </tr>
+        </foreach>
+    </table>
+    <div class="paging">
+        <{$page}>
+    </div>
+</div>
+<include file='public:footer'/>

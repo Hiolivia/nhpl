@@ -1,0 +1,251 @@
+﻿<include file='public:head_frozen'/>
+<header class="ui-header ui-header-stable ui-header-red ui-border-b">
+	<a class="ui-icon-return" href="javascript:history.back();"></a>
+	<h1>供应发布</h1>
+	<button type="button" id="submit-btn" class="ui-btn">发布</button>
+</header> 
+<section class="ui-container">
+    <div class="ui-form ui-border-t">
+        <form id="offer-form"  target="niu-frame" method="post" action="<{:U('cun/offer')}>">
+			<input name="ssid" type="hidden" value="<{$ssid}>" />
+			<div class="ui-form-item ui-border-b">
+				<label>所在区县：</label>
+				<div class="ui-select">
+					<select id="area_id" name="data[area]" >
+						<option value="">请选择</option>
+						<foreach name="areas" item="var">
+						<option value="<{$var.area_id}>"><{$var.area_name}></option>
+						</foreach>
+					</select>
+				</div>
+			</div>
+		
+			<div class="ui-form-item ui-border-b">
+				<label>所在乡镇：</label>
+				<div class="ui-select">
+					<select id="town_id" name="data[town]" >
+						<option value="">请选择</option>
+					</select>
+				</div>
+			</div>
+			
+			<div class="ui-form-item ui-border-b">
+				<label>所在村社：</label>
+				<div class="ui-select">
+					<select id="cun_id" name="data[cun]" >
+						<option value="">请选择</option>
+					</select>
+				</div>
+			</div>
+
+            <div class="ui-form-item ui-border-b">
+                <label>
+                    供应产品：
+                </label>
+                <input name="data[title]" type="text" placeholder="请输入供应产品名" />
+            </div>
+			
+            <div class="ui-form-item ui-border-b">
+                <label>
+                    供应数量：
+                </label>
+                <input name="data[total]" type="text" placeholder="请输入数字" />
+            </div>
+			
+            <div class="ui-form-item ui-border-b">
+                <label>
+                    产品单价：
+                </label>
+                <input name="data[price]" type="text" placeholder="单位：人民币元 ，面议填写零" />
+            </div>
+			
+            <div class="ui-form-item ui-border-b">
+                <label>
+                    产品单位：
+                </label>
+                <input name="data[unit]" type="text" placeholder="如：件、吨、斤" />
+            </div>
+			
+            <div class="ui-form-item ui-form-item-textarea ui-border-b p-b-3">
+                <label>
+                    详细描述：
+                </label>
+                <textarea name="data[content]" placeholder="请填写产品描述、行情描述，不少于10字、最多不超过200字" ></textarea>
+            </div>
+            <div class="ui-form-item  ui-border-b" >
+                <label>
+                    联系称呼：
+                </label>
+                <input name="data[name]" type="text" placeholder="联系人姓名或称呼" />
+            </div>
+            <div class="ui-form-item ui-border-b">
+                <label>
+                    联系手机：
+                </label>
+                 <input name="data[mobile]" type="text" placeholder="联系人的手机号码" />
+            </div>
+			
+
+			<div class="ui-form-item ui-border-b">
+				<label>结束日期：</label>
+				<input id="end_time" name="data[end_time]" placeholder="选择日期" readonly />
+			</div>
+			<link rel="stylesheet" href="/public/wap/css/mdater.css">
+			<script src="/public/wap/js/mdater.js"></script>
+			<script type="text/javascript">
+				$('#end_time').mdater();
+			</script>	
+
+			
+			<div id="photo-panel" class="photo-panel">
+				<!--引入JS-->
+				<script src="/public/wap/js/jquery.js"></script>
+				<script src="/public/wap/js/uploader.js"></script>
+				<ul id="photo-list" class="ui-grid-halve photo-list">
+					<li id="photo-pick" class="photo-pick">添加图片</li>
+				</ul>
+			</div>
+			
+			
+			
+        </form>
+    </div>
+</section>
+
+<script type="text/javascript">
+
+	// 文件上传
+	function upload() {
+		var $ = jQuery,
+			$list = $('#photo-list'),
+			$btn = $('#photo-pick'),
+			state = 'pending',
+			// 优化retina, 在retina下这个值是2
+			ratio = window.devicePixelRatio || 1,
+
+			// 缩略图大小
+			thumbnailWidth = 100 * ratio,
+			thumbnailHeight = 100 * ratio,
+			uploader;
+
+
+		var uploader = WebUploader.create({
+			server: "<{:U('/auth/upload/uploadify')}>",
+			pick: '#photo-pick',
+			resize: false,
+			auto:true,
+			accept: {
+				title: 'Images',
+				extensions: 'gif,jpg,jpeg,png',
+				mimeTypes: 'image/*'
+			},
+			compress:{
+				width: 1000,
+				height: 1000,
+				quality: 90,
+				allowMagnify: false,
+				crop: false,
+				preserveHeaders: true,
+				noCompressIfLarger: true,
+				compressSize:0
+			}
+		});
+
+	
+	
+		// 当有文件添加进来的时候
+		uploader.on( 'fileQueued', function( file ) {
+			var $li = $('<li id="' + file.id + '" >' +
+					   ' <div class="ui-grid-halve-img">'+
+						   '<img>'+
+						'</div>'+
+				   '</li>'),
+				$img = $li.find('img');
+
+
+			// $list为容器jQuery实例
+			$list.prepend( $li );
+
+			// 创建缩略图
+			// 如果为非图片文件，可以不用调用此方法。
+			// thumbnailWidth x thumbnailHeight 为 100 x 100
+			uploader.makeThumb( file, function( error, src ) {
+				if ( error ) {
+					$img.replaceWith('<span>不能预览</span>');
+					return;
+				}
+
+				$img.attr( 'src', src );
+			}, thumbnailWidth, thumbnailHeight );
+		});
+		
+		
+		// 文件上传过程中创建进度条实时显示。
+		uploader.on( 'uploadProgress', function( file, percentage ) {
+			var $li = $( '#'+file.id ),
+				$percent = $li.find('.ui-progress span');
+
+			// 避免重复创建
+			if ( !$percent.length ) {
+				$percent = $('<div class="ui-progress"><span></span></div>')
+						.appendTo( $li )
+						.find('span');
+			}
+
+			$percent.css( 'width', percentage * 100 + '%' );
+		});
+		
+		
+		
+		// 文件上传成功，给item添加成功class, 用样式标记上传成功。
+		uploader.on( 'uploadSuccess', function( file,response ) {
+			$( '#'+file.id ).find('.ui-grid-halve-img ').addClass('ui-tag-selected');
+			$( '#'+file.id ).append('<input type="hidden" name="photo[]" value="'+response._raw+'" />');
+
+		});
+		
+		
+		// 文件上传失败，现实上传出错。
+		uploader.on( 'uploadError', function( file ) {
+			error('上传失败');
+		});
+
+		// 完成上传完了，成功或者失败，先删除进度条。
+		uploader.on( 'uploadComplete', function( file ) {
+			$( '#'+file.id ).find('.ui-progress').remove();
+		});
+
+		
+	};
+	upload();
+	
+	
+	$("#submit-btn").click(function(){
+		$("#offer-form").submit();
+	});
+	
+	$("#area_id").change(function(){
+		var url = '<{:U("cun/stown",array("area_id"=>"0000"))}>';
+		if($(this).val() > 0){
+			var url = url.replace('0000',$(this).val());
+			$.get(url,function(data){
+				$("#town_id").html(data);
+			},'html');
+		}
+	});
+	
+	$("#town_id").change(function(){
+		var url = '<{:U("cun/scun",array("id"=>"0000"))}>';
+		if($(this).val() > 0){
+			var url = url.replace('0000',$(this).val());
+			$.get(url,function(data){
+				$("#cun_id").html(data);
+			},'html');
+		}
+	});
+	
+	
+	
+</script>
+</body>
+</html>

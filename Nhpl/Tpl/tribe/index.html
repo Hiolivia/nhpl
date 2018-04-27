@@ -1,0 +1,101 @@
+<include  file='public:header'/>
+<div class="mainBt">
+    <ul>
+        <li class="li1">部落</li>
+        <li class="li2">部落管理</li>
+        <li class="li2 li3">部落列表</li>
+    </ul>
+</div>
+<div class="main-jsgl main-sc">
+    <p class="attention"><span>注意：</span>&#28304;&#12288;&#30721;&#12288;&#30001;&#12288;&#25240;&#12288;&#32764;&#12288;&#22825;&#12288;&#20351;&#12288;&#36164;&#12288;&#28304;&#12288;&#31038;&#12288;&#21306;&#12288;&#25552;&#12288;&#20379;</p>
+    <div class="jsglNr">
+        <div class="selectNr" style="margin-top: 0px; border-top:none;">
+            <div class="left">
+                <{:BA('tribe/create','','添加部落')}>
+            </div>
+            <div class="right">
+                <form class="search_form" method="post" action="<{:U('tribe/index')}>">
+                    <div class="seleHidden" id="seleHidden">
+                        <span>关键字(部落名称)</span>
+                        <input type="text" name="keyword" value="<{$keyword}>" class="inptText" /><input type="submit" value="   搜索"  class="inptButton" />
+                    </div> 
+                </form>
+                <a href="javascript:void(0);" class="searchG">高级搜索</a>
+                <div class="clear"></div>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <form method="post" action="<{:U('tribe/index')}>">
+            <div class="selectNr selectNr2">
+                <div class="left">
+                    <div class="seleK">
+                        <label>
+                            <span>分类：</span>
+                            <select id="cate_id" name="cate_id" class="select w100">
+                                <option value="0">请选择...</option>
+                                <foreach name="cates" item="var">
+                                    <option value="<{$var.cate_id}>"  <eq name="var.cate_id" value="$cate_id">selected="selected"</eq> ><{$var.cate_name}></option>                
+                                </foreach>
+                            </select>
+                        </label>
+                        <label>
+                            <span>关键字:</span>
+                            <input type="text" name="keyword" value="<{$keyword}>" class="inptText" />
+                        </label>
+                    </div>
+                </div>
+                <div class="right">
+                    <input type="submit" value="   搜索"  class="inptButton" />
+                </div>
+        </form>
+        <div class="clear"></div>
+    </div>
+    <form  target="baocms_frm" method="post">
+        <div class="tableBox">
+            <table bordercolor="#dbdbdb" cellspacing="0" width="100%" border="1px"  style=" border-collapse: collapse; margin:0px; vertical-align:middle; background-color:#FFF;"  >
+                <tr>
+                    <td class="w50"><input type="checkbox" class="checkAll" rel="tribe_id" /></td>
+                    <td class="w50">ID</td>
+                    <td>部落名称</td>
+                    <td>部落分类</td>
+                    <td>部落图片</td>
+                    <td class="w300">部落banner</td>
+                    <td>部落帖子数</td>
+                    <td>部落关注数</td>
+                    <td>是否热门</td>
+                    <td>创建时间</td>
+                    <td class="w360">操作</td>
+                </tr>
+                <foreach name="list" item="var">
+                    <tr>
+                        <td><input class="child_tribe_id" type="checkbox" name="tribe_id[]" value="<{$var.tribe_id}>" /></td>
+                        <td><{$var.tribe_id}></td>
+                        <td><{$var.tribe_name}></td>
+                        <td><{$cates[$var['cate_id']]['cate_name']}></td>
+                        <td><img src="__ROOT__/attachs/<{$var.photo}>" class="w80" /></td>
+                        <td><img src="__ROOT__/attachs/<{$var.banner}>" class="w300" /></td>
+                        <td><{$var.posts}></td>
+                        <td><{$var.fans}></td>
+                        <td><eq name="var.is_hot" value="1">是<else/>否</eq></td>
+                        <td><{$var.create_time|date='Y-m-d H:i:s',###}></td>
+                    <td>
+                    <{:BA('tribe/edit',array("tribe_id"=>$var["tribe_id"]),'编辑','','remberBtn')}>
+                    <{:BA('tribepost/create',array("tribe_id"=>$var["tribe_id"]),'发帖','','remberBtn')}>
+                    <{:BA('tribe/delete',array("tribe_id"=>$var["tribe_id"]),'删除','act','remberBtn')}>
+                    </td>
+                    </tr>
+                </foreach>
+            </table>
+            <{$page}>
+        </div>
+        <div class="selectNr" style="margin-bottom: 0px; border-bottom: none;">
+            <div class="left">
+                <{:BA('tribe/delete','','批量删除','list',' a2')}>
+            </div>
+        </div>
+    </form>
+</div>
+</div>
+<include  file='public:footer'/>  
+
+

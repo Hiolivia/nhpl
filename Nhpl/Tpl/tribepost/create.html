@@ -1,0 +1,84 @@
+<include  file='public:header'/>
+<div class="mainBt">
+    <ul>
+        <li class="li1">部落</li>
+        <li class="li2">部落管理</li>
+        <li class="li2 li3">新增话题</li>
+    </ul>
+</div>
+<form  target="baocms_frm" action="<{:U('tribepost/create',array('tribe_id'=>$detail['tribe_id']))}>" method="post">
+    <div class="mainScAdd">
+        <div class="tableBox">
+            <table  bordercolor="#dbdbdb" cellspacing="0" width="100%" border="1px"  style=" border-collapse: collapse; margin:0px; vertical-align:middle; background-color:#FFF;" >
+                <tr>
+                    <td class="lfTdBt">标题：</td>
+                    <td class="rgTdBt"><input type="text" name="data[title]" value="<{$detail.title|default=''}>" class="scAddTextName w210" />
+
+                    </td>
+                </tr>
+            <tr>
+                    <td  class="lfTdBt">
+                        <js file='__PUBLIC__/js/uploadify/jquery.uploadify.min.js'/>
+                        <link rel="stylesheet" href="__PUBLIC__/js/uploadify/uploadify.css">
+                        详情图片：</td>
+                    <td class="rgTdBt">
+                        <div>
+                            <input id="thumb_file" name="logo_file" type="file" multiple="true" value="" />
+                        </div>
+                        <div class="jq_uploads_img">
+                            <foreach  name="thumb" item="item">
+                                <span style="width: 200px; height: 120px; float: left; margin-left: 5px; margin-top: 10px;"> 
+                                    <img width="160" height="120" src="__ROOT__/attachs/<{$item.photo}>">  
+                                    <input type="hidden" name="thumb[]" value="<{$item.photo}>" />  
+                                    <a href="javascript:void(0);">取消</a>  
+                                </span>
+                            </foreach>
+                        </div>
+                        <script>
+                            $("#thumb_file").uploadify({
+                                'swf': '__PUBLIC__/js/uploadify/uploadify.swf?t=<{$nowtime}>',
+                                'uploader': '<{:U("app/upload/uploadify",array("model"=>"tribepost"))}>',
+                                'cancelImg': '__PUBLIC__/js/uploadify/uploadify-cancel.png',
+                                'buttonText': '上传图片',
+                                'fileTypeExts': '*.gif;*.jpg;*.png',
+                                'queueSizeLimit': 5,
+                                'onUploadSuccess': function (file, data, response) {
+                                    var str = '<span style="width: 160px; height: 120px; float: left; margin-left: 5px; margin-top: 10px;">  <img width="120" height="90" src="__ROOT__/attachs/' + data + '">  <input type="hidden" name="thumb[]" value="' + data + '" />    <a href="javascript:void(0);">取消</a>  </span>';
+                                    $(".jq_uploads_img").append(str);
+                                }
+                            });
+
+                            $(document).on("click", ".jq_uploads_img a", function () {
+                                $(this).parent().remove();
+                            });
+
+                        </script>
+                    </td>
+                </tr>
+        
+        <tr>
+            <td class="lfTdBt">详情：</td>
+            <td class="rgTdBt">
+                <script type="text/plain" id="data_details" name="data[details]" style="width:800px;height:360px;"><{$detail.details}></script>
+            </td>
+        </tr>
+        <link rel="stylesheet" href="__PUBLIC__/umeditor/themes/default/css/umeditor.min.css" type="text/css">
+        <script type="text/javascript" charset="utf-8" src="__PUBLIC__/umeditor/umeditor.config.js"></script>
+        <script type="text/javascript" charset="utf-8" src="__PUBLIC__/umeditor/umeditor.min.js"></script>
+        <script type="text/javascript" src="__PUBLIC__/umeditor/lang/zh-cn/zh-cn.js"></script>
+        <script>
+                    um = UM.getEditor('data_details', {
+                        imageUrl: "<{:U('app/upload/editor')}>",
+                        imagePath: '__ROOT__/attachs/editor/',
+                        lang: 'zh-cn',
+                        langPath: UMEDITOR_CONFIG.UMEDITOR_HOME_URL + "lang/",
+                        focus: false
+                    });
+        </script>
+    </table>
+       
+</div>
+<div class="smtQr"><input type="submit" value="确认添加" class="smtQrIpt" /></div>
+</div>
+</form>
+<include  file='public:footer'/>       

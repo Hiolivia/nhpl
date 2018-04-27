@@ -1,0 +1,36 @@
+<include  file='public:header'/>
+<div class="mainBt">
+    <ul>
+        <li class="li1">贴吧管理</li>
+        <li class="li2">标签列表</li>
+        <li class="li2 li3">新增</li>
+    </ul>
+</div>
+
+<div class="mainScAdd ">
+    <div class="tableBox">
+        <form  target="baocms_frm" action="<{:U('postlabel/create')}>" method="post">
+            <table bordercolor="#e1e6eb" cellspacing="0" width="100%" border="1px"  style=" border-collapse: collapse; margin:0px; vertical-align:middle; background-color:#FFF;" >
+                <tr>
+                    <td class="lfTdBt">标签：</td>
+                    <td class="rgTdBt">
+                        <input type="text" name="data[label_name]"  class="manageInput" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="lfTdBt">排序：</td>
+                    <td class="rgTdBt">
+                        <input type="text" name="data[orderby]" value="<{$detail.orderby|default=''}>" class="manageInput" />
+                        <code>数字越小越高</code>
+                    </td>
+                </tr>
+            </table>
+
+            <div style="margin-left:140px;margin-top:20px">
+                <input type="submit" value="确认添加" class="smtQrIpt" />
+            </div>
+
+        </form>
+    </div>
+</div>
+<include  file='public:footer'/>

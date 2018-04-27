@@ -1,0 +1,506 @@
+<php>$mobile_title = $detail['title'].'团购';</php>
+<include file='public:header'/>    
+<script src="/static/default/wap/other/roll.js"></script>
+	<header class="top-fixed bg-yellow bg-inverse">
+		<div class="top-back">
+			<a class="top-addr" href="<{:U('tuan/index')}>"><i class="icon-angle-left"></i></a>
+		</div>
+		<div class="top-title">
+			团购详情
+		</div>
+		<div class="top-search" style="display:none;">
+			<form method="post" action="<{:U('tuan/index')}>">
+				<input name="keyword" placeholder="输入团购的关键字"  />
+				<button type="submit" class="icon-search"></button> 
+			</form>
+		</div>
+		<div class="top-signed">
+			<a id="search-btn" href="javascript:void(0);"><i class="icon-search"></i></a>
+		</div>
+	</header> 
+
+    
+
+    <script type="text/javascript">
+
+	$(function(){
+
+		$("#search-btn").click(function(){
+
+			if($(".top-search").css("display")=='block'){
+
+				$(".top-search").hide();
+
+				$(".top-title").show(200);
+
+			}
+
+			else{
+
+				$(".top-search").show();
+
+				$(".top-title").hide(200);
+
+			}
+
+		});
+
+		$("#search-bar li").each(function(e){
+
+			$(this).click(function(){
+
+				if($(this).hasClass("on")){
+
+					$(this).parent().find("li").removeClass("on");
+
+					$(this).removeClass("on");
+
+					$(".serch-bar-mask").hide();
+
+				}
+
+				else{
+
+					$(this).parent().find("li").removeClass("on");
+
+					$(this).addClass("on");
+
+					$(".serch-bar-mask").show();
+
+				}
+
+				$(".serch-bar-mask .serch-bar-mask-list").each(function(i){
+
+					
+
+					if(e==i){
+
+						$(this).parent().find(".serch-bar-mask-list").hide();
+
+						$(this).show();
+
+					}
+
+					else{
+
+						$(this).hide();
+
+					}
+
+					$(this).find("li").click(function(){
+
+						$(this).parent().find("li").removeClass("on");
+
+						$(this).addClass("on");
+
+					});
+
+				});
+
+			});
+
+		});
+
+	});
+
+	</script>	 
+
+	
+
+    <div class="tuan-detail">
+
+    <div class="line banner">	
+
+    
+
+        <div id="focus" class="focus">
+
+            <div class="hd"><ul></ul></div>
+
+            <div class="bd">
+
+                <ul>
+
+                    <li><a href="<{:U('tuan/pic',array('tuan_id'=>$detail['tuan_id']))}>"><img src="__ROOT__/attachs/<{$detail.photo}>" /></a></li>
+
+                    <foreach name="thumb" item="item">
+
+                    <li><a href="<{:U('tuan/pic',array('tuan_id'=>$detail['tuan_id']))}>"><img src="__ROOT__/attachs/<{$item}>" /></a></li>
+
+                    </foreach>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    		<div class="title">
+
+				<h1><{:bao_Msubstr($detail['title'],0,48,false)}>  </h1>
+
+				<p><{:bao_Msubstr($detail['intro'],0,88,false)}></p>
+
+			</div>
+
+		</div>
+
+</div>            
+
+            
+
+  
+
+	<script type="text/javascript">
+
+		TouchSlide({ 
+
+			slideCell:"#focus",
+
+			titCell:".hd ul", //开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
+
+			mainCell:".bd ul", 
+
+			effect:"left", 
+
+			autoPlay:true,//自动播放
+
+			autoPage:true, //自动分页
+
+			switchLoad:"_src" //切换加载，真实图片路径为"_src" 
+
+		});
+
+	</script>
+
+
+
+	<!--小区广告结束-->
+
+	
+
+	<div class="tuan-detail">
+
+
+
+        <if condition="!empty($detail['xiangou'])">
+
+        <div class="line info">
+
+			<div class="x12">
+
+                <h4 class="se">每天限购：<{$detail.xiangou}> 份，剩余：<{$detail.num}> 份。</h4>
+
+			</div> 
+
+		</div>
+
+        </if>
+
+		<div class="line info">
+
+			<div class="x6">
+
+				<span class="txt-border txt-little radius-circle border-green"><div class="txt radius-circle bg-green">退</div></span>
+
+				<span class="text-green">支持随时退款</span>
+
+			</div>
+
+			<div class="x6">
+
+				<span class="txt-border txt-little radius-circle border-gray"><div class="txt radius-circle bg-gray"><i class="icon-user"></i></div></span>
+
+				<span class="text-gray">已售 <{$detail.sold_num}> 份</span>
+
+			</div>
+
+            
+
+            <!--小灰灰增加开始-->
+
+            <div class="x6">
+
+            <if condition="$detail['freebook'] eq 1">
+
+            <span class="txt-border txt-little radius-circle border-green"><div class="txt radius-circle bg-green">预</div></span>
+
+			<span class="text-green">免预约</span>
+
+            <else />
+
+			<span class="txt-border txt-little radius-circle border-green"><div class="txt radius-circle bg-green">预</div></span>
+
+			<span class="text-green">需要预约哦</span>
+
+                
+
+            </if>
+
+			</div>
+
+            <div class="x6">
+
+				<span class="txt-border txt-little radius-circle border-gray"><div class="txt radius-circle bg-gray">距</div></span>
+
+				<span class="text-gray"><{$detail.d}></span>
+
+			</div>
+
+           <!--小灰灰增加结束-->
+
+			<if condition="$detail['use_integral'] gt 0">
+
+			<div class="x12 margin-top">
+
+				<span class="txt-border txt-little radius-circle border-dot"><div class="txt radius-circle bg-dot"><i class="icon-database"></i></div></span>
+
+				<span class="text-dot">该抢购可以使用<{$detail.use_integral}>积分</span>
+
+			</div>
+
+            </if>
+
+		</div>
+
+		<hr />
+
+		<div class="line status">
+
+			<div class="x6">
+
+				<span class="ui-starbar"><span style="width:<{:round($score*10,2)}>%"></span></span>
+
+			</div>
+
+			<div class="x6">
+
+				<span class="float-right margin-small-top"><a href="<{:U('tuan/dianping',array('tuan_id'=>$detail['tuan_id']))}>"><{$pingnum}>人评价了该抢购 </a><i class="icon-angle-right"></i></span>
+
+			</div>
+
+		</div>
+
+		<hr />
+
+		<div class="line shop">
+
+			<div class="x9 border-right">
+
+				<h2> <a href="<{:U('shop/detail',array('shop_id'=>$detail['shop_id']))}>"><{$shop.shop_name}> </a>
+
+                <if condition="$shop['is_renzheng'] eq 1">
+
+                <a style="font-size:12px; background:#F00; padding:0 3px; color:#fff;" href="<{:U('shop/detail',array('shop_id'=>$detail['shop_id']))}>">已认证 </a>
+
+                </if>
+
+                </h2>
+
+				<p><{$shop.addr}> &nbsp;<a  style="color:#F00; font-size:12px "href="<{:U('shop/gps',array('shop_id'=>$detail['shop_id']))}>"> (导航)</a></p>
+
+			</div>
+
+			<div class="x3">
+
+				<a class="tel" href="tel:<{$shop.tel}>"><i class="icon-phone text-main"></i></a>
+
+			</div>
+
+		</div>
+
+		<hr />
+
+		<div class="blank-10 bg"></div>
+
+		<hr />
+
+		<div class="line status">
+
+			<div class="x5">
+
+				<span><a >抢购须知 </a></span>
+
+			</div>
+
+			<div class="x7">
+
+				<span class="float-right"> <a href="<{:U('tuan/tuwen',array('tuan_id'=>$detail['tuan_id']))}>">更多图文详情 </a><i class="icon-angle-right"></i></span>
+
+			</div>
+
+		</div>
+
+        <hr />
+
+        <div class="blank-10"></div>
+
+        <div class="container">
+
+        <{$tuandetails.instructions}>
+
+        </div>
+
+        <hr />
+
+
+
+  <div class="blank-10 bg"></div>   
+
+  <hr />
+
+         <div class="line-title">
+
+		<h5>本店其他抢购</h5>
+
+	    </div>
+
+    
+
+        <div class="main-tuan">
+
+        <volist name="tuans" id="item" key="index">
+
+		<ul id="tuan-list">   
+
+        <li class="x12">
+
+		<a class="line" href="<{:U('tuan/detail',array('tuan_id'=>$item['tuan_id']))}>">
+
+			<div class="container">
+
+				<img class="x4" src="__ROOT__/attachs/<{$item.photo|default='default.jpg'}>">	
+
+				<div class="des x8">
+
+					<h5><{:bao_msubstr($item['title'],0,18)}></h5>
+
+					<p class="intro">
+
+						<{:bao_msubstr($item['intro'],0,28)}></p>
+
+					<p class="info">
+
+						<span>￥ <em><{:round($item['tuan_price']/100,2)}></em></span> <del>￥<{:round($item['price']/100,2)}></del>
+
+						<span class="text-little float-right badge bg-gray margin-small-top">已售：<{$item.sold_num}></span>
+
+					</p>
+
+				</div>
+
+			</div>
+
+		</a>
+
+	</li>
+
+    </volist>
+
+    </ul>
+
+	</div>
+
+   </div>
+
+</div>
+
+
+
+<div class="blank-10 bg"></div>
+
+
+
+
+
+<section class="buy-btn-wrap" id="j-buy-segment">
+
+    <div class="buy-segment">
+
+            <span class="old-current-price">
+
+            	<em class="price-value"><{$detail.tuan_price}></em>
+
+            </span>
+
+            <span class="original-price">
+
+            	<del><{$detail.price}></del>
+
+            </span>
+
+        <!--判断开始-->
+
+        
+
+                        
+
+                        
+
+                        
+
+        <if condition="$detail['bg_date'] gt $today">  
+
+        <div class="buy-wrapper">
+
+            <div class="privilege-btn">
+
+                <a href="<{:U('tuan/buy',array('tuan_id'=>$detail['tuan_id']))}>" class="buy-btn" data-role="buy-btn" >
+
+                    <span class="text">即将开始</span>
+
+                </a>
+
+            </div>
+
+        </div> 
+
+        <else/>
+
+        <if condition="$detail.num lt 1 ">
+
+        <div class="buy-wrapper">
+
+            <div class="privilege-btn">
+
+                <a href="<{:U('tuan/buy',array('tuan_id'=>$detail['tuan_id']))}>" class="buy-btn" data-role="buy-btn" >
+
+                    <span class="text">卖光了</span>
+
+                </a>
+
+            </div>
+
+        </div>
+
+        <else />
+
+        <div class="buy-wrapper">
+
+            <div class="privilege-btn">
+
+                <a href="<{:U('tuan/buy',array('tuan_id'=>$detail['tuan_id']))}>" class="buy-btn" data-role="buy-btn" >
+
+                    <span class="text">立即抢购</span>
+
+                </a>
+
+            </div>
+
+        </div>
+
+         </if>
+
+     </if>           
+
+    </div>
+
+</section>
+<include  file='public:footer_share'/> 
+
+
+
+
+	</body>
+
+</html>

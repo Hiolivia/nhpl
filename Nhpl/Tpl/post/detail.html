@@ -1,0 +1,76 @@
+<include  file='public:header'/>
+
+<div class="mainBt">
+    <ul>
+        <li class="li1">消费分享</li>
+        <li class="li2">分享消息</li>
+        <li class="li2 li3">详情</li>
+    </ul>
+</div>
+<div class="mainScAdd ">
+
+    <div class="tableBox">
+        <form target="baocms_frm" action="<{:U('post/edit',array('post_id'=>$detail['post_id']))}>" method="post">
+            <table bordercolor="#e1e6eb" cellspacing="0" width="100%" border="1px"  style=" border-collapse: collapse; margin:0px; vertical-align:middle; background-color:#FFF;" >
+                <tr>
+                    <td class="lfTdBt">标题：</td>
+                    <td class="rgTdBt">
+                        <input type="text" name="data[title]" value="<{$detail.title|default=''}>" class="manageInput" readonly/>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="lfTdBt">楼主：</td>
+                    <td class="rgTdBt">
+                        <input type="text" name="data[user_id]" value="<{$detail.nickname|default=''}>" class="manageInput" readonly/>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="lfTdBt">分类：</td>
+                    <td class="rgTdBt">
+                        <select name="data[cate_id]" class="manageSelect w100" disabled="disabled">
+                            <option value="0">请选择...</option>
+                            <foreach name="cates" item="item">
+                                <option value="<{$item.cate_id}>" <eq name="item.cate_id" value="$detail.cate_id">selected="selected"</eq> ><{$item.cate_name}></option>
+                            </foreach>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="lfTdBt">标签：</td>
+                    <td class="rgTdBt">
+                         <foreach name="labels" item="item">
+                             <label>
+                                 <input type="checkbox" style="width: 15px; height: 15px;"  value="<{$item.label_name}>"<if condition="in_array($item['label_id'],$detail['label_id'])">checked="checked"</if>  onclick="return false;" />
+                                 <span><{$item.label_name}>&nbsp;&nbsp;</span>
+                             </label>
+                         </foreach>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="lfTdBt">内容：</td>
+                    <td class="rgTdBt">
+                        <textarea  name="data[details]" class="manageInput" cols="170" rows="10" readonly><{$detail.details|default=''}>
+                        </textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="lfTdBt">图片：</td>
+                    <td class="rgTdBt">
+                        <foreach name="detail.pic" item="item">
+                            <img width="150" height="150" style="margin-right:10px;" src="__ROOT__<{$item}>" />
+                        </foreach>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="lfTdBt">精华：</td>
+                    <td class="rgTdBt">
+                        <input type="radio" name="data[is_fine]"  <eq name="detail.is_fine" value="1">checked="checked"</eq>  value="1" disabled /> 是
+                        <input type="radio" name="data[is_fine]" <eq name="detail.is_fine" value="0">checked="checked"</eq> value="0" disabled /> 否
+
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</div>
+<include  file='public:footer'/>

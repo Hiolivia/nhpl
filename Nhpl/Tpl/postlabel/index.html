@@ -1,0 +1,44 @@
+<include  file='public:header'/>
+<div class="mainBt">
+    <ul>
+        <li class="li1">功能</li>
+        <li class="li2">贴吧管理</li>
+        <li class="li2 li3">标签列表</li>
+    </ul>
+</div>
+<div class="main-cate">
+    <div class="jsglNr">
+        <div class="selectNr" style="border-top: 1px solid #dbdbdb;">
+            <div class="left">
+                <{:BA('postlabel/create','','添加标签')}>
+            </div>
+        </div>
+        <div class="tableBox">
+            <table bordercolor="#dbdbdb" cellspacing="0" width="100%" border="1px"  style=" border-collapse: collapse; margin:0px; vertical-align:middle; background-color:#FFF; text-align:center;">
+                <tr bgcolor="#F5F6FA" height="48px;" style="color:#333; font-size:16px; line-height:48px;">
+                    <th>标签</th>
+                    <th>排序</th>
+                    <th>操作</th>
+                </tr>
+                <foreach name="list" item="var">
+
+                    <tr bgcolor="#f1f1f1" height="48px" style="font-size:14px; color:#545454; text-align:left; line-height:48px;">
+                        <td style="padding-left:20px;"><{$var.label_name}></td>
+                        <td style="padding-left:20px;"><{$var.orderby}></td>
+                        <td style="text-align: center;">
+                            <{:BA('postlabel/edit',array("label_id"=>$var["label_id"]),'编辑','','remberBtn')}>
+                            <?php if($var['closed']): ?>
+                                <{:BA('postlabel/change',array("label_id"=>$var["label_id"]),'启用','act','remberBtn')}>
+                            <?php else: ?>
+                                <{:BA('postlabel/change',array("label_id"=>$var["label_id"]),'禁用','act','remberBtn')}>
+                            <?php endif ?>
+                        </td>
+                    </tr>
+
+                </foreach>
+            </table>
+            <{$page}>
+        </div>
+    </div>
+</div>
+<include  file='public:footer'/>

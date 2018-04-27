@@ -1,0 +1,31 @@
+<foreach name='list' item='item'>
+	<li class="line">	
+        <a href="<{:U('appoint/detail',array('appoint_id'=>$item['appoint_id']))}>">		
+        <div class="x12 dealcard">
+        <style>
+		.dealcard .dealcard-nobooking:after {content: "<{:bao_msubstr($appointcates[$item['cate_id']]['cate_name'],0,4,false)}>";}
+		</style>
+        <span class="dealcard-nobooking"></span>
+        <img src="<{:config_img($item['photo'])}>">
+        <div class="title">
+				<h1><{:bao_msubstr($item['title'],0,26,false)}></h1>
+			</div>
+        </div>
+            <div class="x12" style="padding:0 10px;">
+             <div class="blank-10"></div>
+                <p class="desc"><{$item['intro']}></p>	
+                <p class="desc">具体活动时间：<{$item.biz_time}>&nbsp;截止：<{$item.end_date}></p>
+                <p class="info">
+                	<span class="text-dot">服务价：&yen;<{:round($item['price']/100,2)}>
+                    <if condition="!empty($item['unit'])">
+                    	/<{$item.unit}>
+                    </if>
+                    </span>
+                    <em class="button button-small bg-yellow">立即预约 <i class="icon-angle-right"></i></em>
+                </p>
+                <div class="blank-10"></div>	
+            </div>	
+       </a>	
+     </li>  
+     <div class="blank-10 bg"></div>	
+</foreach>

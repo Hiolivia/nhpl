@@ -1,0 +1,171 @@
+<include  file='public:header'/> 
+<include  file='public:top'/> 
+<include  file='public:nav2'/>
+<div class="pagewd">
+    <div class="tribeMain_infor mt10 mb20">
+        <img src="__ROOT__/attachs/<{$detail.banner}>" width="1200" height="260" />
+        <div class="infor">
+            <img src="__ROOT__/attachs/<{$detail.photo}>" width="152" height="152" />
+            <p class="name"><{$detail.tribe_name}><span class="num"><small class="graycl">话题</small><{$detail.posts}></span><span class="num"><small class="graycl">关注</small><{$detail.fans}></span></p>
+            <p class="blackcl6"><{$detail.intro}></p>
+            <a mini='act' href="<{:U('tribe/collect',array('tribe_id'=>$detail['tribe_id']))}>" class="btn"><if condition="$detail['collect'] eq 1"><b>&nbsp;</b>取消<else/><b>＋</b>关注</if></a>
+        </div>
+    </div>
+    <!--内容-->
+    <div class="tribeCont">
+        <div class="tribeCont_r">
+            <!--话题动态-->
+            <div class="tribe_topic_box mb20">
+            	<div class="tribe_topic_tab">
+                	<ul>
+                            <li class="list <if condition='!$order or $order eq 1'>on</if> "><a href="<{:U('tribe/detail',array('tribe_id'=>$detail['tribe_id'],'order'=>1))}>">全部</a></li>
+                            <li class="list <if condition='$order eq 2'>on</if>"><a href="<{:U('tribe/detail',array('tribe_id'=>$detail['tribe_id'],'order'=>2))}>">最新</a></li>
+            	    </ul>
+                </div>
+                <div class="tribe_topic_cont">
+                    <div class="list_box">
+                    	<ul>
+                            <php>$k=1;</php>
+                            <foreach name="list" item="item">
+                                <li class="tribe_topic_list">
+                                    <div class="topCont">
+                                        <div class="left from"><if condition="$k elt 3"><span class="tag">最新</span></if><a target="_blank" href="<{:U('tribe/postdetail',array('post_id'=>$item['post_id']))}>"><{$item.title}></a></div>
+                                        <div class="right">
+                                            <span class="num"><em class="ico ico_1"></em></span><span class="xian">|</span>
+                                            <span class="num"><em class="ico ico_2"></em><{$item.reply_num}></span><span class="xian">|</span>
+                                            <span class="num"><em class="ico ico_3"></em><{$item.zan_num}></span>
+                                        </div>
+                                    </div>
+                                    <P class="nr"><{:cleanhtml($item['details'])}></P>
+                                    <ul class="img_list">
+                                        <volist name="item.pics" id="pic">
+                                            <php>if($key<3){</php>
+                                            <li <if condition="$key eq 2">style="margin-right:0px;"</if> ><img src="__ROOT__/attachs/<{$pic}>" width="272" height="190" /></li>
+                                            <php>}</php>
+                                        </volist>
+                                    </ul>
+                                    <div class="bottomCont">
+                                            <span><em class="ico ico_1"></em><{$users[$item['user_id']]['nickname']|default='系统管理员'}></span>
+                                        <span><em class="ico ico_2"></em><{$item.create_time|date='Y-m-d H:i',###}></span>
+                                    </div>
+                                </li>
+                                <php>$k++;</php>
+                            </foreach>
+                	    </ul>
+                        <!--页码-->
+                        <div class="x">
+                            <{$page}>
+                        </div>
+            			<!--页码end-->
+                    </div>
+                </div>
+            </div>
+            <!--话题动态end-->
+            <!--你可能感兴趣的-->
+            <div class="tribeMain_title"><h3 class="left">你可能感兴趣的部落</h3><div class="right"><a href="javascript:void(0);" id="collect" class="btn"><b>＋</b>一键关注</a></div></div>
+            <div class="tribeCate_cont mb20">	
+                <ul>
+                    <form method="post" id="collect_form">
+                        <foreach name="tribes" item="item">
+                            <li class="tribeCate_cont_list">
+                                <input type="hidden" name="tribe_ids[]" value="<{$item.tribe_id}>">
+                                <img src="__ROOT__/attachs/<{$item.photo}>" width="90" height="90" class="left" />
+                                <div class="pub_wz">
+                                    <p class="name"><{$item.tribe_name}></p>
+                                    <p class="graycl">话题<{$item.posts}><span class="ml10">关注<{$item.fans}></span></p>
+                                    <p class="graycl"><{$item.intro}></p>
+                                </div>
+                                <div class="clear"></div>
+                                <a mini='act' href="<{:U('tribe/collect',array('tribe_id'=>$item['tribe_id']))}>" class="btn"><b>＋</b>关注</a>
+                            </li>
+                        </foreach>
+                    </form>
+                </ul>
+            </div>
+            <script>
+                $(document).ready(function(){
+                    $("#collect").click(function(){
+                        var link = "<{:U('tribe/plsc')}>";
+                        $.post(link,$("#collect_form").serialize(),function(data){
+                            if(data.status == 'login'){
+                                ajaxLogin();
+                            }else if(data.status == 'success'){
+                                layer.msg(data.msg);
+                                setTimeout(function(){
+                                    window.location.reload(true);
+                                },1000)
+                                
+                            }else{
+                                layer.msg(data.msg);
+                            }
+                        },'json')
+                    })
+                })
+            </script>
+            <!--你可能感兴趣的end-->
+            <!--话题发表-->
+            <div class="tribe_topic_fabiao">
+            	<h3>部落发表</h3>
+                <form method="post" id="fabu_form">
+                    <input type="hidden" name="tribe_id" value="<{$detail.tribe_id}>"/>
+                    <input type="text" name="title" placeholder="请填写标题" />
+                    <textarea name="details" placeholder="请输入内容~"></textarea>
+                    <div class="uploadImg mt10 jq_uploads_img">
+                        <js file='__PUBLIC__/js/uploadify/jquery.uploadify.min.js'/>
+                        <link rel="stylesheet" href="__PUBLIC__/js/uploadify/uploadify.css">
+                        <div><label class="sc_btn"><input id="logo_file" name="logo_file" type="file" multiple="true" value="" /></label></div>
+                        <script>
+                            $("#logo_file").uploadify({
+                                'swf': '__PUBLIC__/js/uploadify/uploadify.swf?t=<{$nowtime}>',
+                                'uploader': '<{:U("app/upload/uploadify",array("model"=>"tribepost"))}>',
+                                'cancelImg': '__PUBLIC__/js/uploadify/uploadify-cancel.png',
+                                'buttonText': '上传图片',
+                                'fileTypeExts': '*.gif;*.jpg;*.png',
+                                'queueSizeLimit': 5,
+                                'onUploadSuccess': function (file, data, response) {
+                                    var str = '<li><img width="160" height="120" src="__ROOT__/attachs/' + data + '"><input type="hidden" name="photos[]" value="' + data + '" /> <a href="javascript:void(0);">取消</a></li>';
+                                    $(".imgList ul").append(str);
+                                }
+                            });
+
+                            $(document).on("click", ".jq_uploads_img a", function () {
+                                $(this).parent().remove();
+                            });
+                        </script>
+                        <div class="imgList">
+                        	<ul>
+                            	
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="btn_box mt10">
+                        <input class="btn" type="button" id="fabu" value="发表">
+                    </div>
+                </form>
+            </div>
+            <!--话题发表end-->
+        </div>
+    </div>
+    <script>
+        $(document).ready(function(){
+            $("#fabu").click(function(){
+                var link = "<{:U('tribe/fabu')}>";
+                $.post(link,$("#fabu_form").serialize(),function(data){
+                    if(data.status == 'login'){
+                        ajaxLogin();
+                    }else if(data.status == 'success'){
+                        layer.msg(data.msg);
+                        setTimeout(function(){
+                            window.location.reload(true);
+                        },1000)
+
+                    }else{
+                        layer.msg(data.msg);
+                    }
+                },'json')
+            })
+        })
+    </script>
+    <!--内容end-->
+</div>
+<include file="public:footer"/>

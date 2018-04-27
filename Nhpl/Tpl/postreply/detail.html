@@ -1,0 +1,46 @@
+<include  file='public:header'/>
+
+<div class="mainBt">
+    <ul>
+        <li class="li1">消费分享</li>
+        <li class="li2">分享消息</li>
+        <li class="li2 li3">回复详情</li>
+    </ul>
+</div>
+<div class="mainScAdd ">
+
+    <div class="tableBox">
+        <form target="baocms_frm" action="<{:U('postreply/edit',array('reply_id'=>$detail['reply_id']))}>" method="post">
+            <table bordercolor="#e1e6eb" cellspacing="0" width="100%" border="1px"  style=" border-collapse: collapse; margin:0px; vertical-align:middle; background-color:#FFF;" >
+                <tr>
+                    <td class="lfTdBt">帖子id：</td>
+                    <td class="rgTdBt">
+                        <input type="text" name="data[post_id]" value="<{$detail.post_id|default=''}>" class="manageInput" readonly/>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="lfTdBt">回复人：</td>
+                    <td class="rgTdBt">
+                        <input type="text" name="data[user_id]" value="<{$detail.nickname|default=''}>" class="manageInput" readonly/>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="lfTdBt">内容：</td>
+                    <td class="rgTdBt">
+                        <textarea  name="data[contents]" class="manageInput" cols="170" rows="10" readonly><{$detail.contents|default=''}>
+                        </textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="lfTdBt">图片：</td>
+                    <td class="rgTdBt">
+                        <foreach name="detail.pic" item="item">
+                            <img width="150" height="150" style="margin-right:10px;" src="__ROOT__<{$item}>" />
+                        </foreach>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</div>
+<include  file='public:footer'/>

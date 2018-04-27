@@ -1,0 +1,23 @@
+<include  file='public:header'/>    
+<body style="height: 100%;">
+<iframe marginwidth="0" onLoad="iFrameHeight()"  marginheight="0" frameborder="0" id="main_frm" name="main_frm" scrolling="Auto" width="100%" height="100%"  src="<{:U('payment/payment', array('log_id' => $log_id))}>"></iframe>
+<script type="text/javascript" language="javascript">
+			function iFrameHeight() {
+			
+			var ifm= document.getElementById("main_frm");
+			
+			var subWeb = document.frames ? document.frames["main_frm"].document :
+			
+			ifm.contentDocument;
+			
+				if(ifm != null && subWeb != null) {
+			
+				ifm.height = subWeb.body.scrollHeight;
+			
+				}
+			
+			}
+			</script>
+                        
+</body>
+</html>

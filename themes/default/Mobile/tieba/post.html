@@ -1,0 +1,83 @@
+
+<include  file='public:header'/>
+	<header class="top-fixed bg-yellow bg-inverse">
+		<div class="top-back">
+			<a class="top-addr" href="<{:U('tieba/index')}>"><i class="icon-angle-left"></i></a>
+		</div>
+		<div class="top-title">
+			发表帖子
+		</div>
+		<div class="top-share">
+			<a href="<{:U('tieba/main')}>" id="cate-btn"><i class="icon-bars"></i></a>
+		</div>
+	</header>
+	<form class="post-form" action="<{:U('tieba/post',array('cat'=>$cate[cate_id]))}>" method="post" target="x-frame" >
+		<input type="hidden" id="photo" name="data[photo]" />
+		<input type="hidden" name="data[safecode]" value="<{$safecode}>" />
+		<div class="line border-bottom">
+			<div class="x9 form-title">
+				<select name="cat">
+					<option value="">选择分类</option>
+					<foreach name="sharecatess" key="k" index="index" item="item">
+					<if condition="$item['parent_id'] neq 0">
+					<option value="<{$item['cate_id']}>"><{$item['cate_name']}></option>
+					</if>
+					</foreach>
+				</select>
+			</div>
+		</div>
+		<div class="line border-bottom">
+			<div class="x9 form-title">
+				<input type="text" name="data[title]" value="" placeholder="请输入标题"  />
+			</div>
+			<div class="x3 text-right">
+				<button class="button bg-green margin-small-right" type="submit">发表</button>
+			</div>
+		</div>
+		<div class="line border-bottom">
+			<textarea class="form-content" name="data[contents]" placeholder="文明上网，登陆发言"></textarea>
+		</div>
+		<div class="blank-10 clearfix"></div>
+		<div class="container">
+			<div class="Upload-img-box">
+            	<div class="Upload-btn"><input type="file" id="fileToUpload" name="fileToUpload" >上传图片</div>
+                <div class="Upload-img" id="jq_imgs">
+                </div>
+                
+                <script type="text/javascript" src="/themes/default/Mobile/statics/js/ajaxfileupload.js"></script>
+                <script>
+                    function ajaxupload() {
+                        $.ajaxFileUpload({
+                            url: '<{:U("app/upload/upload",array("model"=>"tieba"))}>',
+                            type: 'post',
+                            fileElementId: 'fileToUpload',
+                            dataType: 'text',
+                            secureuri: false, //一般设置为false
+                            success: function (data, status) {
+								var str = '<div class="list-img"><img width="200" height="100" src="__ROOT__/attachs/' + data + '">  <input type="hidden" name="photos[]" value="' + data + '" />  <a href="javascript:void(0);">取消</a></div>';
+                                $("#jq_imgs").append(str);
+                                $("#fileToUpload").unbind('change');
+                                $("#fileToUpload").change(function () {
+                                    ajaxupload();
+                                });
+                            }
+                        });
+                    }
+
+                    $(document).ready(function () {
+                        $("#fileToUpload").change(function () {
+                            ajaxupload();
+                        });
+                        $(document).on("click", "#jq_imgs a", function () {
+                            $(this).parent().remove();
+                        });
+                    });
+                </script>
+                
+                
+            </div>
+		</div>
+	</form>
+	
+
+<include  file='public:footer'/> 

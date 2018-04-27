@@ -1,0 +1,50 @@
+<include file="public:header"/>
+<script src="/static/default/wap/js/star.js"></script>
+<style>.list-media-x {margin-top: 0.0rem;}</style>
+<header class="top-fixed bg-yellow bg-inverse">
+	<div class="top-back">
+		<a class="top-addr" href="javascript:history.back(-1);"><i class="icon-angle-left"></i></a>
+	</div>
+		<div class="top-title">
+			农家乐点评
+		</div>
+	<div class="top-signed">
+		<include file="public:message"/>
+	</div>
+</header>
+<form method="post" action="<{:U('farm/comment',array('order_id'=>$detail['order_id']))}>"  target="x-frame">
+<div class="line padding">
+		<div class="x12">
+			<p class="margin-small-bottom text-gray"><span> 农家乐“<{$detail.farm.farm_name}>”的点评</p>
+		</div>
+	</div>
+ <div class="blank-10 bg"></div>   
+
+<div class="list-media-x" id="list-media">
+	<ul>
+    <div class="line padding border-bottom">
+		<div class="x3">
+			<img src="<{:config_img($detail['farm']['photo'])}>" width="90%">
+		</div>
+		<div class="x9">
+			<p><{$detail.farm.farm_name}></p>
+			<p class="text-gray">￥<{$detail.amount}></p>
+		</div>
+	</div>
+   </ul>
+</div>
+
+<div class="blank-10 bg"></div>	
+	<div class="line padding border-bottom">
+		<div class="x3">
+			选择评分：
+		</div>
+		<div class="x9">
+			<span id="jq_star"></span>
+		</div>
+	</div>
+<div class="blank-10 bg"></div>
+	<script>
+		$(document).ready(function () {
+			$("#jq_star").raty({
+				nu

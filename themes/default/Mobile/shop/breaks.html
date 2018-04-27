@@ -1,0 +1,56 @@
+<include file="public:header"/>
+<header class="top-fixed bg-yellow bg-inverse">
+	<div class="top-back">
+		<a class="top-addr" href="<{:U('shop/detail',array('shop_id'=>$detail['shop_id']))}>"><i class="icon-angle-left"></i></a>
+	</div>
+		<div class="top-title">
+			优惠买单
+		</div>
+	<div class="top-signed">
+	</div>
+</header>
+<div class="panel-list">
+	<ul>
+		<li>
+        <php>$shop = D('Shop')->where(array('shop_id'=>$detail['shop_id']))->find();</php>
+			<a href="<{:U('shop/detail',array('shop_id'=>$detail['shop_id']))}>">当前商家<em class="text-gray"><{$shop['shop_name']}></em></a>
+		</li>
+	</ul>
+</div>
+<div class="container">
+	<div class="blank-10"></div>
+	<p class="text-small text-dot">请输入消费金额： 
+    <if condition="$detail['type'] EQ 0">
+    优惠方式：&nbsp;(<{$detail['discount']}>)折
+    <else/>
+    优惠方式：&nbsp;满 &yen;<{$detail['min_amount']}>元&nbsp;减 &yen;<{$detail['amount']}>元 
+    </if>
+    
+    
+    
+    </p>
+	<form target="x-frame" id="nick-form" method="post" action="<{:U('shop/breaks',array('shop_id'=>$detail['shop_id']))}>">
+	<div class="form-group">
+		<div class="field">
+			<div class="input-group">
+				<input type="text" id="amount" class="input" name="amount" size="50" value="" placeholder="询问服务员后输入" />
+			</div>
+		</div>
+	</div>
+    <div class="blank-10"></div>
+    <p class="text-small text-gray">输入不参与优惠金额（酒水、特价菜等）</p>
+    <div class="form-group">
+		<div class="field">
+			<div class="input-group">
+				<input type="text" id="exception" class="input" name="exception" size="50" value="" placeholder="询问服务员后输入" />
+			</div>
+		</div>
+	</div>
+    
+	<div class="blank-20"></div>
+	<button id="check-form" type="submit" class="button button-block button-big bg-dot text-center">确认支付</button>
+	</form>
+</div>
+
+
+<include file='public:footer'/> 

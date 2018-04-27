@@ -1,0 +1,30 @@
+    <footer class="foot-fixed">		
+           <a class="foot-item <if condition="($ctl eq 'index') AND ($act neq 'more')">active</if>" href="<{:U('index/index')}>">		
+    	    <span class="icon icon-home"></span>		
+        	<span class="foot-label">首页</span>		
+            </a>		
+
+            <a class="foot-item <eq name="ctl" value="tuan">active</eq>" href="<{:U('store/tuan/index')}>">		
+            	<span class="icon icon-plus"></span>			
+                <span class="foot-label">抢购</span>
+            </a>		
+            
+           <a class="foot-item <eq name="ctl" value="mart">active</eq>" href="<{:U('store/mart/index')}>">		
+            	<span class="icon icon-recycle"></span>			
+                <span class="foot-label">微店</span>
+            </a>
+            
+            <a class="foot-item <eq name="ctl" value="money">active</eq>" href="<{:U('store/money/index')}>">		
+            	<span class="icon icon-calendar"></span>			
+                <span class="foot-label">结算</span>
+            </a>
+            
+            <a class="foot-item <eq name="ctl" value="dianping">active</eq>" href="<{:U('store/dianping/index')}>">		
+            	<span class="icon icon-commenting-o"></span>			
+                <span class="foot-label">点评</span>
+            </a>
+
+            </footer>	
+            <iframe id="x-frame" name="x-frame" style="display:none;"></iframe>
+        </body>
+ </html>

@@ -1,0 +1,117 @@
+﻿<include file='public:head_frozen'/>
+    <header class="ui-header ui-header-stable ui-border-b ui-header-red">
+        <a class="ui-icon-return" href="<{:U('cun/post')}>"></a>
+        <h1>发布预售信息</h1>
+    </header> 
+    <section class="ui-container">
+    <div class="ui-form ui-border-t">
+        <form action="#">
+            <div class="ui-form-item ui-border-b ">
+                <label>
+                    预售产品：
+                </label>
+                <input type="text" placeholder="">
+
+            </div>
+            <div class="ui-form-item ui-border-b">
+                <label>
+                    发货地址：
+                </label>
+                <input type="text" placeholder="">
+                
+            </div>
+			<div class="ui-form-item ui-border-b">
+                <label>
+                    上市时间：
+                </label>
+                <input type="text" placeholder="">
+                
+            </div>
+			<div class="ui-form-item ui-border-b">
+                <label>
+                    结束时间：
+                </label>
+                <input type="text" placeholder="">
+                
+            </div>
+            <div class="ui-form-item ui-border-b">
+                <label>
+                    单位：
+                </label>
+                <input type="text" placeholder="">
+
+            </div>
+
+                <div class="ui-row-flex ">
+                    <div class="ui-col ui-col-4 ">
+                        <div class="ui-form-item ui-border-b ui-form-item-pure p-r-1">
+                        <label class="">价格：</label>
+                        <input type="text" placeholder="" value="最低价" class="text-grey-300 " style="margin-left:50px;width:80px;">
+                    </div>
+                    </div>
+                    <div class="ui-col text-center "> <span class="to block bg-black" style="margin-top:23px;"></span></div>
+                    <div class="ui-col ui-col-4  ">
+                        <div class="ui-form-item ui-border-b ui-form-item-pure">
+                        <input type="text" placeholder="" value="最高价" class="text-grey-300 float-left  m-l-1"style="margin-top:13px;width:60px">
+                            <span class="m-l-2 float-left">元/斤</span>
+                        </div>
+                    </div>
+                </div>
+				</div>
+                <div class="ui-form-item ui-border-b">
+                    <label>
+                        单位：
+                </label>
+                <input type="text" placeholder="">
+
+            </div>
+				
+
+            <div class="ui-form-item  ui-border-b" >
+                <label>
+                    联系人
+                </label>
+                <input type="text" value="">
+            </div>
+            <div class="ui-form-item ui-border-b">
+                <label>
+                    联系电话
+                </label>
+                <input type="text" value="">
+            </div>
+            <div class="ui-form-item ui-form-item-textarea ui-border-b p-b-3">
+                <label>
+                    详细描述：
+                </label>
+                <textarea placeholder="请填写产品描述、行情描述、货运方式、交易方式等、不少于10字、最多不超过200字" ></textarea>
+            </div>
+            <div class="ui-row ui-whitespace text-center m-t-1  "style="margin-top: 70px !important">
+                <li class="bg-deep-orange-600 ">
+                <input type="submit" class="bg-deep-orange-600 text-white p-y-1 ui-f16" value="确定发布">
+                </li>
+            </div>
+        </form>
+    </div>
+
+</section>
+  <script>
+        
+        var slider = new fz.Scroll('.ui-slider', {
+            role: 'slider',
+            indicator: true,
+            autoplay: false,
+            interval: 3000
+        });
+
+    
+    
+    
+        $('.ui-searchbar').click(function(){
+            $('.ui-searchbar-wrap').addClass('focus');
+            $('.ui-searchbar-input input').focus();
+        });
+        $('.ui-searchbar-cancel').click(function(){
+            $('.ui-searchbar-wrap').removeClass('focus');
+        });
+    </script>
+    <include file='cun:footer'/>

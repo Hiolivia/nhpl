@@ -1,0 +1,58 @@
+<include file='public:header_news'/> <div class="container">
+
+	<div class="blank-10"></div> 
+
+	<ul class="bread bg">
+		<li><a href="<{:U('index/index')}>" title="<{$CONFIG.site.sitename}>"><{$CONFIG.site.sitename}></a></li>
+		<li><a href="<{:U('seller/index')}>">商家新闻</a></li>
+		<if condition="$cate"><li><a title="<{$cate['cate_name']}>" href="<{:LinkTo('seller/index',array('cat'=>$cate['cate_id']))}>"><{$cate['cate_name']}></a></li></if>
+		<li><{$detail.title}></li>
+	</ul>
+
+	<div class="line">
+		<div class="x9">
+			<div class="news-detail">
+				<div class="detail">
+					<h1><{$detail.title}></h1>
+					<p class="text-center"><span><{$detail.create_time|date='Y-m-d',###}></span> <span>总浏览：<{$detail.views}></span></p>
+					<{$detail.details}>  
+				</div>
+			</div>
+			
+			<div class="blank-10"></div> 
+			
+			
+		
+			
+			
+		</div>
+		<div class="x3">
+			<div class="side-ad">
+				<ul>
+					<calldata mdl="Ad" where=" closed=0 AND site_id=49  and bg_date ELT '{$today}' AND end_date EGT '{$today}' " limit="0,5" cache="43200" order="orderby asc">
+					<li><a href="<{$item.link_url}>" target="_blank" > <img src="__ROOT__/attachs/<{$item.photo}>"></a></li>
+					</calldata>
+				</ul>
+			</div>
+			
+			<div class="blank"></div>
+			
+			<ul class="side-list-coupon">
+				<calldata mdl="Goods"  limit="0,10"  cache="21600" order="goods_id desc">
+					<li class="media media-x">
+						<a class="float-left" href="<{:U('mall/detail',array('goods_id'=>$item['goods_id']))}>" target="_blank">
+							<img class="radius" src="/attachs/<{$item.photo}>" alt="<{$item.title}>" />
+						</a>
+						<div class="media-body">
+							<strong><a href="<{:U('mall/detail',array('goods_id'=>$item['goods_id']))}>" target="_blank"><{$item.title}></a></strong>
+							<{$item.intro}>
+						</div>
+					</li>
+					</calldata>
+			</ul>
+		</div>
+	</div>
+
+</div>
+<div class="blank-10"></div>
+<include file='public:footer'/>  

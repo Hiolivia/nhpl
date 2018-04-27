@@ -1,0 +1,192 @@
+<php>$mobile_title = $detail['title'];</php>
+<include file='public:header'/>   
+<style>
+.top-fixed { background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0))!important;position: absolute;border: none;}
+</style>
+<script src="/static/default/wap/other/roll.js"></script>
+	<header class="top-fixed bg-yellow bg-inverse">
+		<div class="top-back">
+			<a class="top-addr inner-back" href="<{:U('mall/index')}>"></a>
+		</div>
+		<div class="top-title">
+			商品详情
+		</div>
+		<div class="top-share">
+			<a href="<{:U('mall/cart')}>" class="inner-cart" id="share-btn"></a>
+		</div>
+	</header>
+<div class="tuan-detail">
+<div class="line banner">	
+	<div id="focus" class="focus">
+		<div class="hd">
+			<ul></ul>
+		</div>
+		<div class="bd">
+			<ul>
+          		<li><a href="javascript:void(0);"><img src="<{:config_img($detail['photo'])}>" /></a></li>
+                <foreach  name="pics" item="item">
+                <li><a href="javascript:void(0);"><img src="<{:config_img($item['photo'])}>" /></a></li>
+                </foreach>
+			</ul>
+		</div>
+	</div>
+   </div>
+</div>             
+	<script type="text/javascript">
+		TouchSlide({ 
+			slideCell:"#focus",
+			titCell:".hd ul", 
+			mainCell:".bd ul", 
+			effect:"left", 
+			autoPlay:true,//自动播放
+			autoPage:true, //自动分页
+			switchLoad:"_src" 
+		});
+	</script>
+
+<div class="item-detail">
+			<div class="detail-row bb">
+				<div class="item-price">
+                   <h1><{:bao_msubstr($detail['title'],0,24)}></h1>
+					<p class="price">&yen; <{:round($detail['mall_price']/100,2)}> 
+                        <span class="pre-price-tips">
+                        <if condition="!empty($detail['is_agent_price'])">
+                         	<if condition="empty($MEMBER)">
+                                <span class="dt-icon">登录查看代理价？</span>
+                            <elseif condition="!empty($MEMBER['is_agent'])" />
+                                <span class="dt-icon">代理价：&yen;<{:round($detail['is_agent_price']/100,2)}>元</span>
+                            </if>
+                        </if>
+                            <span class="dt-icon"><{:round($detail['mall_price']/$detail['price']*10,1)}>折</span>
+                                <if condition="!empty($detail['use_integral'])">
+                                    <span class="dt-icon" style="background-color:#ff9204;">积分抵扣 &yen;<{:round($detail['use_integral']/100,2)}>元</span>
+                                </if>
+                                <if condition="!empty($detail['mobile_fan'])">
+                                    <span class="dt-icon" style="background-color: #F00;">下单立减 &yen;<{:round($detail['mobile_fan']/100,2)}>元</span>
+                                </if>
+                        </span>
+                    </p>  
+                                    
+                    <div class="x12 price-tip">
+                        <span class="text-gray text-small">原价：<del>&yen; <{:round($detail['price']/100,2)}></del>元</span>
+                        <span class="text-gray text-small margin-left">月售：<{$detail['sold_num']}>笔</span>
+                        <span class="text-gray text-small margin-left">库存：<{$detail['num']}> <{$detail['guige']}> </span>
+                    </div>
+
+				</div>
+			</div>
+            <if condition="!empty($is_vs)">
+			<div class="detail-row bb">
+				<div class="item-tips">
+					<eq name="detail.is_vs1" value="1"><em><span class="text-green"><i class="check-circle"></i></span>认证商家</em></eq>
+                    <eq name="detail.is_vs2" value="1"><em><span class="text-green"><i class="check-circle"></i></span>正品保证</em></eq>
+                    <eq name="detail.is_vs3" value="1"><em><span class="text-green"><i class="check-circle"></i></span>假一赔十</em></eq>
+                    <eq name="detail.is_vs4" value="1"><em><span class="text-green"><i class="check-circle"></i></span>当日送达</em></eq>
+                    <eq name="detail.is_vs6" value="1"><em><span class="text-green"><i class="check-circle"></i></span>货到付款</em></eq>
+                    <eq name="detail.is_vs5" value="1"><em><span class="text-green"><i class="check-circle"></i></span>免运费</em></eq>
+				</div>
+			</div>
+           </if>
+            
+		</div>
+       </div>
+		<div class="blank-10 bg"></div>
+        
+       <div class="tuan-detail2">
+       <div class="line status">
+			<div class="x6">
+				<span class="ui-starbar"><span style="width:<{:round($score*10,2)}>%"></span></span>
+			</div>
+			<div class="x6">
+				<span class="float-right"><a href="<{:U('mall/dianping',array('goods_id'=>$detail['goods_id']))}>"><{$pingnum}>人评价了该商品 </a><i class="icon-angle-right"></i></span>
+			</div>
+		</div> 
+       </div> 
+        
+		
+		<div class="blank-10 bg"></div>
+		
+        
+        <div class="item-intro">
+			<h2>购买须知</h2>
+			<div class="intro-bd"><{:cleanhtml($detail['instructions'])}></div>
+		</div>
+        <div class="blank-10 bg"></div>
+        
+		<div class="item-intro">
+			<h2>商品介绍</h2>
+            <div id="focus" class="global_focus intro-bd">
+             <{$detail.details}>   
+            </div>
+		</div>		
+		
+        <if condition="!empty($recom)"><!--如果看了又看不等于空-->
+          <div class="blank-10 bg"></div>
+            <div class="item-list item-intro" id="item-list">
+                <h2>看了又看</h2>
+                <ul>
+                <volist name="recom" id="item" key="index">
+                <li class="line">
+                    <a href="<{:U('mall/detail',array('goods_id'=>$item['goods_id']))}>">
+                    <div class="x3">
+                        <img src="<{:config_img($item['photo'])}>" />
+                    </div>
+                    <div class="x9">
+                        <h5><{$item.title}></h5>
+                        <p class="desc"><{:bao_Msubstr($item[instructions],0,60)}></p>
+                        <p class="info">
+                            <span>&yen;<{:round($item['price']/100,2)}></span><del>&yen;<{:round($item['mall_price']/100,2)}></del>
+                            <em>已售<{$item.sold_num}></em>
+                    </div>
+                    </a>
+                </li>
+                </volist>
+                </ul>
+            </div>
+        </if>
+        
+        
+        
+
+   <script>
+        $(document).ready(function () {
+            $(".cartadd2").click(function(){
+               var url = "<{:U('mall/cartadd2')}>";
+               var goods_id = "<{$detail.goods_id}>" ;
+               var shop_id = "<{$detail.shop_id}>";
+               $.post(url,{goods_id:goods_id,shop_id:shop_id},function(data){
+                   if(data.status == 'success'){
+                       layer.msg(data.msg, function () {
+                            setTimeout(function () {
+                                window.location.reload(true);
+                            }, 1000)
+                        });
+                   }else{
+                       layer.msg(data.msg);
+                   }
+               },'json')
+           })
+        });
+    </script>
+<div data-spm="action" class="item-action">
+    <div class="toggle-collect">
+        <a data-spm="dstore" href="<{:U('mall/cart')}>">
+        <span class="badge bg-red icon"><{$cartnum}></span>已购</a>
+    </div>
+    <div class="go-store">
+        <a data-spm="dstore" href="<{:U('shop/detail',array('shop_id'=>$detail['shop_id']))}>">
+        <span class="icon"></span>店铺</a>
+    </div>
+    <div id="bottom-cart-entrance" class="add-to-cart cartadd2">加入购物车</div>
+     <if condition="$detail['num'] elt 0"> 
+   	 <div class="buy-now ">缺货</div>
+     <else/>
+     <div class="buy-now"><a href="<{:U('mall/buy',array('goods_id'=>$detail['goods_id']))}>">立即购买</a></div>
+     </if>
+</div>
+
+
+	
+</body>
+</html>
+<include file="public:footer_share"/>

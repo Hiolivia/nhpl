@@ -1,0 +1,194 @@
+<include file='public:head_frozen'/>
+	<header class="ui-header header-search">
+		<a class="ui-icon-return" href="<{:U('index/index')}>"></a>
+		<div class="ui-searchbar-wrap bg-white">
+        <form class="ui-searchbar bg-grey-100" method="post" action="<{:U('village/index')}>">
+		        <i class="ui-icon-search"></i>
+		        <div class="ui-searchbar-text">搜索服务</div>
+		        <div class="ui-searchbar-input"><input value="" name="keyword" type="text" placeholder="<{$keyword|default='搜您周边村镇'}>" autocapitalize="off"></div>
+		        <i class="ui-icon-close"></i>
+		    </form>
+            <button class="ui-searchbar-cancel">取消</button>
+		</div>
+
+	</header>
+<style>
+.ui-row-flex2{display: table;width: 100%;background: rgba(0,0,0,.75);padding: 7px 0 0;text-align: left;}
+.ui-row-flex2 li{display: inline-block;width: 25%;text-align: center;margin: 6px 0;}
+.ui-row-flex2 li a{ color:#fff;}
+</style>
+
+
+        <script>
+            function bd_encrypt(gg_lat, gg_lon)   
+            {
+			    var x_pi = 3.14159265358979324 * 3000.0 / 180.0;  
+                var  x = gg_lon;
+                var y = gg_lat;  
+                var  z = Math.sqrt(x * x + y * y) + 0.00002 * Math.sin(y * x_pi);  
+                var  theta = Math.atan2(y, x) + 0.000003 * Math.cos(x * x_pi);  
+                var bd_lon = z * Math.cos(theta) + 0.0065;  
+                var  bd_lat = z * Math.sin(theta) + 0.006; 
+
+				var page =  "/mobile/near/dingwei/lat/"+bd_lat+"/lng/"+bd_lon+".html";
+				$.get(page, function (data) {
+					if(data == '1'){
+						$.get("/mobile/near/address.html", function (data) {
+							if(data!=''){
+								$("#local-addr").html(data);
+							}else{
+								$("#local-addr").html("暂时没获取到位置信息");
+							}
+						}, 'html');
+					}
+				}, 'html');
+            }
+            navigator.geolocation.getCurrentPosition(function (position) {
+                bd_encrypt(position.coords.latitude, position.coords.longitude);
+            });
+        </script>
+        
+        
+	<section class="ui-container">
+	
+		
+		<div class="ui-row ui-whitespace bg-white p-y-1">
+			<div class=""><i class="fa fa-local"></i> 
+            <i class="icon-map-marker"></i> <span id="local-addr"></span> (<a href="javascript:reset();" class="text-gray" id="local-reset">重新定位</a>)
+
+			</span>
+			</div>
+		</div>
+		<div class="index-banner">
+		<div class="ui-row ui-whitespace">
+			<div class="ui-col">
+            
+             <calldata mdl="Ad" where=" bg_date ELT '{$today}' AND end_date EGT '{$today}' AND city_id IN ({$city_ids}) AND closed=0 AND site_id=61" limit="0,1" cache="21600" order="orderby asc">
+            <a href="<{$item.link_url}>" title="<{$item.title}>" target="_blank"><img src="__ROOT__/attachs/<{$item.photo}>" draggable="false"></a>
+            </calldata>
+
+			</div>
+		</div>
+		<div class="ui-row ui-border-tb">
+			<ul id="smart-list" class="smart-list">
+			</ul>
+		</div>
+	</section>
+	
+   <!-- js --> 
+    
+    <div id="allmap" style="width:100%;height:100px; display:none"></div>
+	<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=qfbt1AS4SZZvfZvSXE0A1Mx2"></script>
+	<script>
+		$(document).ready(function () {
+			TouchSlide({ 
+				slideCell:"#focus",
+				titCell:".hd ul", //开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
+				mainCell:".bd", 
+				effect:"left", 
+				autoPlay:false,//自动播放
+				autoPage:true, //自动分页
+			});
+			reset();
+			$("#search-btn").click(function(){
+				if($(".top-search").css("display")=='block'){
+					$(".top-search").hide();
+					$(".top-title").show(200);
+				}
+				else{
+					$(".top-search").show();
+					$(".top-title").hide(200);
+				}
+			});
+			
+		});	
+   
+	function reset() {
+		var addr = $("#local-addr").html();
+		$("#local-addr").html("定位中……");
+			// 百度地图API功能
+	var map = new BMap.Map("allmap");
+	var point = new BMap.Point(116.331398,39.897445);
+	map.centerAndZoom(point,12);
+	var geolocation = new BMap.Geolocation();
+	geolocation.getCurrentPosition(function(r){
+		if(this.getStatus() == BMAP_STATUS_SUCCESS){
+			var mk = new BMap.Marker(r.point);
+			map.addOverlay(mk);
+			map.panTo(r.point);
+			lat=r.point.lat;
+			lng=r.point.lng;
+			getlat(lng,lat);
+			//alert('您的位置：'+lng+','+lat);
+			$("#addr").html(lng+','+lat);
+		}
+		else {
+			//alert('failed'+this.getStatus());
+		}        
+	},{enableHighAccuracy: true})
+		
+		}
+		function getlat(lng,lat){
+	//alert('开始获取');
+	var map = new BMap.Map("allmap"); 
+	var point = new BMap.Point(lng,lat);
+	map.centerAndZoom(point,12);
+	var geoc = new BMap.Geocoder();    
+	var pt = point;
+	geoc.getLocation(pt, function(rs){
+			var addComp = rs.addressComponents;
+			//alert(addComp.city + ", " + addComp.district + ", " + addComp.street + ", " + addComp.streetNumber);
+			$("#local-addr").html(addComp.city + addComp.district + addComp.street + addComp.streetNumber);
+		});        
+		}
+		 
+	</script>
+    
+    
+	
+	<script type="text/javascript">
+		loaddata('<{$nextpage}>', $("#smart-list"), true);
+
+	    $('.ui-searchbar').tap(function(){
+	        $('.ui-searchbar-wrap').addClass('focus');
+	        $('.ui-searchbar-input input').focus();
+	    });
+	    $('.ui-searchbar-cancel').tap(function(){
+	        $('.ui-searchbar-wrap').removeClass('focus');
+	    });
+
+		$("#filter-sec li").each(function(e){ 
+			$(this).click(function(){
+
+				if($(this).hasClass("on")){
+					$(this).parent().find("li").removeClass("on");
+					$(this).removeClass("on");
+					$("#filter-sec-list").hide();
+				}else{
+					$(this).parent().find("li").removeClass("on");
+					$(this).addClass("on");
+					$("#filter-sec-list").show();
+				}
+		
+				$("#filter-sec-list ul").each(function(i){
+					
+					if(e==i){
+						$(this).parent().find(".filter-sec-list").hide();
+						$(this).show();
+					}
+					else{
+						$(this).hide();
+					}
+					$(this).find("li").click(function(){
+						$(this).parent().find("li").removeClass("on");
+						$(this).addClass("on");
+					});
+				});
+
+			});
+		});
+
+
+
+	</script>   
+<include file='cun:footer'/> 

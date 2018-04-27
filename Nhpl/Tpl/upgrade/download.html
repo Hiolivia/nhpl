@@ -1,0 +1,33 @@
+<include  file='public:header'/>
+<div class="mainBt">
+    <ul>
+        <li class="li1">当前位置>
+        <li class="li2"> 升级检查</li>
+      
+    </ul>
+</div>
+<div class="main-jsgl main-sc">
+    <p class="attention"><span>注意：</span> 如果出现这个页面说明下面的文件都没有写入权限！</p>
+   <div class="mainScAdd">
+        <div class="tableBox">
+            <table  bordercolor="#dbdbdb" cellspacing="0" width="100%" border="1px"  style=" border-collapse: collapse; margin:0px; vertical-align:middle; background-color:#FFF;" >
+                <foreach name='files' item='file'>
+                <tr>
+                    <td class="lfTdBt">权限检查</td>
+                    <td class="rgTdBt" style="color: red;">
+                       <{$file}>需要写入权限
+                    </td>
+                </tr>
+                </foreach>
+                <tr>
+                     <td class="lfTdBt">操作：</td>
+                    <td class="rgTdBt">
+                        <a href="<{:U('upgrade/download',array('patch_name'=>$patch_name))}>">我已经修改了权限，再试一次</a>
+                        <code>升级前请做好备份</code>
+                    </td>
+                </tr>
+            </table>
+        </div>
+</div>
+<include  file='public:footer'/>  
+

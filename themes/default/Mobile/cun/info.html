@@ -1,0 +1,108 @@
+<include file='public:head_frozen'/>
+	<header class="ui-header ui-header-stable ui-header-red ui-border-b">
+		<a class="ui-icon-return" href="javascript:history.back();"></a>
+		<eq name="type" value="0"><h1>供需信息</h1></eq>
+		<eq name="type" value="1"><h1>供应信息</h1></eq>
+		<eq name="type" value="2"><h1>需求信息</h1></eq>
+	</header> 
+	<section class="ui-container ui-container-filter">
+		<form method="post" action="<{:U('cun/info')}>" id="search-sec" class="ui-searchbar-wrap ui-border-b" style="display:none;">
+			<div class="ui-searchbar ui-border-radius">
+				<i class="ui-icon-search"></i>
+				<div class="ui-searchbar-text">搜索喜欢的宝贝</div>
+				<div class="ui-searchbar-input"><input name="keyword" value="" type="search" placeholder="搜索喜欢的宝贝" /></div>
+			</div>
+			<button class="ui-searchbar-cancel">取消</button>
+		</form>
+		
+		<div id="filter-sec" class="filter-sec">
+			<ul class="ui-row-flex">
+				<li class="ui-col"><span>类别</span><i class="ui-icon-unfold"></i><b></b></li>
+				<li class="ui-col"><span>区域</span><i class="ui-icon-unfold"></i><b></b></li>
+				<li class="ui-col"><span>乡镇</span><i class="ui-icon-unfold"></i><b></b></li>
+				<li class="ui-col"><span>排序</span><i class="ui-icon-unfold"></i></li>
+			</ul>
+		</div>
+		<div id="filter-sec-list" class="filter-sec-list">
+			<ul class="ui-list ui-list-text ui-list-active ui-list-cover ui-border-b">
+				<li class="ui-border-t <if condition="$type eq 0">on</if>" ><a href="<{:U('cun/info',array('area'=>$area,'order'=>$order))}>">全部</a></li>
+				<li class="ui-border-t <if condition="$type eq 1">on</if>" ><a href="<{:U('cun/info',array('type'=>$type, 'area'=>$area,'order'=>$order))}>">供应</a></li>
+				<li class="ui-border-t <if condition="$type eq 2">on</if>" ><a href="<{:U('cun/info',array('type'=>$type, 'area'=>$area,'order'=>$order))}>">需求</a></li>
+			</ul>
+
+			<ul class="ui-list ui-list-text ui-list-active ui-list-cover ui-border-b">
+				<li class="ui-border-t <if condition="empty($area)">on</if>" ><a href="<{:U('cun/info',array('type'=>$type,'area'=>0,'order'=>$order))}>">全部</a></li>
+				<volist name="areas" id="item">
+				<li class="ui-border-t <if condition="$item['area_id'] eq $area">on</if>" ><a href="<{:U('cun/info',array('type'=>$type,'area'=>$item['area_id'],'order'=>$order))}>"><{$item.area_name}></a></li>
+				</volist>
+			</ul>
+		
+			<ul class="ui-list ui-list-text ui-list-active ui-list-cover ui-border-b">
+				<li class="ui-border-t <if condition='empty($town)'>on</if> "><a href="<{:LinkTo('cun/info',array('type'=>$type,'area'=>$area,'order'=>$order))}>">全部</a></li>
+				<foreach name="towns" item="var">
+				<li class="ui-border-t <if condition="$var.id eq $town">on</if>" ><a href="<{:LinkTo('cun/info',array('type'=>$type,'area'=>$area,'town'=>$var['id'],'order'=>$order))}>"><{$var.name}></a></li>
+				</foreach> 
+			</ul>
+			
+			<ul class="ui-list ui-list-text ui-list-active ui-list-cover ui-border-b">
+				<li class="ui-border-t"><a href="<{:U('cun/info',array('type'=>$type,'area'=>$area,'town'=>$var['town'],'order'=>'1'))}>">按照时间</a></li>
+				<li class="ui-border-t"><a href="<{:U('cun/info',array('type'=>$type,'area'=>$area,'town'=>$var['town'],'order'=>'2'))}>">按照人气</a></li>
+			</ul>
+
+		</div>
+		
+
+		<script type="text/javascript">
+			$('#show-search').tap(function(){
+				$('#search-sec').toggle();
+			
+			});
+			$('.ui-searchbar').tap(function(){
+				$('.ui-searchbar-wrap').addClass('focus');
+				$('.ui-searchbar-input input').focus();
+			});
+			$('.ui-searchbar-cancel').tap(function(){
+				$('.ui-searchbar-wrap').removeClass('focus');
+			});
+			
+			$("#filter-sec li").each(function(e){ 
+				$(this).click(function(){
+
+					if($(this).hasClass("on")){
+						$(this).parent().find("li").removeClass("on");
+						$(this).removeClass("on");
+						$("#filter-sec-list").hide();
+					}else{
+						$(this).parent().find("li").removeClass("on");
+						$(this).addClass("on");
+						$("#filter-sec-list").show();
+					}
+			
+					$("#filter-sec-list ul").each(function(i){
+						
+						if(e==i){
+							$(this).parent().find(".filter-sec-list").hide();
+							$(this).show();
+						}
+						else{
+							$(this).hide();
+						}
+						$(this).find("li").click(function(){
+							$(this).parent().find("li").removeClass("on");
+							$(this).addClass("on");
+						});
+					});
+
+				});
+			});
+		</script>
+		
+		<ul id="item-list" class="ui-list ui-border-b item-list"></ul>
+		
+		
+	</section>
+	<!-- js -->
+	<script>
+		loaddata('<{$nextpage}>', $("#item-list"), true);
+	</script>
+<include file='cun:footer'/> 

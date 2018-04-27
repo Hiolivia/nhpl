@@ -1,0 +1,13 @@
+<foreach name="list" item="item">
+	<a class="item" href="<{:U('booking/detail',array('shop_id'=>$item['shop_id']))}>">	
+		<img class="pic" src="<{:config_img($item['photo'])}>">	
+		<div class="des">	
+			<h5><{$item.shop_name}>	<span class="distance"><{$item.d}></span>	</h5>	
+			<div class="info">	
+                <span class="ui-starbar"><span style="width:<{:round($item['score']*20,1)}>%"></span></span>
+                <span class="shopyouhui"><{$item.comments}>评价</span>
+            </div>	
+			<span class="addr">	地址：<{$item['addr']}></span>
+		</div>	
+	</a>
+</foreach>

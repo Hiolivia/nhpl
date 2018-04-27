@@ -1,0 +1,94 @@
+<include  file='public:header'/>
+<style>.lfTdBt {width: 200px;}</style>
+<div class="mainBt">
+    <ul>
+        <li class="li1">设置</li>
+        <li class="li2">站点功能</li>
+        <li class="li2">商城设置</li>
+    </ul>
+</div>
+<div class="main-jsgl main-sc">
+    <p class="attention"><span>注意：</span>一些基本是商城设置这里修改</p>
+    <form  target="baocms_frm" action="<{:U('setting/goods')}>" method="post">
+        <div class="tableBox">
+            <table  bordercolor="#dbdbdb" cellspacing="0" width="100%" border="1px"  style=" border-collapse: collapse; margin:0px; vertical-align:middle; background-color:#FFF;" >
+
+<tr>
+    <td class="lfTdBt">商城后台显示成本价：</td>
+    <td class="rgTdBt">
+    <label><input type="radio" name="data[cost_price]" <eq name="CONFIG.goods.cost_price" value="1">checked="checked"</eq> value="1"  />开启显示</label>
+    <label><input type="radio" name="data[cost_price]"  <eq name="CONFIG.goods.cost_price" value="0">checked="checked"</eq>  value="0"  />关闭显示</label>
+    <code>开启后商品可以编辑成本价，但是前台不显示以及暂时没有其他逻辑</code>
+    </td>
+</tr> 
+
+<tr>
+    <td class="lfTdBt">商城后台显示出厂价：</td>
+    <td class="rgTdBt">
+    <label><input type="radio" name="data[factory_price]" <eq name="CONFIG.goods.factory_price" value="1">checked="checked"</eq> value="1"  />开启显示</label>
+    <label><input type="radio" name="data[factory_price]"  <eq name="CONFIG.goods.factory_price" value="0">checked="checked"</eq>  value="0"  />关闭显示</label>
+    <code>出厂价，同上</code>
+    </td>
+</tr>   
+
+<tr>
+    <td class="lfTdBt">商城后台显示批发价：</td>
+    <td class="rgTdBt">
+    <label><input type="radio" name="data[wholesale_price]" <eq name="CONFIG.goods.wholesale_price" value="1">checked="checked"</eq> value="1"  />开启显示</label>
+    <label><input type="radio" name="data[wholesale_price]"  <eq name="CONFIG.goods.wholesale_price" value="0">checked="checked"</eq>  value="0"  />关闭显示</label>
+    <code>批发价，同上</code>
+    </td>
+</tr>  
+
+<tr>
+    <td class="lfTdBt">商城后台显示代理价：</td>
+    <td class="rgTdBt">
+    <label><input type="radio" name="data[agent_price]" <eq name="CONFIG.goods.agent_price" value="1">checked="checked"</eq> value="1"  />开启显示</label>
+    <label><input type="radio" name="data[agent_price]"  <eq name="CONFIG.goods.agent_price" value="0">checked="checked"</eq>  value="0"  />关闭显示</label>
+    <code>代理价，同上</code>
+    </td>
+</tr> 
+
+<tr>
+    <td class="lfTdBt">商城后台显示市场价：</td>
+    <td class="rgTdBt">
+    <label><input type="radio" name="data[market_price]" <eq name="CONFIG.goods.market_price" value="1">checked="checked"</eq> value="1"  />开启显示</label>
+    <label><input type="radio" name="data[market_price]"  <eq name="CONFIG.goods.market_price" value="0">checked="checked"</eq>  value="0"  />关闭显示</label>
+    <code>市场价，同上</code>
+    </td>
+</tr>     
+
+<tr>
+    <td class="lfTdBt">商城后台显示零售价：</td>
+    <td class="rgTdBt">
+    <label><input type="radio" name="data[retail_price]" <eq name="CONFIG.goods.retail_price" value="1">checked="checked"</eq> value="1"  />开启显示</label>
+    <label><input type="radio" name="data[retail_price]"  <eq name="CONFIG.goods.retail_price" value="0">checked="checked"</eq>  value="0"  />关闭显示</label>
+    <code>零售价，同上</code>
+    </td>
+</tr>   
+
+<tr>
+    <td class="lfTdBt">商城后台显示毛利率：</td>
+    <td class="rgTdBt">
+    <label><input type="radio" name="data[gross_margin]" <eq name="CONFIG.goods.gross_margin" value="1">checked="checked"</eq> value="1"  />开启显示</label>
+    <label><input type="radio" name="data[gross_margin]"  <eq name="CONFIG.goods.gross_margin" value="0">checked="checked"</eq>  value="0"  />关闭显示</label>
+    <code>毛利率，同上</code>
+    </td>
+</tr> 
+
+
+<tr>
+    <td class="lfTdBt">商城后台显示利润率：</td>
+    <td class="rgTdBt">
+    <label><input type="radio" name="data[profit_margin]" <eq name="CONFIG.goods.profit_margin" value="1">checked="checked"</eq> value="1"  />开启显示</label>
+    <label><input type="radio" name="data[profit_margin]"  <eq name="CONFIG.goods.profit_margin" value="0">checked="checked"</eq>  value="0"  />关闭显示</label>
+    <code>利润率，同上</code>
+    </td>
+</tr>                 
+
+       </table>
+        </div>
+        <div class="smtQr"><input type="submit" value="确认保存" class="smtQrIpt" /></div>
+    </form>
+</div>
+<include  file='public:footer'/>       

@@ -1,0 +1,24 @@
+<volist name="list" id="item">
+	<li class="reply-item">
+		<div class="line">
+			<div class="x2">
+				<span class="avatar">
+					   <!--手机贴吧头像调用-->
+            <?php if(strstr($users[$item['user_id']]['face'],"http")){ ?>
+            <img  class="radius"  src="<{$users[$item['user_id']]['face']|default='default.jpg'}>" />
+            <?php }else{ ?>
+            <img  class="radius"  src="__ROOT__/attachs/<{$users[$item['user_id']]['face']|default='default.jpg'}>" />
+            <?php }?>
+				</span>
+			</div>
+			<div class="x10">
+				<div class="content">
+					<em><{$users[$item['user_id']]['nickname']}> :</em> <{$item['details']}>
+					
+						<span class="time"><{$item.create_time|date="Y-m-d",###}></span>
+					
+				</div>
+			</div>
+		</div>
+	</li>
+</volist>

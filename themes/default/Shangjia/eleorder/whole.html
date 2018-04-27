@@ -1,0 +1,85 @@
+<include  file='public:header'/>
+<script src="__PUBLIC__/js/my97/WdatePicker.js"></script>
+<div class="sjgl_lead">
+    <ul>
+        <li><a href="#">其他</a> > <a href="">外卖设置</a> > <a>确认订单</a></li>
+    </ul>
+</div>
+<div class="tuan_content">
+    <form method="post" action="<{:U('eleorder/whole')}>">
+    <div class="radius5 tuan_top">
+        <div class="tuan_top_t">
+            开始时间：<input type="text" class="radius3 tuan_topser"  name="bg_date" value="<{$bg_date|default=''}>" onfocus="WdatePicker({dateFmt: 'yyyy-MM-dd HH:mm:ss'});"/>
+            结束时间：<input type="text" class="radius3 tuan_topser"  name="end_date" value="<{$end_date|default=''}>" onfocus="WdatePicker({dateFmt: 'yyyy-MM-dd HH:mm:ss'});"/>
+            订单编号：<input type="text" name="keyword" value="<{$keyword}>" class="radius3 tuan_topser" />
+            <input type="submit" style="margin-left:10px;" class="radius3 sjgl_an tuan_topbt" value="搜 索"/>
+        </div>
+    </div>
+    </form>
+    <div class="tuanfabu_tab">
+        <ul>
+        
+            <li class="tuanfabu_tabli tabli_change on"><a href="<{:U('eleorder/whole')}>">全部订单</a></li>
+            <li class="tuanfabu_tabli tabli_change"><a href="<{:U('eleorder/wait')}>">确认订单</a></li>
+            <li class="tuanfabu_tabli tabli_change "><a href="<{:U('eleorder/count')}>">配送员订单统计</a></li>
+            
+          
+        </ul>
+    </div> 
+    <table class="tuan_table" width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr style="background-color:#eee;">
+            <td>订单ID</td>
+            <td>总价值（含送餐费）</td>
+            <td>结算价格</td>
+            <td>数量</td>
+            <td>客户地址</td>  
+            <td>状态</td>
+            <td>菜品</td>
+            <td>下单时间</td>
+            <td>留言</td>
+        </tr>
+       
+        <foreach name="list" item="var">
+         <php>
+            $is_pei = D('Shop') -> where('shop_id ='.$var['shop_id']) -> getField('is_pei');
+            $users = D('Users') -> find($var['user_id']);
+        </php>
+        
+            <tr>
+                <td><{$var.order_id}></td>
+                <td><{:round($var['total_price']/100,2)}></td>
+                <td><eq name="var.is_pay" value="1"><{:round($var['total_price']/100,2)}><else />餐到付款</eq></td>
+                <td><{$var.num}></td>
+                <td>
+                <if condition="!empty($var['addr_id'])">
+                    <{$areas[$addrs[$var['addr_id']]['area_id']]['area_name']}>、
+                    <{$business[$addrs[$var['addr_id']]['business_id']]['business_name']}>、
+                    <{$addrs[$var['addr_id']]['addr']}>
+                    <{$addrs[$var['addr_id']]['name']}>
+                    <{$addrs[$var['addr_id']]['mobile']}>
+                <else/>
+                    <a style="color:#999"><eq name="var.status" value="0">【未付款】用户手机：<{$users['mobile']}></eq></a>
+                </if>
+                </td>
+                <td>
+                	<span style="color:#FF0000;"><{$eletypes[$var['status']]}></span>
+                </td>
+                <td>
+                <foreach name="goods" item="good">
+                    <if condition="$good['order_id'] eq $var['order_id']">    
+                        <p>
+                            <{$products[$good['product_id']]['product_name']}>：<{$good.num}>份
+                        </p>
+                    </if>
+                </foreach>
+                </td>
+                <td><{$var.create_time|date='Y-m-d H:i:s',###}></td>
+                <td>
+                    <{$var['message']}> 
+                </td>
+            </tr>
+        </foreach>
+    </table>
+    <{$page}>
+</div>
+<include  file='public:footer'/>

@@ -1,0 +1,45 @@
+<include  file='public:header'/>
+<div class="mainBt">
+    <ul>
+        <li class="li1">当前位置>
+        <li class="li2"> 升级检查</li>
+      
+    </ul>
+</div>
+<div class="main-jsgl main-sc">
+    <p class="attention"><span>注意：</span> 需要提前备份好程序，以免升级的时候程序执行时间超时导致了系统出错！</p>
+   <div class="mainScAdd">
+        <div class="tableBox">
+            <table  bordercolor="#dbdbdb" cellspacing="0" width="100%" border="1px"  style=" border-collapse: collapse; margin:0px; vertical-align:middle; background-color:#FFF;" >
+                <tr>
+                    <td class="lfTdBt">补丁名称：</td>
+                    <td class="rgTdBt" ><{$data.patch_name}></td>
+                </tr>
+                <tr>
+                    <td class="lfTdBt">版本：</td>
+                    <td class="rgTdBt">
+                        <{$data.version}>
+                    </td>
+                </tr><tr>
+                    <td class="lfTdBt">发布时间：</td>
+                    <td class="rgTdBt">
+                        <{:date('Y-m-d H:i:s',$data['dateline'])}>
+                    </td>
+                </tr><tr>
+                    <td class="lfTdBt">说明：</td>
+                    <td class="rgTdBt">
+                        <{:nl2br($data['content'])}>
+                    </td>
+                </tr>
+                <tr>
+                     <td class="lfTdBt">操作：</td>
+                    <td class="rgTdBt">
+                        <a href="<{:U('upgrade/download',array('patch_id'=>$data['patch_id']))}>">立刻升级</a>
+                        <code>升级前请做好备份</code>
+                    </td>
+                </tr>
+            </table>
+        </div>
+</div>
+<include  file='public:footer'/>  
+

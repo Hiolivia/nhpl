@@ -1,0 +1,79 @@
+<include  file='public:header'/>
+<div class="sjgl_lead">
+    <ul>
+        <li><a href="#">商家管理</a> > <a href="">积分商城</a> > <a>对焊列表</a></li>
+    </ul>
+</div>
+<div class="tuan_content">
+
+	<form method="post" action="<{:U('integral/order')}>">
+    <div class="radius5 tuan_top">
+        <div class="tuan_top_t">
+            <div class="left tuan_topser_l">
+            开始时间：<input type="text" class="radius3 seleFl"  placeholder="输入开始时间" name="bg_date" value="<{$bg_date|default=''}>" onfocus="WdatePicker({dateFmt: 'yyyy-MM-dd HH:mm:ss'});"/>
+            结束时间：<input type="text" class="radius3 seleFl" placeholder="输入结束时间"  name="end_date" value="<{$end_date|default=''}>" onfocus="WdatePicker({dateFmt: 'yyyy-MM-dd HH:mm:ss'});"/>
+            订单编号：<input type="text" name="keyword" value="<{$keyword}>" placeholder="输入关键字"   class="radius3 seleFl" />
+            状态：<select name="audit" class="seleFl w80">
+                       <option value="999">请选择状态</option>
+                       <option <eq name="audit" value="-1">selected="selected"</eq>  value="-1">等待审核</option>
+                       <option <eq name="audit" value="1">selected="selected"</eq>  value="1">正常</option>
+                </select>
+            <input type="submit" style="margin-left:10px;" class="radius3 sjgl_an tuan_topbt" value="搜 索"/>
+            </div>
+        </div>
+    </div>
+    </form>
+    
+    <div class="tuanfabu_tab">
+        <ul>
+            <li class="tuanfabu_tabli"><a href="<{:U('integral/index')}>">积分商品管理</a></li>
+            <li class="tuanfabu_tabli on "><a href="<{:U('integral/order')}>">积分兑换列表</a></li>
+        </ul>
+    </div>
+    <table class="tuan_table" width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr style="background-color:#eee;">
+             <td class="w50">ID</td>
+             <td>用户</td>
+             <td>地址</td>
+             <td>商品</td>
+             <td>商家</td>
+             <td>兑换时间</td>
+             <td>兑换IP</td>
+             <td>状态</td>
+        </tr>
+        <foreach name="list" item="var">
+        <tr>
+            <tr>
+                <td><{$var.exchange_id}></td>
+                <td><{$users[$var['user_id']]['account']}>(UID:<{$var.user_id}> )</td>
+                <td>
+                   <{$areas[$addrs[$var['addr_id']]['area_id']]['area_name']}>
+                   <{$business[$addrs[$var['addr_id']]['business_id']]['business_name']}>
+                   <{$addrs[$var['addr_id']]['addr']}>
+                   <br />
+                   <{$addrs[$var['addr_id']]['name']}>
+                   <br />
+                   <{$addrs[$var['addr_id']]['mobile']}>
+                </td>
+                <td><{$goods[$var['goods_id']]['title']}></td>
+                <td>
+                    <{$shops[$var['shop_id']]['shop_name']}>
+                    <br/>
+                    <{$shops[$var['shop_id']]['tel']}>
+                    <br />
+                    <{$shops[$var['shop_id']]['contact']}>
+                </td>
+                <td><{$var.create_time|date="Y-m-d H:i:s",###}></td>
+                <td><{$var.create_ip}></td>
+                <td>                    
+                	<eq name="var.audit" value="0"><a  mini="confirm"  href="<{:U('integral/audit',array('exchange_id'=>$var['exchange_id']))}>">审核</a></eq>
+                </td>
+            </tr>
+        </tr>
+        </foreach>
+    </table>
+    <div class="paging">
+        <{$page}>
+    </div>
+</div>
+<include  file='public:footer'/>

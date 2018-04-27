@@ -1,0 +1,31 @@
+<foreach name="list" item="item">
+<li class="list-item" onclick="location='<{:U('village/detail',array('village_id'=>$item['village_id']))}>'">
+	<div class="item-info ui-row">
+		<div class="ui-col ui-col-80">
+			<div class="info-img" href="<{:U('village/detail',array('village_id'=>$item['village_id']))}>">
+                <if condition="!empty($item['pic'])">
+				<img src="__ROOT__/attachs/<{$item['pic']|default='default.jpg'}>"/>
+                <else/>
+                <img src="__ROOT__/attachs/default.jpg"/>
+                </if>
+			</div>
+			<div class="info-des">
+				<h4 class="ui-nowrap-flex"><a href="<{:U('village/detail',array('village_id'=>$item['village_id']))}>"><{$item.name}></a></h4>
+				<p><span>
+                <if condition="!empty($item['tel'])">
+                电话：<{$item.tel}>
+                <else/>
+                暂无联系方式
+                </if>
+                
+                </span></p>
+				<p class="ui-nowrap-flex"><{$item.addr}></p>
+			</div>
+		</div>
+		<div class="ui-col ui-col-20">
+			<i class="fa fa-location"></i> <{$item.d}>
+		</div>
+	</div>
+	
+</li>
+</foreach>

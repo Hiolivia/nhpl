@@ -1,0 +1,60 @@
+<include  file='public:header'/>
+<div class="mainBt">
+    <ul>
+        <li class="li1">手机</li>
+        <li class="li2">手机功能</li>
+        <li class="li2 li3">功能列表</li>
+    </ul>
+</div>
+<div class="main-jsgl main-sc">
+    <p class="attention"><span>注意：功能的链接是默认的，最好不要随意改动</span> </p>
+    <div class="jsglNr">
+        <div class="selectNr" style="margin-top: 0px; border-top:none;">
+            <div class="right">
+               <{:BA('function/create','','添加功能','load','remberBtn',600,400)}>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <form  target="baocms_frm" method="post">
+            <div class="tableBox">
+                <table bordercolor="#dbdbdb" cellspacing="0" width="100%" border="1px"  style=" border-collapse: collapse; margin:0px; vertical-align:middle; background-color:#FFF;"  >
+                    <tr class="jq_tr">
+                        <td class="w50"><input type="checkbox" class="checkAll" rel="func_id" /></td>
+                        <td class="w50">编号</td>  
+                        <td>标题</td>
+                        <td>图标</td>
+                        <td>链接</td>
+                        <td>是否首页显示</td>
+                        <td>排序</td>
+                        <td class="w300">操作</td>
+                    <foreach name="list" item="var">
+                        <tr>
+                            <td><input class="child_func_id" type="checkbox" name="func_id[]" value="<{$var.func_id}>" /> </td>
+                            <td><{$var.func_id}></td>
+                            <td><{$var.title}></td>
+                            <td><img src="__ROOT__/attachs/<{$var.photo|default='default.jpg'}>" width="40" height="40"/></td>
+                            <td><{$var.url}></td>
+                            <td><eq name="var.is_index" value="1"><span style="color:green">显示</span><else/><span style="color:red">不显示</span></eq></td>
+                            <td><{$var.orderby}></td>
+                        <td>
+                            <{:BA('function/edit',array("func_id"=>$var["func_id"]),'编辑','load','remberBtn',600,400)}>
+                            <if condition="$var.is_index eq 1"><{:BA('function/close',array("func_id"=>$var["func_id"]),'关闭','act','remberBtn')}><else/><{:BA('function/open',array("func_id"=>$var["func_id"]),'开启','act','remberBtn')}></if>
+                            <{:BA('function/delete',array("func_id"=>$var["func_id"]),'删除','act','remberBtn')}>
+                        </td>
+                        </tr>
+                    </foreach>
+                </table>
+                <{$page}>
+            </div>
+          <div class="selectNr" style="margin-bottom: 0px; border-bottom: none;">
+                <div class="left">
+                    <{:BA('function/delete','','批量删除','list','a2')}>
+                    <{:BA('function/close','','批量关闭','list','a2')}>
+                    <{:BA('function/open','','批量开启','list','list')}>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<include  file='public:footer'/>  
+

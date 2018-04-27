@@ -1,0 +1,134 @@
+﻿<include file='public:head_frozen'/>
+<header class="ui-header ui-header-stable ui-header-red ui-border-b">
+	<a class="ui-icon-return" href="javascript:history.back();"></a>
+	<h1>需求发布</h1>
+	<button type="button" id="submit-btn" class="ui-btn">发布</button>
+</header> 
+<section class="ui-container">
+    <div class="ui-form ui-border-t">
+        <form id="offer-form"  target="niu-frame" method="post" action="<{:U('cun/need')}>">
+			<input name="ssid" type="hidden" value="<{$ssid}>" />
+			<div class="ui-form-item ui-border-b">
+				<label>所在区县：</label>
+				<div class="ui-select">
+					<select id="area_id" name="data[area]" >
+						<option value="">请选择</option>
+						<foreach name="areas" item="var">
+						<option value="<{$var.area_id}>"><{$var.area_name}></option>
+						</foreach>
+					</select>
+				</div>
+			</div>
+		
+			<div class="ui-form-item ui-border-b">
+				<label>所在乡镇：</label>
+				<div class="ui-select">
+					<select id="town_id" name="data[town]" >
+						<option value="">请选择</option>
+					</select>
+				</div>
+			</div>
+			
+			<div class="ui-form-item ui-border-b">
+				<label>所在村社：</label>
+				<div class="ui-select">
+					<select id="cun_id" name="data[cun]" >
+						<option value="">请选择</option>
+					</select>
+				</div>
+			</div>
+
+            <div class="ui-form-item ui-border-b">
+                <label>
+                    求购产品：
+                </label>
+                <input name="data[title]" type="text" placeholder="请输入求购产品名" />
+            </div>
+			
+            <div class="ui-form-item ui-border-b">
+                <label>
+                    需求数量：
+                </label>
+                <input name="data[total]" type="text" placeholder="请输入数字" />
+            </div>
+			
+            <div class="ui-form-item ui-border-b">
+                <label>
+                    产品单价：
+                </label>
+                <input name="data[price]" type="text" placeholder="单位：人民币元 ，面议填写零" />
+            </div>
+			
+            <div class="ui-form-item ui-border-b">
+                <label>
+                    产品单位：
+                </label>
+                <input name="data[unit]" type="text" placeholder="如：件、吨、斤" />
+            </div>
+			
+            <div class="ui-form-item ui-form-item-textarea ui-border-b p-b-3">
+                <label>
+                    其他要求：
+                </label>
+                <textarea name="data[content]" placeholder="更多要求填写到这里，不少于10字、最多不超过200字" ></textarea>
+            </div>
+            <div class="ui-form-item  ui-border-b" >
+                <label>
+                    联系称呼：
+                </label>
+                <input name="data[name]" type="text" placeholder="联系人姓名或称呼" />
+            </div>
+            <div class="ui-form-item ui-border-b">
+                <label>
+                    联系手机：
+                </label>
+                 <input name="data[mobile]" type="text" placeholder="联系人的手机号码" />
+            </div>
+			
+
+			<div class="ui-form-item ui-border-b">
+				<label>结束日期：</label>
+				<input id="end_time" name="data[end_time]" placeholder="选择日期" readonly />
+			</div>
+			<link rel="stylesheet" href="/public/wap/css/mdater.css">
+			<script src="/public/wap/js/mdater.js"></script>
+			<script type="text/javascript">
+				$('#end_time').mdater();
+			</script>	
+
+        </form>
+    </div>
+</section>
+
+<script type="text/javascript">
+
+	
+	$("#submit-btn").click(function(){
+		$("#offer-form").submit();
+	});
+	
+	$("#area_id").change(function(){
+		var url = '<{:U("cun/stown",array("area_id"=>"0000"))}>';
+		if($(this).val() > 0){
+			var url = url.replace('0000',$(this).val());
+			$.get(url,function(data){
+				$("#town_id").html(data);
+			},'html');
+		}
+	});
+	
+	$("#town_id").change(function(){
+		var url = '<{:U("cun/scun",array("id"=>"0000"))}>';
+		if($(this).val() > 0){
+			var url = url.replace('0000',$(this).val());
+			$.get(url,function(data){
+				$("#cun_id").html(data);
+			},'html');
+		}
+	});
+	
+	
+	
+</script>
+</body>
+</html>

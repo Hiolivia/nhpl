@@ -1,0 +1,3 @@
+<?php
+//000000086400a:2:{i:1;a:14:{s:7:"city_id";s:1:"1";s:4:"name";s:6:"重庆";s:5:"photo";s:28:"2016/08/15/57b10fbe2938a.png";s:6:"pinyin";s:9:"chongqing";s:7:"is_open";s:1:"1";s:6:"domain";s:1:"0";s:3:"lng";s:10:"106.556671";s:3:"lat";s:9:"29.571201";s:7:"orderby";s:1:"1";s:12:"first_letter";s:1:"C";s:5:"theme";s:7:"default";s:6:"closed";s:1:"0";s:11:"create_time";s:0:"";s:9:"create_ip";s:1:"0";}i:2;a:14:{s:7:"city_id";s:1:"2";s:4:"name";s:6:"郑州";s:5:"photo";s:28:"2016/09/04/57cbceb632cc0.jpg";s:6:"pinyin";s:2:"zz";s:7:"is_open";s:1:"1";s:6:"domain";s:1:"1";s:3:"lng";s:10:"118.882932";s:3:"lat";s:9:"42.277943";s:7:"orderby";s:3:"100";s:12:"first_letter";s:1:"z";s:5:"theme";s:6:"baocms";s:6:"closed";s:1:"0";s:11:"create_time";s:0:"";s:9:"create_ip";s:1:"0";}}
+?>

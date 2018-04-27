@@ -1,0 +1,120 @@
+<include  file='blog:header'/>    
+<!--中间-->
+<div id="conter">
+    <!--个人浏览者-->
+    <div class="gr_top">
+        <div class="gr_top_top"></div>
+        <div class="gr_top_mid">
+            <div class="gr_top_mid_img">
+                <img src="__ROOT__/attachs/<{$user.face|default='default.jpg'}>" width="120" height="120" /> 
+            </div>
+            <div class="gr_top_mid_mid">
+                <dl>
+                    <dt><{$user.nickname}></dt>
+                    <dd><div class="ico"></div>积分： <{$user.integral}></dd>
+                    <dd><div class="ico01"></div>声望值： <{$user.prestige}></dd>
+                    <dd><div class="ico02"></div>会员等级：<{$ranks[$user['rank_id']]['rank_name']}></dd>
+                    <dd><div class="ico03"></div>注册时间：<{$user.reg_time|date='Y-m-d',###}></dd>
+                </dl>
+            </div>
+            <!--导航-->
+            <div class="gr_top_mid_right" id="menu">
+                <ul>
+                    <li><a href="#menu" class="active"><h1></h1>首页</a></li>
+                    <li><a href="#dianping"><h2></h2>点评</a></li>
+                    <li><a href="#sc"><h3></h3>收藏</a></li>
+                    <li><a href="#photo"><h4></h4>图片</a></li>
+                </ul>
+            </div>
+            <!--导航结束-->
+        </div>
+        <div class="gr_top_bot"></div>
+    </div>
+    <!---->
+    <div class="gr_bot">
+        <!--左边-->
+        <div class="gr_bot_left">           
+            <dl>
+                <dt><span>最近访客</span></dt>
+                <ul>
+                    <foreach name="visitors.users" item="item">
+                    <li>
+                        <a target="_blank" href="<{:U('blog/index',array('user_id'=>$item['user_id']))}>"><img width="60" height="60" src="__ROOT__/attachs/<{$item.face|default='default.jpg'}>" /></a>
+                        <p> <a target="_blank" href="<{:U('blog/index',array('user_id'=>$item['user_id']))}>"><{:msubstr($item['nickname'],0,3)}></a></p>
+                    </li>
+                    </foreach>
+                </ul>
+            </dl>           
+        </div>
+        <!--右边-->
+        <div class="gr_bot_right">
+            <div id="dianping" class="gr_bot_right_nav">点评</div>
+            <div class="gr_bot_right_font">
+                <!--点评-->
+                <div class="dp">
+                    <ul>
+                        <foreach name="dianping" item="item">
+                        <li>
+                            <div class="dp_xx">
+                                <h1><{$shops[$item['shop_id']]['shop_name']}></h1><div style="float: left; margin-left: 5px;" class="jq_star_show" rel="<{$item['score']*10}>"></div>&nbsp;&nbsp;&nbsp;&nbsp;人均：<{$item.cost}>
+                            </div>
+                            <div class="dp_font">&nbsp;&nbsp;&nbsp;&nbsp;<{$item.contents}></div>
+                            <div class="date"><{$item.create_time|date='Y-m-d H:i:s',###}></div>
+                            <div class="right"><a target="_blank" title="<{$shops[$item['shop_id']]['shop_name']}>" href="<{:U('shop/detail',array('shop_id'=>$item['shop_id']))}>">我也要点评</a></div>
+                        </li>
+                        </foreach>
+                    </ul>
+                    <div class="clear"></div>
+              
+                </div>
+            </div>
+            <!--收藏-->
+            <div class="sc">
+                <div id="sc" class="sc_nav"><h1></h1>收藏</div>
+                <div class="sc_font">
+                    <ul>
+                        <foreach name="favorites" item="item">
+                        <li>
+                            <h1><a target="_blank" title="<{$shops[$item['shop_id']]['shop_name']}>" href="<{:U('shop/detail',array('shop_id'=>$item['shop_id']))}>"><{$shops[$item['shop_id']]['shop_name']}></a></h1>
+                            <dl>
+                                <dt class="jq_star_show" rel="<{$shops[$item['shop_id']]['score']}>"><img src="__TMPL__statics/images/xx.jpg" width="91" height="16" /></dt>
+                                <dt><{$shops[$item['shop_id']]['tel']}></dt>
+                                <dt><{$shops[$item['shop_id']]['business_time']}></dt>
+                            </dl>
+                        </li>
+                       </foreach>
+                    </ul>
+                </div>
+                <div class="clear"></div>
+              
+            </div>
+            <!--图片-->
+            <div class="tp_img" id="photo">
+                <div class="tp_img_nav"><h1></h1>图片</div>
+                <div class="tp_img_font">
+                    <script language="javascript" type="text/javascript" src="__TMPL__statics/js/superslide.js"></script>
+                    <div class="mr_frbox">
+                        <img class="mr_frBtnL prev" src="__TMPL__statics/images/mfrL.jpg" width="23" height="130" />
+                        <div class="mr_frUl">
+                            <ul>
+                                <foreach name="pics" item="item">
+                                    <li><a target="_blank" href="<{:U('shop/detail',array('shop_id'=>$item['shop_id']))}>" ><img src="__ROOT__/attachs/<{$item.pic|default='default.jpg'}>" width="195" height="129" /></a></li>
+                                </foreach>
+                            </ul>
+                        </div>
+                        <img class="mr_frBtnR next" src="__TMPL__statics/images/mfrR.jpg" width="23" height="130" />
+                    </div>
+                    <script language="javascript">
+                        $(".mr_frUl ul li img").hover(function(){$(this).css("border-color","#A0C0EB");},function(){$(this).css("border-color","#d8d8d8")});
+                        jQuery(".mr_frbox").slide({titCell:"",mainCell:".mr_frUl ul",autoPage:true,effect:"leftLoop",autoPlay:true,vis:4});
+                    </script>
+                </div> 
+              
+            </div>
+            <!--图片结束-->
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
+
+<include  file='member:footer'/>    

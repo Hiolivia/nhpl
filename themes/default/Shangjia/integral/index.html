@@ -1,0 +1,62 @@
+<include  file='public:header'/>
+<div class="sjgl_lead">
+    <ul>
+        <li><a href="#">商家管理</a> > <a href="">积分兑换</a> > <a>积分兑换商品列表</a></li>
+    </ul>
+</div>
+<div class="tuan_content">
+	<form method="post" action="<{:U('integral/index')}>">
+    <div class="radius5 tuan_top">
+        <div class="tuan_top_t">
+            <div class="left tuan_topser_l">关键字：<input type="text" class="radius3 tuan_topser"  name="keyword" value="<{$keyword}>"/>
+            <input type="submit" style="margin-left:10px;" class="radius3 sjgl_an tuan_topbt" value="搜 索"/></div>
+            <div class="right tuan_topfb_r"><a class="radius3 sjgl_an tuan_topbt" target="main_frm" href="<{:U('integral/create')}>">发布积分商城+</a></div>
+        </div>
+    </div>
+    </form>
+    <div class="tuanfabu_tab">
+        <ul>
+            <li class="tuanfabu_tabli on"><a href="<{:U('integral/index')}>">积分商品管理</a></li>
+            <li class="tuanfabu_tabli "><a href="<{:U('integral/order')}>">积分兑换列表</a></li>
+        </ul>
+    </div>
+    <table class="tuan_table" width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr style="background-color:#eee;">
+            <td class="w50">ID</td>
+            <td>产品名称</td>
+            <td>产品图片</td>
+            <td>兑换积分</td>
+            <td>市场价格</td>
+            <td>库存数量</td>
+            <td>兑换数量</td>
+            <td>创建时间</td>
+            <td>创建IP</td>
+            <td>是否审核</td>
+            <td>操作</td>
+        </tr>
+        <foreach name="list" item="var">
+        <tr>
+            <tr>
+                 <td><{$var.goods_id}></td>
+                 <td><{$var.title}></td>
+                 <td><img style="width:60px;" src="<{:config_img($var['face_pic'])}>"/></td>
+                 <td><{$var.integral}></td>
+                 <td><{$var.price}></td>
+                 <td><{$var.num}></td>
+                 <td><{$var.exchange_num}></td>
+                 <td><{$var.create_time|date='Y-m-d H:i:s',###}></td>
+                 <td><{$var.create_ip_area}><{$var.create_ip}></td>
+                 <td><eq name="var.audit" value="0">等待审核<else/>正常</eq></td>
+                <td>
+                    <a href="<{:U('integral/edit',array('goods_id'=>$var['goods_id']))}>">编辑</a>
+                    <a  mini="confirm"  href="<{:U('integral/delete',array('goods_id'=>$var['goods_id']))}>">删除</a>
+                </td>
+            </tr>
+        </tr>
+        </foreach>
+    </table>
+    <div class="paging">
+        <{$page}>
+    </div>
+</div>
+<include  file='public:footer'/>

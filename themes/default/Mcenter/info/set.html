@@ -1,0 +1,33 @@
+<include file="public:header"/>
+<header class="top-fixed bg-yellow bg-inverse">
+	<div class="top-back">
+		<a class="top-addr" href="<{:U('information/index')}>"><i class="icon-angle-left"></i></a>
+	</div>
+		<div class="top-title">
+			基本设置
+		</div>
+	<div class="top-signed">
+		<include file="public:message"/>
+	</div>
+</header>
+<style>
+.line {padding:0 10px;}
+.line .x4{height:40px;line-height:40px;color:#999;}
+.line .x8{position:relative;height:40px;}
+.line .x8 input{border:none;padding:10px;position:absolute;bottom:0;}
+</style>
+<form action="<{:U('info/set')}>" method="post" target="x-frame">
+		<div class="line border-bottom">
+			<span class="x4">云联惠账户：</span>
+			<span class="x8"><input name="ext_account"  type="text" placeholder="" value="<{$MEMBER['ext_account']}>"></span>
+		</div>
+		<div class="line border-bottom">
+			<span class="x4">云联惠手机：</span>
+			<span class="x8"><input name="ext_mobile"  type="text" placeholder="" value="<{$MEMBER['ext_mobile']}>"></span>
+		</div>
+	<div class="blank-30"></div>
+	<div class="container">
+		<button class="button button-block button-big bg-dot" type="submit">立刻修改</button>
+	</div>
+</form>
+<include  file='public:footer'/>  

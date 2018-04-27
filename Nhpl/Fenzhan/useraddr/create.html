@@ -1,0 +1,115 @@
+<include  file='public:header'/>
+<div class="mainBt">
+    <ul>
+        <li class="li1">会员</li>
+        <li class="li2">收货地址</li>
+        <li class="li2 li3">新增</li>
+    </ul>
+</div>
+<form  target="baocms_frm" action="<{:U('useraddr/create')}>" method="post">
+    <div class="mainScAdd">
+        <div class="tableBox">
+            <table bordercolor="#e1e6eb" cellspacing="0" width="100%" border="1px"  style=" border-collapse: collapse; margin:0px; vertical-align:middle; background-color:#FFF;" >
+                <tr>
+                    <td class="lfTdBt">用户：</td>
+                    <td class="rgTdBt">
+                        <div class="lt">
+                            <input type="hidden" id="user_id" name="data[user_id]" value="<{$detail.user_id|default=''}>" />
+                            <input class="scAddTextName w250 sj" type="text" name="nickname" id="nickname"  value="" />
+                        </div>
+                        <a mini="select"  w="800" h="600" href="<{:U('user/select')}>" class="seleSj">选择用户</a>
+                    </td>
+                </tr>
+                     <tr>
+                    <td class="lfTdBt">所在区域：</td>
+                    <td class="rgTdBt">
+                        
+                        <select name="data[city_id]" id="city_id" style="float: left;" class="seleFl w210"></select>
+                       <select name="data[area_id]" id="area_id" style="float: left;"  class="seleFl w210"></select>
+
+                    </td>
+                </tr>
+                 <script src="<{:U('fenzhan/fenzhan/cityarea')}>"></script>
+                <script>
+                    var city_id = <?php echo (int)$detail['city_id'];?>;
+                    var area_id = <?php echo (int)$detail['area_id'];?>;
+					var business_id = <?php echo (int)$detail['business_id'];?>;
+                    function changeCity(cid){
+                        var area_str = '<option value="0">请选择.....</option>';
+                        for(a in cityareas.area){
+                           if(cityareas.area[a].city_id ==cid){
+                                if(area_id == cityareas.area[a].area_id){
+                                    area_str += '<option selected="selected" value="'+cityareas.area[a].area_id+'">'+cityareas.area[a].area_name+'</option>';
+                                }else{
+                                     area_str += '<option value="'+cityareas.area[a].area_id+'">'+cityareas.area[a].area_name+'</option>';
+                                }  
+                            }
+                        }
+                        $("#area_id").html(area_str);
+                    }
+                    $(document).ready(function(){
+                        var city_str = '<option value="0">请选择.....</option>';
+                        for(a in cityareas.city){
+                           if(city_id == cityareas.city[a].city_id){
+                               city_str += '<option selected="selected" value="'+cityareas.city[a].city_id+'">'+cityareas.city[a].name+'</option>';
+                           }else{
+                                city_str += '<option value="'+cityareas.city[a].city_id+'">'+cityareas.city[a].name+'</option>';
+                           }  
+                        }
+                        $("#city_id").html(city_str);
+                        if(city_id){
+                            changeCity(city_id);
+                        }
+                        $("#city_id").change(function(){
+                            city_id = $(this).val();
+                            changeCity($(this).val());
+                        });
+                        
+                        $("#area_id").change(function () {
+                            var url = '<{:U("business/child",array("area_id"=>"0000"))}>';
+                            if ($(this).val() > 0) {
+                                var url2 = url.replace('0000', $(this).val());
+                                $.get(url2, function (data) {
+                                    $("#business_id").html(data);
+                                }, 'html');
+                            }
+
+                        });
+                    });
+                </script>
+                
+                 <tr>
+                    <td class="lfTdBt">商圈：</td>
+                    <td class="rgTdBt"> <select name="data[business_id]" id="business_id" class="w200 seleFl">
+                            <option value="0">请选择...</option>
+                            <foreach name="business" item="var">
+                                <option value="<{$var.business_id}>"  <eq name="var.business_id" value="$detail.business_id">selected="selected"</eq> ><{$var.business_name}></option>
+                            </foreach>   
+                        </select>
+
+                    </td>
+                </tr
+                
+                
+                <tr>
+                    <td class="lfTdBt">收货人：</td>
+                    <td class="rgTdBt"><input type="text" name="data[name]" value="<{$detail.name|default=''}>" class="scAddTextName w300" />
+
+                    </td>
+                </tr><tr>
+                    <td class="lfTdBt">手机号码：</td>
+                    <td class="rgTdBt"><input type="text" name="data[mobile]" value="<{$detail.mobile|default=''}>" class="scAddTextName w300" />
+
+                    </td>
+                </tr><tr>
+                    <td class="lfTdBt">具体地址：</td>
+                    <td class="rgTdBt"><input type="text" name="data[addr]" value="<{$detail.addr|default=''}>" class="scAddTextName w300" />
+                        <code>格式如：合肥市政务区天鹅湖商圈绿地蓝海A座2002</code>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="smtQr"><input type="submit" value="确认添加" class="smtQrIpt" /></div>
+    </div>
+</form>
+<include  file='public:footer'/>       

@@ -1,0 +1,3 @@
+<?php
+//000000086400a:4:{i:1;a:5:{s:7:"area_id";s:1:"1";s:7:"city_id";s:1:"1";s:9:"area_name";s:9:"发多少";s:7:"orderby";s:1:"0";s:6:"closed";s:1:"0";}i:2;a:5:{s:7:"area_id";s:1:"2";s:7:"city_id";s:1:"7";s:9:"area_name";s:9:"开发区";s:7:"orderby";s:1:"0";s:6:"closed";s:1:"0";}i:3;a:5:{s:7:"area_id";s:1:"3";s:7:"city_id";s:1:"7";s:9:"area_name";s:9:"福山区";s:7:"orderby";s:1:"0";s:6:"closed";s:1:"0";}i:4;a:5:{s:7:"area_id";s:1:"4";s:7:"city_id";s:1:"7";s:9:"area_name";s:9:"芝罘区";s:7:"orderby";s:1:"0";s:6:"closed";s:1:"0";}}
+?>

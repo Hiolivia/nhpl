@@ -1,0 +1,37 @@
+  <include  file='public:header'/>
+   <link rel="stylesheet" type="text/css" href="/static/default/wap/other/webuploader.css"> 
+<script src="/static/default/wap/other/webuploader.js"></script>
+
+	<header class="top-fixed bg-yellow bg-inverse">
+		<div class="top-back">
+			<a class="top-addr" href="<{:U('tieba/index')}>"><i class="icon-angle-left"></i></a>
+		</div>
+		<div class="top-title">
+			回复帖子
+		</div>
+		<div class="top-share">
+			<a href="<{:U('tieba/main')}>" id="cate-btn"><i class="icon-bars"></i></a>
+		</div>
+	</header>
+
+	<form class="post-form" action="<{:U('tieba/reply',array('post_id'=>$detail[post_id]))}>" method="post" target="x-frame" >
+		<input type="hidden" name="data[safecode]" value="<{$safecode}>" />
+		<input type="hidden" id="photo" name="data[photo]" value="" />
+		<div class="line border-bottom">
+			<div class="x9 form-title">
+				<span>回复：<{$detail.title}></span>
+			</div>
+			<div class="x3 text-right">
+				<button class="button bg-green margin-small-right" type="submit">发表</button>
+				<div class="margin-small-bottom"></div>
+			</div>
+		</div>
+		<div class="line border-bottom">
+			<textarea class="form-content" name="data[contents]" placeholder="文明上网，登陆发言"></textarea>
+		</div>
+		
+	<div class="blank-10 clearfix"></div>
+		
+	</form>
+	
+<include  file='public:footer'/> 

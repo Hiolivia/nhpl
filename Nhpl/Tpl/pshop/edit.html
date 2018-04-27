@@ -1,0 +1,90 @@
+<include  file='public:header'/>
+<div class="mainBt">
+    <ul>
+        <li class="li1">拼团商家</li>
+        <li class="li2">商家管理</li>
+        <li class="li2 li3">编辑商家</li>
+    </ul>
+</div>
+<form  target="baocms_frm" action="<{:U('pshop/edit',array('shop_id'=>$detail['id']))}>" method="post">
+    <div class="mainScAdd">
+        <div class="tableBox">
+            <table bordercolor="#e1e6eb" cellspacing="0" width="100%" border="1px"  style=" border-collapse: collapse; margin:0px; vertical-align:middle; background-color:#FFF;" >
+
+
+                <tr>
+                    <td class="lfTdBt">管理者：</td>
+                    <td class="rgTdBt">
+                        <div class="lt">
+                            <input type="hidden" id="user_id" name="data[user_id]" value="<{$detail.user_id|default=''}>" />
+                            <input class="scAddTextName w210 sj" type="text" name="nickname" id="nickname"  value="<{$user.nickname}>" />
+                        </div>
+                        <a mini="select"  w="800" h="600" href="<{:U('user/select')}>" class="seleSj">选择用户</a>
+                    </td>
+                </tr><tr>
+                    <td class="lfTdBt">商铺名称：</td>
+                    <td class="rgTdBt"><input type="text" name="data[name]" value="<{$detail.name|default=''}>" class="scAddTextName w210" />
+
+                    </td>
+                </tr><tr>
+                    <td class="lfTdBt">
+                <js file='__PUBLIC__/js/uploadify/jquery.uploadify.min.js'/>
+                <link rel="stylesheet" href="__PUBLIC__/js/uploadify/uploadify.css">
+                商铺LOGO：
+                </td>
+                <td class="rgTdBt">
+                    <div style="width: 300px;height: 100px; float: left;">
+                        <input type="hidden" name="data[logo]" value="<{$detail.logo}>" id="data_logo" />
+                        <input id="logo_file" name="logo_file" type="file" multiple="true" value="" />
+                    </div>
+                    <div style="width: 300px;height: 100px; float: left;">
+                        <img id="logo_img" width="80" height="80"  src="__ROOT__/attachs/<{$detail.logo|default='default.jpg'}>" />
+                        <a href="<{:U('setting/attachs')}>">设置【全站商城支持传七牛云联系：120,585,022】</a>
+                        建议尺寸:100*100
+                    </div>
+                    <script>
+                        $("#logo_file").uploadify({
+                            'swf': '__PUBLIC__/js/uploadify/uploadify.swf?t=<{$nowtime}>',
+                            'uploader': '<{:U("app/upload/uploadify",array("model"=>"shoplogo"))}>',
+                            'cancelImg': '__PUBLIC__/js/uploadify/uploadify-cancel.png',
+                            'buttonText': '上传商铺LOGO',
+                            'fileTypeExts': '*.gif;*.jpg;*.png',
+                            'queueSizeLimit': 1,
+                            'onUploadSuccess': function (file, data, response) {
+                                $("#data_logo").val(data);
+                                $("#logo_img").attr('src', '__ROOT__/attachs/' + data).show();
+                            }
+                        });
+
+                    </script>
+                </td>
+            </tr><tr>
+            <td class="lfTdBt">店铺地址：</td>
+            <td class="rgTdBt">
+                <input type="text" name="data[address]" value="<{$detail.address|default=''}>" class="scAddTextName w210" />
+            </td>
+        </tr><tr>
+            <td class="lfTdBt">店铺电话：</td>
+            <td class="rgTdBt"><input type="text" name="data[tel]" value="<{$detail.tel|default=''}>" class="scAddTextName w210" />
+
+            </td>
+        </tr>
+        <tr>
+            <td class="lfTdBt">是否全免运费：</td>
+            	<td class="rgTdBt">
+                	<input type="radio" name="data[mianyunfei]" <eq name="detail.mianyunfei" value="0">checked="checked"</eq> value="0" /> 否
+                	<input type="radio" name="data[mianyunfei]" <eq name="detail.mianyunfei" value="1">checked="checked"</eq> value="1" /> 是
+            	</td>
+        </tr>
+        <tr>
+            <td class="lfTdBt">同城配送：</td>
+            <td class="rgTdBt"><input type="text" name="data[tongchen]" value="<{$detail.tongchen|default=''}>" class="scAddTextName w210" />
+            	<code>通过小写,进行添加，如1,2,3 可先在<a target="_blank" href="/admin/pkuaidi/address.html">新查找记录ID号</a></code>
+            </td>
+        </tr>
+    </table>
+</div>
+<div class="smtQr"><input type="submit" value="确认编辑" class="smtQrIpt" /></div>
+</div>
+</form>
+<include  file='public:footer'/>       

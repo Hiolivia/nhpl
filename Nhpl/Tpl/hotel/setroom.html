@@ -1,0 +1,111 @@
+<include  file='public:header'/>
+<div class="mainBt">
+    <ul>
+        <li class="li1">酒店</li>
+        <li class="li2">房间管理</li>
+        <li class="li2 li3">新增房间</li>
+    </ul>
+</div>
+<div class="mainScAdd ">
+
+    <div class="tableBox">
+        <form  target="baocms_frm" action="<{:U('hotel/setroom',array('hotel_id'=>$detail['hotel_id']))}>" method="post">
+            <table  bordercolor="#dbdbdb" cellspacing="0" width="100%" border="1px"  style=" border-collapse: collapse; margin:0px; vertical-align:middle; background-color:#FFF;" >
+               
+                  <tr>
+                    <td class="lfTdBt">房间名称：</td>
+                    <td class="rgTdBt"><input type="text" name="data[title]" value="<{$detail.title|default=''}>" class="manageInput" />
+                     <code>房间的名称</code>
+                    </td>
+                </tr> 
+                 <tr>
+                    <td class="lfTdBt">房间类型：</td>
+                    <td class="rgTdBt">
+                       <select id="type" name="data[type]" class="seleFl w210">
+                       <option value="0">请选择...</option>
+                       		<volist name="roomtype" id="val">
+                                <option value="<{$i}>" <if condition="$detail['type'] eq $i">selected="selected"</if>  ><{$val}></option>
+                            </volist>
+                        </select>
+                        <code>房间类型必须选择</code>
+                    </td>
+                </tr>   
+                 <tr>
+                    <td class="lfTdBt">
+                <js file='__PUBLIC__/js/uploadify/jquery.uploadify.min.js'/>
+                <link rel="stylesheet" href="__PUBLIC__/js/uploadify/uploadify.css">
+                酒店图片：
+                </td>
+                <td class="rgTdBt">
+                    <div style="width: 300px;height: 100px; float: left;">
+                        <input type="hidden" name="data[photo]" value="<{$detail.photo}>" id="data_logo" />
+                        <input id="logo_file" name="logo_file" type="file" multiple="true" value="" />
+                    </div>
+                    <div style="width: 300px;height: 100px; float: left;">
+                        <img id="logo_img" width="80" height="80"  src="__ROOT__/attachs/<{$detail.photo|default='default.jpg'}>" />
+                        <a href="<{:U('setting/attachs')}>">设置【全站商城支持传七牛云联系：120,585,022】</a>
+                        建议尺寸:<{$CONFIG.attachs.hotel.thumb}>
+                    </div>
+                    <script>
+                        $("#logo_file").uploadify({
+                            'swf': '__PUBLIC__/js/uploadify/uploadify.swf?t=<{$nowtime}>',
+                            'uploader': '<{:U("app/upload/uploadify",array("model"=>"hotel"))}>',
+                            'cancelImg': '__PUBLIC__/js/uploadify/uploadify-cancel.png',
+                            'buttonText': '上传酒店图片',
+                            'fileTypeExts': '*.gif;*.jpg;*.png',
+                            'queueSizeLimit': 1,
+                            'onUploadSuccess': function (file, data, response) {
+                                $("#data_logo").val(data);
+                                $("#logo_img").attr('src', '__ROOT__/attachs/' + data).show();
+                            }
+                        });
+
+                    </script>
+                </td>
+            </tr>
+            
+            <tr>
+                <td class="lfTdBt">房间价格：</td>
+                <td class="rgTdBt"><input type="text" name="data[price]" value="<{$detail.price|default=''}>" class="manageInput" />
+                <code>房间的价格</code>
+                 </td>
+           </tr> 
+                
+            <tr>
+                <td class="lfTdBt">房间结算价格：</td>
+                <td class="rgTdBt"><input type="text" name="data[settlement_price]" value="<{$detail.settlement_price|default=''}>" class="manageInput" />
+                <code>用户确认收货后房间的结算给商家的价格</code>
+                 </td>
+           </tr> 
+       
+           <tr>
+                <td class="lfTdBt">剩余房间：</td>
+                <td class="rgTdBt"><input type="text" name="data[sku]" value="<{$detail.sku|default=''}>" class="manageInput" />
+                <code>这里相当于房间的库存，就是还有多少可以预定，超出后无法预定</code>
+                 </td>
+           </tr>
+           
+           <tr>
+                <td class="lfTdBt">配套设施：</td>
+                <td class="rgTdBt">
+                
+                <label><span>是否提供早餐：</span><input style="width: 20px; height: 20px;" type="checkbox" name="data[is_zc]" value="1" <if condition="$detail['is_zc'] eq 1">checked="checked"</if> /></label>
+                            <label><span style="margin-left: 20px;">是否有宽带：</span><input style="width: 20px; height: 20px;" type="checkbox" name="data[is_kd]" value="1"  <if condition="$detail['is_kd'] eq 1">checked="checked"</if> /></label>
+                            <label><span style="margin-left: 20px;">是否可以取消：</span><input style="width: 20px; height: 20px;" type="checkbox" name="data[is_cancel]" value="1"  <if condition="$detail['is_cancel'] eq 1">checked="checked"</if> /></label>
+                <code>这里的是可选择项目</code>
+                
+                
+                 </td>
+           </tr>  
+          
+              
+        
+ 
+    </table>
+            <div style="margin-left:140px;margin-top:20px">
+                <input type="submit" value="确认添加" class="smtQrIpt" />
+           <div>
+</form>
+</div>
+</div>
+<include  file='public:footer'/>       

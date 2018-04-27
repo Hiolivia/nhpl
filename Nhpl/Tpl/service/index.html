@@ -1,0 +1,70 @@
+<include  file='public:header'/>
+<div class="mainBt">
+    <ul>
+        <li class="li1">功能</li>
+        <li class="li2">服务中心</li>
+        <li class="li2 li3">服务列表</li>
+    </ul>
+</div>
+<div class="main-jsgl main-sc">
+    <p class="attention"><span>注意：</span> </p>
+    <div class="jsglNr">
+        <div class="selectNr" style="margin-top: 0px; border-top:none;">
+            <div class="left">
+                <{:BA('service/create','','添加内容')}>
+            </div>
+            <div class="right">
+                <form  method="post"  action="<{:U('service/index')}>"> 
+
+                    <div class="seleHidden" id="seleHidden">
+                        <div class="seleK">
+                            <span>标题</span>
+                            <input type="text"  class="inptText" name="keyword" value="<{$keyword}>"  />
+                            <input type="submit" value=" 搜索"  class="inptButton" />
+                        </div>
+                    </div> 
+                </form>
+                <div class="clear"></div>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <form  target="baocms_frm" method="post">
+            <div class="tableBox">
+                <table bordercolor="#dbdbdb" cellspacing="0" width="100%" border="1px"  style=" border-collapse: collapse; margin:0px; vertical-align:middle; background-color:#FFF;"  >
+                    <tr>
+
+                        <td class="w50"><input type="checkbox" class="checkAll" rel="service_id" /></td>
+                        <td class="w50">服务ID</td>  
+                        <td>标题</td>
+                        <td>简介</td>
+                        <td>排序</td>
+                        <td>创建时间</td>
+                        <td class="w300">操作</td>
+                    <foreach name="list" item="var">
+                        <tr>
+                            <td><input class="child_service_id" type="checkbox" name="service_id[]" value="<{$var.service_id}>" /> </td>
+                            <td><{$var.service_id}></td>
+                            <td><{$var.title}></td>
+                            <td><{$var.intro}></td>
+                            <td><{$var.orderby}></td>
+                            <td><{$var.create_time|date="Y-m-d H:i:s",###}></td>
+                            <td>
+                                <{:BA('service/edit',array("service_id"=>$var["service_id"]),'编辑','','remberBtn')}>
+                                <{:BA('service/delete',array("service_id"=>$var["service_id"]),'删除','act','remberBtn')}>
+                            </td>
+                        </tr>
+                    </foreach>
+                </table>
+                <{$page}>
+            </div>
+            <div class="selectNr" style="margin-bottom: 0px; border-bottom: none;">
+                <div class="left">
+                    <{:BA('service/delete','','批量删除','list',' a2')}>
+                </div>
+            </div>
+
+        </form>
+    </div>
+</div>
+<include  file='public:footer'/>  
+

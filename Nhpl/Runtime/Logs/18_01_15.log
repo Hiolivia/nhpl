@@ -1,0 +1,2298 @@
+[ 2018-01-15T09:30:49+08:00 ] 127.0.0.1 /app/user/releaseWork
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of SettingModel::fetchAll() should be compatible with CommonModel::fetchAll($field = '*', $where = Array) F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [2048] Declaration of SettingModel::save() should be compatible with Model::save($data = '', $options = Array) F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `hb_setting` [ RunTime:0.005000s ]
+ERR: 1146:Table 'nhpl.hb_setting' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_setting`
+SQL: SELECT * FROM `hb_setting`  [ RunTime:0.001000s ]
+ERR: 1146:Table 'nhpl.hb_setting' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_setting` 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 16 行.
+NOTIC: 建议使用I方法替代_param
+NOTIC: 建议使用I方法替代_param
+NOTIC: 建议使用I方法替代_get
+NOTIC: 建议使用I方法替代_get
+NOTIC: 建议使用I方法替代_get
+NOTIC: [8] Undefined index:  F:\phpstudy\WWW\nhpl\Nhpl\Lib\Action\App\CommonAction.class.php 第 64 行.
+SQL: SHOW COLUMNS FROM `hb_shop_cate` [ RunTime:0.007000s ]
+ERR: 1146:Table 'nhpl.hb_shop_cate' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_shop_cate`
+SQL: SELECT * FROM `hb_shop_cate` ORDER BY `orderby` asc  [ RunTime:0.001000s ]
+ERR: 1146:Table 'nhpl.hb_shop_cate' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_shop_cate` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+SQL: SHOW COLUMNS FROM `hb_tuan_cate` [ RunTime:0.007001s ]
+ERR: 1146:Table 'nhpl.hb_tuan_cate' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_tuan_cate`
+SQL: SELECT * FROM `hb_tuan_cate` ORDER BY `orderby` asc  [ RunTime:0.002000s ]
+ERR: 1146:Table 'nhpl.hb_tuan_cate' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_tuan_cate` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+SQL: SHOW COLUMNS FROM `hb_goods_cate` [ RunTime:0.005000s ]
+ERR: 1146:Table 'nhpl.hb_goods_cate' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_goods_cate`
+SQL: SELECT * FROM `hb_goods_cate` ORDER BY `orderby` asc  [ RunTime:0.001000s ]
+ERR: 1146:Table 'nhpl.hb_goods_cate' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_goods_cate` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+SQL: SHOW COLUMNS FROM `hb_area` [ RunTime:0.005000s ]
+ERR: 1146:Table 'nhpl.hb_area' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_area`
+SQL: SELECT * FROM `hb_area` ORDER BY `orderby` asc  [ RunTime:0.001000s ]
+ERR: 1146:Table 'nhpl.hb_area' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_area` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+SQL: SHOW COLUMNS FROM `hb_business` [ RunTime:0.005000s ]
+ERR: 1146:Table 'nhpl.hb_business' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_business`
+SQL: SELECT * FROM `hb_business` ORDER BY `orderby` asc  [ RunTime:0.001000s ]
+ERR: 1146:Table 'nhpl.hb_business' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_business` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+SQL: SHOW COLUMNS FROM `hb_works` [ RunTime:0.051002s ]
+NOTIC: [8] Undefined variable: char F:\phpstudy\WWW\nhpl\Core\Extend\Library\ORG\Crypt\Base64.class.php 第 59 行.
+NOTIC: [8] Undefined variable: str F:\phpstudy\WWW\nhpl\Core\Extend\Library\ORG\Crypt\Base64.class.php 第 66 行.
+SQL: SELECT * FROM `hb_setting`  [ RunTime:0.001000s ]
+ERR: 1146:Table 'nhpl.hb_setting' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_setting` 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 16 行.
+NOTIC: 建议使用I方法替代_param
+NOTIC: 建议使用I方法替代_param
+NOTIC: 建议使用I方法替代_get
+NOTIC: 建议使用I方法替代_get
+NOTIC: 建议使用I方法替代_get
+NOTIC: [8] Undefined index:  F:\phpstudy\WWW\nhpl\Nhpl\Lib\Action\App\CommonAction.class.php 第 64 行.
+SQL: SELECT * FROM `hb_shop_cate` ORDER BY `orderby` asc  [ RunTime:0.001000s ]
+ERR: 1146:Table 'nhpl.hb_shop_cate' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_shop_cate` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+SQL: SELECT * FROM `hb_tuan_cate` ORDER BY `orderby` asc  [ RunTime:0.001000s ]
+ERR: 1146:Table 'nhpl.hb_tuan_cate' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_tuan_cate` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+SQL: SELECT * FROM `hb_goods_cate` ORDER BY `orderby` asc  [ RunTime:0.001000s ]
+ERR: 1146:Table 'nhpl.hb_goods_cate' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_goods_cate` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+SQL: SELECT * FROM `hb_area` ORDER BY `orderby` asc  [ RunTime:0.001000s ]
+ERR: 1146:Table 'nhpl.hb_area' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_area` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+SQL: SELECT * FROM `hb_business` ORDER BY `orderby` asc  [ RunTime:0.001000s ]
+ERR: 1146:Table 'nhpl.hb_business' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_business` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+NOTIC: [8] Undefined variable: char F:\phpstudy\WWW\nhpl\Core\Extend\Library\ORG\Crypt\Base64.class.php 第 59 行.
+NOTIC: [8] Undefined variable: str F:\phpstudy\WWW\nhpl\Core\Extend\Library\ORG\Crypt\Base64.class.php 第 66 行.
+SQL: INSERT INTO `hb_works` (`uid`,`title`,`content`,`pic`,`c_id`,`l_id`,`r_nums`,`time`) VALUES (8,'杀马特','杀马特发型，绝对吊炸天','[\"\\/attachs\\/2018\\/01\\/15\\/0f5bc1b7a217a3b3996f8466ab4694bd.jpg\",\"\\/attachs\\/2018\\/01\\/15\\/4edc140ed7907b2c0be88ba6cd7f4cb0.jpg\",\"\\/attachs\\/2018\\/01\\/15\\/33e61e9ed9e75edeac3dcd0207ffdce9.jpg\",\"\\/attachs\\/2018\\/01\\/15\\/3707a4c0250f05ad6aff0d2ff56525d5.jpg\",\"\\/attachs\\/2018\\/01\\/15\\/b561f969e4f114e1669e506240deb28a.jpg\"]','1,2,3','2,3,4',0,1515979849) [ RunTime:0.011000s ]
+
+[ 2018-01-15T09:31:36+08:00 ] 127.0.0.1 /app/passport/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of SettingModel::fetchAll() should be compatible with CommonModel::fetchAll($field = '*', $where = Array) F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [2048] Declaration of SettingModel::save() should be compatible with Model::save($data = '', $options = Array) F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `hb_setting` [ RunTime:0.010000s ]
+ERR: 1146:Table 'nhpl.hb_setting' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_setting`
+SQL: SELECT * FROM `hb_setting`  [ RunTime:0.001000s ]
+ERR: 1146:Table 'nhpl.hb_setting' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_setting` 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 16 行.
+NOTIC: 建议使用I方法替代_param
+NOTIC: 建议使用I方法替代_param
+NOTIC: 建议使用I方法替代_get
+NOTIC: 建议使用I方法替代_get
+NOTIC: 建议使用I方法替代_get
+NOTIC: [8] Undefined index:  F:\phpstudy\WWW\nhpl\Nhpl\Lib\Action\App\CommonAction.class.php 第 64 行.
+SQL: SHOW COLUMNS FROM `hb_shop_cate` [ RunTime:0.010000s ]
+ERR: 1146:Table 'nhpl.hb_shop_cate' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_shop_cate`
+SQL: SELECT * FROM `hb_shop_cate` ORDER BY `orderby` asc  [ RunTime:0.001000s ]
+ERR: 1146:Table 'nhpl.hb_shop_cate' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_shop_cate` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+SQL: SHOW COLUMNS FROM `hb_tuan_cate` [ RunTime:0.013001s ]
+ERR: 1146:Table 'nhpl.hb_tuan_cate' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_tuan_cate`
+SQL: SELECT * FROM `hb_tuan_cate` ORDER BY `orderby` asc  [ RunTime:0.001000s ]
+ERR: 1146:Table 'nhpl.hb_tuan_cate' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_tuan_cate` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+SQL: SHOW COLUMNS FROM `hb_goods_cate` [ RunTime:0.013000s ]
+ERR: 1146:Table 'nhpl.hb_goods_cate' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_goods_cate`
+SQL: SELECT * FROM `hb_goods_cate` ORDER BY `orderby` asc  [ RunTime:0.001000s ]
+ERR: 1146:Table 'nhpl.hb_goods_cate' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_goods_cate` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+SQL: SHOW COLUMNS FROM `hb_area` [ RunTime:0.014000s ]
+ERR: 1146:Table 'nhpl.hb_area' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_area`
+SQL: SELECT * FROM `hb_area` ORDER BY `orderby` asc  [ RunTime:0.002001s ]
+ERR: 1146:Table 'nhpl.hb_area' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_area` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+SQL: SHOW COLUMNS FROM `hb_business` [ RunTime:0.014000s ]
+ERR: 1146:Table 'nhpl.hb_business' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_business`
+SQL: SELECT * FROM `hb_business` ORDER BY `orderby` asc  [ RunTime:0.002001s ]
+ERR: 1146:Table 'nhpl.hb_business' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_business` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+NOTIC: [8] Undefined variable: char F:\phpstudy\WWW\nhpl\Core\Extend\Library\ORG\Crypt\Base64.class.php 第 59 行.
+NOTIC: [8] Undefined variable: str F:\phpstudy\WWW\nhpl\Core\Extend\Library\ORG\Crypt\Base64.class.php 第 66 行.
+
+[ 2018-01-15T09:38:10+08:00 ] 127.0.0.1 /app/user/myworks
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of SettingModel::fetchAll() should be compatible with CommonModel::fetchAll($field = '*', $where = Array) F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [2048] Declaration of SettingModel::save() should be compatible with Model::save($data = '', $options = Array) F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `hb_setting` [ RunTime:0.012001s ]
+ERR: 1146:Table 'nhpl.hb_setting' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_setting`
+SQL: SELECT * FROM `hb_setting`  [ RunTime:0.001000s ]
+ERR: 1146:Table 'nhpl.hb_setting' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_setting` 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 16 行.
+NOTIC: 建议使用I方法替代_param
+NOTIC: 建议使用I方法替代_param
+NOTIC: 建议使用I方法替代_get
+NOTIC: 建议使用I方法替代_get
+NOTIC: 建议使用I方法替代_get
+NOTIC: [8] Undefined index:  F:\phpstudy\WWW\nhpl\Nhpl\Lib\Action\App\CommonAction.class.php 第 64 行.
+SQL: SHOW COLUMNS FROM `hb_shop_cate` [ RunTime:0.014001s ]
+ERR: 1146:Table 'nhpl.hb_shop_cate' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_shop_cate`
+SQL: SELECT * FROM `hb_shop_cate` ORDER BY `orderby` asc  [ RunTime:0.001000s ]
+ERR: 1146:Table 'nhpl.hb_shop_cate' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_shop_cate` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+SQL: SHOW COLUMNS FROM `hb_tuan_cate` [ RunTime:0.030002s ]
+ERR: 1146:Table 'nhpl.hb_tuan_cate' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_tuan_cate`
+SQL: SELECT * FROM `hb_tuan_cate` ORDER BY `orderby` asc  [ RunTime:0.002000s ]
+ERR: 1146:Table 'nhpl.hb_tuan_cate' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_tuan_cate` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+SQL: SHOW COLUMNS FROM `hb_goods_cate` [ RunTime:0.013001s ]
+ERR: 1146:Table 'nhpl.hb_goods_cate' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_goods_cate`
+SQL: SELECT * FROM `hb_goods_cate` ORDER BY `orderby` asc  [ RunTime:0.001000s ]
+ERR: 1146:Table 'nhpl.hb_goods_cate' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_goods_cate` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+SQL: SHOW COLUMNS FROM `hb_area` [ RunTime:0.048003s ]
+ERR: 1146:Table 'nhpl.hb_area' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_area`
+SQL: SELECT * FROM `hb_area` ORDER BY `orderby` asc  [ RunTime:0.001000s ]
+ERR: 1146:Table 'nhpl.hb_area' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_area` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+SQL: SHOW COLUMNS FROM `hb_business` [ RunTime:0.009000s ]
+ERR: 1146:Table 'nhpl.hb_business' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_business`
+SQL: SELECT * FROM `hb_business` ORDER BY `orderby` asc  [ RunTime:0.002001s ]
+ERR: 1146:Table 'nhpl.hb_business' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_business` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+NOTIC: [8] Undefined variable: char F:\phpstudy\WWW\nhpl\Core\Extend\Library\ORG\Crypt\Base64.class.php 第 59 行.
+NOTIC: [8] Undefined variable: str F:\phpstudy\WWW\nhpl\Core\Extend\Library\ORG\Crypt\Base64.class.php 第 66 行.
+
+[ 2018-01-15T09:39:50+08:00 ] 127.0.0.1 /app/passport/logot
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of SettingModel::fetchAll() should be compatible with CommonModel::fetchAll($field = '*', $where = Array) F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [2048] Declaration of SettingModel::save() should be compatible with Model::save($data = '', $options = Array) F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `hb_setting` [ RunTime:0.005001s ]
+ERR: 1146:Table 'nhpl.hb_setting' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_setting`
+SQL: SELECT * FROM `hb_setting`  [ RunTime:0.002000s ]
+ERR: 1146:Table 'nhpl.hb_setting' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_setting` 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 16 行.
+NOTIC: 建议使用I方法替代_param
+NOTIC: 建议使用I方法替代_param
+NOTIC: 建议使用I方法替代_get
+NOTIC: 建议使用I方法替代_get
+NOTIC: 建议使用I方法替代_get
+NOTIC: [8] Undefined index:  F:\phpstudy\WWW\nhpl\Nhpl\Lib\Action\App\CommonAction.class.php 第 64 行.
+SQL: SHOW COLUMNS FROM `hb_shop_cate` [ RunTime:0.006000s ]
+ERR: 1146:Table 'nhpl.hb_shop_cate' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_shop_cate`
+SQL: SELECT * FROM `hb_shop_cate` ORDER BY `orderby` asc  [ RunTime:0.002000s ]
+ERR: 1146:Table 'nhpl.hb_shop_cate' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_shop_cate` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+SQL: SHOW COLUMNS FROM `hb_tuan_cate` [ RunTime:0.009001s ]
+ERR: 1146:Table 'nhpl.hb_tuan_cate' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_tuan_cate`
+SQL: SELECT * FROM `hb_tuan_cate` ORDER BY `orderby` asc  [ RunTime:0.002000s ]
+ERR: 1146:Table 'nhpl.hb_tuan_cate' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_tuan_cate` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+SQL: SHOW COLUMNS FROM `hb_goods_cate` [ RunTime:0.005000s ]
+ERR: 1146:Table 'nhpl.hb_goods_cate' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_goods_cate`
+SQL: SELECT * FROM `hb_goods_cate` ORDER BY `orderby` asc  [ RunTime:0.002000s ]
+ERR: 1146:Table 'nhpl.hb_goods_cate' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_goods_cate` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+SQL: SHOW COLUMNS FROM `hb_area` [ RunTime:0.006001s ]
+ERR: 1146:Table 'nhpl.hb_area' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_area`
+SQL: SELECT * FROM `hb_area` ORDER BY `orderby` asc  [ RunTime:0.002000s ]
+ERR: 1146:Table 'nhpl.hb_area' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_area` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+SQL: SHOW COLUMNS FROM `hb_business` [ RunTime:0.005000s ]
+ERR: 1146:Table 'nhpl.hb_business' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_business`
+SQL: SELECT * FROM `hb_business` ORDER BY `orderby` asc  [ RunTime:0.001000s ]
+ERR: 1146:Table 'nhpl.hb_business' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_business` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+ERR: 非法操作:logot
+
+[ 2018-01-15T09:39:52+08:00 ] 127.0.0.1 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: HTTP_USER_AGENT F:\phpstudy\WWW\nhpl\Nhpl\Common\common.php 第 113 行.
+NOTIC: [2048] Declaration of SettingModel::fetchAll() should be compatible with CommonModel::fetchAll($field = '*', $where = Array) F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [2048] Declaration of SettingModel::save() should be compatible with Model::save($data = '', $options = Array) F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `hb_setting` [ RunTime:0.006000s ]
+ERR: 1146:Table 'nhpl.hb_setting' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_setting`
+SQL: SELECT * FROM `hb_setting`  [ RunTime:0.002000s ]
+ERR: 1146:Table 'nhpl.hb_setting' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_setting` 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `hb_city` [ RunTime:0.006000s ]
+ERR: 1146:Table 'nhpl.hb_city' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_city`
+SQL: SELECT * FROM `hb_city` ORDER BY `orderby` asc  [ RunTime:0.002001s ]
+ERR: 1146:Table 'nhpl.hb_city' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_city` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+NOTIC: [8] Undefined index:  F:\phpstudy\WWW\nhpl\Nhpl\Lib\Action\Pchome\CommonAction.class.php 第 41 行.
+NOTIC: [8] Undefined variable: str F:\phpstudy\WWW\nhpl\Core\Extend\Library\ORG\Crypt\Base64.class.php 第 69 行.
+SQL: SHOW COLUMNS FROM `hb_shop_cate` [ RunTime:0.011001s ]
+ERR: 1146:Table 'nhpl.hb_shop_cate' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_shop_cate`
+SQL: SELECT * FROM `hb_shop_cate` ORDER BY `orderby` asc  [ RunTime:0.002000s ]
+ERR: 1146:Table 'nhpl.hb_shop_cate' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_shop_cate` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+SQL: SHOW COLUMNS FROM `hb_tuan_cate` [ RunTime:0.007000s ]
+ERR: 1146:Table 'nhpl.hb_tuan_cate' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_tuan_cate`
+SQL: SELECT * FROM `hb_tuan_cate` ORDER BY `orderby` asc  [ RunTime:0.001000s ]
+ERR: 1146:Table 'nhpl.hb_tuan_cate' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_tuan_cate` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+SQL: SHOW COLUMNS FROM `hb_area` [ RunTime:0.005001s ]
+ERR: 1146:Table 'nhpl.hb_area' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_area`
+SQL: SELECT * FROM `hb_area` ORDER BY `orderby` asc  [ RunTime:0.002000s ]
+ERR: 1146:Table 'nhpl.hb_area' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_area` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+SQL: SHOW COLUMNS FROM `hb_business` [ RunTime:0.006000s ]
+ERR: 1146:Table 'nhpl.hb_business' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_business`
+SQL: SELECT * FROM `hb_business` ORDER BY `orderby` asc  [ RunTime:0.001000s ]
+ERR: 1146:Table 'nhpl.hb_business' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_business` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+NOTIC: [2048] Declaration of TemplateModel::fetchAll() should be compatible with CommonModel::fetchAll($field = '*', $where = Array) F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\TemplateModel.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `hb_template` [ RunTime:0.006001s ]
+ERR: 1146:Table 'nhpl.hb_template' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_template`
+SQL: SELECT * FROM `hb_template`  [ RunTime:0.002000s ]
+ERR: 1146:Table 'nhpl.hb_template' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_template` 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\TemplateModel.class.php 第 15 行.
+SQL: SELECT * FROM `hb_template`  [ RunTime:0.002000s ]
+ERR: 1146:Table 'nhpl.hb_template' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_template` 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\TemplateModel.class.php 第 15 行.
+NOTIC: [8] Undefined variable: theme F:\phpstudy\WWW\nhpl\Nhpl\Lib\Action\Pchome\CommonAction.class.php 第 209 行.
+SQL: SHOW COLUMNS FROM `hb_template_setting` [ RunTime:0.006001s ]
+ERR: 1146:Table 'nhpl.hb_template_setting' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_template_setting`
+SQL: SELECT * FROM `hb_template_setting`  [ RunTime:0.001000s ]
+ERR: 1146:Table 'nhpl.hb_template_setting' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_template_setting` 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+NOTIC: [8] Undefined offset: 0 F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\TemplatesettingModel.class.php 第 12 行.
+NOTIC: 建议使用I方法替代_get
+NOTIC: [2] array_sum() expects parameter 1 to be array, null given F:\phpstudy\WWW\nhpl\Nhpl\Lib\Action\Pchome\CommonAction.class.php 第 107 行.
+SQL: SHOW COLUMNS FROM `hb_navigation` [ RunTime:0.006000s ]
+ERR: 1146:Table 'nhpl.hb_navigation' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_navigation`
+SQL: SELECT * FROM `hb_navigation` WHERE ( `status` = 4 ) AND ( `closed` = 0 ) ORDER BY `orderby` asc  [ RunTime:0.002000s ]
+ERR: 1146:Table 'nhpl.hb_navigation' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_navigation` WHERE ( `status` = 4 ) AND ( `closed` = 0 ) ORDER BY `orderby` asc 
+NOTIC: [2048] Declaration of SeoModel::fetchAll() should be compatible with CommonModel::fetchAll($field = '*', $where = Array) F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\SeoModel.class.php 第 26 行.
+SQL: SHOW COLUMNS FROM `hb_seo` [ RunTime:0.006000s ]
+ERR: 1146:Table 'nhpl.hb_seo' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_seo`
+SQL: SELECT * FROM `hb_seo`  [ RunTime:0.002000s ]
+ERR: 1146:Table 'nhpl.hb_seo' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_seo` 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\SeoModel.class.php 第 17 行.
+NOTIC: [8] Constant THEME_NAME already defined F:\phpstudy\WWW\nhpl\Nhpl\Lib\Action\Pchome\CommonAction.class.php 第 189 行.
+SQL: SELECT * FROM `hb_template`  [ RunTime:0.002000s ]
+ERR: 1146:Table 'nhpl.hb_template' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_template` 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\TemplateModel.class.php 第 15 行.
+SQL: SELECT * FROM `hb_template`  [ RunTime:0.001001s ]
+ERR: 1146:Table 'nhpl.hb_template' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_template` 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\TemplateModel.class.php 第 15 行.
+NOTIC: [8] Undefined variable: theme F:\phpstudy\WWW\nhpl\Nhpl\Lib\Action\Pchome\CommonAction.class.php 第 209 行.
+NOTIC: [8] Constant THEME_PATH already defined F:\phpstudy\WWW\nhpl\Core\Lib\Core\View.class.php 第 154 行.
+NOTIC: [8] Constant APP_TMPL_PATH already defined F:\phpstudy\WWW\nhpl\Core\Lib\Core\View.class.php 第 155 行.
+INFO: [ view_parse ] --START--
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in F:\phpstudy\WWW\nhpl\Nhpl\Lib\TagLib\TagLibCalldata.class.php on line 49 and defined F:\phpstudy\WWW\nhpl\Core\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag F:\phpstudy\WWW\nhpl\Core\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  F:\phpstudy\WWW\nhpl\Core\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag F:\phpstudy\WWW\nhpl\Core\Lib\Template\TagLib.class.php 第 92 行.
+NOTIC: [8] Undefined index: format F:\phpstudy\WWW\nhpl\Nhpl\Lib\TagLib\TagLibCalldata.class.php 第 57 行.
+NOTIC: [8] Undefined index: debug F:\phpstudy\WWW\nhpl\Nhpl\Lib\TagLib\TagLibCalldata.class.php 第 58 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in F:\phpstudy\WWW\nhpl\Nhpl\Lib\TagLib\TagLibCalldata.class.php on line 49 and defined F:\phpstudy\WWW\nhpl\Core\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag F:\phpstudy\WWW\nhpl\Core\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  F:\phpstudy\WWW\nhpl\Core\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag F:\phpstudy\WWW\nhpl\Core\Lib\Template\TagLib.class.php 第 92 行.
+NOTIC: [8] Undefined index: format F:\phpstudy\WWW\nhpl\Nhpl\Lib\TagLib\TagLibCalldata.class.php 第 57 行.
+NOTIC: [8] Undefined index: debug F:\phpstudy\WWW\nhpl\Nhpl\Lib\TagLib\TagLibCalldata.class.php 第 58 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in F:\phpstudy\WWW\nhpl\Nhpl\Lib\TagLib\TagLibCalldata.class.php on line 49 and defined F:\phpstudy\WWW\nhpl\Core\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag F:\phpstudy\WWW\nhpl\Core\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  F:\phpstudy\WWW\nhpl\Core\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag F:\phpstudy\WWW\nhpl\Core\Lib\Template\TagLib.class.php 第 92 行.
+NOTIC: [8] Undefined index: format F:\phpstudy\WWW\nhpl\Nhpl\Lib\TagLib\TagLibCalldata.class.php 第 57 行.
+NOTIC: [8] Undefined index: debug F:\phpstudy\WWW\nhpl\Nhpl\Lib\TagLib\TagLibCalldata.class.php 第 58 行.
+NOTIC: [8] Undefined variable: config F:\phpstudy\WWW\nhpl\Nhpl\Runtime\Cache\Pchome\cff83abaa8a0d07475c6dee202a3a078.php 第 7 行.
+NOTIC: [2] array_reverse() expects parameter 1 to be array, boolean given F:\phpstudy\WWW\nhpl\Nhpl\Runtime\Cache\Pchome\cff83abaa8a0d07475c6dee202a3a078.php 第 99 行.
+SQL: SHOW COLUMNS FROM `hb_ad` [ RunTime:0.006000s ]
+ERR: 1146:Table 'nhpl.hb_ad' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_ad`
+SQL: SELECT * FROM `hb_ad` WHERE (  closed=0 AND site_id=66 AND  city_id IN (0,) and bg_date <= '2018-01-15' AND end_date >= '2018-01-15'  ) ORDER BY orderby asc LIMIT 0,1   [ RunTime:0.001000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') and bg_date <= '2018-01-15' AND end_date >= '2018-01-15'  ) ORDER BY orderby a' at line 1
+ [ SQL语句 ] : SELECT * FROM `hb_ad` WHERE (  closed=0 AND site_id=66 AND  city_id IN (0,) and bg_date <= '2018-01-15' AND end_date >= '2018-01-15'  ) ORDER BY orderby asc LIMIT 0,1  
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Runtime\Cache\Pchome\cff83abaa8a0d07475c6dee202a3a078.php 第 183 行.
+NOTIC: [8] Use of undefined constant ding - assumed 'ding' F:\phpstudy\WWW\nhpl\Nhpl\Runtime\Cache\Pchome\cff83abaa8a0d07475c6dee202a3a078.php 第 244 行.
+NOTIC: [8] Undefined variable: keyword F:\phpstudy\WWW\nhpl\Nhpl\Runtime\Cache\Pchome\cff83abaa8a0d07475c6dee202a3a078.php 第 244 行.
+SQL: SHOW COLUMNS FROM `hb_keyword` [ RunTime:0.006000s ]
+ERR: 1146:Table 'nhpl.hb_keyword' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_keyword`
+SQL: SELECT * FROM `hb_keyword` ORDER BY key_id desc LIMIT 0,8   [ RunTime:0.002000s ]
+ERR: 1146:Table 'nhpl.hb_keyword' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_keyword` ORDER BY key_id desc LIMIT 0,8  
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Runtime\Cache\Pchome\cff83abaa8a0d07475c6dee202a3a078.php 第 258 行.
+NOTIC: [8] Use of undefined constant index - assumed 'index' F:\phpstudy\WWW\nhpl\Nhpl\Runtime\Cache\Pchome\cff83abaa8a0d07475c6dee202a3a078.php 第 323 行.
+SQL: SHOW COLUMNS FROM `hb_links` [ RunTime:0.006000s ]
+ERR: 1146:Table 'nhpl.hb_links' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_links`
+SQL: SELECT * FROM `hb_links` WHERE ( audit=1 AND colsed=0 AND city_id= ) ORDER BY orderby asc LIMIT 0,10   [ RunTime:0.002000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') ORDER BY orderby asc LIMIT 0,10' at line 1
+ [ SQL语句 ] : SELECT * FROM `hb_links` WHERE ( audit=1 AND colsed=0 AND city_id= ) ORDER BY orderby asc LIMIT 0,10  
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Runtime\Cache\Pchome\cff83abaa8a0d07475c6dee202a3a078.php 第 325 行.
+NOTIC: [8] Undefined variable: height_num F:\phpstudy\WWW\nhpl\Nhpl\Runtime\Cache\Pchome\cff83abaa8a0d07475c6dee202a3a078.php 第 412 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.139008s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.139008s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.084004s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002001s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.089005s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-01-15T09:39:52+08:00 ] 127.0.0.1 /mobile/index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of CommonAction::show() should be compatible with Action::show($content, $charset = '', $contentType = '', $prefix = '') F:\phpstudy\WWW\nhpl\Nhpl\Lib\Action\Mobile\CommonAction.class.php 第 505 行.
+NOTIC: [2048] Declaration of SettingModel::fetchAll() should be compatible with CommonModel::fetchAll($field = '*', $where = Array) F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [2048] Declaration of SettingModel::save() should be compatible with Model::save($data = '', $options = Array) F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `hb_setting` [ RunTime:0.006000s ]
+ERR: 1146:Table 'nhpl.hb_setting' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_setting`
+SQL: SELECT * FROM `hb_setting`  [ RunTime:0.003001s ]
+ERR: 1146:Table 'nhpl.hb_setting' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_setting` 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `hb_city` [ RunTime:0.006000s ]
+ERR: 1146:Table 'nhpl.hb_city' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_city`
+SQL: SELECT * FROM `hb_city` ORDER BY `orderby` asc  [ RunTime:0.002000s ]
+ERR: 1146:Table 'nhpl.hb_city' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_city` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+NOTIC: [8] Undefined index:  F:\phpstudy\WWW\nhpl\Nhpl\Lib\Action\Mobile\CommonAction.class.php 第 31 行.
+NOTIC: [8] Undefined index: HTTP_USER_AGENT F:\phpstudy\WWW\nhpl\Nhpl\Common\common.php 第 142 行.
+NOTIC: [8] Undefined variable: str F:\phpstudy\WWW\nhpl\Core\Extend\Library\ORG\Crypt\Base64.class.php 第 69 行.
+NOTIC: 建议使用I方法替代_get
+NOTIC: 建议使用I方法替代_get
+NOTIC: 建议使用I方法替代_get
+NOTIC: 建议使用I方法替代_get
+SQL: SELECT * FROM `hb_setting`  [ RunTime:0.002001s ]
+ERR: 1146:Table 'nhpl.hb_setting' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_setting` 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 16 行.
+NOTIC: [8] Constant __HOST__ already defined F:\phpstudy\WWW\nhpl\Nhpl\Lib\Action\Mobile\CommonAction.class.php 第 92 行.
+SQL: SHOW COLUMNS FROM `hb_pois_content` [ RunTime:0.007001s ]
+ERR: 1146:Table 'nhpl.hb_pois_content' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_pois_content`
+NOTIC: [8] Undefined index: HTTP_USER_AGENT F:\phpstudy\WWW\nhpl\Nhpl\Common\common.php 第 145 行.
+SQL: SHOW COLUMNS FROM `hb_area` [ RunTime:0.010000s ]
+ERR: 1146:Table 'nhpl.hb_area' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_area`
+SQL: SELECT * FROM `hb_area` ORDER BY `orderby` asc  [ RunTime:0.002000s ]
+ERR: 1146:Table 'nhpl.hb_area' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_area` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+SQL: SHOW COLUMNS FROM `hb_business` [ RunTime:0.009000s ]
+ERR: 1146:Table 'nhpl.hb_business' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_business`
+SQL: SELECT * FROM `hb_business` ORDER BY `orderby` asc  [ RunTime:0.006000s ]
+ERR: 1146:Table 'nhpl.hb_business' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_business` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+SQL: SHOW COLUMNS FROM `hb_msg` [ RunTime:0.010001s ]
+ERR: 1146:Table 'nhpl.hb_msg' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_msg`
+SQL: SELECT * FROM `hb_msg` WHERE ( `user_id` IN (0,0) ) LIMIT 0,20   [ RunTime:0.003000s ]
+ERR: 1146:Table 'nhpl.hb_msg' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_msg` WHERE ( `user_id` IN (0,0) ) LIMIT 0,20  
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Action\Mobile\CommonAction.class.php 第 302 行.
+NOTIC: [2] array_sum() expects parameter 1 to be array, null given F:\phpstudy\WWW\nhpl\Nhpl\Lib\Action\Mobile\CommonAction.class.php 第 157 行.
+SQL: SHOW COLUMNS FROM `hb_shop` [ RunTime:0.011000s ]
+ERR: 1146:Table 'nhpl.hb_shop' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_shop`
+SQL: SELECT * FROM `hb_shop` WHERE ( `user_id` = 0 ) LIMIT 1   [ RunTime:0.002000s ]
+ERR: 1146:Table 'nhpl.hb_shop' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_shop` WHERE ( `user_id` = 0 ) LIMIT 1  
+NOTIC: [2048] Declaration of TemplateModel::fetchAll() should be compatible with CommonModel::fetchAll($field = '*', $where = Array) F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\TemplateModel.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `hb_template` [ RunTime:0.009001s ]
+ERR: 1146:Table 'nhpl.hb_template' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_template`
+SQL: SELECT * FROM `hb_template`  [ RunTime:0.003000s ]
+ERR: 1146:Table 'nhpl.hb_template' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_template` 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\TemplateModel.class.php 第 15 行.
+NOTIC: [8] Constant THEME_PATH already defined F:\phpstudy\WWW\nhpl\Core\Lib\Core\View.class.php 第 154 行.
+NOTIC: [8] Constant APP_TMPL_PATH already defined F:\phpstudy\WWW\nhpl\Core\Lib\Core\View.class.php 第 155 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.036002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-01-15T09:39:52+08:00 ] 127.0.0.1 HTTP://www.nhpl.com/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: HTTP_USER_AGENT F:\phpstudy\WWW\nhpl\Nhpl\Common\common.php 第 113 行.
+NOTIC: [2048] Declaration of SettingModel::fetchAll() should be compatible with CommonModel::fetchAll($field = '*', $where = Array) F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [2048] Declaration of SettingModel::save() should be compatible with Model::save($data = '', $options = Array) F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `hb_setting` [ RunTime:0.007001s ]
+ERR: 1146:Table 'nhpl.hb_setting' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_setting`
+SQL: SELECT * FROM `hb_setting`  [ RunTime:0.005000s ]
+ERR: 1146:Table 'nhpl.hb_setting' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_setting` 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `hb_city` [ RunTime:0.006001s ]
+ERR: 1146:Table 'nhpl.hb_city' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_city`
+SQL: SELECT * FROM `hb_city` ORDER BY `orderby` asc  [ RunTime:0.001000s ]
+ERR: 1146:Table 'nhpl.hb_city' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_city` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+NOTIC: [8] Undefined index:  F:\phpstudy\WWW\nhpl\Nhpl\Lib\Action\Pchome\CommonAction.class.php 第 41 行.
+NOTIC: [8] Undefined variable: str F:\phpstudy\WWW\nhpl\Core\Extend\Library\ORG\Crypt\Base64.class.php 第 69 行.
+SQL: SHOW COLUMNS FROM `hb_shop_cate` [ RunTime:0.007000s ]
+ERR: 1146:Table 'nhpl.hb_shop_cate' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_shop_cate`
+SQL: SELECT * FROM `hb_shop_cate` ORDER BY `orderby` asc  [ RunTime:0.001000s ]
+ERR: 1146:Table 'nhpl.hb_shop_cate' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_shop_cate` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+SQL: SHOW COLUMNS FROM `hb_tuan_cate` [ RunTime:0.007000s ]
+ERR: 1146:Table 'nhpl.hb_tuan_cate' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_tuan_cate`
+SQL: SELECT * FROM `hb_tuan_cate` ORDER BY `orderby` asc  [ RunTime:0.002000s ]
+ERR: 1146:Table 'nhpl.hb_tuan_cate' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_tuan_cate` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+SQL: SHOW COLUMNS FROM `hb_area` [ RunTime:0.006000s ]
+ERR: 1146:Table 'nhpl.hb_area' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_area`
+SQL: SELECT * FROM `hb_area` ORDER BY `orderby` asc  [ RunTime:0.001000s ]
+ERR: 1146:Table 'nhpl.hb_area' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_area` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+SQL: SHOW COLUMNS FROM `hb_business` [ RunTime:0.006000s ]
+ERR: 1146:Table 'nhpl.hb_business' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_business`
+SQL: SELECT * FROM `hb_business` ORDER BY `orderby` asc  [ RunTime:0.002000s ]
+ERR: 1146:Table 'nhpl.hb_business' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_business` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+NOTIC: [2048] Declaration of TemplateModel::fetchAll() should be compatible with CommonModel::fetchAll($field = '*', $where = Array) F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\TemplateModel.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `hb_template` [ RunTime:0.019001s ]
+ERR: 1146:Table 'nhpl.hb_template' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_template`
+SQL: SELECT * FROM `hb_template`  [ RunTime:0.015001s ]
+ERR: 1146:Table 'nhpl.hb_template' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_template` 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\TemplateModel.class.php 第 15 行.
+SQL: SELECT * FROM `hb_template`  [ RunTime:0.002001s ]
+ERR: 1146:Table 'nhpl.hb_template' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_template` 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\TemplateModel.class.php 第 15 行.
+NOTIC: [8] Undefined variable: theme F:\phpstudy\WWW\nhpl\Nhpl\Lib\Action\Pchome\CommonAction.class.php 第 209 行.
+SQL: SHOW COLUMNS FROM `hb_template_setting` [ RunTime:0.006000s ]
+ERR: 1146:Table 'nhpl.hb_template_setting' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_template_setting`
+SQL: SELECT * FROM `hb_template_setting`  [ RunTime:0.002000s ]
+ERR: 1146:Table 'nhpl.hb_template_setting' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_template_setting` 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+NOTIC: [8] Undefined offset: 0 F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\TemplatesettingModel.class.php 第 12 行.
+NOTIC: 建议使用I方法替代_get
+NOTIC: [2] array_sum() expects parameter 1 to be array, null given F:\phpstudy\WWW\nhpl\Nhpl\Lib\Action\Pchome\CommonAction.class.php 第 107 行.
+SQL: SHOW COLUMNS FROM `hb_navigation` [ RunTime:0.006001s ]
+ERR: 1146:Table 'nhpl.hb_navigation' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_navigation`
+SQL: SELECT * FROM `hb_navigation` WHERE ( `status` = 4 ) AND ( `closed` = 0 ) ORDER BY `orderby` asc  [ RunTime:0.002000s ]
+ERR: 1146:Table 'nhpl.hb_navigation' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_navigation` WHERE ( `status` = 4 ) AND ( `closed` = 0 ) ORDER BY `orderby` asc 
+NOTIC: [2048] Declaration of SeoModel::fetchAll() should be compatible with CommonModel::fetchAll($field = '*', $where = Array) F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\SeoModel.class.php 第 26 行.
+SQL: SHOW COLUMNS FROM `hb_seo` [ RunTime:0.005000s ]
+ERR: 1146:Table 'nhpl.hb_seo' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_seo`
+SQL: SELECT * FROM `hb_seo`  [ RunTime:0.007001s ]
+ERR: 1146:Table 'nhpl.hb_seo' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_seo` 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\SeoModel.class.php 第 17 行.
+NOTIC: [8] Constant THEME_NAME already defined F:\phpstudy\WWW\nhpl\Nhpl\Lib\Action\Pchome\CommonAction.class.php 第 189 行.
+SQL: SELECT * FROM `hb_template`  [ RunTime:0.002000s ]
+ERR: 1146:Table 'nhpl.hb_template' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_template` 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\TemplateModel.class.php 第 15 行.
+SQL: SELECT * FROM `hb_template`  [ RunTime:0.002000s ]
+ERR: 1146:Table 'nhpl.hb_template' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_template` 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\TemplateModel.class.php 第 15 行.
+NOTIC: [8] Undefined variable: theme F:\phpstudy\WWW\nhpl\Nhpl\Lib\Action\Pchome\CommonAction.class.php 第 209 行.
+NOTIC: [8] Constant THEME_PATH already defined F:\phpstudy\WWW\nhpl\Core\Lib\Core\View.class.php 第 154 行.
+NOTIC: [8] Constant APP_TMPL_PATH already defined F:\phpstudy\WWW\nhpl\Core\Lib\Core\View.class.php 第 155 行.
+INFO: [ view_parse ] --START--
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in F:\phpstudy\WWW\nhpl\Nhpl\Lib\TagLib\TagLibCalldata.class.php on line 49 and defined F:\phpstudy\WWW\nhpl\Core\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag F:\phpstudy\WWW\nhpl\Core\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  F:\phpstudy\WWW\nhpl\Core\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag F:\phpstudy\WWW\nhpl\Core\Lib\Template\TagLib.class.php 第 92 行.
+NOTIC: [8] Undefined index: format F:\phpstudy\WWW\nhpl\Nhpl\Lib\TagLib\TagLibCalldata.class.php 第 57 行.
+NOTIC: [8] Undefined index: debug F:\phpstudy\WWW\nhpl\Nhpl\Lib\TagLib\TagLibCalldata.class.php 第 58 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in F:\phpstudy\WWW\nhpl\Nhpl\Lib\TagLib\TagLibCalldata.class.php on line 49 and defined F:\phpstudy\WWW\nhpl\Core\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag F:\phpstudy\WWW\nhpl\Core\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  F:\phpstudy\WWW\nhpl\Core\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag F:\phpstudy\WWW\nhpl\Core\Lib\Template\TagLib.class.php 第 92 行.
+NOTIC: [8] Undefined index: format F:\phpstudy\WWW\nhpl\Nhpl\Lib\TagLib\TagLibCalldata.class.php 第 57 行.
+NOTIC: [8] Undefined index: debug F:\phpstudy\WWW\nhpl\Nhpl\Lib\TagLib\TagLibCalldata.class.php 第 58 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in F:\phpstudy\WWW\nhpl\Nhpl\Lib\TagLib\TagLibCalldata.class.php on line 49 and defined F:\phpstudy\WWW\nhpl\Core\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag F:\phpstudy\WWW\nhpl\Core\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  F:\phpstudy\WWW\nhpl\Core\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag F:\phpstudy\WWW\nhpl\Core\Lib\Template\TagLib.class.php 第 92 行.
+NOTIC: [8] Undefined index: format F:\phpstudy\WWW\nhpl\Nhpl\Lib\TagLib\TagLibCalldata.class.php 第 57 行.
+NOTIC: [8] Undefined index: debug F:\phpstudy\WWW\nhpl\Nhpl\Lib\TagLib\TagLibCalldata.class.php 第 58 行.
+NOTIC: [8] Undefined variable: config F:\phpstudy\WWW\nhpl\Nhpl\Runtime\Cache\Pchome\cff83abaa8a0d07475c6dee202a3a078.php 第 7 行.
+NOTIC: [2] array_reverse() expects parameter 1 to be array, boolean given F:\phpstudy\WWW\nhpl\Nhpl\Runtime\Cache\Pchome\cff83abaa8a0d07475c6dee202a3a078.php 第 99 行.
+SQL: SHOW COLUMNS FROM `hb_ad` [ RunTime:0.006000s ]
+ERR: 1146:Table 'nhpl.hb_ad' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_ad`
+SQL: SELECT * FROM `hb_ad` WHERE (  closed=0 AND site_id=66 AND  city_id IN (0,) and bg_date <= '2018-01-15' AND end_date >= '2018-01-15'  ) ORDER BY orderby asc LIMIT 0,1   [ RunTime:0.002000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') and bg_date <= '2018-01-15' AND end_date >= '2018-01-15'  ) ORDER BY orderby a' at line 1
+ [ SQL语句 ] : SELECT * FROM `hb_ad` WHERE (  closed=0 AND site_id=66 AND  city_id IN (0,) and bg_date <= '2018-01-15' AND end_date >= '2018-01-15'  ) ORDER BY orderby asc LIMIT 0,1  
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Runtime\Cache\Pchome\cff83abaa8a0d07475c6dee202a3a078.php 第 183 行.
+NOTIC: [8] Use of undefined constant ding - assumed 'ding' F:\phpstudy\WWW\nhpl\Nhpl\Runtime\Cache\Pchome\cff83abaa8a0d07475c6dee202a3a078.php 第 244 行.
+NOTIC: [8] Undefined variable: keyword F:\phpstudy\WWW\nhpl\Nhpl\Runtime\Cache\Pchome\cff83abaa8a0d07475c6dee202a3a078.php 第 244 行.
+SQL: SHOW COLUMNS FROM `hb_keyword` [ RunTime:0.020001s ]
+ERR: 1146:Table 'nhpl.hb_keyword' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_keyword`
+SQL: SELECT * FROM `hb_keyword` ORDER BY key_id desc LIMIT 0,8   [ RunTime:0.003000s ]
+ERR: 1146:Table 'nhpl.hb_keyword' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_keyword` ORDER BY key_id desc LIMIT 0,8  
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Runtime\Cache\Pchome\cff83abaa8a0d07475c6dee202a3a078.php 第 258 行.
+NOTIC: [8] Use of undefined constant index - assumed 'index' F:\phpstudy\WWW\nhpl\Nhpl\Runtime\Cache\Pchome\cff83abaa8a0d07475c6dee202a3a078.php 第 323 行.
+SQL: SHOW COLUMNS FROM `hb_links` [ RunTime:0.012001s ]
+ERR: 1146:Table 'nhpl.hb_links' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_links`
+SQL: SELECT * FROM `hb_links` WHERE ( audit=1 AND colsed=0 AND city_id= ) ORDER BY orderby asc LIMIT 0,10   [ RunTime:0.002000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') ORDER BY orderby asc LIMIT 0,10' at line 1
+ [ SQL语句 ] : SELECT * FROM `hb_links` WHERE ( audit=1 AND colsed=0 AND city_id= ) ORDER BY orderby asc LIMIT 0,10  
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Runtime\Cache\Pchome\cff83abaa8a0d07475c6dee202a3a078.php 第 325 行.
+NOTIC: [8] Undefined variable: height_num F:\phpstudy\WWW\nhpl\Nhpl\Runtime\Cache\Pchome\cff83abaa8a0d07475c6dee202a3a078.php 第 412 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.109006s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.109006s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-01-15T09:39:53+08:00 ] 127.0.0.1 HTTP://www.nhpl.com/mobile/index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of CommonAction::show() should be compatible with Action::show($content, $charset = '', $contentType = '', $prefix = '') F:\phpstudy\WWW\nhpl\Nhpl\Lib\Action\Mobile\CommonAction.class.php 第 505 行.
+NOTIC: [2048] Declaration of SettingModel::fetchAll() should be compatible with CommonModel::fetchAll($field = '*', $where = Array) F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [2048] Declaration of SettingModel::save() should be compatible with Model::save($data = '', $options = Array) F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `hb_setting` [ RunTime:0.005000s ]
+ERR: 1146:Table 'nhpl.hb_setting' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_setting`
+SQL: SELECT * FROM `hb_setting`  [ RunTime:0.000000s ]
+ERR: 1146:Table 'nhpl.hb_setting' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_setting` 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `hb_city` [ RunTime:0.005001s ]
+ERR: 1146:Table 'nhpl.hb_city' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_city`
+SQL: SELECT * FROM `hb_city` ORDER BY `orderby` asc  [ RunTime:0.001000s ]
+ERR: 1146:Table 'nhpl.hb_city' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_city` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+NOTIC: [8] Undefined index:  F:\phpstudy\WWW\nhpl\Nhpl\Lib\Action\Mobile\CommonAction.class.php 第 31 行.
+NOTIC: [8] Undefined index: HTTP_USER_AGENT F:\phpstudy\WWW\nhpl\Nhpl\Common\common.php 第 142 行.
+NOTIC: [8] Undefined variable: str F:\phpstudy\WWW\nhpl\Core\Extend\Library\ORG\Crypt\Base64.class.php 第 69 行.
+NOTIC: 建议使用I方法替代_get
+NOTIC: 建议使用I方法替代_get
+NOTIC: 建议使用I方法替代_get
+NOTIC: 建议使用I方法替代_get
+SQL: SELECT * FROM `hb_setting`  [ RunTime:0.001000s ]
+ERR: 1146:Table 'nhpl.hb_setting' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_setting` 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 16 行.
+NOTIC: [8] Constant __HOST__ already defined F:\phpstudy\WWW\nhpl\Nhpl\Lib\Action\Mobile\CommonAction.class.php 第 92 行.
+SQL: SHOW COLUMNS FROM `hb_pois_content` [ RunTime:0.006000s ]
+ERR: 1146:Table 'nhpl.hb_pois_content' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_pois_content`
+NOTIC: [8] Undefined index: HTTP_USER_AGENT F:\phpstudy\WWW\nhpl\Nhpl\Common\common.php 第 145 行.
+SQL: SHOW COLUMNS FROM `hb_area` [ RunTime:0.010000s ]
+ERR: 1146:Table 'nhpl.hb_area' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_area`
+SQL: SELECT * FROM `hb_area` ORDER BY `orderby` asc  [ RunTime:0.001000s ]
+ERR: 1146:Table 'nhpl.hb_area' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_area` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+SQL: SHOW COLUMNS FROM `hb_business` [ RunTime:0.006001s ]
+ERR: 1146:Table 'nhpl.hb_business' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_business`
+SQL: SELECT * FROM `hb_business` ORDER BY `orderby` asc  [ RunTime:0.003000s ]
+ERR: 1146:Table 'nhpl.hb_business' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_business` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+SQL: SHOW COLUMNS FROM `hb_msg` [ RunTime:0.005000s ]
+ERR: 1146:Table 'nhpl.hb_msg' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_msg`
+SQL: SELECT * FROM `hb_msg` WHERE ( `user_id` IN (0,0) ) LIMIT 0,20   [ RunTime:0.001000s ]
+ERR: 1146:Table 'nhpl.hb_msg' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_msg` WHERE ( `user_id` IN (0,0) ) LIMIT 0,20  
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Action\Mobile\CommonAction.class.php 第 302 行.
+NOTIC: [2] array_sum() expects parameter 1 to be array, null given F:\phpstudy\WWW\nhpl\Nhpl\Lib\Action\Mobile\CommonAction.class.php 第 157 行.
+SQL: SHOW COLUMNS FROM `hb_shop` [ RunTime:0.118007s ]
+ERR: 1146:Table 'nhpl.hb_shop' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_shop`
+SQL: SELECT * FROM `hb_shop` WHERE ( `user_id` = 0 ) LIMIT 1   [ RunTime:0.000000s ]
+ERR: 1146:Table 'nhpl.hb_shop' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_shop` WHERE ( `user_id` = 0 ) LIMIT 1  
+NOTIC: [2048] Declaration of TemplateModel::fetchAll() should be compatible with CommonModel::fetchAll($field = '*', $where = Array) F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\TemplateModel.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `hb_template` [ RunTime:0.010001s ]
+ERR: 1146:Table 'nhpl.hb_template' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_template`
+SQL: SELECT * FROM `hb_template`  [ RunTime:0.001000s ]
+ERR: 1146:Table 'nhpl.hb_template' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_template` 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\TemplateModel.class.php 第 15 行.
+NOTIC: [8] Constant THEME_PATH already defined F:\phpstudy\WWW\nhpl\Core\Lib\Core\View.class.php 第 154 行.
+NOTIC: [8] Constant APP_TMPL_PATH already defined F:\phpstudy\WWW\nhpl\Core\Lib\Core\View.class.php 第 155 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2018-01-15T09:39:53+08:00 ] 127.0.0.1 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: HTTP_USER_AGENT F:\phpstudy\WWW\nhpl\Nhpl\Common\common.php 第 113 行.
+NOTIC: [2048] Declaration of SettingModel::fetchAll() should be compatible with CommonModel::fetchAll($field = '*', $where = Array) F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [2048] Declaration of SettingModel::save() should be compatible with Model::save($data = '', $options = Array) F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `hb_setting` [ RunTime:0.006000s ]
+ERR: 1146:Table 'nhpl.hb_setting' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_setting`
+SQL: SELECT * FROM `hb_setting`  [ RunTime:0.002000s ]
+ERR: 1146:Table 'nhpl.hb_setting' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_setting` 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `hb_city` [ RunTime:0.007000s ]
+ERR: 1146:Table 'nhpl.hb_city' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_city`
+SQL: SELECT * FROM `hb_city` ORDER BY `orderby` asc  [ RunTime:0.001000s ]
+ERR: 1146:Table 'nhpl.hb_city' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_city` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+NOTIC: [8] Undefined index:  F:\phpstudy\WWW\nhpl\Nhpl\Lib\Action\Pchome\CommonAction.class.php 第 41 行.
+NOTIC: [8] Undefined variable: str F:\phpstudy\WWW\nhpl\Core\Extend\Library\ORG\Crypt\Base64.class.php 第 69 行.
+SQL: SHOW COLUMNS FROM `hb_shop_cate` [ RunTime:0.007001s ]
+ERR: 1146:Table 'nhpl.hb_shop_cate' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_shop_cate`
+SQL: SELECT * FROM `hb_shop_cate` ORDER BY `orderby` asc  [ RunTime:0.048003s ]
+ERR: 1146:Table 'nhpl.hb_shop_cate' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_shop_cate` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+SQL: SHOW COLUMNS FROM `hb_tuan_cate` [ RunTime:0.076004s ]
+ERR: 1146:Table 'nhpl.hb_tuan_cate' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_tuan_cate`
+SQL: SELECT * FROM `hb_tuan_cate` ORDER BY `orderby` asc  [ RunTime:0.014001s ]
+ERR: 1146:Table 'nhpl.hb_tuan_cate' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_tuan_cate` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+SQL: SHOW COLUMNS FROM `hb_area` [ RunTime:0.009001s ]
+ERR: 1146:Table 'nhpl.hb_area' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_area`
+SQL: SELECT * FROM `hb_area` ORDER BY `orderby` asc  [ RunTime:0.002000s ]
+ERR: 1146:Table 'nhpl.hb_area' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_area` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+SQL: SHOW COLUMNS FROM `hb_business` [ RunTime:0.007000s ]
+ERR: 1146:Table 'nhpl.hb_business' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_business`
+SQL: SELECT * FROM `hb_business` ORDER BY `orderby` asc  [ RunTime:0.002000s ]
+ERR: 1146:Table 'nhpl.hb_business' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_business` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+NOTIC: [2048] Declaration of TemplateModel::fetchAll() should be compatible with CommonModel::fetchAll($field = '*', $where = Array) F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\TemplateModel.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `hb_template` [ RunTime:0.007001s ]
+ERR: 1146:Table 'nhpl.hb_template' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_template`
+SQL: SELECT * FROM `hb_template`  [ RunTime:0.001000s ]
+ERR: 1146:Table 'nhpl.hb_template' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_template` 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\TemplateModel.class.php 第 15 行.
+SQL: SELECT * FROM `hb_template`  [ RunTime:0.002000s ]
+ERR: 1146:Table 'nhpl.hb_template' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_template` 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\TemplateModel.class.php 第 15 行.
+NOTIC: [8] Undefined variable: theme F:\phpstudy\WWW\nhpl\Nhpl\Lib\Action\Pchome\CommonAction.class.php 第 209 行.
+SQL: SHOW COLUMNS FROM `hb_template_setting` [ RunTime:0.008001s ]
+ERR: 1146:Table 'nhpl.hb_template_setting' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_template_setting`
+SQL: SELECT * FROM `hb_template_setting`  [ RunTime:0.002000s ]
+ERR: 1146:Table 'nhpl.hb_template_setting' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_template_setting` 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+NOTIC: [8] Undefined offset: 0 F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\TemplatesettingModel.class.php 第 12 行.
+NOTIC: 建议使用I方法替代_get
+NOTIC: [2] array_sum() expects parameter 1 to be array, null given F:\phpstudy\WWW\nhpl\Nhpl\Lib\Action\Pchome\CommonAction.class.php 第 107 行.
+SQL: SHOW COLUMNS FROM `hb_navigation` [ RunTime:0.024001s ]
+ERR: 1146:Table 'nhpl.hb_navigation' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_navigation`
+SQL: SELECT * FROM `hb_navigation` WHERE ( `status` = 4 ) AND ( `closed` = 0 ) ORDER BY `orderby` asc  [ RunTime:0.045003s ]
+ERR: 1146:Table 'nhpl.hb_navigation' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_navigation` WHERE ( `status` = 4 ) AND ( `closed` = 0 ) ORDER BY `orderby` asc 
+NOTIC: [2048] Declaration of SeoModel::fetchAll() should be compatible with CommonModel::fetchAll($field = '*', $where = Array) F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\SeoModel.class.php 第 26 行.
+SQL: SHOW COLUMNS FROM `hb_seo` [ RunTime:0.010001s ]
+ERR: 1146:Table 'nhpl.hb_seo' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_seo`
+SQL: SELECT * FROM `hb_seo`  [ RunTime:0.002000s ]
+ERR: 1146:Table 'nhpl.hb_seo' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_seo` 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\SeoModel.class.php 第 17 行.
+NOTIC: [8] Constant THEME_NAME already defined F:\phpstudy\WWW\nhpl\Nhpl\Lib\Action\Pchome\CommonAction.class.php 第 189 行.
+SQL: SELECT * FROM `hb_template`  [ RunTime:0.001000s ]
+ERR: 1146:Table 'nhpl.hb_template' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_template` 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\TemplateModel.class.php 第 15 行.
+SQL: SELECT * FROM `hb_template`  [ RunTime:0.001000s ]
+ERR: 1146:Table 'nhpl.hb_template' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_template` 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\TemplateModel.class.php 第 15 行.
+NOTIC: [8] Undefined variable: theme F:\phpstudy\WWW\nhpl\Nhpl\Lib\Action\Pchome\CommonAction.class.php 第 209 行.
+NOTIC: [8] Constant THEME_PATH already defined F:\phpstudy\WWW\nhpl\Core\Lib\Core\View.class.php 第 154 行.
+NOTIC: [8] Constant APP_TMPL_PATH already defined F:\phpstudy\WWW\nhpl\Core\Lib\Core\View.class.php 第 155 行.
+INFO: [ view_parse ] --START--
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in F:\phpstudy\WWW\nhpl\Nhpl\Lib\TagLib\TagLibCalldata.class.php on line 49 and defined F:\phpstudy\WWW\nhpl\Core\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag F:\phpstudy\WWW\nhpl\Core\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  F:\phpstudy\WWW\nhpl\Core\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag F:\phpstudy\WWW\nhpl\Core\Lib\Template\TagLib.class.php 第 92 行.
+NOTIC: [8] Undefined index: format F:\phpstudy\WWW\nhpl\Nhpl\Lib\TagLib\TagLibCalldata.class.php 第 57 行.
+NOTIC: [8] Undefined index: debug F:\phpstudy\WWW\nhpl\Nhpl\Lib\TagLib\TagLibCalldata.class.php 第 58 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in F:\phpstudy\WWW\nhpl\Nhpl\Lib\TagLib\TagLibCalldata.class.php on line 49 and defined F:\phpstudy\WWW\nhpl\Core\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag F:\phpstudy\WWW\nhpl\Core\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  F:\phpstudy\WWW\nhpl\Core\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag F:\phpstudy\WWW\nhpl\Core\Lib\Template\TagLib.class.php 第 92 行.
+NOTIC: [8] Undefined index: format F:\phpstudy\WWW\nhpl\Nhpl\Lib\TagLib\TagLibCalldata.class.php 第 57 行.
+NOTIC: [8] Undefined index: debug F:\phpstudy\WWW\nhpl\Nhpl\Lib\TagLib\TagLibCalldata.class.php 第 58 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in F:\phpstudy\WWW\nhpl\Nhpl\Lib\TagLib\TagLibCalldata.class.php on line 49 and defined F:\phpstudy\WWW\nhpl\Core\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag F:\phpstudy\WWW\nhpl\Core\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  F:\phpstudy\WWW\nhpl\Core\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag F:\phpstudy\WWW\nhpl\Core\Lib\Template\TagLib.class.php 第 92 行.
+NOTIC: [8] Undefined index: format F:\phpstudy\WWW\nhpl\Nhpl\Lib\TagLib\TagLibCalldata.class.php 第 57 行.
+NOTIC: [8] Undefined index: debug F:\phpstudy\WWW\nhpl\Nhpl\Lib\TagLib\TagLibCalldata.class.php 第 58 行.
+NOTIC: [8] Undefined variable: config F:\phpstudy\WWW\nhpl\Nhpl\Runtime\Cache\Pchome\cff83abaa8a0d07475c6dee202a3a078.php 第 7 行.
+NOTIC: [2] array_reverse() expects parameter 1 to be array, boolean given F:\phpstudy\WWW\nhpl\Nhpl\Runtime\Cache\Pchome\cff83abaa8a0d07475c6dee202a3a078.php 第 99 行.
+SQL: SHOW COLUMNS FROM `hb_ad` [ RunTime:0.008000s ]
+ERR: 1146:Table 'nhpl.hb_ad' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_ad`
+SQL: SELECT * FROM `hb_ad` WHERE (  closed=0 AND site_id=66 AND  city_id IN (0,) and bg_date <= '2018-01-15' AND end_date >= '2018-01-15'  ) ORDER BY orderby asc LIMIT 0,1   [ RunTime:0.001000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') and bg_date <= '2018-01-15' AND end_date >= '2018-01-15'  ) ORDER BY orderby a' at line 1
+ [ SQL语句 ] : SELECT * FROM `hb_ad` WHERE (  closed=0 AND site_id=66 AND  city_id IN (0,) and bg_date <= '2018-01-15' AND end_date >= '2018-01-15'  ) ORDER BY orderby asc LIMIT 0,1  
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Runtime\Cache\Pchome\cff83abaa8a0d07475c6dee202a3a078.php 第 183 行.
+NOTIC: [8] Use of undefined constant ding - assumed 'ding' F:\phpstudy\WWW\nhpl\Nhpl\Runtime\Cache\Pchome\cff83abaa8a0d07475c6dee202a3a078.php 第 244 行.
+NOTIC: [8] Undefined variable: keyword F:\phpstudy\WWW\nhpl\Nhpl\Runtime\Cache\Pchome\cff83abaa8a0d07475c6dee202a3a078.php 第 244 行.
+SQL: SHOW COLUMNS FROM `hb_keyword` [ RunTime:0.007001s ]
+ERR: 1146:Table 'nhpl.hb_keyword' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_keyword`
+SQL: SELECT * FROM `hb_keyword` ORDER BY key_id desc LIMIT 0,8   [ RunTime:0.001000s ]
+ERR: 1146:Table 'nhpl.hb_keyword' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_keyword` ORDER BY key_id desc LIMIT 0,8  
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Runtime\Cache\Pchome\cff83abaa8a0d07475c6dee202a3a078.php 第 258 行.
+NOTIC: [8] Use of undefined constant index - assumed 'index' F:\phpstudy\WWW\nhpl\Nhpl\Runtime\Cache\Pchome\cff83abaa8a0d07475c6dee202a3a078.php 第 323 行.
+SQL: SHOW COLUMNS FROM `hb_links` [ RunTime:0.007000s ]
+ERR: 1146:Table 'nhpl.hb_links' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_links`
+SQL: SELECT * FROM `hb_links` WHERE ( audit=1 AND colsed=0 AND city_id= ) ORDER BY orderby asc LIMIT 0,10   [ RunTime:0.001000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') ORDER BY orderby asc LIMIT 0,10' at line 1
+ [ SQL语句 ] : SELECT * FROM `hb_links` WHERE ( audit=1 AND colsed=0 AND city_id= ) ORDER BY orderby asc LIMIT 0,10  
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Runtime\Cache\Pchome\cff83abaa8a0d07475c6dee202a3a078.php 第 325 行.
+NOTIC: [8] Undefined variable: height_num F:\phpstudy\WWW\nhpl\Nhpl\Runtime\Cache\Pchome\cff83abaa8a0d07475c6dee202a3a078.php 第 412 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.073005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.074005s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-01-15T09:39:53+08:00 ] 127.0.0.1 /mobile/index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of CommonAction::show() should be compatible with Action::show($content, $charset = '', $contentType = '', $prefix = '') F:\phpstudy\WWW\nhpl\Nhpl\Lib\Action\Mobile\CommonAction.class.php 第 505 行.
+NOTIC: [2048] Declaration of SettingModel::fetchAll() should be compatible with CommonModel::fetchAll($field = '*', $where = Array) F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [2048] Declaration of SettingModel::save() should be compatible with Model::save($data = '', $options = Array) F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `hb_setting` [ RunTime:0.005000s ]
+ERR: 1146:Table 'nhpl.hb_setting' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_setting`
+SQL: SELECT * FROM `hb_setting`  [ RunTime:0.001000s ]
+ERR: 1146:Table 'nhpl.hb_setting' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_setting` 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `hb_city` [ RunTime:0.005001s ]
+ERR: 1146:Table 'nhpl.hb_city' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_city`
+SQL: SELECT * FROM `hb_city` ORDER BY `orderby` asc  [ RunTime:0.001000s ]
+ERR: 1146:Table 'nhpl.hb_city' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_city` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+NOTIC: [8] Undefined index:  F:\phpstudy\WWW\nhpl\Nhpl\Lib\Action\Mobile\CommonAction.class.php 第 31 行.
+NOTIC: [8] Undefined index: HTTP_USER_AGENT F:\phpstudy\WWW\nhpl\Nhpl\Common\common.php 第 142 行.
+NOTIC: [8] Undefined variable: str F:\phpstudy\WWW\nhpl\Core\Extend\Library\ORG\Crypt\Base64.class.php 第 69 行.
+NOTIC: 建议使用I方法替代_get
+NOTIC: 建议使用I方法替代_get
+NOTIC: 建议使用I方法替代_get
+NOTIC: 建议使用I方法替代_get
+SQL: SELECT * FROM `hb_setting`  [ RunTime:0.001000s ]
+ERR: 1146:Table 'nhpl.hb_setting' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_setting` 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 16 行.
+NOTIC: [8] Constant __HOST__ already defined F:\phpstudy\WWW\nhpl\Nhpl\Lib\Action\Mobile\CommonAction.class.php 第 92 行.
+SQL: SHOW COLUMNS FROM `hb_pois_content` [ RunTime:0.005000s ]
+ERR: 1146:Table 'nhpl.hb_pois_content' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_pois_content`
+NOTIC: [8] Undefined index: HTTP_USER_AGENT F:\phpstudy\WWW\nhpl\Nhpl\Common\common.php 第 145 行.
+SQL: SHOW COLUMNS FROM `hb_area` [ RunTime:0.005001s ]
+ERR: 1146:Table 'nhpl.hb_area' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_area`
+SQL: SELECT * FROM `hb_area` ORDER BY `orderby` asc  [ RunTime:0.001000s ]
+ERR: 1146:Table 'nhpl.hb_area' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_area` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+SQL: SHOW COLUMNS FROM `hb_business` [ RunTime:0.004000s ]
+ERR: 1146:Table 'nhpl.hb_business' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_business`
+SQL: SELECT * FROM `hb_business` ORDER BY `orderby` asc  [ RunTime:0.001000s ]
+ERR: 1146:Table 'nhpl.hb_business' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_business` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+SQL: SHOW COLUMNS FROM `hb_msg` [ RunTime:0.007001s ]
+ERR: 1146:Table 'nhpl.hb_msg' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_msg`
+SQL: SELECT * FROM `hb_msg` WHERE ( `user_id` IN (0,0) ) LIMIT 0,20   [ RunTime:0.000000s ]
+ERR: 1146:Table 'nhpl.hb_msg' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_msg` WHERE ( `user_id` IN (0,0) ) LIMIT 0,20  
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Action\Mobile\CommonAction.class.php 第 302 行.
+NOTIC: [2] array_sum() expects parameter 1 to be array, null given F:\phpstudy\WWW\nhpl\Nhpl\Lib\Action\Mobile\CommonAction.class.php 第 157 行.
+SQL: SHOW COLUMNS FROM `hb_shop` [ RunTime:0.005000s ]
+ERR: 1146:Table 'nhpl.hb_shop' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_shop`
+SQL: SELECT * FROM `hb_shop` WHERE ( `user_id` = 0 ) LIMIT 1   [ RunTime:0.001000s ]
+ERR: 1146:Table 'nhpl.hb_shop' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_shop` WHERE ( `user_id` = 0 ) LIMIT 1  
+NOTIC: [2048] Declaration of TemplateModel::fetchAll() should be compatible with CommonModel::fetchAll($field = '*', $where = Array) F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\TemplateModel.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `hb_template` [ RunTime:0.007001s ]
+ERR: 1146:Table 'nhpl.hb_template' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_template`
+SQL: SELECT * FROM `hb_template`  [ RunTime:0.000000s ]
+ERR: 1146:Table 'nhpl.hb_template' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_template` 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\TemplateModel.class.php 第 15 行.
+NOTIC: [8] Constant THEME_PATH already defined F:\phpstudy\WWW\nhpl\Core\Lib\Core\View.class.php 第 154 行.
+NOTIC: [8] Constant APP_TMPL_PATH already defined F:\phpstudy\WWW\nhpl\Core\Lib\Core\View.class.php 第 155 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-01-15T09:39:58+08:00 ] 127.0.0.1 /index.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: HTTP_USER_AGENT F:\phpstudy\WWW\nhpl\Nhpl\Common\common.php 第 113 行.
+NOTIC: [2048] Declaration of SettingModel::fetchAll() should be compatible with CommonModel::fetchAll($field = '*', $where = Array) F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [2048] Declaration of SettingModel::save() should be compatible with Model::save($data = '', $options = Array) F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `hb_setting` [ RunTime:0.008001s ]
+ERR: 1146:Table 'nhpl.hb_setting' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_setting`
+SQL: SELECT * FROM `hb_setting`  [ RunTime:0.002000s ]
+ERR: 1146:Table 'nhpl.hb_setting' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_setting` 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `hb_city` [ RunTime:0.009001s ]
+ERR: 1146:Table 'nhpl.hb_city' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_city`
+SQL: SELECT * FROM `hb_city` ORDER BY `orderby` asc  [ RunTime:0.002000s ]
+ERR: 1146:Table 'nhpl.hb_city' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_city` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+NOTIC: [8] Undefined index:  F:\phpstudy\WWW\nhpl\Nhpl\Lib\Action\Pchome\CommonAction.class.php 第 41 行.
+NOTIC: [8] Undefined variable: str F:\phpstudy\WWW\nhpl\Core\Extend\Library\ORG\Crypt\Base64.class.php 第 69 行.
+SQL: SHOW COLUMNS FROM `hb_shop_cate` [ RunTime:0.006000s ]
+ERR: 1146:Table 'nhpl.hb_shop_cate' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_shop_cate`
+SQL: SELECT * FROM `hb_shop_cate` ORDER BY `orderby` asc  [ RunTime:0.002000s ]
+ERR: 1146:Table 'nhpl.hb_shop_cate' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_shop_cate` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+SQL: SHOW COLUMNS FROM `hb_tuan_cate` [ RunTime:0.008001s ]
+ERR: 1146:Table 'nhpl.hb_tuan_cate' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_tuan_cate`
+SQL: SELECT * FROM `hb_tuan_cate` ORDER BY `orderby` asc  [ RunTime:0.002000s ]
+ERR: 1146:Table 'nhpl.hb_tuan_cate' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_tuan_cate` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+SQL: SHOW COLUMNS FROM `hb_area` [ RunTime:0.009001s ]
+ERR: 1146:Table 'nhpl.hb_area' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_area`
+SQL: SELECT * FROM `hb_area` ORDER BY `orderby` asc  [ RunTime:0.002000s ]
+ERR: 1146:Table 'nhpl.hb_area' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_area` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+SQL: SHOW COLUMNS FROM `hb_business` [ RunTime:0.006000s ]
+ERR: 1146:Table 'nhpl.hb_business' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_business`
+SQL: SELECT * FROM `hb_business` ORDER BY `orderby` asc  [ RunTime:0.002001s ]
+ERR: 1146:Table 'nhpl.hb_business' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_business` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+NOTIC: [2048] Declaration of TemplateModel::fetchAll() should be compatible with CommonModel::fetchAll($field = '*', $where = Array) F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\TemplateModel.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `hb_template` [ RunTime:0.006000s ]
+ERR: 1146:Table 'nhpl.hb_template' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_template`
+SQL: SELECT * FROM `hb_template`  [ RunTime:0.002000s ]
+ERR: 1146:Table 'nhpl.hb_template' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_template` 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\TemplateModel.class.php 第 15 行.
+SQL: SELECT * FROM `hb_template`  [ RunTime:0.003000s ]
+ERR: 1146:Table 'nhpl.hb_template' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_template` 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\TemplateModel.class.php 第 15 行.
+NOTIC: [8] Undefined variable: theme F:\phpstudy\WWW\nhpl\Nhpl\Lib\Action\Pchome\CommonAction.class.php 第 209 行.
+SQL: SHOW COLUMNS FROM `hb_template_setting` [ RunTime:0.009000s ]
+ERR: 1146:Table 'nhpl.hb_template_setting' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_template_setting`
+SQL: SELECT * FROM `hb_template_setting`  [ RunTime:0.001000s ]
+ERR: 1146:Table 'nhpl.hb_template_setting' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_template_setting` 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+NOTIC: [8] Undefined offset: 0 F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\TemplatesettingModel.class.php 第 12 行.
+NOTIC: 建议使用I方法替代_get
+NOTIC: [2] array_sum() expects parameter 1 to be array, null given F:\phpstudy\WWW\nhpl\Nhpl\Lib\Action\Pchome\CommonAction.class.php 第 107 行.
+SQL: SHOW COLUMNS FROM `hb_navigation` [ RunTime:0.007001s ]
+ERR: 1146:Table 'nhpl.hb_navigation' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_navigation`
+SQL: SELECT * FROM `hb_navigation` WHERE ( `status` = 4 ) AND ( `closed` = 0 ) ORDER BY `orderby` asc  [ RunTime:0.001000s ]
+ERR: 1146:Table 'nhpl.hb_navigation' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_navigation` WHERE ( `status` = 4 ) AND ( `closed` = 0 ) ORDER BY `orderby` asc 
+NOTIC: [2048] Declaration of SeoModel::fetchAll() should be compatible with CommonModel::fetchAll($field = '*', $where = Array) F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\SeoModel.class.php 第 26 行.
+SQL: SHOW COLUMNS FROM `hb_seo` [ RunTime:0.011001s ]
+ERR: 1146:Table 'nhpl.hb_seo' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_seo`
+SQL: SELECT * FROM `hb_seo`  [ RunTime:0.002000s ]
+ERR: 1146:Table 'nhpl.hb_seo' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_seo` 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\SeoModel.class.php 第 17 行.
+NOTIC: [8] Constant THEME_NAME already defined F:\phpstudy\WWW\nhpl\Nhpl\Lib\Action\Pchome\CommonAction.class.php 第 189 行.
+SQL: SELECT * FROM `hb_template`  [ RunTime:0.002000s ]
+ERR: 1146:Table 'nhpl.hb_template' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_template` 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\TemplateModel.class.php 第 15 行.
+SQL: SELECT * FROM `hb_template`  [ RunTime:0.002000s ]
+ERR: 1146:Table 'nhpl.hb_template' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_template` 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\TemplateModel.class.php 第 15 行.
+NOTIC: [8] Undefined variable: theme F:\phpstudy\WWW\nhpl\Nhpl\Lib\Action\Pchome\CommonAction.class.php 第 209 行.
+NOTIC: [8] Constant THEME_PATH already defined F:\phpstudy\WWW\nhpl\Core\Lib\Core\View.class.php 第 154 行.
+NOTIC: [8] Constant APP_TMPL_PATH already defined F:\phpstudy\WWW\nhpl\Core\Lib\Core\View.class.php 第 155 行.
+INFO: [ view_parse ] --START--
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in F:\phpstudy\WWW\nhpl\Nhpl\Lib\TagLib\TagLibCalldata.class.php on line 49 and defined F:\phpstudy\WWW\nhpl\Core\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag F:\phpstudy\WWW\nhpl\Core\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  F:\phpstudy\WWW\nhpl\Core\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag F:\phpstudy\WWW\nhpl\Core\Lib\Template\TagLib.class.php 第 92 行.
+NOTIC: [8] Undefined index: format F:\phpstudy\WWW\nhpl\Nhpl\Lib\TagLib\TagLibCalldata.class.php 第 57 行.
+NOTIC: [8] Undefined index: debug F:\phpstudy\WWW\nhpl\Nhpl\Lib\TagLib\TagLibCalldata.class.php 第 58 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in F:\phpstudy\WWW\nhpl\Nhpl\Lib\TagLib\TagLibCalldata.class.php on line 49 and defined F:\phpstudy\WWW\nhpl\Core\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag F:\phpstudy\WWW\nhpl\Core\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  F:\phpstudy\WWW\nhpl\Core\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag F:\phpstudy\WWW\nhpl\Core\Lib\Template\TagLib.class.php 第 92 行.
+NOTIC: [8] Undefined index: format F:\phpstudy\WWW\nhpl\Nhpl\Lib\TagLib\TagLibCalldata.class.php 第 57 行.
+NOTIC: [8] Undefined index: debug F:\phpstudy\WWW\nhpl\Nhpl\Lib\TagLib\TagLibCalldata.class.php 第 58 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in F:\phpstudy\WWW\nhpl\Nhpl\Lib\TagLib\TagLibCalldata.class.php on line 49 and defined F:\phpstudy\WWW\nhpl\Core\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag F:\phpstudy\WWW\nhpl\Core\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  F:\phpstudy\WWW\nhpl\Core\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag F:\phpstudy\WWW\nhpl\Core\Lib\Template\TagLib.class.php 第 92 行.
+NOTIC: [8] Undefined index: format F:\phpstudy\WWW\nhpl\Nhpl\Lib\TagLib\TagLibCalldata.class.php 第 57 行.
+NOTIC: [8] Undefined index: debug F:\phpstudy\WWW\nhpl\Nhpl\Lib\TagLib\TagLibCalldata.class.php 第 58 行.
+NOTIC: [8] Undefined variable: config F:\phpstudy\WWW\nhpl\Nhpl\Runtime\Cache\Pchome\cff83abaa8a0d07475c6dee202a3a078.php 第 7 行.
+NOTIC: [2] array_reverse() expects parameter 1 to be array, boolean given F:\phpstudy\WWW\nhpl\Nhpl\Runtime\Cache\Pchome\cff83abaa8a0d07475c6dee202a3a078.php 第 99 行.
+SQL: SHOW COLUMNS FROM `hb_ad` [ RunTime:0.012000s ]
+ERR: 1146:Table 'nhpl.hb_ad' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_ad`
+SQL: SELECT * FROM `hb_ad` WHERE (  closed=0 AND site_id=66 AND  city_id IN (0,) and bg_date <= '2018-01-15' AND end_date >= '2018-01-15'  ) ORDER BY orderby asc LIMIT 0,1   [ RunTime:0.002001s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') and bg_date <= '2018-01-15' AND end_date >= '2018-01-15'  ) ORDER BY orderby a' at line 1
+ [ SQL语句 ] : SELECT * FROM `hb_ad` WHERE (  closed=0 AND site_id=66 AND  city_id IN (0,) and bg_date <= '2018-01-15' AND end_date >= '2018-01-15'  ) ORDER BY orderby asc LIMIT 0,1  
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Runtime\Cache\Pchome\cff83abaa8a0d07475c6dee202a3a078.php 第 183 行.
+NOTIC: [8] Use of undefined constant ding - assumed 'ding' F:\phpstudy\WWW\nhpl\Nhpl\Runtime\Cache\Pchome\cff83abaa8a0d07475c6dee202a3a078.php 第 244 行.
+NOTIC: [8] Undefined variable: keyword F:\phpstudy\WWW\nhpl\Nhpl\Runtime\Cache\Pchome\cff83abaa8a0d07475c6dee202a3a078.php 第 244 行.
+SQL: SHOW COLUMNS FROM `hb_keyword` [ RunTime:0.009000s ]
+ERR: 1146:Table 'nhpl.hb_keyword' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_keyword`
+SQL: SELECT * FROM `hb_keyword` ORDER BY key_id desc LIMIT 0,8   [ RunTime:0.002000s ]
+ERR: 1146:Table 'nhpl.hb_keyword' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_keyword` ORDER BY key_id desc LIMIT 0,8  
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Runtime\Cache\Pchome\cff83abaa8a0d07475c6dee202a3a078.php 第 258 行.
+NOTIC: [8] Use of undefined constant index - assumed 'index' F:\phpstudy\WWW\nhpl\Nhpl\Runtime\Cache\Pchome\cff83abaa8a0d07475c6dee202a3a078.php 第 323 行.
+SQL: SHOW COLUMNS FROM `hb_links` [ RunTime:0.006000s ]
+ERR: 1146:Table 'nhpl.hb_links' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_links`
+SQL: SELECT * FROM `hb_links` WHERE ( audit=1 AND colsed=0 AND city_id= ) ORDER BY orderby asc LIMIT 0,10   [ RunTime:0.001000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') ORDER BY orderby asc LIMIT 0,10' at line 1
+ [ SQL语句 ] : SELECT * FROM `hb_links` WHERE ( audit=1 AND colsed=0 AND city_id= ) ORDER BY orderby asc LIMIT 0,10  
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Runtime\Cache\Pchome\cff83abaa8a0d07475c6dee202a3a078.php 第 325 行.
+NOTIC: [8] Undefined variable: height_num F:\phpstudy\WWW\nhpl\Nhpl\Runtime\Cache\Pchome\cff83abaa8a0d07475c6dee202a3a078.php 第 412 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.081004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.081004s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-01-15T09:40:04+08:00 ] 127.0.0.1 /app/passport/logout
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of SettingModel::fetchAll() should be compatible with CommonModel::fetchAll($field = '*', $where = Array) F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [2048] Declaration of SettingModel::save() should be compatible with Model::save($data = '', $options = Array) F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `hb_setting` [ RunTime:0.013000s ]
+ERR: 1146:Table 'nhpl.hb_setting' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_setting`
+SQL: SELECT * FROM `hb_setting`  [ RunTime:0.001000s ]
+ERR: 1146:Table 'nhpl.hb_setting' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_setting` 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 16 行.
+NOTIC: 建议使用I方法替代_param
+NOTIC: 建议使用I方法替代_param
+NOTIC: 建议使用I方法替代_get
+NOTIC: 建议使用I方法替代_get
+NOTIC: 建议使用I方法替代_get
+NOTIC: [8] Undefined index:  F:\phpstudy\WWW\nhpl\Nhpl\Lib\Action\App\CommonAction.class.php 第 64 行.
+SQL: SHOW COLUMNS FROM `hb_shop_cate` [ RunTime:0.009001s ]
+ERR: 1146:Table 'nhpl.hb_shop_cate' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_shop_cate`
+SQL: SELECT * FROM `hb_shop_cate` ORDER BY `orderby` asc  [ RunTime:0.002000s ]
+ERR: 1146:Table 'nhpl.hb_shop_cate' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_shop_cate` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+SQL: SHOW COLUMNS FROM `hb_tuan_cate` [ RunTime:0.014001s ]
+ERR: 1146:Table 'nhpl.hb_tuan_cate' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_tuan_cate`
+SQL: SELECT * FROM `hb_tuan_cate` ORDER BY `orderby` asc  [ RunTime:0.001000s ]
+ERR: 1146:Table 'nhpl.hb_tuan_cate' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_tuan_cate` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+SQL: SHOW COLUMNS FROM `hb_goods_cate` [ RunTime:0.013001s ]
+ERR: 1146:Table 'nhpl.hb_goods_cate' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_goods_cate`
+SQL: SELECT * FROM `hb_goods_cate` ORDER BY `orderby` asc  [ RunTime:0.001000s ]
+ERR: 1146:Table 'nhpl.hb_goods_cate' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_goods_cate` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+SQL: SHOW COLUMNS FROM `hb_area` [ RunTime:0.011001s ]
+ERR: 1146:Table 'nhpl.hb_area' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_area`
+SQL: SELECT * FROM `hb_area` ORDER BY `orderby` asc  [ RunTime:0.002000s ]
+ERR: 1146:Table 'nhpl.hb_area' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_area` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+SQL: SHOW COLUMNS FROM `hb_business` [ RunTime:0.013001s ]
+ERR: 1146:Table 'nhpl.hb_business' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_business`
+SQL: SELECT * FROM `hb_business` ORDER BY `orderby` asc  [ RunTime:0.002000s ]
+ERR: 1146:Table 'nhpl.hb_business' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_business` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+SQL: SELECT * FROM `hb_setting`  [ RunTime:0.002000s ]
+ERR: 1146:Table 'nhpl.hb_setting' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_setting` 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 16 行.
+
+[ 2018-01-15T09:40:14+08:00 ] 127.0.0.1 /app/user/myworks
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of SettingModel::fetchAll() should be compatible with CommonModel::fetchAll($field = '*', $where = Array) F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [2048] Declaration of SettingModel::save() should be compatible with Model::save($data = '', $options = Array) F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `hb_setting` [ RunTime:0.013000s ]
+ERR: 1146:Table 'nhpl.hb_setting' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_setting`
+SQL: SELECT * FROM `hb_setting`  [ RunTime:0.002000s ]
+ERR: 1146:Table 'nhpl.hb_setting' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_setting` 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 16 行.
+NOTIC: 建议使用I方法替代_param
+NOTIC: 建议使用I方法替代_param
+NOTIC: 建议使用I方法替代_get
+NOTIC: 建议使用I方法替代_get
+NOTIC: 建议使用I方法替代_get
+NOTIC: [8] Undefined index:  F:\phpstudy\WWW\nhpl\Nhpl\Lib\Action\App\CommonAction.class.php 第 64 行.
+SQL: SHOW COLUMNS FROM `hb_shop_cate` [ RunTime:0.007001s ]
+ERR: 1146:Table 'nhpl.hb_shop_cate' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_shop_cate`
+SQL: SELECT * FROM `hb_shop_cate` ORDER BY `orderby` asc  [ RunTime:0.001000s ]
+ERR: 1146:Table 'nhpl.hb_shop_cate' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_shop_cate` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+SQL: SHOW COLUMNS FROM `hb_tuan_cate` [ RunTime:0.011000s ]
+ERR: 1146:Table 'nhpl.hb_tuan_cate' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_tuan_cate`
+SQL: SELECT * FROM `hb_tuan_cate` ORDER BY `orderby` asc  [ RunTime:0.001000s ]
+ERR: 1146:Table 'nhpl.hb_tuan_cate' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_tuan_cate` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+SQL: SHOW COLUMNS FROM `hb_goods_cate` [ RunTime:0.013001s ]
+ERR: 1146:Table 'nhpl.hb_goods_cate' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_goods_cate`
+SQL: SELECT * FROM `hb_goods_cate` ORDER BY `orderby` asc  [ RunTime:0.002000s ]
+ERR: 1146:Table 'nhpl.hb_goods_cate' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_goods_cate` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+SQL: SHOW COLUMNS FROM `hb_area` [ RunTime:0.007000s ]
+ERR: 1146:Table 'nhpl.hb_area' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_area`
+SQL: SELECT * FROM `hb_area` ORDER BY `orderby` asc  [ RunTime:0.001000s ]
+ERR: 1146:Table 'nhpl.hb_area' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_area` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+SQL: SHOW COLUMNS FROM `hb_business` [ RunTime:0.014000s ]
+ERR: 1146:Table 'nhpl.hb_business' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_business`
+SQL: SELECT * FROM `hb_business` ORDER BY `orderby` asc  [ RunTime:0.001001s ]
+ERR: 1146:Table 'nhpl.hb_business' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_business` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+NOTIC: [8] Undefined variable: str F:\phpstudy\WWW\nhpl\Core\Extend\Library\ORG\Crypt\Base64.class.php 第 69 行.
+
+[ 2018-01-15T09:41:50+08:00 ] 127.0.0.1 /app/user/myworks
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of SettingModel::fetchAll() should be compatible with CommonModel::fetchAll($field = '*', $where = Array) F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [2048] Declaration of SettingModel::save() should be compatible with Model::save($data = '', $options = Array) F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `hb_setting` [ RunTime:0.011000s ]
+ERR: 1146:Table 'nhpl.hb_setting' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_setting`
+SQL: SELECT * FROM `hb_setting`  [ RunTime:0.001000s ]
+ERR: 1146:Table 'nhpl.hb_setting' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_setting` 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 16 行.
+NOTIC: 建议使用I方法替代_param
+NOTIC: 建议使用I方法替代_param
+NOTIC: 建议使用I方法替代_get
+NOTIC: 建议使用I方法替代_get
+NOTIC: 建议使用I方法替代_get
+NOTIC: [8] Undefined index:  F:\phpstudy\WWW\nhpl\Nhpl\Lib\Action\App\CommonAction.class.php 第 64 行.
+SQL: SHOW COLUMNS FROM `hb_shop_cate` [ RunTime:0.014001s ]
+ERR: 1146:Table 'nhpl.hb_shop_cate' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_shop_cate`
+SQL: SELECT * FROM `hb_shop_cate` ORDER BY `orderby` asc  [ RunTime:0.001000s ]
+ERR: 1146:Table 'nhpl.hb_shop_cate' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_shop_cate` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+SQL: SHOW COLUMNS FROM `hb_tuan_cate` [ RunTime:0.013001s ]
+ERR: 1146:Table 'nhpl.hb_tuan_cate' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_tuan_cate`
+SQL: SELECT * FROM `hb_tuan_cate` ORDER BY `orderby` asc  [ RunTime:0.001000s ]
+ERR: 1146:Table 'nhpl.hb_tuan_cate' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_tuan_cate` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+SQL: SHOW COLUMNS FROM `hb_goods_cate` [ RunTime:0.009001s ]
+ERR: 1146:Table 'nhpl.hb_goods_cate' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_goods_cate`
+SQL: SELECT * FROM `hb_goods_cate` ORDER BY `orderby` asc  [ RunTime:0.001000s ]
+ERR: 1146:Table 'nhpl.hb_goods_cate' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_goods_cate` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+SQL: SHOW COLUMNS FROM `hb_area` [ RunTime:0.005000s ]
+ERR: 1146:Table 'nhpl.hb_area' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_area`
+SQL: SELECT * FROM `hb_area` ORDER BY `orderby` asc  [ RunTime:0.001000s ]
+ERR: 1146:Table 'nhpl.hb_area' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_area` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+SQL: SHOW COLUMNS FROM `hb_business` [ RunTime:0.010000s ]
+ERR: 1146:Table 'nhpl.hb_business' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_business`
+SQL: SELECT * FROM `hb_business` ORDER BY `orderby` asc  [ RunTime:0.001000s ]
+ERR: 1146:Table 'nhpl.hb_business' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_business` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+NOTIC: [8] Undefined variable: str F:\phpstudy\WWW\nhpl\Core\Extend\Library\ORG\Crypt\Base64.class.php 第 69 行.
+
+[ 2018-01-15T09:41:57+08:00 ] 127.0.0.1 /app/user/myworks
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of SettingModel::fetchAll() should be compatible with CommonModel::fetchAll($field = '*', $where = Array) F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [2048] Declaration of SettingModel::save() should be compatible with Model::save($data = '', $options = Array) F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `hb_setting` [ RunTime:0.011001s ]
+ERR: 1146:Table 'nhpl.hb_setting' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_setting`
+SQL: SELECT * FROM `hb_setting`  [ RunTime:0.002000s ]
+ERR: 1146:Table 'nhpl.hb_setting' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_setting` 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 16 行.
+NOTIC: 建议使用I方法替代_param
+NOTIC: 建议使用I方法替代_param
+NOTIC: 建议使用I方法替代_get
+NOTIC: 建议使用I方法替代_get
+NOTIC: 建议使用I方法替代_get
+NOTIC: [8] Undefined index:  F:\phpstudy\WWW\nhpl\Nhpl\Lib\Action\App\CommonAction.class.php 第 64 行.
+SQL: SHOW COLUMNS FROM `hb_shop_cate` [ RunTime:0.010001s ]
+ERR: 1146:Table 'nhpl.hb_shop_cate' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_shop_cate`
+SQL: SELECT * FROM `hb_shop_cate` ORDER BY `orderby` asc  [ RunTime:0.002000s ]
+ERR: 1146:Table 'nhpl.hb_shop_cate' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_shop_cate` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+SQL: SHOW COLUMNS FROM `hb_tuan_cate` [ RunTime:0.010001s ]
+ERR: 1146:Table 'nhpl.hb_tuan_cate' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_tuan_cate`
+SQL: SELECT * FROM `hb_tuan_cate` ORDER BY `orderby` asc  [ RunTime:0.001000s ]
+ERR: 1146:Table 'nhpl.hb_tuan_cate' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_tuan_cate` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+SQL: SHOW COLUMNS FROM `hb_goods_cate` [ RunTime:0.010001s ]
+ERR: 1146:Table 'nhpl.hb_goods_cate' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_goods_cate`
+SQL: SELECT * FROM `hb_goods_cate` ORDER BY `orderby` asc  [ RunTime:0.002000s ]
+ERR: 1146:Table 'nhpl.hb_goods_cate' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_goods_cate` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+SQL: SHOW COLUMNS FROM `hb_area` [ RunTime:0.007000s ]
+ERR: 1146:Table 'nhpl.hb_area' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_area`
+SQL: SELECT * FROM `hb_area` ORDER BY `orderby` asc  [ RunTime:0.002000s ]
+ERR: 1146:Table 'nhpl.hb_area' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_area` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+SQL: SHOW COLUMNS FROM `hb_business` [ RunTime:0.009000s ]
+ERR: 1146:Table 'nhpl.hb_business' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_business`
+SQL: SELECT * FROM `hb_business` ORDER BY `orderby` asc  [ RunTime:0.002001s ]
+ERR: 1146:Table 'nhpl.hb_business' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_business` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+NOTIC: [8] Undefined variable: str F:\phpstudy\WWW\nhpl\Core\Extend\Library\ORG\Crypt\Base64.class.php 第 69 行.
+
+[ 2018-01-15T09:42:06+08:00 ] 127.0.0.1 /app/passport/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of SettingModel::fetchAll() should be compatible with CommonModel::fetchAll($field = '*', $where = Array) F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [2048] Declaration of SettingModel::save() should be compatible with Model::save($data = '', $options = Array) F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `hb_setting` [ RunTime:0.013001s ]
+ERR: 1146:Table 'nhpl.hb_setting' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_setting`
+SQL: SELECT * FROM `hb_setting`  [ RunTime:0.001000s ]
+ERR: 1146:Table 'nhpl.hb_setting' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_setting` 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 16 行.
+NOTIC: 建议使用I方法替代_param
+NOTIC: 建议使用I方法替代_param
+NOTIC: 建议使用I方法替代_get
+NOTIC: 建议使用I方法替代_get
+NOTIC: 建议使用I方法替代_get
+NOTIC: [8] Undefined index:  F:\phpstudy\WWW\nhpl\Nhpl\Lib\Action\App\CommonAction.class.php 第 64 行.
+SQL: SHOW COLUMNS FROM `hb_shop_cate` [ RunTime:0.012001s ]
+ERR: 1146:Table 'nhpl.hb_shop_cate' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_shop_cate`
+SQL: SELECT * FROM `hb_shop_cate` ORDER BY `orderby` asc  [ RunTime:0.001000s ]
+ERR: 1146:Table 'nhpl.hb_shop_cate' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_shop_cate` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+SQL: SHOW COLUMNS FROM `hb_tuan_cate` [ RunTime:0.012001s ]
+ERR: 1146:Table 'nhpl.hb_tuan_cate' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_tuan_cate`
+SQL: SELECT * FROM `hb_tuan_cate` ORDER BY `orderby` asc  [ RunTime:0.001000s ]
+ERR: 1146:Table 'nhpl.hb_tuan_cate' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_tuan_cate` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+SQL: SHOW COLUMNS FROM `hb_goods_cate` [ RunTime:0.009001s ]
+ERR: 1146:Table 'nhpl.hb_goods_cate' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_goods_cate`
+SQL: SELECT * FROM `hb_goods_cate` ORDER BY `orderby` asc  [ RunTime:0.001000s ]
+ERR: 1146:Table 'nhpl.hb_goods_cate' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_goods_cate` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+SQL: SHOW COLUMNS FROM `hb_area` [ RunTime:0.013001s ]
+ERR: 1146:Table 'nhpl.hb_area' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_area`
+SQL: SELECT * FROM `hb_area` ORDER BY `orderby` asc  [ RunTime:0.001000s ]
+ERR: 1146:Table 'nhpl.hb_area' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_area` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+SQL: SHOW COLUMNS FROM `hb_business` [ RunTime:0.011001s ]
+ERR: 1146:Table 'nhpl.hb_business' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_business`
+SQL: SELECT * FROM `hb_business` ORDER BY `orderby` asc  [ RunTime:0.001000s ]
+ERR: 1146:Table 'nhpl.hb_business' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_business` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+NOTIC: [8] Undefined variable: str F:\phpstudy\WWW\nhpl\Core\Extend\Library\ORG\Crypt\Base64.class.php 第 69 行.
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+SQL: SELECT * FROM `hb_setting`  [ RunTime:0.000000s ]
+ERR: 1146:Table 'nhpl.hb_setting' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_setting` 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `hb_huser` [ RunTime:0.015001s ]
+SQL: SELECT * FROM `hb_huser` WHERE ( `mobile` = '15211011049' ) LIMIT 1   [ RunTime:0.002000s ]
+NOTIC: [8] Undefined variable: set F:\phpstudy\WWW\nhpl\Core\Lib\Core\Db.class.php 第 294 行.
+NOTIC: [2] implode(): Invalid arguments passed F:\phpstudy\WWW\nhpl\Core\Lib\Core\Db.class.php 第 294 行.
+SQL: UPDATE `hb_huser` SET  WHERE ( `huser_id` = 8 ) [ RunTime:0.001000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `huser_id` = 8 )' at line 1
+ [ SQL语句 ] : UPDATE `hb_huser` SET  WHERE ( `huser_id` = 8 )
+NOTIC: [8] Undefined variable: char F:\phpstudy\WWW\nhpl\Core\Extend\Library\ORG\Crypt\Base64.class.php 第 36 行.
+NOTIC: [8] Undefined variable: str F:\phpstudy\WWW\nhpl\Core\Extend\Library\ORG\Crypt\Base64.class.php 第 40 行.
+
+[ 2018-01-15T09:42:11+08:00 ] 127.0.0.1 /app/user/myworks
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of SettingModel::fetchAll() should be compatible with CommonModel::fetchAll($field = '*', $where = Array) F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [2048] Declaration of SettingModel::save() should be compatible with Model::save($data = '', $options = Array) F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `hb_setting` [ RunTime:0.006000s ]
+ERR: 1146:Table 'nhpl.hb_setting' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_setting`
+SQL: SELECT * FROM `hb_setting`  [ RunTime:0.001000s ]
+ERR: 1146:Table 'nhpl.hb_setting' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_setting` 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 16 行.
+NOTIC: 建议使用I方法替代_param
+NOTIC: 建议使用I方法替代_param
+NOTIC: 建议使用I方法替代_get
+NOTIC: 建议使用I方法替代_get
+NOTIC: 建议使用I方法替代_get
+NOTIC: [8] Undefined index:  F:\phpstudy\WWW\nhpl\Nhpl\Lib\Action\App\CommonAction.class.php 第 64 行.
+SQL: SHOW COLUMNS FROM `hb_shop_cate` [ RunTime:0.006000s ]
+ERR: 1146:Table 'nhpl.hb_shop_cate' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_shop_cate`
+SQL: SELECT * FROM `hb_shop_cate` ORDER BY `orderby` asc  [ RunTime:0.001000s ]
+ERR: 1146:Table 'nhpl.hb_shop_cate' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_shop_cate` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+SQL: SHOW COLUMNS FROM `hb_tuan_cate` [ RunTime:0.006001s ]
+ERR: 1146:Table 'nhpl.hb_tuan_cate' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_tuan_cate`
+SQL: SELECT * FROM `hb_tuan_cate` ORDER BY `orderby` asc  [ RunTime:0.002000s ]
+ERR: 1146:Table 'nhpl.hb_tuan_cate' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_tuan_cate` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+SQL: SHOW COLUMNS FROM `hb_goods_cate` [ RunTime:0.005000s ]
+ERR: 1146:Table 'nhpl.hb_goods_cate' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_goods_cate`
+SQL: SELECT * FROM `hb_goods_cate` ORDER BY `orderby` asc  [ RunTime:0.001000s ]
+ERR: 1146:Table 'nhpl.hb_goods_cate' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_goods_cate` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+SQL: SHOW COLUMNS FROM `hb_area` [ RunTime:0.007000s ]
+ERR: 1146:Table 'nhpl.hb_area' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_area`
+SQL: SELECT * FROM `hb_area` ORDER BY `orderby` asc  [ RunTime:0.003000s ]
+ERR: 1146:Table 'nhpl.hb_area' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_area` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+SQL: SHOW COLUMNS FROM `hb_business` [ RunTime:0.006001s ]
+ERR: 1146:Table 'nhpl.hb_business' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_business`
+SQL: SELECT * FROM `hb_business` ORDER BY `orderby` asc  [ RunTime:0.002000s ]
+ERR: 1146:Table 'nhpl.hb_business' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_business` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+NOTIC: [8] Undefined variable: char F:\phpstudy\WWW\nhpl\Core\Extend\Library\ORG\Crypt\Base64.class.php 第 59 行.
+NOTIC: [8] Undefined variable: str F:\phpstudy\WWW\nhpl\Core\Extend\Library\ORG\Crypt\Base64.class.php 第 66 行.
+NOTIC: [8] Undefined variable: char F:\phpstudy\WWW\nhpl\Core\Extend\Library\ORG\Crypt\Base64.class.php 第 59 行.
+NOTIC: [8] Undefined variable: str F:\phpstudy\WWW\nhpl\Core\Extend\Library\ORG\Crypt\Base64.class.php 第 66 行.
+SQL: SHOW COLUMNS FROM `hb_works` [ RunTime:0.007001s ]
+SQL: SELECT * FROM `hb_works` WHERE ( uid=8 )  [ RunTime:0.002000s ]
+
+[ 2018-01-15T09:59:04+08:00 ] 127.0.0.1 /app/user/releaseWork
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of SettingModel::fetchAll() should be compatible with CommonModel::fetchAll($field = '*', $where = Array) F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [2048] Declaration of SettingModel::save() should be compatible with Model::save($data = '', $options = Array) F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `hb_setting` [ RunTime:0.007000s ]
+ERR: 1146:Table 'nhpl.hb_setting' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_setting`
+SQL: SELECT * FROM `hb_setting`  [ RunTime:0.003000s ]
+ERR: 1146:Table 'nhpl.hb_setting' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_setting` 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 16 行.
+NOTIC: 建议使用I方法替代_param
+NOTIC: 建议使用I方法替代_param
+NOTIC: 建议使用I方法替代_get
+NOTIC: 建议使用I方法替代_get
+NOTIC: 建议使用I方法替代_get
+NOTIC: [8] Undefined index:  F:\phpstudy\WWW\nhpl\Nhpl\Lib\Action\App\CommonAction.class.php 第 64 行.
+SQL: SHOW COLUMNS FROM `hb_shop_cate` [ RunTime:0.008000s ]
+ERR: 1146:Table 'nhpl.hb_shop_cate' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_shop_cate`
+SQL: SELECT * FROM `hb_shop_cate` ORDER BY `orderby` asc  [ RunTime:0.004000s ]
+ERR: 1146:Table 'nhpl.hb_shop_cate' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_shop_cate` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+SQL: SHOW COLUMNS FROM `hb_tuan_cate` [ RunTime:0.008000s ]
+ERR: 1146:Table 'nhpl.hb_tuan_cate' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_tuan_cate`
+SQL: SELECT * FROM `hb_tuan_cate` ORDER BY `orderby` asc  [ RunTime:0.003000s ]
+ERR: 1146:Table 'nhpl.hb_tuan_cate' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_tuan_cate` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+SQL: SHOW COLUMNS FROM `hb_goods_cate` [ RunTime:0.011001s ]
+ERR: 1146:Table 'nhpl.hb_goods_cate' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_goods_cate`
+SQL: SELECT * FROM `hb_goods_cate` ORDER BY `orderby` asc  [ RunTime:0.004000s ]
+ERR: 1146:Table 'nhpl.hb_goods_cate' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_goods_cate` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+SQL: SHOW COLUMNS FROM `hb_area` [ RunTime:0.008000s ]
+ERR: 1146:Table 'nhpl.hb_area' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_area`
+SQL: SELECT * FROM `hb_area` ORDER BY `orderby` asc  [ RunTime:0.003000s ]
+ERR: 1146:Table 'nhpl.hb_area' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_area` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+SQL: SHOW COLUMNS FROM `hb_business` [ RunTime:0.010001s ]
+ERR: 1146:Table 'nhpl.hb_business' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_business`
+SQL: SELECT * FROM `hb_business` ORDER BY `orderby` asc  [ RunTime:0.003000s ]
+ERR: 1146:Table 'nhpl.hb_business' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_business` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+SQL: SHOW COLUMNS FROM `hb_works` [ RunTime:0.008001s ]
+NOTIC: [8] Undefined variable: char F:\phpstudy\WWW\nhpl\Core\Extend\Library\ORG\Crypt\Base64.class.php 第 59 行.
+NOTIC: [8] Undefined variable: str F:\phpstudy\WWW\nhpl\Core\Extend\Library\ORG\Crypt\Base64.class.php 第 66 行.
+SQL: SELECT * FROM `hb_setting`  [ RunTime:0.002000s ]
+ERR: 1146:Table 'nhpl.hb_setting' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_setting` 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 16 行.
+NOTIC: 建议使用I方法替代_param
+NOTIC: 建议使用I方法替代_param
+NOTIC: 建议使用I方法替代_get
+NOTIC: 建议使用I方法替代_get
+NOTIC: 建议使用I方法替代_get
+NOTIC: [8] Undefined index:  F:\phpstudy\WWW\nhpl\Nhpl\Lib\Action\App\CommonAction.class.php 第 64 行.
+SQL: SELECT * FROM `hb_shop_cate` ORDER BY `orderby` asc  [ RunTime:0.002000s ]
+ERR: 1146:Table 'nhpl.hb_shop_cate' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_shop_cate` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+SQL: SELECT * FROM `hb_tuan_cate` ORDER BY `orderby` asc  [ RunTime:0.003000s ]
+ERR: 1146:Table 'nhpl.hb_tuan_cate' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_tuan_cate` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+SQL: SELECT * FROM `hb_goods_cate` ORDER BY `orderby` asc  [ RunTime:0.003000s ]
+ERR: 1146:Table 'nhpl.hb_goods_cate' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_goods_cate` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+SQL: SELECT * FROM `hb_area` ORDER BY `orderby` asc  [ RunTime:0.005000s ]
+ERR: 1146:Table 'nhpl.hb_area' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_area` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+SQL: SELECT * FROM `hb_business` ORDER BY `orderby` asc  [ RunTime:0.003000s ]
+ERR: 1146:Table 'nhpl.hb_business' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_business` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+
+[ 2018-01-15T09:59:28+08:00 ] 127.0.0.1 /app/user/releaseWork
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of SettingModel::fetchAll() should be compatible with CommonModel::fetchAll($field = '*', $where = Array) F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [2048] Declaration of SettingModel::save() should be compatible with Model::save($data = '', $options = Array) F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `hb_setting` [ RunTime:0.007001s ]
+ERR: 1146:Table 'nhpl.hb_setting' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_setting`
+SQL: SELECT * FROM `hb_setting`  [ RunTime:0.003000s ]
+ERR: 1146:Table 'nhpl.hb_setting' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_setting` 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 16 行.
+NOTIC: 建议使用I方法替代_param
+NOTIC: 建议使用I方法替代_param
+NOTIC: 建议使用I方法替代_get
+NOTIC: 建议使用I方法替代_get
+NOTIC: 建议使用I方法替代_get
+NOTIC: [8] Undefined index:  F:\phpstudy\WWW\nhpl\Nhpl\Lib\Action\App\CommonAction.class.php 第 64 行.
+SQL: SHOW COLUMNS FROM `hb_shop_cate` [ RunTime:0.007001s ]
+ERR: 1146:Table 'nhpl.hb_shop_cate' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_shop_cate`
+SQL: SELECT * FROM `hb_shop_cate` ORDER BY `orderby` asc  [ RunTime:0.002000s ]
+ERR: 1146:Table 'nhpl.hb_shop_cate' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_shop_cate` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+SQL: SHOW COLUMNS FROM `hb_tuan_cate` [ RunTime:0.005000s ]
+ERR: 1146:Table 'nhpl.hb_tuan_cate' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_tuan_cate`
+SQL: SELECT * FROM `hb_tuan_cate` ORDER BY `orderby` asc  [ RunTime:0.002000s ]
+ERR: 1146:Table 'nhpl.hb_tuan_cate' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_tuan_cate` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+SQL: SHOW COLUMNS FROM `hb_goods_cate` [ RunTime:0.005000s ]
+ERR: 1146:Table 'nhpl.hb_goods_cate' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_goods_cate`
+SQL: SELECT * FROM `hb_goods_cate` ORDER BY `orderby` asc  [ RunTime:0.001000s ]
+ERR: 1146:Table 'nhpl.hb_goods_cate' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_goods_cate` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+SQL: SHOW COLUMNS FROM `hb_area` [ RunTime:0.006001s ]
+ERR: 1146:Table 'nhpl.hb_area' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_area`
+SQL: SELECT * FROM `hb_area` ORDER BY `orderby` asc  [ RunTime:0.002000s ]
+ERR: 1146:Table 'nhpl.hb_area' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_area` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+SQL: SHOW COLUMNS FROM `hb_business` [ RunTime:0.006000s ]
+ERR: 1146:Table 'nhpl.hb_business' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_business`
+SQL: SELECT * FROM `hb_business` ORDER BY `orderby` asc  [ RunTime:0.003001s ]
+ERR: 1146:Table 'nhpl.hb_business' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_business` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+SQL: SHOW COLUMNS FROM `hb_works` [ RunTime:0.006000s ]
+NOTIC: [8] Undefined variable: char F:\phpstudy\WWW\nhpl\Core\Extend\Library\ORG\Crypt\Base64.class.php 第 59 行.
+NOTIC: [8] Undefined variable: str F:\phpstudy\WWW\nhpl\Core\Extend\Library\ORG\Crypt\Base64.class.php 第 66 行.
+SQL: SELECT * FROM `hb_setting`  [ RunTime:0.002000s ]
+ERR: 1146:Table 'nhpl.hb_setting' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_setting` 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 16 行.
+NOTIC: 建议使用I方法替代_param
+NOTIC: 建议使用I方法替代_param
+NOTIC: 建议使用I方法替代_get
+NOTIC: 建议使用I方法替代_get
+NOTIC: 建议使用I方法替代_get
+NOTIC: [8] Undefined index:  F:\phpstudy\WWW\nhpl\Nhpl\Lib\Action\App\CommonAction.class.php 第 64 行.
+SQL: SELECT * FROM `hb_shop_cate` ORDER BY `orderby` asc  [ RunTime:0.002001s ]
+ERR: 1146:Table 'nhpl.hb_shop_cate' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_shop_cate` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+SQL: SELECT * FROM `hb_tuan_cate` ORDER BY `orderby` asc  [ RunTime:0.001000s ]
+ERR: 1146:Table 'nhpl.hb_tuan_cate' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_tuan_cate` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+SQL: SELECT * FROM `hb_goods_cate` ORDER BY `orderby` asc  [ RunTime:0.001000s ]
+ERR: 1146:Table 'nhpl.hb_goods_cate' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_goods_cate` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+SQL: SELECT * FROM `hb_area` ORDER BY `orderby` asc  [ RunTime:0.001000s ]
+ERR: 1146:Table 'nhpl.hb_area' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_area` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+SQL: SELECT * FROM `hb_business` ORDER BY `orderby` asc  [ RunTime:0.003000s ]
+ERR: 1146:Table 'nhpl.hb_business' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_business` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+
+[ 2018-01-15T10:00:45+08:00 ] 127.0.0.1 /app/user/releaseWork
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+NOTIC: [2048] Declaration of SettingModel::fetchAll() should be compatible with CommonModel::fetchAll($field = '*', $where = Array) F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [2048] Declaration of SettingModel::save() should be compatible with Model::save($data = '', $options = Array) F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `hb_setting` [ RunTime:0.005000s ]
+ERR: 1146:Table 'nhpl.hb_setting' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_setting`
+SQL: SELECT * FROM `hb_setting`  [ RunTime:0.003001s ]
+ERR: 1146:Table 'nhpl.hb_setting' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_setting` 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 16 行.
+NOTIC: 建议使用I方法替代_param
+NOTIC: 建议使用I方法替代_param
+NOTIC: 建议使用I方法替代_get
+NOTIC: 建议使用I方法替代_get
+NOTIC: 建议使用I方法替代_get
+NOTIC: [8] Undefined index:  F:\phpstudy\WWW\nhpl\Nhpl\Lib\Action\App\CommonAction.class.php 第 64 行.
+SQL: SHOW COLUMNS FROM `hb_shop_cate` [ RunTime:0.006000s ]
+ERR: 1146:Table 'nhpl.hb_shop_cate' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_shop_cate`
+SQL: SELECT * FROM `hb_shop_cate` ORDER BY `orderby` asc  [ RunTime:0.001000s ]
+ERR: 1146:Table 'nhpl.hb_shop_cate' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_shop_cate` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+SQL: SHOW COLUMNS FROM `hb_tuan_cate` [ RunTime:0.006001s ]
+ERR: 1146:Table 'nhpl.hb_tuan_cate' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_tuan_cate`
+SQL: SELECT * FROM `hb_tuan_cate` ORDER BY `orderby` asc  [ RunTime:0.001000s ]
+ERR: 1146:Table 'nhpl.hb_tuan_cate' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_tuan_cate` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+SQL: SHOW COLUMNS FROM `hb_goods_cate` [ RunTime:0.005000s ]
+ERR: 1146:Table 'nhpl.hb_goods_cate' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_goods_cate`
+SQL: SELECT * FROM `hb_goods_cate` ORDER BY `orderby` asc  [ RunTime:0.001000s ]
+ERR: 1146:Table 'nhpl.hb_goods_cate' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_goods_cate` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+SQL: SHOW COLUMNS FROM `hb_area` [ RunTime:0.013001s ]
+ERR: 1146:Table 'nhpl.hb_area' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_area`
+SQL: SELECT * FROM `hb_area` ORDER BY `orderby` asc  [ RunTime:0.003000s ]
+ERR: 1146:Table 'nhpl.hb_area' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_area` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+SQL: SHOW COLUMNS FROM `hb_business` [ RunTime:0.005000s ]
+ERR: 1146:Table 'nhpl.hb_business' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_business`
+SQL: SELECT * FROM `hb_business` ORDER BY `orderby` asc  [ RunTime:0.001000s ]
+ERR: 1146:Table 'nhpl.hb_business' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_business` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+SQL: SHOW COLUMNS FROM `hb_works` [ RunTime:0.007001s ]
+NOTIC: [8] Undefined variable: char F:\phpstudy\WWW\nhpl\Core\Extend\Library\ORG\Crypt\Base64.class.php 第 59 行.
+NOTIC: [8] Undefined variable: str F:\phpstudy\WWW\nhpl\Core\Extend\Library\ORG\Crypt\Base64.class.php 第 66 行.
+SQL: SELECT * FROM `hb_setting`  [ RunTime:0.002000s ]
+ERR: 1146:Table 'nhpl.hb_setting' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_setting` 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 16 行.
+NOTIC: 建议使用I方法替代_param
+NOTIC: 建议使用I方法替代_param
+NOTIC: 建议使用I方法替代_get
+NOTIC: 建议使用I方法替代_get
+NOTIC: 建议使用I方法替代_get
+NOTIC: [8] Undefined index:  F:\phpstudy\WWW\nhpl\Nhpl\Lib\Action\App\CommonAction.class.php 第 64 行.
+SQL: SELECT * FROM `hb_shop_cate` ORDER BY `orderby` asc  [ RunTime:0.001000s ]
+ERR: 1146:Table 'nhpl.hb_shop_cate' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_shop_cate` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+SQL: SELECT * FROM `hb_tuan_cate` ORDER BY `orderby` asc  [ RunTime:0.001000s ]
+ERR: 1146:Table 'nhpl.hb_tuan_cate' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_tuan_cate` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+SQL: SELECT * FROM `hb_goods_cate` ORDER BY `orderby` asc  [ RunTime:0.001000s ]
+ERR: 1146:Table 'nhpl.hb_goods_cate' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_goods_cate` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+SQL: SELECT * FROM `hb_area` ORDER BY `orderby` asc  [ RunTime:0.002000s ]
+ERR: 1146:Table 'nhpl.hb_area' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_area` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+SQL: SELECT * FROM `hb_business` ORDER BY `orderby` asc  [ RunTime:0.002000s ]
+ERR: 1146:Table 'nhpl.hb_business' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_business` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+
+[ 2018-01-15T10:06:05+08:00 ] 127.0.0.1 /app/user/releaseWork
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of SettingModel::fetchAll() should be compatible with CommonModel::fetchAll($field = '*', $where = Array) F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [2048] Declaration of SettingModel::save() should be compatible with Model::save($data = '', $options = Array) F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `hb_setting` [ RunTime:0.005000s ]
+ERR: 1146:Table 'nhpl.hb_setting' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_setting`
+SQL: SELECT * FROM `hb_setting`  [ RunTime:0.001000s ]
+ERR: 1146:Table 'nhpl.hb_setting' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_setting` 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 16 行.
+NOTIC: 建议使用I方法替代_param
+NOTIC: 建议使用I方法替代_param
+NOTIC: 建议使用I方法替代_get
+NOTIC: 建议使用I方法替代_get
+NOTIC: 建议使用I方法替代_get
+NOTIC: [8] Undefined index:  F:\phpstudy\WWW\nhpl\Nhpl\Lib\Action\App\CommonAction.class.php 第 64 行.
+SQL: SHOW COLUMNS FROM `hb_shop_cate` [ RunTime:0.005001s ]
+ERR: 1146:Table 'nhpl.hb_shop_cate' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_shop_cate`
+SQL: SELECT * FROM `hb_shop_cate` ORDER BY `orderby` asc  [ RunTime:0.001000s ]
+ERR: 1146:Table 'nhpl.hb_shop_cate' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_shop_cate` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+SQL: SHOW COLUMNS FROM `hb_tuan_cate` [ RunTime:0.006000s ]
+ERR: 1146:Table 'nhpl.hb_tuan_cate' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_tuan_cate`
+SQL: SELECT * FROM `hb_tuan_cate` ORDER BY `orderby` asc  [ RunTime:0.001000s ]
+ERR: 1146:Table 'nhpl.hb_tuan_cate' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_tuan_cate` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+SQL: SHOW COLUMNS FROM `hb_goods_cate` [ RunTime:0.006000s ]
+ERR: 1146:Table 'nhpl.hb_goods_cate' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_goods_cate`
+SQL: SELECT * FROM `hb_goods_cate` ORDER BY `orderby` asc  [ RunTime:0.001000s ]
+ERR: 1146:Table 'nhpl.hb_goods_cate' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_goods_cate` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+SQL: SHOW COLUMNS FROM `hb_area` [ RunTime:0.005000s ]
+ERR: 1146:Table 'nhpl.hb_area' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_area`
+SQL: SELECT * FROM `hb_area` ORDER BY `orderby` asc  [ RunTime:0.001000s ]
+ERR: 1146:Table 'nhpl.hb_area' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_area` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+SQL: SHOW COLUMNS FROM `hb_business` [ RunTime:0.005000s ]
+ERR: 1146:Table 'nhpl.hb_business' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_business`
+SQL: SELECT * FROM `hb_business` ORDER BY `orderby` asc  [ RunTime:0.001000s ]
+ERR: 1146:Table 'nhpl.hb_business' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_business` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+SQL: SHOW COLUMNS FROM `hb_works` [ RunTime:0.007001s ]
+NOTIC: [8] Undefined variable: char F:\phpstudy\WWW\nhpl\Core\Extend\Library\ORG\Crypt\Base64.class.php 第 59 行.
+NOTIC: [8] Undefined variable: str F:\phpstudy\WWW\nhpl\Core\Extend\Library\ORG\Crypt\Base64.class.php 第 66 行.
+SQL: SELECT * FROM `hb_setting`  [ RunTime:0.001000s ]
+ERR: 1146:Table 'nhpl.hb_setting' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_setting` 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 16 行.
+NOTIC: 建议使用I方法替代_param
+NOTIC: 建议使用I方法替代_param
+NOTIC: 建议使用I方法替代_get
+NOTIC: 建议使用I方法替代_get
+NOTIC: 建议使用I方法替代_get
+NOTIC: [8] Undefined index:  F:\phpstudy\WWW\nhpl\Nhpl\Lib\Action\App\CommonAction.class.php 第 64 行.
+SQL: SELECT * FROM `hb_shop_cate` ORDER BY `orderby` asc  [ RunTime:0.001001s ]
+ERR: 1146:Table 'nhpl.hb_shop_cate' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_shop_cate` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+SQL: SELECT * FROM `hb_tuan_cate` ORDER BY `orderby` asc  [ RunTime:0.001000s ]
+ERR: 1146:Table 'nhpl.hb_tuan_cate' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_tuan_cate` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+SQL: SELECT * FROM `hb_goods_cate` ORDER BY `orderby` asc  [ RunTime:0.000000s ]
+ERR: 1146:Table 'nhpl.hb_goods_cate' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_goods_cate` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+SQL: SELECT * FROM `hb_area` ORDER BY `orderby` asc  [ RunTime:0.002000s ]
+ERR: 1146:Table 'nhpl.hb_area' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_area` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+SQL: SELECT * FROM `hb_business` ORDER BY `orderby` asc  [ RunTime:0.001000s ]
+ERR: 1146:Table 'nhpl.hb_business' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_business` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+NOTIC: [8] Undefined variable: char F:\phpstudy\WWW\nhpl\Core\Extend\Library\ORG\Crypt\Base64.class.php 第 59 行.
+NOTIC: [8] Undefined variable: str F:\phpstudy\WWW\nhpl\Core\Extend\Library\ORG\Crypt\Base64.class.php 第 66 行.
+SQL: INSERT INTO `hb_works` (`uid`,`title`,`content`,`pic`,`cover_pic`,`c_id`,`l_id`,`r_nums`,`time`) VALUES (8,'杀马特','杀马特发型，绝对吊炸天','[\"\\/attachs\\/2018\\/01\\/15\\/d70a6c6c41a9194e34342d191075d54a.jpg\",\"\\/attachs\\/2018\\/01\\/15\\/410a9724722d01c704d3d40c567fec0b.jpg\",\"\\/attachs\\/2018\\/01\\/15\\/a6ea9fcf142e15f7e13da1f4bd40d503.jpg\",\"\\/attachs\\/2018\\/01\\/15\\/37269b5590251a44d12b7cfa60098cf5.jpg\",\"\\/attachs\\/2018\\/01\\/15\\/682b30614b8f7ce11b443c408bca9418.jpg\"]','/attachs/2018/01/15/d70a6c6c41a9194e34342d191075d54a.jpg','1,2,3','2,3,4',0,1515981965) [ RunTime:0.001000s ]
+
+[ 2018-01-15T11:10:53+08:00 ] 127.0.0.1 /app/user/myworks
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [2048] Declaration of SettingModel::fetchAll() should be compatible with CommonModel::fetchAll($field = '*', $where = Array) F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [2048] Declaration of SettingModel::save() should be compatible with Model::save($data = '', $options = Array) F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `hb_setting` [ RunTime:0.006000s ]
+ERR: 1146:Table 'nhpl.hb_setting' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_setting`
+SQL: SELECT * FROM `hb_setting`  [ RunTime:0.002001s ]
+ERR: 1146:Table 'nhpl.hb_setting' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_setting` 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 16 行.
+NOTIC: 建议使用I方法替代_param
+NOTIC: 建议使用I方法替代_param
+NOTIC: 建议使用I方法替代_get
+NOTIC: 建议使用I方法替代_get
+NOTIC: 建议使用I方法替代_get
+NOTIC: [8] Undefined index:  F:\phpstudy\WWW\nhpl\Nhpl\Lib\Action\App\CommonAction.class.php 第 64 行.
+SQL: SHOW COLUMNS FROM `hb_shop_cate` [ RunTime:0.006001s ]
+ERR: 1146:Table 'nhpl.hb_shop_cate' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_shop_cate`
+SQL: SELECT * FROM `hb_shop_cate` ORDER BY `orderby` asc  [ RunTime:0.001000s ]
+ERR: 1146:Table 'nhpl.hb_shop_cate' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_shop_cate` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+SQL: SHOW COLUMNS FROM `hb_tuan_cate` [ RunTime:0.006000s ]
+ERR: 1146:Table 'nhpl.hb_tuan_cate' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_tuan_cate`
+SQL: SELECT * FROM `hb_tuan_cate` ORDER BY `orderby` asc  [ RunTime:0.002001s ]
+ERR: 1146:Table 'nhpl.hb_tuan_cate' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_tuan_cate` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+SQL: SHOW COLUMNS FROM `hb_goods_cate` [ RunTime:0.007001s ]
+ERR: 1146:Table 'nhpl.hb_goods_cate' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_goods_cate`
+SQL: SELECT * FROM `hb_goods_cate` ORDER BY `orderby` asc  [ RunTime:0.003000s ]
+ERR: 1146:Table 'nhpl.hb_goods_cate' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_goods_cate` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+SQL: SHOW COLUMNS FROM `hb_area` [ RunTime:0.007001s ]
+ERR: 1146:Table 'nhpl.hb_area' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_area`
+SQL: SELECT * FROM `hb_area` ORDER BY `orderby` asc  [ RunTime:0.002000s ]
+ERR: 1146:Table 'nhpl.hb_area' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_area` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+SQL: SHOW COLUMNS FROM `hb_business` [ RunTime:0.006000s ]
+ERR: 1146:Table 'nhpl.hb_business' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_business`
+SQL: SELECT * FROM `hb_business` ORDER BY `orderby` asc  [ RunTime:0.002000s ]
+ERR: 1146:Table 'nhpl.hb_business' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_business` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+NOTIC: [8] Undefined variable: char F:\phpstudy\WWW\nhpl\Core\Extend\Library\ORG\Crypt\Base64.class.php 第 59 行.
+NOTIC: [8] Undefined variable: str F:\phpstudy\WWW\nhpl\Core\Extend\Library\ORG\Crypt\Base64.class.php 第 66 行.
+NOTIC: [8] Undefined variable: char F:\phpstudy\WWW\nhpl\Core\Extend\Library\ORG\Crypt\Base64.class.php 第 59 行.
+NOTIC: [8] Undefined variable: str F:\phpstudy\WWW\nhpl\Core\Extend\Library\ORG\Crypt\Base64.class.php 第 66 行.
+SQL: SHOW COLUMNS FROM `hb_works` [ RunTime:0.007000s ]
+SQL: SELECT `cover_pic`,`r_nums`,`time` FROM `hb_works` WHERE ( uid=8 )  [ RunTime:0.002001s ]
+
+[ 2018-01-15T11:12:11+08:00 ] 127.0.0.1 /app/user/myworks
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of SettingModel::fetchAll() should be compatible with CommonModel::fetchAll($field = '*', $where = Array) F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [2048] Declaration of SettingModel::save() should be compatible with Model::save($data = '', $options = Array) F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `hb_setting` [ RunTime:0.005001s ]
+ERR: 1146:Table 'nhpl.hb_setting' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_setting`
+SQL: SELECT * FROM `hb_setting`  [ RunTime:0.002000s ]
+ERR: 1146:Table 'nhpl.hb_setting' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_setting` 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 16 行.
+NOTIC: 建议使用I方法替代_param
+NOTIC: 建议使用I方法替代_param
+NOTIC: 建议使用I方法替代_get
+NOTIC: 建议使用I方法替代_get
+NOTIC: 建议使用I方法替代_get
+NOTIC: [8] Undefined index:  F:\phpstudy\WWW\nhpl\Nhpl\Lib\Action\App\CommonAction.class.php 第 64 行.
+SQL: SHOW COLUMNS FROM `hb_shop_cate` [ RunTime:0.005001s ]
+ERR: 1146:Table 'nhpl.hb_shop_cate' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_shop_cate`
+SQL: SELECT * FROM `hb_shop_cate` ORDER BY `orderby` asc  [ RunTime:0.002000s ]
+ERR: 1146:Table 'nhpl.hb_shop_cate' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_shop_cate` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+SQL: SHOW COLUMNS FROM `hb_tuan_cate` [ RunTime:0.006000s ]
+ERR: 1146:Table 'nhpl.hb_tuan_cate' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_tuan_cate`
+SQL: SELECT * FROM `hb_tuan_cate` ORDER BY `orderby` asc  [ RunTime:0.002000s ]
+ERR: 1146:Table 'nhpl.hb_tuan_cate' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_tuan_cate` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+SQL: SHOW COLUMNS FROM `hb_goods_cate` [ RunTime:0.005000s ]
+ERR: 1146:Table 'nhpl.hb_goods_cate' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_goods_cate`
+SQL: SELECT * FROM `hb_goods_cate` ORDER BY `orderby` asc  [ RunTime:0.001000s ]
+ERR: 1146:Table 'nhpl.hb_goods_cate' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_goods_cate` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+SQL: SHOW COLUMNS FROM `hb_area` [ RunTime:0.005000s ]
+ERR: 1146:Table 'nhpl.hb_area' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_area`
+SQL: SELECT * FROM `hb_area` ORDER BY `orderby` asc  [ RunTime:0.002001s ]
+ERR: 1146:Table 'nhpl.hb_area' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_area` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+SQL: SHOW COLUMNS FROM `hb_business` [ RunTime:0.005000s ]
+ERR: 1146:Table 'nhpl.hb_business' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_business`
+SQL: SELECT * FROM `hb_business` ORDER BY `orderby` asc  [ RunTime:0.001000s ]
+ERR: 1146:Table 'nhpl.hb_business' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_business` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+NOTIC: [8] Undefined variable: char F:\phpstudy\WWW\nhpl\Core\Extend\Library\ORG\Crypt\Base64.class.php 第 59 行.
+NOTIC: [8] Undefined variable: str F:\phpstudy\WWW\nhpl\Core\Extend\Library\ORG\Crypt\Base64.class.php 第 66 行.
+NOTIC: [8] Undefined variable: char F:\phpstudy\WWW\nhpl\Core\Extend\Library\ORG\Crypt\Base64.class.php 第 59 行.
+NOTIC: [8] Undefined variable: str F:\phpstudy\WWW\nhpl\Core\Extend\Library\ORG\Crypt\Base64.class.php 第 66 行.
+SQL: SHOW COLUMNS FROM `hb_works` [ RunTime:0.008001s ]
+SQL: SELECT `cover_pic`,`r_nums`,`time` FROM `hb_works` WHERE ( uid=8 )  [ RunTime:0.002000s ]
+
+[ 2018-01-15T11:13:45+08:00 ] 127.0.0.1 /app/user/myworks
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of SettingModel::fetchAll() should be compatible with CommonModel::fetchAll($field = '*', $where = Array) F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [2048] Declaration of SettingModel::save() should be compatible with Model::save($data = '', $options = Array) F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `hb_setting` [ RunTime:0.005000s ]
+ERR: 1146:Table 'nhpl.hb_setting' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_setting`
+SQL: SELECT * FROM `hb_setting`  [ RunTime:0.002000s ]
+ERR: 1146:Table 'nhpl.hb_setting' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_setting` 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 16 行.
+NOTIC: 建议使用I方法替代_param
+NOTIC: 建议使用I方法替代_param
+NOTIC: 建议使用I方法替代_get
+NOTIC: 建议使用I方法替代_get
+NOTIC: 建议使用I方法替代_get
+NOTIC: [8] Undefined index:  F:\phpstudy\WWW\nhpl\Nhpl\Lib\Action\App\CommonAction.class.php 第 64 行.
+SQL: SHOW COLUMNS FROM `hb_shop_cate` [ RunTime:0.006000s ]
+ERR: 1146:Table 'nhpl.hb_shop_cate' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_shop_cate`
+SQL: SELECT * FROM `hb_shop_cate` ORDER BY `orderby` asc  [ RunTime:0.002001s ]
+ERR: 1146:Table 'nhpl.hb_shop_cate' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_shop_cate` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+SQL: SHOW COLUMNS FROM `hb_tuan_cate` [ RunTime:0.006000s ]
+ERR: 1146:Table 'nhpl.hb_tuan_cate' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_tuan_cate`
+SQL: SELECT * FROM `hb_tuan_cate` ORDER BY `orderby` asc  [ RunTime:0.003000s ]
+ERR: 1146:Table 'nhpl.hb_tuan_cate' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_tuan_cate` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+SQL: SHOW COLUMNS FROM `hb_goods_cate` [ RunTime:0.008001s ]
+ERR: 1146:Table 'nhpl.hb_goods_cate' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_goods_cate`
+SQL: SELECT * FROM `hb_goods_cate` ORDER BY `orderby` asc  [ RunTime:0.002000s ]
+ERR: 1146:Table 'nhpl.hb_goods_cate' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_goods_cate` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+SQL: SHOW COLUMNS FROM `hb_area` [ RunTime:0.006000s ]
+ERR: 1146:Table 'nhpl.hb_area' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_area`
+SQL: SELECT * FROM `hb_area` ORDER BY `orderby` asc  [ RunTime:0.002000s ]
+ERR: 1146:Table 'nhpl.hb_area' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_area` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+SQL: SHOW COLUMNS FROM `hb_business` [ RunTime:0.007000s ]
+ERR: 1146:Table 'nhpl.hb_business' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_business`
+SQL: SELECT * FROM `hb_business` ORDER BY `orderby` asc  [ RunTime:0.002000s ]
+ERR: 1146:Table 'nhpl.hb_business' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_business` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+NOTIC: [8] Undefined variable: char F:\phpstudy\WWW\nhpl\Core\Extend\Library\ORG\Crypt\Base64.class.php 第 59 行.
+NOTIC: [8] Undefined variable: str F:\phpstudy\WWW\nhpl\Core\Extend\Library\ORG\Crypt\Base64.class.php 第 66 行.
+NOTIC: [8] Undefined variable: char F:\phpstudy\WWW\nhpl\Core\Extend\Library\ORG\Crypt\Base64.class.php 第 59 行.
+NOTIC: [8] Undefined variable: str F:\phpstudy\WWW\nhpl\Core\Extend\Library\ORG\Crypt\Base64.class.php 第 66 行.
+SQL: SHOW COLUMNS FROM `hb_works` [ RunTime:0.008000s ]
+SQL: SELECT `id`,`cover_pic`,`r_nums`,`time` FROM `hb_works` WHERE ( uid=8 )  [ RunTime:0.003000s ]
+
+[ 2018-01-15T11:41:35+08:00 ] 127.0.0.1 /app/user/myworks
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.013502s ]
+INFO: [ route_check ] --END-- [ RunTime:0.039005s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.043506s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.043506s ]
+NOTIC: [2048] Declaration of SettingModel::fetchAll() should be compatible with CommonModel::fetchAll($field = '*', $where = Array) F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [2048] Declaration of SettingModel::save() should be compatible with Model::save($data = '', $options = Array) F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `hb_setting` [ RunTime:0.106014s ]
+ERR: 1146:Table 'nhpl.hb_setting' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_setting`
+SQL: SELECT * FROM `hb_setting`  [ RunTime:0.001000s ]
+ERR: 1146:Table 'nhpl.hb_setting' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_setting` 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 16 行.
+NOTIC: 建议使用I方法替代_param
+NOTIC: 建议使用I方法替代_param
+NOTIC: 建议使用I方法替代_get
+NOTIC: 建议使用I方法替代_get
+NOTIC: 建议使用I方法替代_get
+NOTIC: [8] Undefined index:  F:\phpstudy\WWW\nhpl\Nhpl\Lib\Action\App\CommonAction.class.php 第 64 行.
+SQL: SHOW COLUMNS FROM `hb_shop_cate` [ RunTime:0.007001s ]
+ERR: 1146:Table 'nhpl.hb_shop_cate' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_shop_cate`
+SQL: SELECT * FROM `hb_shop_cate` ORDER BY `orderby` asc  [ RunTime:0.001501s ]
+ERR: 1146:Table 'nhpl.hb_shop_cate' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_shop_cate` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+SQL: SHOW COLUMNS FROM `hb_tuan_cate` [ RunTime:0.007001s ]
+ERR: 1146:Table 'nhpl.hb_tuan_cate' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_tuan_cate`
+SQL: SELECT * FROM `hb_tuan_cate` ORDER BY `orderby` asc  [ RunTime:0.001000s ]
+ERR: 1146:Table 'nhpl.hb_tuan_cate' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_tuan_cate` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+SQL: SHOW COLUMNS FROM `hb_goods_cate` [ RunTime:0.025003s ]
+ERR: 1146:Table 'nhpl.hb_goods_cate' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_goods_cate`
+SQL: SELECT * FROM `hb_goods_cate` ORDER BY `orderby` asc  [ RunTime:0.001500s ]
+ERR: 1146:Table 'nhpl.hb_goods_cate' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_goods_cate` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+SQL: SHOW COLUMNS FROM `hb_area` [ RunTime:0.006000s ]
+ERR: 1146:Table 'nhpl.hb_area' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_area`
+SQL: SELECT * FROM `hb_area` ORDER BY `orderby` asc  [ RunTime:0.001501s ]
+ERR: 1146:Table 'nhpl.hb_area' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_area` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+SQL: SHOW COLUMNS FROM `hb_business` [ RunTime:0.007501s ]
+ERR: 1146:Table 'nhpl.hb_business' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_business`
+SQL: SELECT * FROM `hb_business` ORDER BY `orderby` asc  [ RunTime:0.005000s ]
+ERR: 1146:Table 'nhpl.hb_business' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_business` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+NOTIC: [8] Undefined variable: char F:\phpstudy\WWW\nhpl\Core\Extend\Library\ORG\Crypt\Base64.class.php 第 59 行.
+NOTIC: [8] Undefined variable: str F:\phpstudy\WWW\nhpl\Core\Extend\Library\ORG\Crypt\Base64.class.php 第 66 行.
+NOTIC: [8] Undefined variable: char F:\phpstudy\WWW\nhpl\Core\Extend\Library\ORG\Crypt\Base64.class.php 第 59 行.
+NOTIC: [8] Undefined variable: str F:\phpstudy\WWW\nhpl\Core\Extend\Library\ORG\Crypt\Base64.class.php 第 66 行.
+SQL: SHOW COLUMNS FROM `hb_works` [ RunTime:0.088012s ]
+SQL: SELECT `id`,`cover_pic`,`r_nums`,`time` FROM `hb_works` WHERE ( uid=8 )  [ RunTime:0.012001s ]
+
+[ 2018-01-15T11:44:41+08:00 ] 127.0.0.1 /app/user/worksDetail?id=7
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001500s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001500s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+NOTIC: [2048] Declaration of SettingModel::fetchAll() should be compatible with CommonModel::fetchAll($field = '*', $where = Array) F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [2048] Declaration of SettingModel::save() should be compatible with Model::save($data = '', $options = Array) F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `hb_setting` [ RunTime:0.025003s ]
+ERR: 1146:Table 'nhpl.hb_setting' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_setting`
+SQL: SELECT * FROM `hb_setting`  [ RunTime:0.002500s ]
+ERR: 1146:Table 'nhpl.hb_setting' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_setting` 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 16 行.
+NOTIC: 建议使用I方法替代_param
+NOTIC: 建议使用I方法替代_param
+NOTIC: 建议使用I方法替代_get
+NOTIC: 建议使用I方法替代_get
+NOTIC: 建议使用I方法替代_get
+NOTIC: [8] Undefined index:  F:\phpstudy\WWW\nhpl\Nhpl\Lib\Action\App\CommonAction.class.php 第 64 行.
+SQL: SHOW COLUMNS FROM `hb_shop_cate` [ RunTime:0.006000s ]
+ERR: 1146:Table 'nhpl.hb_shop_cate' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_shop_cate`
+SQL: SELECT * FROM `hb_shop_cate` ORDER BY `orderby` asc  [ RunTime:0.002001s ]
+ERR: 1146:Table 'nhpl.hb_shop_cate' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_shop_cate` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+SQL: SHOW COLUMNS FROM `hb_tuan_cate` [ RunTime:0.008001s ]
+ERR: 1146:Table 'nhpl.hb_tuan_cate' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_tuan_cate`
+SQL: SELECT * FROM `hb_tuan_cate` ORDER BY `orderby` asc  [ RunTime:0.002500s ]
+ERR: 1146:Table 'nhpl.hb_tuan_cate' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_tuan_cate` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+SQL: SHOW COLUMNS FROM `hb_goods_cate` [ RunTime:0.006501s ]
+ERR: 1146:Table 'nhpl.hb_goods_cate' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_goods_cate`
+SQL: SELECT * FROM `hb_goods_cate` ORDER BY `orderby` asc  [ RunTime:0.002001s ]
+ERR: 1146:Table 'nhpl.hb_goods_cate' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_goods_cate` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+SQL: SHOW COLUMNS FROM `hb_area` [ RunTime:0.006001s ]
+ERR: 1146:Table 'nhpl.hb_area' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_area`
+SQL: SELECT * FROM `hb_area` ORDER BY `orderby` asc  [ RunTime:0.002000s ]
+ERR: 1146:Table 'nhpl.hb_area' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_area` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+SQL: SHOW COLUMNS FROM `hb_business` [ RunTime:0.006501s ]
+ERR: 1146:Table 'nhpl.hb_business' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_business`
+SQL: SELECT * FROM `hb_business` ORDER BY `orderby` asc  [ RunTime:0.002000s ]
+ERR: 1146:Table 'nhpl.hb_business' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_business` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+NOTIC: 建议使用I方法替代_get
+
+[ 2018-01-15T11:46:54+08:00 ] 127.0.0.1 /app/user/worksDetail?id=7
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002501s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002501s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003500s ]
+NOTIC: [2048] Declaration of SettingModel::fetchAll() should be compatible with CommonModel::fetchAll($field = '*', $where = Array) F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [2048] Declaration of SettingModel::save() should be compatible with Model::save($data = '', $options = Array) F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `hb_setting` [ RunTime:0.006001s ]
+ERR: 1146:Table 'nhpl.hb_setting' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_setting`
+SQL: SELECT * FROM `hb_setting`  [ RunTime:0.003000s ]
+ERR: 1146:Table 'nhpl.hb_setting' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_setting` 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 16 行.
+NOTIC: 建议使用I方法替代_param
+NOTIC: 建议使用I方法替代_param
+NOTIC: 建议使用I方法替代_get
+NOTIC: 建议使用I方法替代_get
+NOTIC: 建议使用I方法替代_get
+NOTIC: [8] Undefined index:  F:\phpstudy\WWW\nhpl\Nhpl\Lib\Action\App\CommonAction.class.php 第 64 行.
+SQL: SHOW COLUMNS FROM `hb_shop_cate` [ RunTime:0.007001s ]
+ERR: 1146:Table 'nhpl.hb_shop_cate' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_shop_cate`
+SQL: SELECT * FROM `hb_shop_cate` ORDER BY `orderby` asc  [ RunTime:0.002000s ]
+ERR: 1146:Table 'nhpl.hb_shop_cate' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_shop_cate` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+SQL: SHOW COLUMNS FROM `hb_tuan_cate` [ RunTime:0.006000s ]
+ERR: 1146:Table 'nhpl.hb_tuan_cate' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_tuan_cate`
+SQL: SELECT * FROM `hb_tuan_cate` ORDER BY `orderby` asc  [ RunTime:0.002500s ]
+ERR: 1146:Table 'nhpl.hb_tuan_cate' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_tuan_cate` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+SQL: SHOW COLUMNS FROM `hb_goods_cate` [ RunTime:0.006001s ]
+ERR: 1146:Table 'nhpl.hb_goods_cate' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_goods_cate`
+SQL: SELECT * FROM `hb_goods_cate` ORDER BY `orderby` asc  [ RunTime:0.001000s ]
+ERR: 1146:Table 'nhpl.hb_goods_cate' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_goods_cate` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+SQL: SHOW COLUMNS FROM `hb_area` [ RunTime:0.008501s ]
+ERR: 1146:Table 'nhpl.hb_area' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_area`
+SQL: SELECT * FROM `hb_area` ORDER BY `orderby` asc  [ RunTime:0.003000s ]
+ERR: 1146:Table 'nhpl.hb_area' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_area` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+SQL: SHOW COLUMNS FROM `hb_business` [ RunTime:0.037504s ]
+ERR: 1146:Table 'nhpl.hb_business' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hb_business`
+SQL: SELECT * FROM `hb_business` ORDER BY `orderby` asc  [ RunTime:0.001001s ]
+ERR: 1146:Table 'nhpl.hb_business' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hb_business` ORDER BY `orderby` asc 
+NOTIC: [2] Invalid argument supplied for foreach() F:\phpstudy\WWW\nhpl\Nhpl\Lib\Model\CommonModel.class.php 第 44 行.
+SQL: SHOW COLUMNS FROM `hb_works` [ RunTime:0.007001s ]
+NOTIC: 建议使用I方法替代_get
+SQL: SELECT * FROM `hb_works` WHERE ( id=7 ) LIMIT 1   [ RunTime:0.480061s ]
+

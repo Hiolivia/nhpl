@@ -1,0 +1,48 @@
+<include  file='public:header'/>
+<div class="mainBt">
+    <!--<ul>-->
+        <!--<li class="li1">团够频道</li>-->
+        <!--<li class="li2">商家产品</li>-->
+        <!--<li class="li2 li3">商品类别</li>-->
+    <!--</ul>-->
+</div>
+<div class="main-cate">
+    <p class="attention"><span>注意：修改完佣金后请清理缓存！</span>最高3级分类，分类名称后面（）内的是团购分类的ID，前台增加抢购自动设置结算价格！</p>
+    <div class="jsglNr">
+        <form  target="baocms_frm" method="post">
+            <div class="selectNr" style="border-top: 1px solid #dbdbdb;">
+                <div class="left">
+                    <{:BA('classify/create','','添加分类','load','',600,300)}>
+                </div>
+                <div class="right">
+                    <{:BA('classify/update','','更新','list','remberBtn')}>
+                </div>
+            </div>
+            <div class="tableBox">
+                <table bordercolor="#dbdbdb" cellspacing="0" width="100%" border="1px"  style=" border-collapse: collapse; margin:0px; vertical-align:middle; background-color:#FFF; text-align:center;">
+                    <tr bgcolor="#F5F6FA" height="48px;" style="color:#333; font-size:16px; line-height:48px;">
+                        <th>分类</th>
+                        <!--<th>排序</th>-->
+                
+ 						<!--<td>费率</td>-->
+                        <th>操作</th>
+                    </tr>
+                    <foreach name="list" item="var">
+
+                        <tr bgcolor="#f1f1f1" height="48px" style="font-size:14px; color:#545454; text-align:left; line-height:48px;">
+                            <td style="padding-left:20px;"><{$var.classify_name}>(<{$var.id}>)</td>
+                            <!--<td style="padding-left:70px;"><input name="orderby[<{$var.cate_id}>]" value="<{$var.orderby}>" type="text" class="remberinput w80" /></td>-->
+                            <!--<td><{$var.rate}>‰（千分）</td>-->
+
+                            <td style="text-align: center;">
+                                <{:BA('classify/edit',array("cate_id"=>$var["id"]),'编辑','load','remberBtn',600,300)}>
+                                <{:BA('classify/delete',array("cate_id"=>$var["id"]),'删除','act','remberBtn')}>
+                            </td>
+                        </tr>
+
+                    </foreach>
+                </table>
+                <{$page}>
+        </form>
+    </div>
+    <include  file='public:footer'/>       

@@ -1,0 +1,667 @@
+<include file="public:header" /> 
+<include file="public:top"/>
+<include file="public:nav"/>
+<style>
+.sy_doorSer_list ul li i img{border-radius: 100%;}
+.sy_doorSer_list li .btn_box{ position:absolute; top:-400px; left:0; width:100%; height:100%; text-align:center; background:rgba(0,0,0,0.3); filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#BF000000,endColorstr=#BF000000); transition:all 0.3s ease;-o-transition:all 0.3s ease;-webkit-transition:all 0.3s ease;-moztransition:all 0.3s ease;}
+.sy_doorSer_list li .btn_box a{ display:inline-block; padding:0 20px; font-size:20px; line-height:40px; color:#fff; background-color:#ff6600; border-radius:5px; margin-top:40px;}
+.sy_doorSer_list li:hover .btn_box{top:0;}
+</style>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.sy_flexslider').flexslider({
+            directionNav: true,
+            pauseOnAction: false
+        });
+		
+		$('.sy_buy_flexslider').flexslider({
+            directionNav: true,
+            pauseOnAction: false,
+			controlNav:false,
+        });
+		
+        $('.sy_waimai_flexslider').flexslider({
+            directionNav: true,
+            pauseOnAction: false
+        });
+    });//首页轮播js
+
+    $(function () {
+        
+        $(".syShop_tab>.left a").each(function (e) {
+            $(this).mouseover(function (event) {
+                $(this).parent().find("a").removeClass("on");
+                $(this).addClass("on");
+                $(".syShop_list_box .syShop_list").each(function (i) {
+                    if (e == i)
+                    {
+                        $(this).parent().find(".syShop_list").hide();
+                        $(this).show();
+                    }
+                    else {
+                        $(this).hide();
+                    }
+                });
+            });
+        });//首页本地商城部分结束
+        $(".cityInfor_tab i").each(function (e) {
+            $(this).mouseover(function (event) {
+                $(this).parent().find("i").removeClass("on");
+                $(this).addClass("on");
+                $(".cityInfor_nr .cityInfor_list").each(function (i) {
+                    if (e == i)
+                    {
+                        $(this).parent().find(".cityInfor_list").hide();
+                        $(this).show();
+                    }
+                    else {
+                        $(this).hide();
+                    }
+                });
+            });
+        });//首页同城信息部分结
+        $(".sy_seatSwitch_tab li").each(function (e) {
+            $(this).mouseover(function (event) {
+                $(this).parent().find("li").removeClass("on");
+                $(this).addClass("on");
+                $(".sy_seatSwitch_box .sy_seatSwitch1").each(function (i) {
+                    if (e == i)
+                    {
+                        $(this).parent().find(".sy_seatSwitch1").hide();
+                        $(this).show();
+                    }
+                    else {
+                        $(this).hide();
+                    }
+                });
+            });
+        });//首页订座部分结
+        
+    });
+</script>
+<!--首页第一部分开始-->
+<div class="sy_partOne">
+	<div class="left sy_partOne_cate"><include file="public:cate"/></div>
+    <div class="right sy_partOne_r">
+    	<div class="sy_flexslider">
+            <ul class="slides">
+                <calldata mdl="Ad" where=" closed=0 AND site_id=1 AND  city_id IN ({$city_ids}) and bg_date ELT '{$today}' AND end_date EGT '{$today}' " limit="0,5" cache="21600" order="orderby asc">
+                     <li class="list" style="background:url('__ROOT__/attachs/<{$item.photo}>') center center no-repeat;"><a target="_blank" href="<{$item.link_url}>"></a></li>
+                </calldata>
+            </ul>
+        </div>
+        <ul class="sy_flsx">
+            <li class="bg_1">
+                <h3><em class="ico ico_1"></em>热门抢购</h3>
+            <php>$i=0;</php>
+            <foreach name="tuancates" item="item">
+                <eq name="item.is_hot" value="1">
+                <php>$i++;if($i<10){</php>
+                <if condition="$item['parent_id'] eq 0">
+                    <a title="<{$item.cate_name}>" target="_blank" href="<{:U('tuan/index',array('cat'=>$item['cate_id']))}>"><{$item['cate_name']}></a>
+                    <else/>
+                    <a title="<{$item.cate_name}>" target="_blank" href="<{:U('tuan/index',array('cat'=>$item['parent_id'],'cate_id'=>$item['cate_id']))}>"><{$item['cate_name']}></a>
+                </if>
+                <php>}</php>
+                </eq>
+    
+            </foreach>
+            </li>
+            <li class="bg_2">
+                <h3><em class="ico ico_2"></em>全部区域</h3>
+            <php>$i=0;</php>
+            <foreach name="areas" item="item">
+                <php>$i++;if($i<=10&&$item['city_id'] == $city_id){</php>
+                <a href="<{:U('tuan/index',array('area'=>$item['area_id']))}>"><{$item['area_name']}></a>
+                <php>}</php>
+            </foreach>
+            </li>
+            <li class="bg_3">
+                <h3><em class="ico ico_3"></em>热门商圈</h3>
+            <php>$i=0;</php>
+            <foreach name="bizs" item="item">
+                <php>if(in_array($item['area_id'],$limit_area)&&$i<=8&&$item['is_hot']=='1'){</php>
+                <a href="<{:U('tuan/index',array('area'=>$item['area_id'],'business'=>$item['business_id']))}>"><{$bizs[$item['business_id']]['business_name']}></a>
+                <php>$i++;}</php>
+            </foreach>
+            </li>
+        </ul>
+    </div>
+    <div class="clear"></div>
+</div>
+<!--首页第一部分结束-->
+<div class="pagewd" id="index-gun">
+    <!--首页抢购部分开始-->
+    <div class="sy_FloorBt" data="top_1" id="floor1" style="border-bottom:none;">
+        <div class="left sy_FloorBtz"><i class="ico_1"></i><span class="bt cl_1">限时抢购</span>
+            <script type="text/javascript" language="javascript">
+                var t1 = 5*3600*1000;
+                
+                    setInterval(function () {
+                        if(t1>0){
+                        t1-=1000;
+                       // alert(t1);
+                       var str = '<span class="spxq_qgTimezt spxq_qgTimejx">&nbsp;</span>';
+                        var d1 = Math.floor(t1 / 1000 / 60 / 60 / 24);
+                        var h1 = Math.floor(t1 / 1000 / 60 / 60 % 24);
+                        var m1 = Math.floor(t1 / 1000 / 60 % 60);
+                        var s1 = Math.floor(t1 / 1000 % 60);
+                        //alert(d1);
+                        //if (d1 > 30 || t1 < 11) {
+                           // $('#s1').hide();
+                       // }
+
+                        if (d1 < 10) {
+                            str+='<span>0'+d1+'</span>天';
+
+                        } else {
+                           str+='<span>'+d1+'</span>天';
+                        }
+                        if (h1 < 10) {
+                            str+='<span>0'+h1+'</span>时';
+                        } else {
+                           str+='<span>'+h1+'</span>时';
+                        }
+                        if (m1 < 10) {
+                           str+='<span>0'+m1+'</span>分';
+                        } else {
+                            str+='<span>'+m1+'</span>分';
+                        }
+                        if (s1 < 10) {
+                            str+='<span>0'+s1+'</span>秒';
+
+                        } else {
+                           str+='<span>'+s1+'</span>秒';
+                        }
+                    }
+                        $("#s1").html(str);
+                    }, 1000);
+            </script>
+            <span class="radius3 spxq_qgTime" style="margin-left:0;" id="s1"></span>
+        </div>
+        <!--<div class="right"><a  title="更多抢购" target="_blank" href="<{:U('tuan/index')}>">更多&gt;&gt;</a></div>-->
+    </div>
+    <div class="sy_buy_nr">
+    	<div class="sy_buy_flexslider">
+        	<ul class="slides">
+                    <calldata mdl="Tuan" where="audit = 1 AND closed=0 AND city_id=$city_id " cache="600" order="orderby asc,sold_num desc" limit="0,25">
+                        <if condition="$index%5 eq 1">
+                            <li class="list">
+                                <ul class="sy_buy_list_box">  
+                                    <li class="sy_buy_list">
+                                        <div class="syPub_list">
+                                            <div class="img"><a target="_blank" title="<{$item.title}>" href="<{:U('tuan/detail',array('tuan_id'=>$item['tuan_id']))}>"><img src="__ROOT__/attachs/<{$item.photo}>"  width="224" height="160" /></a></div>
+                                            <h3><a target="_blank" title="" href="#" class="overflow_clear"><{$item.title}></a></h3>
+                                            <div class="btn_box">
+                                                <div class="left price"><small>¥</small><{:round($item['tuan_price']/100,2)}><del>¥<{:round($item['price']/100,2)}></del></div>
+                                                <div class="right"><p class="graycl">已售<{$item.sold_num}></p></div>
+                                            </div>
+                                            <a href="<{:U('tuan/detail',array('tuan_id'=>$item['tuan_id']))}>" class="long_btn">进店抢购</a>
+                                        </div>
+                                    </li>
+                        <elseif condition="$index%5 eq 0"/>
+                                    <li class="sy_buy_list">
+                                        <div class="syPub_list">
+                                            <div class="img"><a target="_blank" title="<{$item.title}>" href="<{:U('tuan/detail',array('tuan_id'=>$item['tuan_id']))}>"><img src="__ROOT__/attachs/<{$item.photo}>"  width="224" height="160" /></a></div>
+                                            <h3><a target="_blank" title="" href="#" class="overflow_clear"><{$item.title}></a></h3>
+                                            <div class="btn_box">
+                                                <div class="left price"><small>¥</small><{:round($item['tuan_price']/100,2)}><del>¥<{:round($item['price']/100,2)}></del></div>
+                                                <div class="right"><p class="graycl">已售<{$item.sold_num}></p></div>
+                                            </div>
+                                            <a href="<{:U('tuan/detail',array('tuan_id'=>$item['tuan_id']))}>" class="long_btn">进店抢购</a>
+                                        </div>
+                                    </li>
+                            </ul>
+                            <div class="clear"></div>
+                        </li>
+                        <else/>
+                            <li class="sy_buy_list">
+                                <div class="syPub_list">
+                                    <div class="img"><a target="_blank" title="<{$item.title}>" href="<{:U('tuan/detail',array('tuan_id'=>$item['tuan_id']))}>"><img src="__ROOT__/attachs/<{$item.photo}>"  width="224" height="160" /></a></div>
+                                    <h3><a target="_blank" title="" href="#" class="overflow_clear"><{$item.title}></a></h3>
+                                    <div class="btn_box">
+                                        <div class="left price"><small>¥</small><{:round($item['tuan_price']/100,2)}><del>¥<{:round($item['price']/100,2)}></del></div>
+                                        <div class="right"><p class="graycl">已售<{$item.sold_num}></p></div>
+                                    </div>
+                                    <a href="<{:U('tuan/detail',array('tuan_id'=>$item['tuan_id']))}>" class="long_btn">进店抢购</a>
+                                </div>
+                            </li>
+                        </if>
+                    </calldata>
+            </ul>
+        </div>
+    </div>
+    <!--首页抢购部分结束-->
+
+
+    <!--首页本地商城部分开始-->
+    <div class="sy_FloorBt" data="top_2" id="floor2">
+        <div class="left sy_FloorBtz"><i class="ico_2"></i><span class="bt cl_3">本地商城</span></div>
+        <div class="right"><a target="_blank" href="<{:U('mall/index')}>">更多&gt;&gt;</a></div>
+    </div>
+    <div class="sy_cityBuy_nr">
+        <calldata mdl="Ad" where=" closed=0 AND site_id=2 AND city_id IN ({$city_ids})  and bg_date ELT '{$today}' AND end_date EGT '{$today}' " limit="0,1" cache="7200" order="orderby asc">
+            <div class="left sy_cityBuy_ad"><a target="_blank" href="<{$itme.link_url}>"><img src="__ROOT__/attachs/<{$item.photo}>" width="260" height="499" /></a></div>
+        </calldata>
+        <div class="left sy_cityBuy_list_box">
+            <ul>
+            	<calldata mdl="Goods" where="audit =1 AND closed=0 AND city_id = $city_id" order="orderby asc,sold_num desc" limit="0,8" cache="600">
+                    <li class="sy_cityBuy_list">
+                        <a target="_blank" title="<{$item['title']}>" href="<{:U('mall/detail',array('goods_id'=>$item['goods_id']))}>">
+                        <img src="__ROOT__/attachs/<{$item.photo}>" width="214" height="175" />
+                        <p class="price fontcl1">¥<{:round($item['mall_price']/100,2)}> <small class="graycl">¥<{:round($item['price']/100,2)}></small></p>
+                        <P class="bt overflow_clear"><{:msubstr($item['title'],0,15)}></P>
+                        </a>
+                    </li>
+                </calldata>
+            </ul>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <!--首页本地商城部分结束-->
+    
+    <!--首页外卖部分开始-->
+    <div class="sy_FloorBt" data="top_3" id="floor3">
+        <div class="left sy_FloorBtz"><i class="ico_3"></i><span class="bt cl_2">外卖</span></div>
+        <div class="right"><a target="_blank" href="<{:U('ele/index')}>">更多&gt;&gt;</a></div>
+    </div>
+    <div class="sy_waimai_nr">
+    	<div class="sy_waimai_one">
+        	<div class="left sy_waimai_cate">
+            	<div class="sy_waimai_cate_list">
+                    <a target="_blank" href="<{:LinkTo('ele/index',$linkArr,array('cate'=>0))}>" class="list">全部</a>
+                    <volist name="elecate" id="item" key="index">
+                        <php>$i = $index + 1;</php>
+                            <a href="<{:U('ele/index',array('cate'=>$index))}>" class="list"><{$item}></a>
+                    </volist>
+                </div>
+                    <calldata mdl="Ad" where=" closed=0 AND site_id=58 AND city_id IN ({$city_ids})  and bg_date ELT '{$today}' AND end_date EGT '{$today}' " limit="0,1" cache="14400" order="orderby asc">
+                        <div class="sy_waimai_ad"><a target="_blank" href="<{$itme.link_url}>"><img src="__ROOT__/attachs/<{$item.photo}>" width="180" height="180" /></a></div>
+                    </calldata>
+            </div>
+            <div class="left sy_waimai_lunbo">
+            	<div class="sy_waimai_flexslider">
+                    <ul class="slides">
+                        <calldata mdl="Ad" where=" closed=0 AND site_id=69 AND city_id IN ({$city_ids})  and bg_date ELT '{$today}' AND end_date EGT '{$today}' " limit="0,3" cache="43200" order="orderby asc">
+                            <li class="list"><a target="_blank" href="<{$itme.link_url}>"><img src="__ROOT__/attachs/<{$item.photo}>" width="459" height="338" /></a></li>
+                        </calldata>
+                    </ul>
+                </div>
+            </div>
+            <div class="right sy_waimai_listOne">
+                <ul>
+                	<calldata mdl="Ele" where="audit = 1 AND city_id=$city_id " format="true" order="orderby asc,sold_num desc" limit="0,2" cache="600">
+                    <li class="list">
+                    	<div class="nr">
+                        	<p class="bt overflow_clear"><a href="#"><{$item.shop_name}></a></p>
+                            <p>评价：<span class="fontcl1"><{:round($item['shop']['score']/10,1)}>分</span>
+                                <span class="spxq_qgpstarBg"><span class="spxq_qgpstar spxq_qgpstar<{$item.shop.score}>"></span></span>
+                            </p>
+                            <p><span class="mr10">起送：￥<{:round($item['since_money']/100,2)}></span>  配送费：￥<{:round($item['logistics']/100,2)}></p>
+                            <p class="blackcl6"><span class="mr10"><{$item.distribution}>分钟</span> <span class="right">月售：<{$item.month_num}>单</span></p>
+                        </div>
+                        <div class="tag_box"><eq name="item.is_pay" value="1"><i class="ico_2"></i></eq>
+                                    <eq name="item.is_new" value="1"><i class="ico_3"></i></eq>
+                                    <eq name="item.is_fan" value="1"><i class="ico_4"></i></eq></div>
+                        <div class="img"><a title="<{$item.shop_name}>家外卖" target="_blank" href="<{:U('ele/shop',array('shop_id'=>$item['shop_id']))}>"><img alt="<{$item.shop_name}>家外卖" src="__ROOT__/attachs/<{$item.shop.photo}>" width="238" height="180" /></a></div>
+                    </li>
+                    </calldata> 
+                </ul>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="sy_waimai_list_box">
+        	<ul>
+            	<calldata mdl="Ele" where="audit = 1 AND city_id=$city_id " format="true" order="orderby asc,sold_num desc" limit="2,5" cache="600">
+                    <li class="sy_waimai_list">
+                        <div class="img"><a title="<{$item.shop_name}>家外卖" target="_blank" href="<{:U('ele/shop',array('shop_id'=>$item['shop_id']))}>"><div class="tag_box"><eq name="item.is_pay" value="1"><i class="bg_2">付</i></eq>
+                                    <eq name="item.is_new" value="1"><i class="bg_3">首</i></eq>
+                                    <eq name="item.is_fan" value="1"><i class="bg_4">减</i></eq></div><img alt="<{$item.shop_name}>家外卖" src="__ROOT__/attachs/<{$item.shop.photo}>" width="238" height="180" /><p class="overflow_clear"><{$item.shop_name}></p></a></div>
+                        <div class="nr">
+                            <p>评价：<span class="fontcl1"><{:round($item['shop']['score']/10,1)}>分</span>
+                                <span class="spxq_qgpstarBg"><span class="spxq_qgpstar spxq_qgpstar<{$item.shop.score}>"></span></span>
+                            </p>
+                            <p><span class="mr10">起送：￥<{:round($item['since_money']/100,2)}></span>  配送费：￥<{:round($item['logistics']/100,2)}></p>
+                            <p class="blackcl6"><span class="mr10"><{$item.distribution}>分钟</span> <span class="right">月售：<{$item.month_num}>单</span></p>
+                        </div>
+                    </li>
+                </calldata> 
+    	    </ul>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <!--首页外卖部分结束-->
+
+    <!--首页优惠券部分开始-->
+    <div class="sy_FloorBt" data="top_4" id="floor4">
+        <div class="left sy_FloorBtz"><i class="ico_4"></i><span class="bt cl_8">优惠券</span></div>
+        <div class="right"><a target="_blank" href="<{:U('coupon/index')}>">更多&gt;&gt;</a></div>
+    </div>
+    <div class="sy_coupon_nr">
+    	<ul class="sy_buy_list_box">
+        	<calldata mdl="Coupon" cache="600" where="audit=1 AND closed=0 AND city_id=$city_id" order="downloads desc,views desc" limit="0,5">
+                <li class="sy_buy_list">
+                    <div class="syPub_list">
+                        <div class="img"><a target="_blank" title='<{$item.title}>' href="<{:U('coupon/detail',array('coupon_id'=>$item['coupon_id']))}>"><img src="__ROOT__/attachs/<{$item.photo}>"  width="224" height="160" /></a></div>
+                        <h3><a target="_blank" title='<{$item.title}>' href="<{:U('coupon/detail',array('coupon_id'=>$item['coupon_id']))}>" class="overflow_clear"><{$item.title}></a></h3>
+                        <p class="graycl">下载：<{$item.downloads}>次&nbsp;&nbsp;剩余：<{$item.num}>次</p>
+                        <a target="_blank" title='<{$item.title}>' href="<{:U('coupon/detail',array('coupon_id'=>$item['coupon_id']))}>" class="long_btn mt10">立即下载</a>
+                    </div>
+                </li>
+            </calldata>
+        </ul>
+        <div class="clear"></div>
+    </div>
+    <!--首页优惠券部分结束-->
+    <!--首页订座部分开始-->
+    <div class="sy_FloorBt" data="top_5" id="floor5">
+        <div class="left sy_FloorBtz"><i class="ico_5"></i><span class="bt cl_5">订座</span></div>
+        <div class="right"><a target="_blank" href="<{:U('ding/index')}>">更多&gt;&gt;</a></div>
+    </div>
+    <div class="sy_seat_nr">
+        <div class="left sy_seat_list">
+            <ul class="sy_buy_list_box">
+            	<calldata mdl="Shop" cache="600" where="is_ding=1 AND audit=1 AND closed=0 AND  city_id=$city_id"  limit="0,4" order="orderby asc,score desc">
+                    <li class="sy_buy_list">
+                        <div class="syPub_list">
+                            <div class="img"><a target="_blank" href="<{:U('ding/detail',array('shop_id'=>$item['shop_id']))}>"><img src="__ROOT__/attachs/<{$item.photo}>"  width="224" height="160" /></a></div>
+                            <h3><a target="_blank" href="<{:U('ding/detail',array('shop_id'=>$item['shop_id']))}>" class="overflow_clear"><{$item.shop_name}></a></h3>
+                            <p class="graycl">价格<{$item['d1']}>&nbsp;&nbsp;环境<{$item['d2']}>&nbsp;&nbsp;服务<{$item['d3']}></p>
+                            <a target="_blank" href="<{:U('ding/detail',array('shop_id'=>$item['shop_id']))}>" class="long_btn mt10">立即预订</a>
+                        </div>
+                    </li>
+                </calldata>
+            </ul>
+        </div>
+        <div class="right sy_seatSwitch">
+            <ul class="sy_seatSwitch_tab">
+                <li class="on">帮您找座位</li>
+                <li>人气排行榜</li>
+            </ul>
+            <div class="sy_seatSwitch_box">
+                <div class="sy_seatSwitch1" style="display:block;">
+                    <script src="__PUBLIC__/js/my97/WdatePicker.js"></script>
+                    <form action="<{:U('ding/lists')}>" method="post">
+                        <div class="num_box">
+                            <input class="name" type="text"   name="date" value="<php>echo TODAY;</php>" onfocus="WdatePicker({dateFmt: 'yyyy-MM-dd'});"  placeholder="日期" />
+                            <select name="time" class="num">
+                                <php>$cfg = D('Shopdingsetting')->getCfg();</php>
+                                <volist name='cfg' id='item'>
+                                    <option value="<{$key}>"><{$item}></option>
+                                </volist>
+                            </select>
+
+                            <div class="clear"></div>
+                        </div>
+                        <select name="area_id" class="addr">
+                            <volist name='areas' id='item'>
+                                <eq name="item.city_id" value="$city_id">
+
+                                <option value="<{$item.area_id}>"><{$item.area_name}></option>
+                                </eq>
+                            </volist>
+                        </select>
+                        <div class="num_box">
+                            <php>$room=D('Shopdingroom')->getType();</php>
+                            <select name="number" class="num">
+                                <volist name='room' id='item'>
+                                    <option value="<{$key}>"><{$item}></option>
+                                </volist>
+                            </select>
+                            <input class="name" name="name" type="text" placeholder="商户名" />
+                            <div class="clear"></div>
+                        </div>
+                        <input class="btn" type="submit" value="免费帮您订座" />
+                    </form>
+                </div>
+                <div class="sy_seatSwitch1">
+                    <ul class="hotBill">
+                        <calldata mdl="Shop" cache="600" where="is_ding=1 AND audit=1 AND closed=0 AND  city_id=$city_id"  limit="0,3" order="view desc">
+
+                            <li>
+                                <a href="<{:U('ding/detail',array('shop_id'=>$item['shop_id']))}>"><img src="__ROOT__/attachs/<{$item.photo}>"  width="60" height="40" /></a>
+                                <h3 class="overflow_clear"><a href="<{:U('ding/detail',array('shop_id'=>$item['shop_id']))}>"><{$item.shop_name}></a></h3>
+                                <p><span class="spxq_qgpstarBg"><span class="spxq_qgpstar spxq_qgpstar<{$item.score}>"></span></span></p>
+                            </li>
+                        </calldata>   
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <!--首页订座部分结束-->
+    <calldata mdl="Ad" where=" closed=0 AND site_id=2 AND  city_id IN ({$city_ids}) and bg_date ELT '{$today}' AND end_date EGT '{$today}' " limit="0,1" cache="21600" order="orderby asc">
+        <div class="sy_adPosit"><a href="<{$item.link_url}>"><img src="__ROOT__/attachs/<{$item.photo}>" width="1200" height="100"/></a></div>
+    </calldata>
+    <!--首页同城信息部分开始-->
+    <div class="sy_FloorBt" data="top_6" id="floor6">
+        <div class="left sy_FloorBtz"><i class="ico_6"></i><span class="bt cl_4">同城信息</span></div>
+        <div class="right"><a target="_blank" href="<{:U('life/main')}>">更多&gt;&gt;</a></div>
+    </div>
+    <div class="cityInfor_nr">
+        <ul class="cityInfor_list" style="display:block;">
+            <li class="nr">
+                <h3>二手</h3>
+                <div class="link">
+                    <div class="left img ico_1"></div>
+                    <ul>
+                        <li><a  href="<{:U('life/index',array('cat'=>1))}>">手机及配件</a></li>
+                        <li><a href="<{:U('life/index',array('cat'=>2))}>">数码产品</a></li>
+                        <li><a href="<{:U('life/index',array('cat'=>4))}>">家用电器</a></li>
+                        <li><a href="<{:U('life/index',array('cat'=>5))}>">日常用品</a></li>
+                    </ul>
+                </div>
+                <a href="<{:U('life/main')}>" class="more">more</a>
+            </li>
+            <li class="nr">
+                <h3>车辆</h3>
+                <div class="link">
+                    <div class="left img ico_2"></div>
+                    <ul>
+                        <li><a href="<{:U('life/index',array('cat'=>21))}>">二手轿车</a></li>
+                        <li><a href="<{:U('life/index',array('cat'=>24))}>">电动车</a></li>
+                        <li><a href="<{:U('life/index',array('cat'=>25))}>">自行车</a></li>
+                        <li><a href="<{:U('life/index',array('cat'=>27))}>">摩托车/燃气车</a></li>
+                    </ul>
+                </div>
+                <a href="<{:U('life/main')}>" class="more">more</a>
+            </li>
+            <li class="nr">
+                <h3>房屋</h3>
+                <div class="link">
+                    <div class="left img ico_3"></div>
+                    <ul>
+                        <li><a href="<{:U('life/index',array('cat'=>47))}>">租房/出租</a></li>
+                        <li><a href="<{:U('life/index',array('cat'=>48))}>">个人租房</a></li>
+                        <li><a href="<{:U('life/index',array('cat'=>49))}>">二手房出售</a></li>
+                        <li><a href="<{:U('life/index',array('cat'=>52))}>">求租/求购</a></li>
+                    </ul>
+                </div>
+                <a href="<{:U('life/main')}>" class="more">more</a>
+            </li>
+            <li class="nr">
+                <h3>招聘</h3>
+                <div class="link">
+                    <div class="left img ico_4"></div>
+                    <ul>
+                        <li><a href="<{:U('life/index',array('cat'=>67))}>">工人/技工</a></li>
+                        <li><a href="<{:U('life/index',array('cat'=>68))}>">销售/金融</a></li>
+                        <li><a href="<{:U('life/index',array('cat'=>71))}>">人事/行政/文员</a></li>
+                        <li><a href="<{:U('life/index',array('cat'=>72))}>">营业员/促销/零售</a></li>
+                    </ul>
+                </div>
+                <a href="<{:U('life/main')}>" class="more">more</a>
+            </li>
+            <li class="nr">
+                <h3>服务</h3>
+                <div class="link">
+                    <div class="left img ico_5"></div>
+                    <ul>
+                        <li><a href="<{:U('life/index',array('cat'=>90))}>">招商加盟</a></li>
+                        <li><a href="<{:U('life/index',array('cat'=>95))}>">房屋装修</a></li>
+                        <li><a href="<{:U('life/index',array('cat'=>94))}>">公司注册</a></li>
+                        <li><a href="<{:U('life/index',array('cat'=>108))}>">搬家服务</a></li>
+                    </ul>
+                </div>
+                <a href="<{:U('life/main')}>" class="more">more</a>
+            </li>
+            <li class="nr">
+                <h3>培训</h3>
+                <div class="link">
+                    <div class="left img ico_6"></div>
+                    <ul>
+                        <li><a href="<{:U('life/index',array('cat'=>58))}>">中小学教育</a></li>
+                        <li><a href="<{:U('life/index',array('cat'=>59))}>">职业技能</a></li>
+                        <li><a href="<{:U('life/index',array('cat'=>60))}>">学历教育</a></li>
+                        <li><a href="<{:U('life/index',array('cat'=>61))}>">电脑培训</a></li>
+                    </ul>
+                </div>
+                <a href="<{:U('life/main')}>" class="more">more</a>
+            </li>
+            <li class="nr">
+                <h3>求职</h3>
+                <div class="link">
+                    <div class="left img ico_7"></div>
+                    <ul>
+                        <li><a href="<{:U('life/index',array('cat'=>38))}>">全职求职意向</a></li>
+                        <li><a href="<{:U('life/index',array('cat'=>39))}>">兼职求职意向</a></li>
+
+                    </ul>
+                </div>
+                <a href="<{:U('life/main')}>" class="more">more</a>
+            </li>
+            <li class="nr">
+                <h3>兼职</h3>
+                <div class="link">
+                    <div class="left img ico_8"></div>
+                    <ul>
+                        <li><a href="<{:U('life/index',array('cat'=>131))}>">家教/老师</a></li>
+                        <li><a href="<{:U('life/index',array('cat'=>132))}>">派发/促销</a></li>
+                        <li><a href="<{:U('life/index',array('cat'=>134))}>">学生兼职</a></li>
+                        <li><a href="<{:U('life/index',array('cat'=>135))}>">餐厅/服务员</a></li>
+                    </ul>
+                </div>
+                <a href="<{:U('life/main')}>" class="more">more</a>
+            </li>
+        </ul>
+
+    </div>
+    <!--首页同城信息部分结束-->
+    
+    <!--首页活动部分开始-->
+    <div class="sy_FloorBt" data="top_7" id="floor7">
+        <div class="left sy_FloorBtz"><i class="ico_7"></i><span class="bt cl_7">活动</span></div>
+        <div class="right"><a target="_blank" href="<{:U('huodong/index')}>">更多&gt;&gt;</a></div>
+    </div>
+    <div class="sy_active_nr">
+    	<ul class="sy_active_list_box">
+            <calldata mdl="Activity" where="audit=1 AND closed=0 AND city_id=$city_id" order="activity_id desc" limit="0,4" cache="600">
+                <li class="sy_active_list">
+                    <div class="syPub_list">
+                        <a target="_blank" href="<{:U('huodong/detail',array('activity_id'=>$item['activity_id']))}>"><img src="__ROOT__/attachs/<{$item.photo}>"  width="300" height="180" /></a>
+                        <h3 class="mt10"><a target="_blank" href="<{:U('huodong/detail',array('activity_id'=>$item['activity_id']))}>" class="overflow_clear"><{$item.title}></a></h3>
+                        <div class="btn_box">
+                            <div class="left"><p class="graycl">有效期：至<{$item.end_date}> </p></div>
+                            <div class="right"><a target="_blank" href="<{:U('huodong/detail',array('activity_id'=>$item['activity_id']))}>" class="btn">立即参加</a></div>
+                        </div>
+                    </div>
+                </li>
+            </calldata>
+        </ul>
+        <div class="clear"></div>
+    </div>
+    <!--首页活动部分结束-->
+
+    <!--首页上门服务部分开始-->
+    <div class="sy_FloorBt" data="top_8" id="floor8">
+        <div class="left sy_FloorBtz"><i class="ico_8"></i><span class="bt cl_6">上门服务</span></div>
+        <div class="right"><a target="_blank" href="<{:U('lifeservice/index')}>">更多&gt;&gt;</a></div>
+    </div>
+    <div class="sy_doorSer_list">
+        <ul>
+            <calldata mdl="Appoint" where="audit=1 AND closed=0 AND city_id=$city_id" order="appoint_id desc" limit="0,8" cache="600">
+                    <li>
+                        <a href="<{:U('appoint/detail',array('appoint_id'=>$item['appoint_id']))}>">
+                            <i><img src="__ROOT__/attachs/<{$item.photo}>"  width="80" height="80" /></i>
+                            <h3><{$item.title}></h3>
+                            <p><if condition="empty($item['intro'])">暂无简介<else/><{:bao_msubstr($item['intro'],0,16,true)}></if></p>
+                        </a>
+                        <div class="btn_box"><a href="<{:U('appoint/detail',array('appoint_id'=>$item['appoint_id']))}>">立即预约</a></div>
+                    </li>
+             </calldata>
+        </ul>
+    </div>
+    <!--首页上门服务部分结束-->
+</div>
+
+<div style="margin-bottom:-20px; margin-top:40px;"><a href="<{:U('download/index')}>"><img src="__TMPL__statics/images/images/ad.png" width="100%" /></a></div>
+<div class="indexpop" id="fox-food">
+    <ul>
+        <li class="ico_1"><a href="#floor1"><div class="wz">抢购</div></a></li>
+        <li class="ico_2"><a href="#floor2"><div class="wz">商城</div></a></li>
+        <li class="ico_3"><a href="#floor3"><div class="wz">外卖</div></a></li>
+        <li class="ico_4"><a href="#floor4"><div class="wz">优惠</div></a></li>
+        <li class="ico_5"><a href="#floor5"><div class="wz">订座</div></a></li>
+        <li class="ico_6"><a href="#floor6"><div class="wz">信息</div></a></li>
+        <li class="ico_7"><a href="#floor7"><div class="wz">活动</div></a></li>
+        <li class="ico_8"><a href="#floor8"><div class="wz">上门</div></a></li>
+    </ul>
+</div>
+<script>
+    $(function () {
+        $("#fox-food li").each(function (e) {
+            $(this).click(function (event) {
+                $(".radius3").each(function (i) {
+                    if (e == i)
+                    {
+                        $("html,body").animate({scrollTop: $(this).offset().top}, 500);
+                        event.preventDefault();
+                    }
+                });
+            });
+        });
+    });
+
+    $(document).ready(function () {
+        $(window).scroll(function () {
+            var top = $(document).scrollTop();          //定义变量，获取滚动条的高度
+            var menu = $("#fox-food");                      //定义变量，抓取#menu
+            var items = $("#index-gun").find(".sy_FloorBt");    //定义变量，查找.item
+
+            var curId = "";                             //定义变量，当前所在的楼层item #id 
+
+            items.each(function () {
+                var m = $(this);                        //定义变量，获取当前类
+                var itemsTop = m.offset().top;        //定义变量，获取当前类的top偏移量
+                if (top > itemsTop - 300) {
+                    curId = "#" + m.attr("id");
+                } else {
+                    return false;
+                }
+            });
+
+            //给相应的楼层设置cur,取消其他楼层的cur
+            var curLink = menu.find(".cur");
+            if (curId && curLink.attr("href") != curId) {
+                curLink.removeClass("cur");
+                menu.find("[href=" + curId + "]").addClass("cur");
+            }
+            // console.log(top);
+        });
+        /*控制*/
+        $(window).scroll(function () {
+            if ($(window).scrollTop() < 220) {
+                $(".indexpop").css("top", "220px");
+                $(".indexpop").css("bottom", "auto");
+            }
+            else {
+                $(".indexpop").css("top", "40px");
+                $(".indexpop").css("bottom", "auto");
+            }
+        });
+
+
+    });
+</script>
+<include file="public:footer"/>

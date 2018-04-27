@@ -1,0 +1,155 @@
+<include  file='public:header'/> 
+<include  file='public:top'/> 
+<include  file='public:nav2'/>
+<div class="pagewd">
+    <div class="seat_banner mt10">
+        <!--banner-->
+        <div class="flexslider seat_flexslider">
+            <ul class="slides">
+                <calldata mdl="Ad" where=" bg_date ELT '{$today}' AND  city_id IN ({$city_ids}) AND end_date EGT '{$today}' AND closed=0 AND site_id=50" limit="0,5" cache="21600" order="orderby asc">
+                    <li class="list"><a target="_blank" href="<{$item.link_url}>"><img src="__ROOT__/attachs/<{$item.photo}>" width="1200" height="400" /></a></li>
+		</calldata>
+            </ul>
+        </div>
+        <!--banner结束-->
+    </div>
+    <!--内容-->
+    <div class="tribeCont mt10">
+    	<div class="left tribeCont_l">
+        	<!--全部分类-->
+        	<div class="tribe_cate">
+            	<h3>部落分类</h3>
+                <div>
+                    <ul>
+                        <calldata mdl="Tribecate" where="" limit="0,50" cache="21600" order="orderby asc">
+                            <li class="list"><a href="<{:U('tribe/lists',array('cate_id'=>$item['cate_id']))}>"><{$item.cate_name}></a></li>
+                        </calldata>
+                    </ul>
+                    <div class="clear"></div>
+                </div>
+            </div>
+            <!--全部分类end-->
+        </div>
+        <div class="right tribeCont_r">
+            <!--部落推荐-->
+            <div class="tribe_recmd">
+            	<h3>推荐部落</h3>
+                <div class="multipleColumn" style="margin:0 auto">
+                    <div class="hd">
+                        <a class="prev"></a>
+                        <a class="next"></a>
+                    </div>
+                    <div class="bd">
+                        <div class="ulWrap">
+                            <calldata mdl="Tribe" where="closed=0" limit="0,30" cache="21600" order="tribe_id asc">
+                                <if condition="$index%6 eq 1">
+                                    <ul><!-- 把每次滚动的n个li放到1个ul里面 -->
+                                        <li>
+                                            <a href="<{:U('tribe/detail',array('tribe_id'=>$item['tribe_id']))}>"><img src="__ROOT__/attachs/<{$item.photo}>" width="90" height="90"  class="left"/></a>
+                                           <div class="pub_wz">
+                                               <p class="name"><a href="<{:U('tribe/detail',array('tribe_id'=>$item['tribe_id']))}>"><{$item.tribe_name}></a></p>
+                                               <p class="graycl">话题<{$item.posts}></p>
+                                               <p class="graycl">关注<{$item.fans}></p>
+                                           </div>
+                                           <div class="clear"></div>
+                                        </li>
+                                <elseif condition="$index%6 eq 0"/>    
+                                        <li>
+                                            <a href="<{:U('tribe/detail',array('tribe_id'=>$item['tribe_id']))}>"><img src="__ROOT__/attachs/<{$item.photo}>" width="90" height="90"  class="left"/></a>
+                                           <div class="pub_wz">
+                                               <p class="name"><a href="<{:U('tribe/detail',array('tribe_id'=>$item['tribe_id']))}>"><{$item.tribe_name}></a></p>
+                                               <p class="graycl">话题<{$item.posts}></p>
+                                               <p class="graycl">关注<{$item.fans}></p>
+                                           </div>
+                                           <div class="clear"></div>
+                                        </li>
+                                    </ul>
+                                <else/>
+                                        <li>
+                                            <a href="<{:U('tribe/detail',array('tribe_id'=>$item['tribe_id']))}>"><img src="__ROOT__/attachs/<{$item.photo}>" width="90" height="90"  class="left"/></a>
+                                           <div class="pub_wz">
+                                               <p class="name"><a href="<{:U('tribe/detail',array('tribe_id'=>$item['tribe_id']))}>"><{$item.tribe_name}></a></p>
+                                               <p class="graycl">话题<{$item.posts}></p>
+                                               <p class="graycl">关注<{$item.fans}></p>
+                                           </div>
+                                           <div class="clear"></div>
+                                        </li>
+                                </if>
+                            </calldata>
+                        </div><!-- ulWrap End -->
+                    </div><!-- bd End -->
+                </div>
+                <script src="__TMPL__tribe/js/jquery.SuperSlide.2.1.1.js??v=20160420"></script>
+		<script type="text/javascript">
+                    jQuery(".multipleColumn").slide({
+                        titCell:".hd ul",
+                        mainCell:".bd .ulWrap",
+                        autoPage:true,
+                        effect:"leftLoop",
+                        autoPlay:true,
+                        vis:1,
+                    });
+                </script>
+            </div>
+            <!--部落推荐end-->
+            <!--话题动态-->
+            <div class="tribe_topic_box">
+            	<div class="tribe_topic_tab">
+                	<ul>
+                            <li class="list <if condition='$act eq index'>on</if> "><a href="<{:U('tribe/index')}>">热门话题</a></li>
+                            <li class="list <if condition='$act eq focus'>on</if>"><a href="<{:U('tribe/focus')}>">关注动态</a></li>
+            	    </ul>
+                </div>
+                <div class="tribe_topic_cont">
+                	<div class="tribe_topic_cate">
+                            <a <if condition="!$tribe_id">class="on"</if> href="<{:U('tribe/focus')}>">全部</a>
+                            <foreach name="collect" item="item">
+                                <a <if condition="$item['tribe_id'] eq $tribe_id">class="on"</if>  href="<{:U('tribe/focus',array('tribe_id'=>$item['tribe_id']))}>"><{$item.tribe_name}></a>
+                            </foreach>
+                   	</div>
+                    <div class="list_box">
+                    	<ul>
+                            <foreach name="list" item="item">
+                                <li class="tribe_topic_list">
+                                    <div class="topCont">
+                                            <div class="left from"><span class="tag tag2"><{$cates[$item['cate_id']]['cate_name']}><b>·</b></span><{$tribes[$item['tribe_id']]['tribe_name']}>部落</div>
+                                    </div>
+                                    <h3 class="bt"><a href="<{:U('tribe/postdetail',array('post_id'=>$item['post_id']))}>">【<{$tribes[$item['tribe_id']]['tribe_name']}>】<{$item.title}></a><span class="num"><{$item.reply_num}></span></h3>
+                                    <P class="nr"><{:cleanhtml($item['details'])}></P>
+                                    <ul class="img_list">
+                                        <volist name="item.pics" id="pic">
+                                            <php>if($key<3){</php>
+                                            <li <if condition="$key eq 2">style="margin-right:0px;"</if> ><img src="__ROOT__/attachs/<{$pic}>" width="272" height="190" /></li>
+                                            <php>}</php>
+                                        </volist>
+                                    </ul>
+                                    <div class="bottomCont">
+                                            <span><em class="ico ico_1"></em><{$users[$item['user_id']]['nickname']|default='系统管理员'}></span>
+                                        <span><em class="ico ico_2"></em><{$item.create_time|date='Y-m-d H:i',###}></span>
+                                    </div>
+                                </li>
+                            </foreach>
+                	    </ul>
+                        <!--页码-->
+                        <div class="x">
+                            <{$page}>
+            		</div>
+            			<!--页码end-->
+                    </div>
+                </div>
+            </div>
+            <!--话题动态end-->
+        </div>
+        <div class="clear"></div>
+    </div>
+    <!--内容end-->
+</div>
+<script>
+$(document).ready(function () {
+	$('.flexslider').flexslider({
+		directionNav: false,
+		pauseOnAction: false
+	});
+});
+</script>
+<include file="public:footer"/>

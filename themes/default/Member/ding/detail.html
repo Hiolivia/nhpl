@@ -1,0 +1,121 @@
+<include file="public:header"/>
+<div class="content_right"> 
+<div class="tgdd">
+
+
+	
+	<table class="tuan_table" width="100%" border="0" cellspacing="0" cellpadding="0">
+    	<tr>
+            <td colspan="4" style="background-color:#FCFCFC;">
+            	<div class="mallorder_tBox">
+                    <span class="mallorder_t">订单号：<span class="mallorder_jg"><{$arr.order_no}></span></span>
+                    <span class="mallorder_t">地点：<span class="mallorder_jg"><{$arr.room_id}></span></span>
+                    <span class="mallorder_t">预约时间：<span class="mallorder_jg"><{$arr.last_date}> &nbsp;<{$arr.last_t}></span></span>
+                    <span class="mallorder_t">预计人数：<span class="mallorder_jg"><{$arr.number}></span></span>
+                    <span class="mallorder_t">支付定金：<span class="mallorder_jg"><{:round($arr['need_price']/100,2)}> 元 &nbsp;&nbsp; (<if condition="$arr[status] eq 1"> 未消费 <elseif condition="$arr[status] eq 2"/> 已消费 <elseif condition="$arr[status] eq -1"/> 已退款 <else/>未支付</if>)</span></span>
+                    <span class="mallorder_t">联系人：<span class="mallorder_jg"><{$arr.name}> &nbsp;（<if condition="$sex eq 2">女士<else/>先生</if>）</span></span>
+                    
+                    <span class="mallorder_t">电话：<span class="mallorder_jg"><{$arr.mobile}></span></span>
+                 </div>
+            </td>
+        </tr>
+       <if condition="$arr[menu][0][0] gt 0">
+        <tr>
+            <th width="340">详情</th>
+            <th>优惠价</th>
+            <th>数量</th>
+            <th>单价</th>
+        </tr>
+     
+        <volist name='arr.menu' id='item'>
+        <tr>
+        	
+            <td>
+            	<div class="mallorder_xq"><img width="120" src="__ROOT__/attachs/<{$menu[$item[0]][photo]}>" /><p><{$menu[$item[0]][menu_name]}></p></div>
+            </td>
+            <td><span class="mallorder_jg"><{:round($menu[$item[0]][ding_price]/100,2)}>元</span></td>
+            <td><{$item[1]}></td>
+            <td><span class="mallorder_jg"><{:round($menu[$item[0]][ding_price]*$item[1]/100,2)}>元</span></td>
+            
+            
+        </tr>
+        </volist>
+      
+        <tr>
+            <td colspan="4"><div class="con_ri">总价:<span class="mallorder_jg"> <{:round($order[total_price]/100,2)}>元</span></div></td>
+        </tr>
+        </if>
+        
+        <if condition="!empty($arr[tip])">
+        <tr>
+            <td colspan="4" style="background-color:;">
+            	<div class="mallorder_tBox">
+                	<p class="">买家留言：<{$arr.tip}></p>
+                </div>
+            </td>
+        </tr>
+        </if>
+        
+        <if condition="$arr[status] eq 0">
+         <tr>
+            <td colspan="4" style="background-color:;">
+            	<div class="mallorder_tBox">
+                	<p class="">
+                      <a class="myInfor_sx myInfor_sx_fk" <if condition="!empty($arr['name']) && !empty($arr['mobile'])"> href="<{:U('pchome/ding/pay2',array('order_id'=>$arr['order_id']))}>" <else/> href="<{:U('pchome/ding/pay',array('order_id'=>$arr['order_id']))}>"</if> target="_blank">去付款</a>
+                    </p>
+                </div>
+            </td>
+        </tr>
+         <elseif condition="$arr[status] eq 1" />
+         <tr>
+            <td colspan="4" style="background-color:;">
+            	<div class="mallorder_tBox"><p class=""><a class="myInfor_sx myInfor_sx_fk">已付款</a></p></div>
+            </td>
+        </tr>
+        <elseif condition="$arr[status] eq 2" />
+          <tr>
+            <td colspan="4" style="background-color:;">
+            	<div class="mallorder_tBox"><p class=""><a class="myInfor_sx myInfor_sx_fk">已消费</a></p></div>
+            </td>
+        </tr>
+         <eq name="arr.status" value="2">
+         <if condition="$arr['is_dianping'] eq 0">
+          <tr>
+            <td colspan="4" style="background-color:;">
+            	<div class="mallorder_tBox">
+                	<p class=""><a class="myInfor_sx myInfor_sx_fk" href="<{:U('ding/dianping',array('order_id'=>$arr['order_id']))}>" target="_blank">点评</a>
+                    </p>
+                </div>
+            </td>
+        </tr>
+
+         
+         <else/>
+         
+         
+          <tr>
+            <td colspan="4" style="background-color:;">
+            	<div class="mallorder_tBox"><p class=""><a class="myInfor_sx myInfor_sx_fk">已点评</a></p></div>
+            </td>
+         </tr>
+         
+         
+         </if>
+         </eq>
+         <elseif condition="$arr[status] eq -1" />
+         <tr>
+            <td colspan="4" style="background-color:;">
+            	<div class="mallorder_tBox"><p class=""><a class="myInfor_sx myInfor_sx_fk">已退款</a></p></div>
+            </td>
+         </tr>
+         </if>
+                       
+        
+        
+    </table>
+
+</div>
+</div>
+</div>
+</div>
+<include file="public:footer"/>
