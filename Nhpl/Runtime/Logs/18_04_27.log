@@ -6933,3 +6933,1233 @@ NOTIC: [2048] Declaration of SettingModel::save() should be compatible with Mode
 NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Lib\Driver\Db\DbMysql.class.php 第 55 行.
 SQL: SHOW COLUMNS FROM `bao_setting` [ RunTime:0.005001s ]
 
+[ 2018-04-27T10:30:42+08:00 ] 127.0.0.1 /admin/index/check.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Extend\Driver\Session\SessionDb.class.php 第 96 行.
+NOTIC: [2048] Declaration of SettingModel::fetchAll() should be compatible with CommonModel::fetchAll($field = '*', $where = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [2048] Declaration of SettingModel::save() should be compatible with Model::save($data = '', $options = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `bao_setting` [ RunTime:0.004001s ]
+
+[ 2018-04-27T10:31:42+08:00 ] 127.0.0.1 /admin/index/check.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Extend\Driver\Session\SessionDb.class.php 第 96 行.
+NOTIC: [2048] Declaration of SettingModel::fetchAll() should be compatible with CommonModel::fetchAll($field = '*', $where = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [2048] Declaration of SettingModel::save() should be compatible with Model::save($data = '', $options = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `bao_setting` [ RunTime:0.005000s ]
+
+[ 2018-04-27T10:32:42+08:00 ] 127.0.0.1 /admin/index/check.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Extend\Driver\Session\SessionDb.class.php 第 96 行.
+NOTIC: [2048] Declaration of SettingModel::fetchAll() should be compatible with CommonModel::fetchAll($field = '*', $where = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [2048] Declaration of SettingModel::save() should be compatible with Model::save($data = '', $options = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `bao_setting` [ RunTime:0.003000s ]
+
+[ 2018-04-27T10:33:42+08:00 ] 127.0.0.1 /admin/index/check.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Extend\Driver\Session\SessionDb.class.php 第 96 行.
+NOTIC: [2048] Declaration of SettingModel::fetchAll() should be compatible with CommonModel::fetchAll($field = '*', $where = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [2048] Declaration of SettingModel::save() should be compatible with Model::save($data = '', $options = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `bao_setting` [ RunTime:0.004000s ]
+
+[ 2018-04-27T10:34:42+08:00 ] 127.0.0.1 /admin/index/check.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Extend\Driver\Session\SessionDb.class.php 第 96 行.
+NOTIC: [2048] Declaration of SettingModel::fetchAll() should be compatible with CommonModel::fetchAll($field = '*', $where = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [2048] Declaration of SettingModel::save() should be compatible with Model::save($data = '', $options = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `bao_setting` [ RunTime:0.003000s ]
+
+[ 2018-04-27T10:35:42+08:00 ] 127.0.0.1 /admin/index/check.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Extend\Driver\Session\SessionDb.class.php 第 96 行.
+NOTIC: [2048] Declaration of SettingModel::fetchAll() should be compatible with CommonModel::fetchAll($field = '*', $where = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [2048] Declaration of SettingModel::save() should be compatible with Model::save($data = '', $options = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `bao_setting` [ RunTime:0.004001s ]
+
+[ 2018-04-27T10:36:42+08:00 ] 127.0.0.1 /admin/index/check.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Extend\Driver\Session\SessionDb.class.php 第 96 行.
+NOTIC: [2048] Declaration of SettingModel::fetchAll() should be compatible with CommonModel::fetchAll($field = '*', $where = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [2048] Declaration of SettingModel::save() should be compatible with Model::save($data = '', $options = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `bao_setting` [ RunTime:0.004000s ]
+
+[ 2018-04-27T10:37:42+08:00 ] 127.0.0.1 /admin/index/check.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Extend\Driver\Session\SessionDb.class.php 第 96 行.
+NOTIC: [2048] Declaration of SettingModel::fetchAll() should be compatible with CommonModel::fetchAll($field = '*', $where = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [2048] Declaration of SettingModel::save() should be compatible with Model::save($data = '', $options = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `bao_setting` [ RunTime:0.003000s ]
+
+[ 2018-04-27T10:38:42+08:00 ] 127.0.0.1 /admin/index/check.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Extend\Driver\Session\SessionDb.class.php 第 96 行.
+NOTIC: [2048] Declaration of SettingModel::fetchAll() should be compatible with CommonModel::fetchAll($field = '*', $where = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [2048] Declaration of SettingModel::save() should be compatible with Model::save($data = '', $options = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `bao_setting` [ RunTime:0.004000s ]
+
+[ 2018-04-27T10:39:42+08:00 ] 127.0.0.1 /admin/index/check.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Extend\Driver\Session\SessionDb.class.php 第 96 行.
+NOTIC: [2048] Declaration of SettingModel::fetchAll() should be compatible with CommonModel::fetchAll($field = '*', $where = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [2048] Declaration of SettingModel::save() should be compatible with Model::save($data = '', $options = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `bao_setting` [ RunTime:0.004001s ]
+
+[ 2018-04-27T10:40:42+08:00 ] 127.0.0.1 /admin/index/check.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Extend\Driver\Session\SessionDb.class.php 第 96 行.
+NOTIC: [2048] Declaration of SettingModel::fetchAll() should be compatible with CommonModel::fetchAll($field = '*', $where = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [2048] Declaration of SettingModel::save() should be compatible with Model::save($data = '', $options = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `bao_setting` [ RunTime:0.004000s ]
+
+[ 2018-04-27T10:41:42+08:00 ] 127.0.0.1 /admin/index/check.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Extend\Driver\Session\SessionDb.class.php 第 96 行.
+NOTIC: [2048] Declaration of SettingModel::fetchAll() should be compatible with CommonModel::fetchAll($field = '*', $where = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [2048] Declaration of SettingModel::save() should be compatible with Model::save($data = '', $options = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `bao_setting` [ RunTime:0.003000s ]
+
+[ 2018-04-27T10:42:42+08:00 ] 127.0.0.1 /admin/index/check.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Extend\Driver\Session\SessionDb.class.php 第 96 行.
+NOTIC: [2048] Declaration of SettingModel::fetchAll() should be compatible with CommonModel::fetchAll($field = '*', $where = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [2048] Declaration of SettingModel::save() should be compatible with Model::save($data = '', $options = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `bao_setting` [ RunTime:0.004000s ]
+
+[ 2018-04-27T10:43:42+08:00 ] 127.0.0.1 /admin/index/check.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Extend\Driver\Session\SessionDb.class.php 第 96 行.
+NOTIC: [2048] Declaration of SettingModel::fetchAll() should be compatible with CommonModel::fetchAll($field = '*', $where = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [2048] Declaration of SettingModel::save() should be compatible with Model::save($data = '', $options = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `bao_setting` [ RunTime:0.003000s ]
+
+[ 2018-04-27T10:44:42+08:00 ] 127.0.0.1 /admin/index/check.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Extend\Driver\Session\SessionDb.class.php 第 96 行.
+NOTIC: [2048] Declaration of SettingModel::fetchAll() should be compatible with CommonModel::fetchAll($field = '*', $where = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [2048] Declaration of SettingModel::save() should be compatible with Model::save($data = '', $options = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `bao_setting` [ RunTime:0.003000s ]
+
+[ 2018-04-27T10:45:42+08:00 ] 127.0.0.1 /admin/index/check.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001001s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Extend\Driver\Session\SessionDb.class.php 第 96 行.
+NOTIC: [2048] Declaration of SettingModel::fetchAll() should be compatible with CommonModel::fetchAll($field = '*', $where = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [2048] Declaration of SettingModel::save() should be compatible with Model::save($data = '', $options = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `bao_setting` [ RunTime:0.003000s ]
+
+[ 2018-04-27T10:46:42+08:00 ] 127.0.0.1 /admin/index/check.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Extend\Driver\Session\SessionDb.class.php 第 96 行.
+NOTIC: [2048] Declaration of SettingModel::fetchAll() should be compatible with CommonModel::fetchAll($field = '*', $where = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [2048] Declaration of SettingModel::save() should be compatible with Model::save($data = '', $options = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `bao_setting` [ RunTime:0.004000s ]
+
+[ 2018-04-27T10:47:42+08:00 ] 127.0.0.1 /admin/index/check.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Extend\Driver\Session\SessionDb.class.php 第 96 行.
+NOTIC: [2048] Declaration of SettingModel::fetchAll() should be compatible with CommonModel::fetchAll($field = '*', $where = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [2048] Declaration of SettingModel::save() should be compatible with Model::save($data = '', $options = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `bao_setting` [ RunTime:0.005000s ]
+
+[ 2018-04-27T10:48:42+08:00 ] 127.0.0.1 /admin/index/check.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Extend\Driver\Session\SessionDb.class.php 第 96 行.
+NOTIC: [2048] Declaration of SettingModel::fetchAll() should be compatible with CommonModel::fetchAll($field = '*', $where = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [2048] Declaration of SettingModel::save() should be compatible with Model::save($data = '', $options = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `bao_setting` [ RunTime:0.003000s ]
+
+[ 2018-04-27T10:49:42+08:00 ] 127.0.0.1 /admin/index/check.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Extend\Driver\Session\SessionDb.class.php 第 96 行.
+NOTIC: [2048] Declaration of SettingModel::fetchAll() should be compatible with CommonModel::fetchAll($field = '*', $where = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [2048] Declaration of SettingModel::save() should be compatible with Model::save($data = '', $options = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `bao_setting` [ RunTime:0.004000s ]
+
+[ 2018-04-27T10:50:42+08:00 ] 127.0.0.1 /admin/index/check.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Extend\Driver\Session\SessionDb.class.php 第 96 行.
+NOTIC: [2048] Declaration of SettingModel::fetchAll() should be compatible with CommonModel::fetchAll($field = '*', $where = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [2048] Declaration of SettingModel::save() should be compatible with Model::save($data = '', $options = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `bao_setting` [ RunTime:0.003001s ]
+
+[ 2018-04-27T10:51:42+08:00 ] 127.0.0.1 /admin/index/check.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Extend\Driver\Session\SessionDb.class.php 第 96 行.
+NOTIC: [2048] Declaration of SettingModel::fetchAll() should be compatible with CommonModel::fetchAll($field = '*', $where = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [2048] Declaration of SettingModel::save() should be compatible with Model::save($data = '', $options = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `bao_setting` [ RunTime:0.004001s ]
+
+[ 2018-04-27T10:52:42+08:00 ] 127.0.0.1 /admin/index/check.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Extend\Driver\Session\SessionDb.class.php 第 96 行.
+NOTIC: [2048] Declaration of SettingModel::fetchAll() should be compatible with CommonModel::fetchAll($field = '*', $where = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [2048] Declaration of SettingModel::save() should be compatible with Model::save($data = '', $options = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `bao_setting` [ RunTime:0.004001s ]
+
+[ 2018-04-27T10:53:42+08:00 ] 127.0.0.1 /admin/index/check.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Extend\Driver\Session\SessionDb.class.php 第 96 行.
+NOTIC: [2048] Declaration of SettingModel::fetchAll() should be compatible with CommonModel::fetchAll($field = '*', $where = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [2048] Declaration of SettingModel::save() should be compatible with Model::save($data = '', $options = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `bao_setting` [ RunTime:0.003000s ]
+
+[ 2018-04-27T10:54:42+08:00 ] 127.0.0.1 /admin/index/check.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Extend\Driver\Session\SessionDb.class.php 第 96 行.
+NOTIC: [2048] Declaration of SettingModel::fetchAll() should be compatible with CommonModel::fetchAll($field = '*', $where = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [2048] Declaration of SettingModel::save() should be compatible with Model::save($data = '', $options = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `bao_setting` [ RunTime:0.004000s ]
+
+[ 2018-04-27T10:55:42+08:00 ] 127.0.0.1 /admin/index/check.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Extend\Driver\Session\SessionDb.class.php 第 96 行.
+NOTIC: [2048] Declaration of SettingModel::fetchAll() should be compatible with CommonModel::fetchAll($field = '*', $where = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [2048] Declaration of SettingModel::save() should be compatible with Model::save($data = '', $options = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `bao_setting` [ RunTime:0.005000s ]
+
+[ 2018-04-27T10:56:42+08:00 ] 127.0.0.1 /admin/index/check.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Extend\Driver\Session\SessionDb.class.php 第 96 行.
+NOTIC: [2048] Declaration of SettingModel::fetchAll() should be compatible with CommonModel::fetchAll($field = '*', $where = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [2048] Declaration of SettingModel::save() should be compatible with Model::save($data = '', $options = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `bao_setting` [ RunTime:0.004000s ]
+
+[ 2018-04-27T10:57:42+08:00 ] 127.0.0.1 /admin/index/check.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Extend\Driver\Session\SessionDb.class.php 第 96 行.
+NOTIC: [2048] Declaration of SettingModel::fetchAll() should be compatible with CommonModel::fetchAll($field = '*', $where = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [2048] Declaration of SettingModel::save() should be compatible with Model::save($data = '', $options = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `bao_setting` [ RunTime:0.003000s ]
+
+[ 2018-04-27T10:58:42+08:00 ] 127.0.0.1 /admin/index/check.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Extend\Driver\Session\SessionDb.class.php 第 96 行.
+NOTIC: [2048] Declaration of SettingModel::fetchAll() should be compatible with CommonModel::fetchAll($field = '*', $where = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [2048] Declaration of SettingModel::save() should be compatible with Model::save($data = '', $options = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `bao_setting` [ RunTime:0.004001s ]
+
+[ 2018-04-27T10:59:42+08:00 ] 127.0.0.1 /admin/index/check.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Extend\Driver\Session\SessionDb.class.php 第 96 行.
+NOTIC: [2048] Declaration of SettingModel::fetchAll() should be compatible with CommonModel::fetchAll($field = '*', $where = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [2048] Declaration of SettingModel::save() should be compatible with Model::save($data = '', $options = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `bao_setting` [ RunTime:0.003000s ]
+
+[ 2018-04-27T11:00:42+08:00 ] 127.0.0.1 /admin/index/check.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Extend\Driver\Session\SessionDb.class.php 第 96 行.
+NOTIC: [2048] Declaration of SettingModel::fetchAll() should be compatible with CommonModel::fetchAll($field = '*', $where = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [2048] Declaration of SettingModel::save() should be compatible with Model::save($data = '', $options = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `bao_setting` [ RunTime:0.004000s ]
+
+[ 2018-04-27T11:01:42+08:00 ] 127.0.0.1 /admin/index/check.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Extend\Driver\Session\SessionDb.class.php 第 96 行.
+NOTIC: [2048] Declaration of SettingModel::fetchAll() should be compatible with CommonModel::fetchAll($field = '*', $where = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [2048] Declaration of SettingModel::save() should be compatible with Model::save($data = '', $options = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `bao_setting` [ RunTime:0.004000s ]
+
+[ 2018-04-27T11:02:42+08:00 ] 127.0.0.1 /admin/index/check.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Extend\Driver\Session\SessionDb.class.php 第 96 行.
+NOTIC: [2048] Declaration of SettingModel::fetchAll() should be compatible with CommonModel::fetchAll($field = '*', $where = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [2048] Declaration of SettingModel::save() should be compatible with Model::save($data = '', $options = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `bao_setting` [ RunTime:0.003000s ]
+
+[ 2018-04-27T11:03:42+08:00 ] 127.0.0.1 /admin/index/check.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Extend\Driver\Session\SessionDb.class.php 第 96 行.
+NOTIC: [2048] Declaration of SettingModel::fetchAll() should be compatible with CommonModel::fetchAll($field = '*', $where = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [2048] Declaration of SettingModel::save() should be compatible with Model::save($data = '', $options = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `bao_setting` [ RunTime:0.004000s ]
+
+[ 2018-04-27T11:04:42+08:00 ] 127.0.0.1 /admin/index/check.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Extend\Driver\Session\SessionDb.class.php 第 96 行.
+NOTIC: [2048] Declaration of SettingModel::fetchAll() should be compatible with CommonModel::fetchAll($field = '*', $where = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [2048] Declaration of SettingModel::save() should be compatible with Model::save($data = '', $options = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `bao_setting` [ RunTime:0.005000s ]
+
+[ 2018-04-27T11:05:42+08:00 ] 127.0.0.1 /admin/index/check.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Extend\Driver\Session\SessionDb.class.php 第 96 行.
+NOTIC: [2048] Declaration of SettingModel::fetchAll() should be compatible with CommonModel::fetchAll($field = '*', $where = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [2048] Declaration of SettingModel::save() should be compatible with Model::save($data = '', $options = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `bao_setting` [ RunTime:0.004000s ]
+
+[ 2018-04-27T11:06:42+08:00 ] 127.0.0.1 /admin/index/check.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Extend\Driver\Session\SessionDb.class.php 第 96 行.
+NOTIC: [2048] Declaration of SettingModel::fetchAll() should be compatible with CommonModel::fetchAll($field = '*', $where = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [2048] Declaration of SettingModel::save() should be compatible with Model::save($data = '', $options = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `bao_setting` [ RunTime:0.004000s ]
+
+[ 2018-04-27T11:07:42+08:00 ] 127.0.0.1 /admin/index/check.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Extend\Driver\Session\SessionDb.class.php 第 96 行.
+NOTIC: [2048] Declaration of SettingModel::fetchAll() should be compatible with CommonModel::fetchAll($field = '*', $where = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [2048] Declaration of SettingModel::save() should be compatible with Model::save($data = '', $options = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `bao_setting` [ RunTime:0.005000s ]
+
+[ 2018-04-27T11:08:42+08:00 ] 127.0.0.1 /admin/index/check.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002001s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002001s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Extend\Driver\Session\SessionDb.class.php 第 96 行.
+NOTIC: [2048] Declaration of SettingModel::fetchAll() should be compatible with CommonModel::fetchAll($field = '*', $where = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [2048] Declaration of SettingModel::save() should be compatible with Model::save($data = '', $options = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `bao_setting` [ RunTime:0.004000s ]
+
+[ 2018-04-27T11:09:42+08:00 ] 127.0.0.1 /admin/index/check.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Extend\Driver\Session\SessionDb.class.php 第 96 行.
+NOTIC: [2048] Declaration of SettingModel::fetchAll() should be compatible with CommonModel::fetchAll($field = '*', $where = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [2048] Declaration of SettingModel::save() should be compatible with Model::save($data = '', $options = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `bao_setting` [ RunTime:0.005000s ]
+
+[ 2018-04-27T11:10:42+08:00 ] 127.0.0.1 /admin/index/check.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Extend\Driver\Session\SessionDb.class.php 第 96 行.
+NOTIC: [2048] Declaration of SettingModel::fetchAll() should be compatible with CommonModel::fetchAll($field = '*', $where = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [2048] Declaration of SettingModel::save() should be compatible with Model::save($data = '', $options = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `bao_setting` [ RunTime:0.004000s ]
+
+[ 2018-04-27T11:11:42+08:00 ] 127.0.0.1 /admin/index/check.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Extend\Driver\Session\SessionDb.class.php 第 96 行.
+NOTIC: [2048] Declaration of SettingModel::fetchAll() should be compatible with CommonModel::fetchAll($field = '*', $where = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [2048] Declaration of SettingModel::save() should be compatible with Model::save($data = '', $options = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `bao_setting` [ RunTime:0.004000s ]
+
+[ 2018-04-27T11:12:42+08:00 ] 127.0.0.1 /admin/index/check.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Extend\Driver\Session\SessionDb.class.php 第 96 行.
+NOTIC: [2048] Declaration of SettingModel::fetchAll() should be compatible with CommonModel::fetchAll($field = '*', $where = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [2048] Declaration of SettingModel::save() should be compatible with Model::save($data = '', $options = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `bao_setting` [ RunTime:0.004001s ]
+
+[ 2018-04-27T11:13:42+08:00 ] 127.0.0.1 /admin/index/check.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001001s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002001s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Extend\Driver\Session\SessionDb.class.php 第 96 行.
+NOTIC: [2048] Declaration of SettingModel::fetchAll() should be compatible with CommonModel::fetchAll($field = '*', $where = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [2048] Declaration of SettingModel::save() should be compatible with Model::save($data = '', $options = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `bao_setting` [ RunTime:0.004000s ]
+
+[ 2018-04-27T11:14:42+08:00 ] 127.0.0.1 /admin/index/check.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Extend\Driver\Session\SessionDb.class.php 第 96 行.
+NOTIC: [2048] Declaration of SettingModel::fetchAll() should be compatible with CommonModel::fetchAll($field = '*', $where = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [2048] Declaration of SettingModel::save() should be compatible with Model::save($data = '', $options = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `bao_setting` [ RunTime:0.004000s ]
+
+[ 2018-04-27T11:15:42+08:00 ] 127.0.0.1 /admin/index/check.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Extend\Driver\Session\SessionDb.class.php 第 96 行.
+NOTIC: [2048] Declaration of SettingModel::fetchAll() should be compatible with CommonModel::fetchAll($field = '*', $where = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [2048] Declaration of SettingModel::save() should be compatible with Model::save($data = '', $options = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `bao_setting` [ RunTime:0.004000s ]
+
+[ 2018-04-27T11:16:42+08:00 ] 127.0.0.1 /admin/index/check.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Extend\Driver\Session\SessionDb.class.php 第 96 行.
+NOTIC: [2048] Declaration of SettingModel::fetchAll() should be compatible with CommonModel::fetchAll($field = '*', $where = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [2048] Declaration of SettingModel::save() should be compatible with Model::save($data = '', $options = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `bao_setting` [ RunTime:0.004000s ]
+
+[ 2018-04-27T11:17:42+08:00 ] 127.0.0.1 /admin/index/check.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Extend\Driver\Session\SessionDb.class.php 第 96 行.
+NOTIC: [2048] Declaration of SettingModel::fetchAll() should be compatible with CommonModel::fetchAll($field = '*', $where = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [2048] Declaration of SettingModel::save() should be compatible with Model::save($data = '', $options = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `bao_setting` [ RunTime:0.004000s ]
+
+[ 2018-04-27T11:18:42+08:00 ] 127.0.0.1 /admin/index/check.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Extend\Driver\Session\SessionDb.class.php 第 96 行.
+NOTIC: [2048] Declaration of SettingModel::fetchAll() should be compatible with CommonModel::fetchAll($field = '*', $where = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [2048] Declaration of SettingModel::save() should be compatible with Model::save($data = '', $options = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `bao_setting` [ RunTime:0.004001s ]
+
+[ 2018-04-27T11:19:42+08:00 ] 127.0.0.1 /admin/index/check.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Extend\Driver\Session\SessionDb.class.php 第 96 行.
+NOTIC: [2048] Declaration of SettingModel::fetchAll() should be compatible with CommonModel::fetchAll($field = '*', $where = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [2048] Declaration of SettingModel::save() should be compatible with Model::save($data = '', $options = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `bao_setting` [ RunTime:0.004001s ]
+
+[ 2018-04-27T11:20:42+08:00 ] 127.0.0.1 /admin/index/check.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Extend\Driver\Session\SessionDb.class.php 第 96 行.
+NOTIC: [2048] Declaration of SettingModel::fetchAll() should be compatible with CommonModel::fetchAll($field = '*', $where = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [2048] Declaration of SettingModel::save() should be compatible with Model::save($data = '', $options = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `bao_setting` [ RunTime:0.005000s ]
+
+[ 2018-04-27T11:21:42+08:00 ] 127.0.0.1 /admin/index/check.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Extend\Driver\Session\SessionDb.class.php 第 96 行.
+NOTIC: [2048] Declaration of SettingModel::fetchAll() should be compatible with CommonModel::fetchAll($field = '*', $where = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [2048] Declaration of SettingModel::save() should be compatible with Model::save($data = '', $options = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `bao_setting` [ RunTime:0.003000s ]
+
+[ 2018-04-27T11:22:42+08:00 ] 127.0.0.1 /admin/index/check.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Extend\Driver\Session\SessionDb.class.php 第 96 行.
+NOTIC: [2048] Declaration of SettingModel::fetchAll() should be compatible with CommonModel::fetchAll($field = '*', $where = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [2048] Declaration of SettingModel::save() should be compatible with Model::save($data = '', $options = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `bao_setting` [ RunTime:0.005000s ]
+
+[ 2018-04-27T11:23:42+08:00 ] 127.0.0.1 /admin/index/check.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Extend\Driver\Session\SessionDb.class.php 第 96 行.
+NOTIC: [2048] Declaration of SettingModel::fetchAll() should be compatible with CommonModel::fetchAll($field = '*', $where = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [2048] Declaration of SettingModel::save() should be compatible with Model::save($data = '', $options = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `bao_setting` [ RunTime:0.004001s ]
+
+[ 2018-04-27T11:24:42+08:00 ] 127.0.0.1 /admin/index/check.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Extend\Driver\Session\SessionDb.class.php 第 96 行.
+NOTIC: [2048] Declaration of SettingModel::fetchAll() should be compatible with CommonModel::fetchAll($field = '*', $where = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [2048] Declaration of SettingModel::save() should be compatible with Model::save($data = '', $options = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `bao_setting` [ RunTime:0.004000s ]
+
+[ 2018-04-27T11:25:42+08:00 ] 127.0.0.1 /admin/index/check.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Extend\Driver\Session\SessionDb.class.php 第 96 行.
+NOTIC: [2048] Declaration of SettingModel::fetchAll() should be compatible with CommonModel::fetchAll($field = '*', $where = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [2048] Declaration of SettingModel::save() should be compatible with Model::save($data = '', $options = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `bao_setting` [ RunTime:0.003000s ]
+
+[ 2018-04-27T11:26:42+08:00 ] 127.0.0.1 /admin/index/check.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Extend\Driver\Session\SessionDb.class.php 第 96 行.
+NOTIC: [2048] Declaration of SettingModel::fetchAll() should be compatible with CommonModel::fetchAll($field = '*', $where = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [2048] Declaration of SettingModel::save() should be compatible with Model::save($data = '', $options = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `bao_setting` [ RunTime:0.003000s ]
+
+[ 2018-04-27T11:27:42+08:00 ] 127.0.0.1 /admin/index/check.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Extend\Driver\Session\SessionDb.class.php 第 96 行.
+NOTIC: [2048] Declaration of SettingModel::fetchAll() should be compatible with CommonModel::fetchAll($field = '*', $where = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [2048] Declaration of SettingModel::save() should be compatible with Model::save($data = '', $options = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `bao_setting` [ RunTime:0.004000s ]
+
+[ 2018-04-27T11:28:42+08:00 ] 127.0.0.1 /admin/index/check.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Extend\Driver\Session\SessionDb.class.php 第 96 行.
+NOTIC: [2048] Declaration of SettingModel::fetchAll() should be compatible with CommonModel::fetchAll($field = '*', $where = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [2048] Declaration of SettingModel::save() should be compatible with Model::save($data = '', $options = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `bao_setting` [ RunTime:0.005000s ]
+
+[ 2018-04-27T11:29:42+08:00 ] 127.0.0.1 /admin/index/check.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Extend\Driver\Session\SessionDb.class.php 第 96 行.
+NOTIC: [2048] Declaration of SettingModel::fetchAll() should be compatible with CommonModel::fetchAll($field = '*', $where = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [2048] Declaration of SettingModel::save() should be compatible with Model::save($data = '', $options = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `bao_setting` [ RunTime:0.004000s ]
+
+[ 2018-04-27T11:30:42+08:00 ] 127.0.0.1 /admin/index/check.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Extend\Driver\Session\SessionDb.class.php 第 96 行.
+NOTIC: [2048] Declaration of SettingModel::fetchAll() should be compatible with CommonModel::fetchAll($field = '*', $where = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [2048] Declaration of SettingModel::save() should be compatible with Model::save($data = '', $options = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `bao_setting` [ RunTime:0.005000s ]
+
+[ 2018-04-27T11:31:42+08:00 ] 127.0.0.1 /admin/index/check.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Extend\Driver\Session\SessionDb.class.php 第 96 行.
+NOTIC: [2048] Declaration of SettingModel::fetchAll() should be compatible with CommonModel::fetchAll($field = '*', $where = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [2048] Declaration of SettingModel::save() should be compatible with Model::save($data = '', $options = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `bao_setting` [ RunTime:0.004000s ]
+
+[ 2018-04-27T11:32:42+08:00 ] 127.0.0.1 /admin/index/check.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Extend\Driver\Session\SessionDb.class.php 第 96 行.
+NOTIC: [2048] Declaration of SettingModel::fetchAll() should be compatible with CommonModel::fetchAll($field = '*', $where = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [2048] Declaration of SettingModel::save() should be compatible with Model::save($data = '', $options = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `bao_setting` [ RunTime:0.004001s ]
+
+[ 2018-04-27T11:33:42+08:00 ] 127.0.0.1 /admin/index/check.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Extend\Driver\Session\SessionDb.class.php 第 96 行.
+NOTIC: [2048] Declaration of SettingModel::fetchAll() should be compatible with CommonModel::fetchAll($field = '*', $where = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [2048] Declaration of SettingModel::save() should be compatible with Model::save($data = '', $options = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `bao_setting` [ RunTime:0.005001s ]
+
+[ 2018-04-27T11:34:42+08:00 ] 127.0.0.1 /admin/index/check.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Extend\Driver\Session\SessionDb.class.php 第 96 行.
+NOTIC: [2048] Declaration of SettingModel::fetchAll() should be compatible with CommonModel::fetchAll($field = '*', $where = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [2048] Declaration of SettingModel::save() should be compatible with Model::save($data = '', $options = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `bao_setting` [ RunTime:0.005001s ]
+
+[ 2018-04-27T11:35:42+08:00 ] 127.0.0.1 /admin/index/check.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Extend\Driver\Session\SessionDb.class.php 第 96 行.
+NOTIC: [2048] Declaration of SettingModel::fetchAll() should be compatible with CommonModel::fetchAll($field = '*', $where = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [2048] Declaration of SettingModel::save() should be compatible with Model::save($data = '', $options = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `bao_setting` [ RunTime:0.004000s ]
+
+[ 2018-04-27T11:36:42+08:00 ] 127.0.0.1 /admin/index/check.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Extend\Driver\Session\SessionDb.class.php 第 96 行.
+NOTIC: [2048] Declaration of SettingModel::fetchAll() should be compatible with CommonModel::fetchAll($field = '*', $where = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [2048] Declaration of SettingModel::save() should be compatible with Model::save($data = '', $options = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `bao_setting` [ RunTime:0.004000s ]
+
+[ 2018-04-27T11:37:42+08:00 ] 127.0.0.1 /admin/index/check.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Extend\Driver\Session\SessionDb.class.php 第 96 行.
+NOTIC: [2048] Declaration of SettingModel::fetchAll() should be compatible with CommonModel::fetchAll($field = '*', $where = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [2048] Declaration of SettingModel::save() should be compatible with Model::save($data = '', $options = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `bao_setting` [ RunTime:0.004000s ]
+
+[ 2018-04-27T11:38:43+08:00 ] 127.0.0.1 /admin/index/check.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Extend\Driver\Session\SessionDb.class.php 第 96 行.
+NOTIC: [2048] Declaration of SettingModel::fetchAll() should be compatible with CommonModel::fetchAll($field = '*', $where = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [2048] Declaration of SettingModel::save() should be compatible with Model::save($data = '', $options = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `bao_setting` [ RunTime:0.004000s ]
+
+[ 2018-04-27T11:39:42+08:00 ] 127.0.0.1 /admin/index/check.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001001s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Extend\Driver\Session\SessionDb.class.php 第 96 行.
+NOTIC: [2048] Declaration of SettingModel::fetchAll() should be compatible with CommonModel::fetchAll($field = '*', $where = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [2048] Declaration of SettingModel::save() should be compatible with Model::save($data = '', $options = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `bao_setting` [ RunTime:0.004001s ]
+
+[ 2018-04-27T11:40:42+08:00 ] 127.0.0.1 /admin/index/check.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Extend\Driver\Session\SessionDb.class.php 第 96 行.
+NOTIC: [2048] Declaration of SettingModel::fetchAll() should be compatible with CommonModel::fetchAll($field = '*', $where = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [2048] Declaration of SettingModel::save() should be compatible with Model::save($data = '', $options = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `bao_setting` [ RunTime:0.003000s ]
+
+[ 2018-04-27T11:41:42+08:00 ] 127.0.0.1 /admin/index/check.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Extend\Driver\Session\SessionDb.class.php 第 96 行.
+NOTIC: [2048] Declaration of SettingModel::fetchAll() should be compatible with CommonModel::fetchAll($field = '*', $where = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [2048] Declaration of SettingModel::save() should be compatible with Model::save($data = '', $options = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `bao_setting` [ RunTime:0.004000s ]
+
+[ 2018-04-27T11:42:42+08:00 ] 127.0.0.1 /admin/index/check.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Extend\Driver\Session\SessionDb.class.php 第 96 行.
+NOTIC: [2048] Declaration of SettingModel::fetchAll() should be compatible with CommonModel::fetchAll($field = '*', $where = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [2048] Declaration of SettingModel::save() should be compatible with Model::save($data = '', $options = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `bao_setting` [ RunTime:0.003001s ]
+
+[ 2018-04-27T11:43:42+08:00 ] 127.0.0.1 /admin/index/check.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Extend\Driver\Session\SessionDb.class.php 第 96 行.
+NOTIC: [2048] Declaration of SettingModel::fetchAll() should be compatible with CommonModel::fetchAll($field = '*', $where = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [2048] Declaration of SettingModel::save() should be compatible with Model::save($data = '', $options = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `bao_setting` [ RunTime:0.004000s ]
+
+[ 2018-04-27T11:44:42+08:00 ] 127.0.0.1 /admin/index/check.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Extend\Driver\Session\SessionDb.class.php 第 96 行.
+NOTIC: [2048] Declaration of SettingModel::fetchAll() should be compatible with CommonModel::fetchAll($field = '*', $where = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [2048] Declaration of SettingModel::save() should be compatible with Model::save($data = '', $options = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `bao_setting` [ RunTime:0.004000s ]
+
+[ 2018-04-27T11:45:42+08:00 ] 127.0.0.1 /admin/index/check.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Extend\Driver\Session\SessionDb.class.php 第 96 行.
+NOTIC: [2048] Declaration of SettingModel::fetchAll() should be compatible with CommonModel::fetchAll($field = '*', $where = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [2048] Declaration of SettingModel::save() should be compatible with Model::save($data = '', $options = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `bao_setting` [ RunTime:0.003000s ]
+
+[ 2018-04-27T11:46:42+08:00 ] 127.0.0.1 /admin/index/check.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Extend\Driver\Session\SessionDb.class.php 第 96 行.
+NOTIC: [2048] Declaration of SettingModel::fetchAll() should be compatible with CommonModel::fetchAll($field = '*', $where = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [2048] Declaration of SettingModel::save() should be compatible with Model::save($data = '', $options = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `bao_setting` [ RunTime:0.003001s ]
+
+[ 2018-04-27T11:47:42+08:00 ] 127.0.0.1 /admin/index/check.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Extend\Driver\Session\SessionDb.class.php 第 96 行.
+NOTIC: [2048] Declaration of SettingModel::fetchAll() should be compatible with CommonModel::fetchAll($field = '*', $where = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [2048] Declaration of SettingModel::save() should be compatible with Model::save($data = '', $options = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `bao_setting` [ RunTime:0.003000s ]
+
+[ 2018-04-27T11:48:42+08:00 ] 127.0.0.1 /admin/index/check.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Extend\Driver\Session\SessionDb.class.php 第 96 行.
+NOTIC: [2048] Declaration of SettingModel::fetchAll() should be compatible with CommonModel::fetchAll($field = '*', $where = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [2048] Declaration of SettingModel::save() should be compatible with Model::save($data = '', $options = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `bao_setting` [ RunTime:0.004000s ]
+
+[ 2018-04-27T11:49:42+08:00 ] 127.0.0.1 /admin/index/check.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Extend\Driver\Session\SessionDb.class.php 第 96 行.
+NOTIC: [2048] Declaration of SettingModel::fetchAll() should be compatible with CommonModel::fetchAll($field = '*', $where = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [2048] Declaration of SettingModel::save() should be compatible with Model::save($data = '', $options = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `bao_setting` [ RunTime:0.004000s ]
+
+[ 2018-04-27T11:50:42+08:00 ] 127.0.0.1 /admin/index/check.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Extend\Driver\Session\SessionDb.class.php 第 96 行.
+NOTIC: [2048] Declaration of SettingModel::fetchAll() should be compatible with CommonModel::fetchAll($field = '*', $where = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [2048] Declaration of SettingModel::save() should be compatible with Model::save($data = '', $options = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `bao_setting` [ RunTime:0.003000s ]
+
+[ 2018-04-27T11:51:42+08:00 ] 127.0.0.1 /admin/index/check.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001001s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Lib\Core\Dispatcher.class.php 第 132 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\xampp\htdocs\nhpl\Core\Common\common.php 第 217 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Extend\Driver\Session\SessionDb.class.php 第 96 行.
+NOTIC: [2048] Declaration of SettingModel::fetchAll() should be compatible with CommonModel::fetchAll($field = '*', $where = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [2048] Declaration of SettingModel::save() should be compatible with Model::save($data = '', $options = Array) D:\xampp\htdocs\nhpl\Nhpl\Lib\Model\SettingModel.class.php 第 5 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\nhpl\Core\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `bao_setting` [ RunTime:0.004000s ]
+

@@ -1,0 +1,3 @@
+<?php
+//000000021600a:2:{i:0;a:11:{s:5:"ad_id";s:3:"185";s:7:"site_id";s:1:"1";s:7:"city_id";s:1:"0";s:5:"title";s:12:"蜂蜜源码";s:8:"link_url";s:22:"http://www.hatudou.com";s:5:"photo";s:28:"2016/08/15/57b110c26ec1c.jpg";s:4:"code";s:0:"";s:7:"bg_date";s:10:"2016-03-23";s:8:"end_date";s:10:"2020-03-19";s:6:"closed";s:1:"0";s:7:"orderby";s:1:"1";}i:1;a:11:{s:5:"ad_id";s:3:"184";s:7:"site_id";s:1:"1";s:7:"city_id";s:1:"0";s:5:"title";s:12:"蜂蜜源码";s:8:"link_url";s:22:"http://www.hatudou.com";s:5:"photo";s:28:"2016/08/15/57b110d20739f.jpg";s:4:"code";s:0:"";s:7:"bg_date";s:10:"2016-03-22";s:8:"end_date";s:10:"2020-03-25";s:6:"closed";s:1:"0";s:7:"orderby";s:1:"2";}}
+?>
